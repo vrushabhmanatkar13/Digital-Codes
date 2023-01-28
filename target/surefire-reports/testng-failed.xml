@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="tagName" value="Smoke"/>
+  <listeners>
+    <listener class-name="com.Digitalcodes.TestCase.LogResult"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="com.Digitalcodes.TestCase.TC_Loginpage">
+        <methods>
+          <include name="TC8"/>
+          <include name="setdata"/>
+          <include name="afterSuite"/>
+          <include name="log_result"/>
+          <include name="read"/>
+        </methods>
+      </class> <!-- com.Digitalcodes.TestCase.TC_Loginpage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
