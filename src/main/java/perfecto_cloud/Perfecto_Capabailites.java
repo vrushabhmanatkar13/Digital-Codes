@@ -1,7 +1,6 @@
 package perfecto_cloud;
 
 import java.net.URL;
-import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.Platform;
@@ -10,10 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
-import org.testng.internal.annotations.IBeforeTest;
-import org.testng.internal.annotations.ITest;
 
-import com.Digitalcodes.Util.Baseclass;
 import com.Digitalcodes.Util.LoadData;
 import com.perfecto.reportium.client.ReportiumClient;
 import com.perfecto.reportium.test.TestContext;
@@ -21,7 +17,6 @@ import com.perfecto.reportium.test.result.TestResult;
 import com.perfecto.reportium.test.result.TestResultFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import perfecto_cloud.PerfectoLabUtils;
 
 public class Perfecto_Capabailites {
 
