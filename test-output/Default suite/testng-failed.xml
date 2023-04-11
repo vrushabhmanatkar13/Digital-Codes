@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Digitalcodes.TestCase.Prerequisites_Teardown">
+      <class name="com.Digitalcodes.testcases.TC_Loginpage">
         <methods>
-          <include name="perfecto"/>
+          <include name="afterSuite"/>
           <include name="setdata"/>
+          <include name="markFavoriteTitle"/>
           <include name="log_result"/>
-          <include name="read"/>
         </methods>
-      </class> <!-- com.Digitalcodes.TestCase.Prerequisites_Teardown -->
+      </class> <!-- com.Digitalcodes.testcases.TC_Loginpage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

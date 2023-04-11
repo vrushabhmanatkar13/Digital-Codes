@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="85.619" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="116.883" tests="10" errors="0" skipped="1" failures="4">
   <properties>
     <property name="jansi.mode" value="strip"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
     <property name="java.vm.version" value="25.191-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Vrushabh Manatkar\eclipse-workspace\com.Digitalcodes"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\eclipse-workspace\com.Digitalcodes"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Vrushabh Manatkar\eclipse-workspace\com.Digitalcodes"/>
+    <property name="user.dir" value="D:\eclipse-workspace\com.Digitalcodes"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Vrushabh Manatkar\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf11378096337753044449.tmp"/>
+    <property name="classworlds.conf" value="D:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7253014105038208932.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Vrushabh Manatkar/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Vrushabh Manatkar/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Perfecto\Perfecto-Connect-windows64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17.0.5\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platforms;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\;C:\Users\Vrushabh Manatkar\AppData\Local\Microsoft\WindowsApps;C:\Users\Vrushabh Manatkar\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\emulator;;C:\Users\Vrushabh Manatkar\Downloads\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Vrushabh Manatkar/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Vrushabh Manatkar/Downloads/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Perfecto\Perfecto-Connect-windows64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17.0.5\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Vrushabh Manatkar\Downloads\apache-maven-3.8.7\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platforms-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\build-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\;C:\Users\Vrushabh Manatkar\AppData\Local\Microsoft\WindowsApps;C:\Users\Vrushabh Manatkar\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\emulator;C:\Program Files\Java\jdk-17.0.5\bin;;C:\Users\Vrushabh Manatkar\Downloads\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dplatform_Name=Perfecto test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -53,20 +53,235 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Vrushabh Manatkar\eclipse-workspace\com.Digitalcodes\EMBEDDED"/>
+    <property name="maven.home" value="D:\eclipse-workspace\com.Digitalcodes\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
-    <property name="platform_Name" value="Perfecto"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC1" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="2.327"/>
-  <testcase name="TC1_1" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="5.77"/>
-  <testcase name="TC4" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="38.898"/>
-  <testcase name="TC5" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="1.022"/>
-  <testcase name="TC6" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="7.499"/>
-  <testcase name="TC7" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="30.041"/>
-  <testcase name="TC8" classname="com.Digitalcodes.TestCase.TC_Loginpage" time="0.062"/>
+  <testcase name="login" classname="com.Digitalcodes.testcases.TC_Loginpage" time="9.437">
+    <failure message="expected [https://codes-stage.iccsafe.org/dashboard/library] but found [https://codes-stage.iccsafe.org/login]" type="java.lang.AssertionError">java.lang.AssertionError: expected [https://codes-stage.iccsafe.org/dashboard/library] but found [https://codes-stage.iccsafe.org/login]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.AssertStatements.assertEquals(AssertStatements.java:12)
+	at com.Digitalcodes.testcases.TC_Loginpage.login(TC_Loginpage.java:44)
+</failure>
+    <system-out><![CDATA[Objects are initilized ====================>>
+Report Generated ================>>
+firefox Browser launched
+https://codes-stage.iccsafe.org/
+main@439904756
+login <----------- Failed -------->
+java.lang.AssertionError: expected [https://codes-stage.iccsafe.org/dashboard/library] but found [https://codes-stage.iccsafe.org/login]
+]]></system-out>
+    <system-err>SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+1680878463185	geckodriver	INFO	Listening on 127.0.0.1:61392
+1680878465155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51224" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://localhost:51224/" "-no-remote" "-profile" "C:\\Users\\VRUSHA~1\\AppData\\Local\\Temp\\rust_mozprofile0K3sKJ"
+1680878466040	Marionette	INFO	Marionette enabled
+1680878466052	Marionette	INFO	Listening on port 60993
+Read port: 60993
+WebDriver BiDi listening on ws://127.0.0.1:51224
+1680878466497	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VRUSHA~1\\AppData\\Local\\Temp\\rust_mozprofile0K3sKJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51224/devtools/browser/d76848d8-1705-4b6a-8368-e13ee1b6e66a
+Apr 07, 2023 8:11:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://codes-stage.iccsafe.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://codes-stage.iccsafe.org."
+</system-err>
+  </testcase>
+  <testcase name="verifyUserInformation" classname="com.Digitalcodes.testcases.TC_Loginpage" time="0">
+    <skipped/>
+    <system-out><![CDATA[<------------Test Result Logged----------------->
+User able to Login
+=======================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="navigateToGroupTitles" classname="com.Digitalcodes.testcases.TC_Loginpage" time="5.365"/>
+  <testcase name="navigateToTitle" classname="com.Digitalcodes.testcases.TC_Loginpage" time="10.153">
+    <failure message="expected [PREMIUM] but found [BASIC PLUS]" type="java.lang.AssertionError">java.lang.AssertionError: expected [PREMIUM] but found [BASIC PLUS]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.AssertStatements.assertEquals(AssertStatements.java:12)
+	at com.Digitalcodes.testcases.TC_Loginpage.navigateToTitle(TC_Loginpage.java:135)
+</failure>
+    <system-out><![CDATA[<------------Test Result Logged----------------->
+Verify user able to navigate to Group of Title
+=======================================================
+main@439904756
+navigateToTitle <----------- Failed -------->
+java.lang.AssertionError: expected [PREMIUM] but found [BASIC PLUS]
+]]></system-out>
+    <system-err>JavaScript error: https://cdn-codes-qa.iccsafe.org/build/app.bf5ac47b.js, line 2: TypeError: t is undefined
+</system-err>
+  </testcase>
+  <testcase name="markFavoriteTitle" classname="com.Digitalcodes.testcases.TC_Loginpage" time="6.062"/>
+  <testcase name="removeFavoriteTitle" classname="com.Digitalcodes.testcases.TC_Loginpage" time="4.445"/>
+  <testcase name="navigateToMyNotes_fromTOC" classname="com.Digitalcodes.testcases.TC_Loginpage" time="1.497"/>
+  <testcase name="navigateToSection_fromTOC" classname="com.Digitalcodes.testcases.TC_Loginpage" time="12.56"/>
+  <testcase name="createNotes_atSection" classname="com.Digitalcodes.testcases.TC_Loginpage" time="31.871">
+    <failure message="Unable to locate element: //div[@class=&quot;ql-editor ql-blank&quot;]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;IB-PUNE-LAP-329&apos;, ip: &apos;192.168.215.71&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, findElement {using=xpath, value=//div[@class=&quot;ql-editor ql-blank&quot;]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class="ql-editor ql-blank"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, findElement {using=xpath, value=//div[@class="ql-editor ql-blank"]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.clear(Unknown Source)
+	at com.Digitalcodes.pageobject.Codes_Section.createNote_FromSection(Codes_Section.java:187)
+	at com.Digitalcodes.testcases.TC_Loginpage.createNotes_atSection(TC_Loginpage.java:245)
+</failure>
+    <system-out><![CDATA[<------------Test Result Logged----------------->
+Verify user able to naviagate Section from TOC
+=======================================================
+main@439904756
+createNotes_atSection <----------- Failed -------->
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class="ql-editor ql-blank"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, findElement {using=xpath, value=//div[@class="ql-editor ql-blank"]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394
+]]></system-out>
+  </testcase>
+  <testcase name="afterSuite" classname="com.Digitalcodes.testcases.TC_Loginpage" time="35.493">
+    <failure message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;IB-PUNE-LAP-329&apos;, ip: &apos;192.168.215.71&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, quit {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+    <system-out><![CDATA[<------------Test Result Logged----------------->
+Verify user able to create notes at section
+=======================================================
+]]></system-out>
+    <system-err><![CDATA[1680878587107	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:61314
+JavaScript error: chrome://remote/content/server/WebSocketHandshake.jsm, line 174: Error: The handshake request has incorrect Origin header http://127.0.0.1:51224
+Apr 07, 2023 8:13:07 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Invalid Status code=400 text=Bad Request
+java.io.IOException: Invalid Status code=400 text=Bad Request
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:314)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+Apr 07, 2023 8:13:07 PM org.openqa.selenium.remote.RemoteWebDriver close
+SEVERE: Failed to disconnect DevTools session
+org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://127.0.0.1:51224/devtools/browser/d76848d8-1705-4b6a-8368-e13ee1b6e66a
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:447)
+	at com.Digitalcodes.utilities.Baseclass.closeBrowser(Baseclass.java:94)
+	at com.Digitalcodes.testcases.Prerequisites_Teardown.afterSuite(Prerequisites_Teardown.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+
+1680878587144	Marionette	INFO	Stopped listening on port 60993
+]]></system-err>
+  </testcase>
 </testsuite>

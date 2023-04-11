@@ -3,25 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="tagName" value="Smoke"/>
   <listeners>
-    <listener class-name="com.Digitalcodes.TestCase.LogResult"/>
+    <listener class-name="com.Digitalcodes.testcases.LogResult"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Digitalcodes.TestCase.TC_Loginpage">
+      <class name="com.Digitalcodes.testcases.TC_Loginpage">
         <methods>
-          <include name="TC8"/>
-          <include name="TC5"/>
-          <include name="TC6"/>
-          <include name="TC4"/>
-          <include name="TC1"/>
-          <include name="setdata"/>
           <include name="afterSuite"/>
+          <include name="setdata"/>
+          <include name="createNotes_atSection"/>
           <include name="log_result"/>
-          <include name="TC1_1"/>
-          <include name="read"/>
-          <include name="TC7"/>
         </methods>
-      </class> <!-- com.Digitalcodes.TestCase.TC_Loginpage -->
+      </class> <!-- com.Digitalcodes.testcases.TC_Loginpage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
