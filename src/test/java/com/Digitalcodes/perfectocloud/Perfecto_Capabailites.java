@@ -1,12 +1,17 @@
 package com.Digitalcodes.perfectocloud;
 
 import java.net.URL;
+
+import java.util.Properties;
+
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import com.Digitalcodes.capabilities.SetCapbilites;
+
 import com.perfecto.reportium.client.ReportiumClient;
 import com.perfecto.reportium.test.TestContext;
 import com.perfecto.reportium.test.result.TestResult;
@@ -14,120 +19,101 @@ import com.perfecto.reportium.test.result.TestResultFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Perfecto_Capabailites extends SetCapbilites  {
+public class Perfecto_Capabailites extends SetCapbilites {
 
 	static ReportiumClient reportiumClient;
-	//public static Properties prop;
-    
-      public static String platform="local";
-	
-	
-public WebDriver Perfecto(String browserName,String securityToken,String cloudName, String tag) throws Exception {
-	
-	
-	
-	DesiredCapabilities capabilities=setCapabilities(browserName);
-	capabilities.setCapability("resolution", "1024x768");
+	// public static Properties prop;
 
-	
-	// The below capability is mandatory. Please do not replace it.
-	capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
-	
-	RemoteWebDriver Rdriver = new RemoteWebDriver(new URL("https://"+PerfectoLabUtils.fetchSecurityToken(cloudName)+".perfectomobile.com/nexperience/perfectomobile/wd/hub"), capabilities);
-        
-	reportiumClient = PerfectoLabUtils.setReportiumClient(Rdriver, reportiumClient,tag);
-	WebDriver driver=(WebDriver)Rdriver;
-	
-	
-    return driver;
-}
+	public static String platform = "local";
 
+	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag) throws Exception {
 
-public static void stepStart(String step){
-	
-	if(platform.equalsIgnoreCase("Perfecto")) {     
-		reportiumClient.stepStart(step); //Starts a reportium step
+		DesiredCapabilities capabilities = setCapabilities(browserName);
+		capabilities.setCapability("resolution", "1024x768");
 
+		// The below capability is mandatory. Please do not replace it.
+		capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
+
+		RemoteWebDriver Rdriver = new RemoteWebDriver(
+				new URL("https://" + PerfectoLabUtils.fetchSecurityToken(cloudName)
+						+ ".perfectomobile.com/nexperience/perfectomobile/wd/hub"),
+				capabilities);
+
+		reportiumClient = PerfectoLabUtils.setReportiumClient(Rdriver, reportiumClient, tag);
+		WebDriver driver = (WebDriver) Rdriver;
+
+		return driver;
 	}
-}
 
-public static void stepEnd() {
-	if(platform.equalsIgnoreCase("Perfecto")) {
-		reportiumClient.stepEnd();
-	}
-}
+	public static void stepStart(String step) {
 
-
-public static void testStart(String testName, String testtag) throws Exception {
-	//platform="local";
-
-	if(platform.equalsIgnoreCase("Perfecto")) {
-		reportiumClient.testStart(testName, new TestContext(testtag)); //Starts a reportium step
-		
-		
-	
-	}
-}
-
-
-
-public static void Assert(String massege ,boolean expected) {
-	
-	if (platform.equalsIgnoreCase("Perfecto")) {
-	reportiumClient.reportiumAssert(massege, expected);
-	
-	}
-}
-public static void AssertEquels(String actual, String expected) {
-	if (platform.equalsIgnoreCase("Perfecto")) {
-		
-		if (actual.equals(expected)) {
-			reportiumClient.reportiumAssert("Actual and Expecated text is matched", true);
-		}
-		else {
-			reportiumClient.reportiumAssert("Actual and Expecated text is not matched", false);
-			
-		}
-			
-	}
-	
-	
-}
-public static void logResult( ITestResult result) throws Exception {
-
-		
 		if (platform.equalsIgnoreCase("Perfecto")) {
-			TestResult testResult=null;
-			if(result.getStatus() == ITestResult.SUCCESS) {
-				 testResult = TestResultFactory.createSuccess();
+			reportiumClient.stepStart(step); // Starts a reportium step
+
+		}
+	}
+
+	public static void stepEnd() {
+		if (platform.equalsIgnoreCase("Perfecto")) {
+			reportiumClient.stepEnd();
+		}
+	}
+
+	public static void testStart(String testName, String testtag) throws Exception {
+		// platform="local";
+
+		if (platform.equalsIgnoreCase("Perfecto")) {
+			reportiumClient.testStart(testName, new TestContext(testtag)); // Starts a reportium step
+
+		}
+	}
+
+	public static void Assert(String massege, boolean expected) {
+
+		if (platform.equalsIgnoreCase("Perfecto")) {
+			reportiumClient.reportiumAssert(massege, expected);
+
+		}
+	}
+
+	public static void AssertEquels(String actual, String expected) {
+		if (platform.equalsIgnoreCase("Perfecto")) {
+
+			if (actual.equals(expected)) {
+				reportiumClient.reportiumAssert("Actual and Expecated text is matched", true);
+			} else {
+				reportiumClient.reportiumAssert("Actual and Expecated text is not matched", false);
+
 			}
-			else if (result.getStatus() == ITestResult.FAILURE) {
-				 testResult = TestResultFactory.createFailure(result.getThrowable());
+
+		}
+
+	}
+
+	public static void logResult(ITestResult result) throws Exception {
+
+		if (platform.equalsIgnoreCase("Perfecto")) {
+			TestResult testResult = null;
+			if (result.getStatus() == ITestResult.SUCCESS) {
+				testResult = TestResultFactory.createSuccess();
+			} else if (result.getStatus() == ITestResult.FAILURE) {
+				testResult = TestResultFactory.createFailure(result.getThrowable());
 			}
-			
+
 			reportiumClient.testStop(testResult);
 		}
-		
-		
-			
-		}
-		
-		
+
+	}
+
 	public void getReporturl() {
 		if (platform.equalsIgnoreCase("Perfecto")) {
-		String reportURL = reportiumClient.getReportUrl();
-		System.out.println(reportURL);
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.get(reportURL);
-		driver.manage().window().maximize();
+			String reportURL = reportiumClient.getReportUrl();
+			System.out.println(reportURL);
+			WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
+			driver.get(reportURL);
+			driver.manage().window().maximize();
 		}
 	}
-	
-	
-		}
-	
-	
-	
 
-
+}
