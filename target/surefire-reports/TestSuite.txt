@@ -1,4 +1,79 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 138.026 sec
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 1, Time elapsed: 214.281 sec <<< FAILURE!
+login(com.Digitalcodes.testcases.TC_Loginpage)  Time elapsed: 9.437 sec  <<< FAILURE!
+java.lang.AssertionError: expected [https://codes-stage.iccsafe.org/dashboard/library] but found [https://codes-stage.iccsafe.org/login]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.AssertStatements.assertEquals(AssertStatements.java:12)
+	at com.Digitalcodes.testcases.TC_Loginpage.login(TC_Loginpage.java:44)
+
+navigateToTitle(com.Digitalcodes.testcases.TC_Loginpage)  Time elapsed: 10.153 sec  <<< FAILURE!
+java.lang.AssertionError: expected [PREMIUM] but found [BASIC PLUS]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.AssertStatements.assertEquals(AssertStatements.java:12)
+	at com.Digitalcodes.testcases.TC_Loginpage.navigateToTitle(TC_Loginpage.java:135)
+
+createNotes_atSection(com.Digitalcodes.testcases.TC_Loginpage)  Time elapsed: 31.871 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class="ql-editor ql-blank"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, findElement {using=xpath, value=//div[@class="ql-editor ql-blank"]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.clear(Unknown Source)
+	at com.Digitalcodes.pageobject.Codes_Section.createNote_FromSection(Codes_Section.java:187)
+	at com.Digitalcodes.testcases.TC_Loginpage.createNotes_atSection(TC_Loginpage.java:245)
+
+afterSuite(com.Digitalcodes.testcases.TC_Loginpage)  Time elapsed: 35.493 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IB-PUNE-LAP-329', ip: '192.168.215.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2fe9b6c9-10e8-4585-9ec7-c7743e859394, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:debuggerAddress: 127.0.0.1:51224, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21536, moz:profile: C:\Users\VRUSHA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:51224/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2fe9b6c9-10e8-4585-9ec7-c7743e859394
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

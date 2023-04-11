@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="1" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="175766" started-at="2023-01-28T13:05:09 IST" finished-at="2023-01-28T13:08:05 IST">
+  <suite name="Suite" duration-ms="111487" started-at="2023-04-07T21:26:11 IST" finished-at="2023-04-07T21:28:03 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="175766" started-at="2023-01-28T13:05:09 IST" finished-at="2023-01-28T13:08:05 IST">
-      <class name="com.Digitalcodes.TestCase.TC_Loginpage">
-        <test-method status="PASS" signature="setdata(java.lang.String)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="setdata" is-config="true" duration-ms="37683" started-at="2023-01-28T13:04:32 IST" finished-at="2023-01-28T13:05:09 IST">
+    <test name="Test" duration-ms="111487" started-at="2023-04-07T21:26:11 IST" finished-at="2023-04-07T21:28:03 IST">
+      <class name="com.Digitalcodes.testcases.TC_Loginpage">
+        <test-method status="PASS" signature="setdata(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="setdata" is-config="true" duration-ms="68906" started-at="2023-04-07T21:25:02 IST" finished-at="2023-04-07T21:26:11 IST">
           <params>
             <param index="0">
               <value>
@@ -18,116 +18,146 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setdata -->
-        <test-method status="PASS" signature="TC1()[pri:1, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC1" duration-ms="10203" started-at="2023-01-28T13:05:09 IST" description="User able to Login" finished-at="2023-01-28T13:05:20 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="login" duration-ms="17539" started-at="2023-04-07T21:26:11 IST" description="User able to Login" finished-at="2023-04-07T21:26:29 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="6154" started-at="2023-01-28T13:05:20 IST" finished-at="2023-01-28T13:05:26 IST">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2288" started-at="2023-04-07T21:26:29 IST" finished-at="2023-04-07T21:26:31 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC1 status=SUCCESS method=TC_Loginpage.TC1()[pri:1, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_Loginpage.login()[pri:1, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC1_1()[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC1_1" duration-ms="7285" started-at="2023-01-28T13:05:26 IST" description="Verify user able to see user name and subscription type" depends-on-methods="com.Digitalcodes.TestCase.TC_Loginpage.TC1" finished-at="2023-01-28T13:05:33 IST">
+        <test-method status="PASS" signature="verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="verifyUserInformation" duration-ms="2360" started-at="2023-04-07T21:26:31 IST" description="Verify User able to displyed Subscription type, Name, email " depends-on-methods="com.Digitalcodes.testcases.TC_Loginpage.login" finished-at="2023-04-07T21:26:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC1_1 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5508" started-at="2023-01-28T13:05:33 IST" finished-at="2023-01-28T13:05:38 IST">
+        </test-method> <!-- verifyUserInformation -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2028" started-at="2023-04-07T21:26:34 IST" finished-at="2023-04-07T21:26:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC1_1 status=SUCCESS method=TC_Loginpage.TC1_1()[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserInformation status=SUCCESS method=TC_Loginpage.verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC4()[pri:2, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC4" duration-ms="64788" started-at="2023-01-28T13:05:38 IST" description="Verify user able to navigate to Title" finished-at="2023-01-28T13:06:43 IST">
+        <test-method status="PASS" signature="navigateToGroupTitles()[pri:2, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="navigateToGroupTitles" duration-ms="5140" started-at="2023-04-07T21:26:36 IST" description="Verify user able to navigate to Group of Title" finished-at="2023-04-07T21:26:41 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC4 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5511" started-at="2023-01-28T13:06:43 IST" finished-at="2023-01-28T13:06:49 IST">
+        </test-method> <!-- navigateToGroupTitles -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2044" started-at="2023-04-07T21:26:41 IST" finished-at="2023-04-07T21:26:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC4 status=SUCCESS method=TC_Loginpage.TC4()[pri:2, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToGroupTitles status=SUCCESS method=TC_Loginpage.navigateToGroupTitles()[pri:2, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC5()[pri:3, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC5" duration-ms="3637" started-at="2023-01-28T13:06:49 IST" description="Verify User able to navigat to my notes" finished-at="2023-01-28T13:06:52 IST">
+        <test-method status="PASS" signature="navigateToTitle()[pri:3, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="navigateToTitle" duration-ms="16871" started-at="2023-04-07T21:26:43 IST" description="Verify User able to Navigate to Title Landing page and verify Tag" finished-at="2023-04-07T21:27:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC5 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5600" started-at="2023-01-28T13:06:52 IST" finished-at="2023-01-28T13:06:58 IST">
+        </test-method> <!-- navigateToTitle -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2047" started-at="2023-04-07T21:27:00 IST" finished-at="2023-04-07T21:27:02 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC5 status=SUCCESS method=TC_Loginpage.TC5()[pri:3, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToTitle status=SUCCESS method=TC_Loginpage.navigateToTitle()[pri:3, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC6()[pri:4, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC6" duration-ms="17852" started-at="2023-01-28T13:06:58 IST" description="Verify user able to navigate to section from TOC" finished-at="2023-01-28T13:07:16 IST">
+        <test-method status="PASS" signature="markFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="markFavoriteTitle" duration-ms="4575" started-at="2023-04-07T21:27:02 IST" description="Verify user able to mark favorite and title should be displayed in favorites feature" finished-at="2023-04-07T21:27:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC6 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5496" started-at="2023-01-28T13:07:16 IST" finished-at="2023-01-28T13:07:21 IST">
+        </test-method> <!-- markFavoriteTitle -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2034" started-at="2023-04-07T21:27:06 IST" finished-at="2023-04-07T21:27:08 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC6 status=SUCCESS method=TC_Loginpage.TC6()[pri:4, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=markFavoriteTitle status=SUCCESS method=TC_Loginpage.markFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC7()[pri:5, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC7" duration-ms="31234" started-at="2023-01-28T13:07:21 IST" description="Verify user able to click on apps" finished-at="2023-01-28T13:07:53 IST">
+        <test-method status="PASS" signature="removeFavoriteTitle()[pri:5, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="removeFavoriteTitle" duration-ms="4140" started-at="2023-04-07T21:27:08 IST" description="Verify user able to remove favorite title" finished-at="2023-04-07T21:27:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC7 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5429" started-at="2023-01-28T13:07:53 IST" finished-at="2023-01-28T13:07:58 IST">
+        </test-method> <!-- removeFavoriteTitle -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2034" started-at="2023-04-07T21:27:12 IST" finished-at="2023-04-07T21:27:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC7 status=SUCCESS method=TC_Loginpage.TC7()[pri:5, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=removeFavoriteTitle status=SUCCESS method=TC_Loginpage.removeFavoriteTitle()[pri:5, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC8()[pri:6, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="TC8" duration-ms="1360" started-at="2023-01-28T13:07:58 IST" description="Verify user able to create notes" finished-at="2023-01-28T13:07:59 IST">
+        <test-method status="PASS" signature="navigateToMyNotes_fromTOC()[pri:6, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="navigateToMyNotes_fromTOC" duration-ms="3723" started-at="2023-04-07T21:27:14 IST" description="Verify User able to navigat to my notes From TOC" finished-at="2023-04-07T21:27:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC8 -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="log_result" is-config="true" duration-ms="5512" started-at="2023-01-28T13:07:59 IST" finished-at="2023-01-28T13:08:05 IST">
+        </test-method> <!-- navigateToMyNotes_fromTOC -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2036" started-at="2023-04-07T21:27:18 IST" finished-at="2023-04-07T21:27:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC8 status=SUCCESS method=TC_Loginpage.TC8()[pri:6, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToMyNotes_fromTOC status=SUCCESS method=TC_Loginpage.navigateToMyNotes_fromTOC()[pri:6, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.TestCase.TC_Loginpage@24b1d79b]" name="afterSuite" is-config="true" duration-ms="7484" started-at="2023-01-28T13:08:05 IST" finished-at="2023-01-28T13:08:13 IST">
+        <test-method status="PASS" signature="navigateToSection_fromTOC()[pri:7, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="navigateToSection_fromTOC" duration-ms="27987" started-at="2023-04-07T21:27:20 IST" description="Verify user able to naviagate Section from TOC" finished-at="2023-04-07T21:27:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSection_fromTOC -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2043" started-at="2023-04-07T21:27:48 IST" finished-at="2023-04-07T21:27:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToSection_fromTOC status=SUCCESS method=TC_Loginpage.navigateToSection_fromTOC()[pri:7, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method status="PASS" signature="createNotes_atSection()[pri:8, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="createNotes_atSection" duration-ms="10485" started-at="2023-04-07T21:27:50 IST" description="Verify user able to create notes at section" finished-at="2023-04-07T21:28:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNotes_atSection -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="log_result" is-config="true" duration-ms="2058" started-at="2023-04-07T21:28:01 IST" finished-at="2023-04-07T21:28:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNotes_atSection status=SUCCESS method=TC_Loginpage.createNotes_atSection()[pri:8, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.TC_Loginpage@4b53f538]" name="afterSuite" is-config="true" duration-ms="920" started-at="2023-04-07T21:28:03 IST" finished-at="2023-04-07T21:28:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.Digitalcodes.TestCase.TC_Loginpage -->
+      </class> <!-- com.Digitalcodes.testcases.TC_Loginpage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
