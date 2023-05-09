@@ -1,13 +1,14 @@
 package com.Digitalcodes.perfectocloud;
 
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
-import java.util.Properties;
-
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import com.Digitalcodes.capabilities.SetCapbilites;
@@ -23,21 +24,50 @@ public class Perfecto_Capabailites extends SetCapbilites {
 
 	static ReportiumClient reportiumClient;
 	// public static Properties prop;
+	ChromeOptions chrome;
+	FirefoxOptions firefox;
+	RemoteWebDriver Rdriver;
 
 	public static String platform = "local";
+	
+	
+	
+	public static Map<String, Object> perfectoOptions( String securityToken) {
+		Map<String, Object> perfectoOptions = new HashMap<>();
+		perfectoOptions.put("resolution", "1920x1080");
+		perfectoOptions.put("securityToken", securityToken);
+		perfectoOptions.put("platformVersion", "10");
+	
+		
+		return perfectoOptions;
+		
+	}
 
-	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag) throws Exception {
+	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless) throws Exception {
 
-		DesiredCapabilities capabilities = setCapabilities(browserName);
-		capabilities.setCapability("resolution", "1024x768");
-
+		if (browserName.equalsIgnoreCase("Chrome")) {
+			chrome=getChromecapabalites(incognito, headless);
+			chrome.setCapability("perfecto:options", perfectoOptions(securityToken));
+		
+			 Rdriver = new RemoteWebDriver(
+					new URL("https://"+PerfectoLabUtils.fetchSecurityToken(cloudName)+".perfectomobile.com/nexperience/perfectomobile/wd/hub"),chrome);
+		}
+		if (browserName.equalsIgnoreCase("firefox")) {
+			firefox=getFirefoxcapabalites(incognito, headless);
+			firefox.setCapability("perfecto:options", perfectoOptions(securityToken));
+			
+			 Rdriver = new RemoteWebDriver(
+					new URL("https://"+PerfectoLabUtils.fetchSecurityToken(cloudName)+".perfectomobile.com/nexperience/perfectomobile/wd/hub"),firefox);
+		}
+		
+		/*
+		 * DesiredCapabilities capabilities = setCapabilities(browserName);
+		 * capabilities.setCapability("resolution", "1024x768");
+		 */
 		// The below capability is mandatory. Please do not replace it.
-		capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
+	//	capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
 
-		RemoteWebDriver Rdriver = new RemoteWebDriver(
-				new URL("https://" + PerfectoLabUtils.fetchSecurityToken(cloudName)
-						+ ".perfectomobile.com/nexperience/perfectomobile/wd/hub"),
-				capabilities);
+		
 
 		reportiumClient = PerfectoLabUtils.setReportiumClient(Rdriver, reportiumClient, tag);
 		WebDriver driver = (WebDriver) Rdriver;

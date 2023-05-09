@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -33,7 +34,7 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 		 if (platform.equalsIgnoreCase("Perfecto")) {
 				cap=new com.Digitalcodes.perfectocloud.Perfecto_Capabailites();
-				driver=cap.Perfecto(browserName, securityToken, cloudName, tag);
+				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless);
 		       action=new Actions(driver);
 			 return driver;
 			 }
@@ -41,8 +42,7 @@ public class Baseclass extends Perfecto_Capabailites{
 				else {
 					if (browserName.equalsIgnoreCase("Chrome")) {
 						WebDriverManager.chromedriver().setup();
-						WebDriver Cdriver = new ChromeDriver(
-								SetCapbilites.getChromecapabalites(incognito, headless, browserName));
+						WebDriver Cdriver = new ChromeDriver(SetCapbilites.getChromecapabalites(incognito, headless));
 						System.out.println(browserName + "Browser launched");
 						driver = Cdriver;
 
@@ -51,8 +51,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					else if (browserName.equalsIgnoreCase("firefox")) {
 						WebDriverManager.firefoxdriver().setup();
 
-						WebDriver Fdriver = new FirefoxDriver(
-								SetCapbilites.getFirefoxcapabalites(incognito, headless, browserName));
+						WebDriver Fdriver = new FirefoxDriver(SetCapbilites.getFirefoxcapabalites(incognito, headless));
 						System.out.println(browserName + " Browser launched");
 						driver = Fdriver;
 					}
@@ -66,11 +65,16 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 
 	}
+	
+	public static String getTitle() {
+		
+		return driver.getTitle();
+	}
 
 	// Implicit wait
 	public void implicitWait(long sec) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
-	//	driver.manage().timeouts().pageLoad
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(sec));
 	}
 	
 	
@@ -137,6 +141,22 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 	}
 
+	public void click(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.click();
+	}
+	
+	public void sendKeys(WebElement e,String s) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		e.clear();
+		e.sendKeys(s);
+	}
+	
+	public String getText(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOf(e));
+		return e.getText();
+	}
+	
 	
 	
 	

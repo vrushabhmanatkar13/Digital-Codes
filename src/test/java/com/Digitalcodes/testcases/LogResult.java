@@ -14,7 +14,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 		try {
 			
 			  
-			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name"),"null" ,prop.getProperty("browserName"));
+			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,prop.getProperty("browserName"));
 			
 			testStart(result.getMethod().getDescription(),"null"); 
 			
@@ -34,6 +34,8 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
             
 		try {
+			
+			report.create_info(result.getMethod().getDescription());
 			report.test_pass(result.getMethod().getMethodName());
 			
 			System.out.println(result.getMethod().getMethodName()+ " <------------ Passed -------->");
@@ -48,10 +50,11 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		
 		try {
-			report.test_fail(result.getMethod().getMethodName() + " is failed due to /n" +result.getThrowable(), result);
+			report.create_info(result.getMethod().getDescription());
+			report.test_fail(result.getMethod().getMethodName() + " is failed due to"+"/n" +result.getThrowable(), result);
 			
 			System.out.println(result.getMethod().getMethodName() + " <----------- Failed -------->");
-			System.out.println(result.getThrowable());
+			result.getThrowable().printStackTrace();
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -61,6 +64,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
+		report.create_info(result.getMethod().getDescription());
 		report.test_skip(result.getMethod().getMethodName());
 	}
 

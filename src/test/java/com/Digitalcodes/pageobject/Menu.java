@@ -14,13 +14,14 @@ public class Menu extends Baseclass {
 
 	
    WebDriver driver;
-	public Menu(WebDriver driver) {
-		this.driver=driver;
+	@SuppressWarnings("static-access")
+	public Menu() {
+		this.driver=super.driver;
 		PageFactory.initElements(driver, this);
 
 	}
 	
-	@CacheLookup
+	
 	@FindBy(xpath = "//i[normalize-space()='menu']")
 	private WebElement menu;
 
@@ -46,30 +47,38 @@ public class Menu extends Baseclass {
 	private List<WebElement> features;
 	
 	
+	@FindBy( css = ".v-list-item__title.lighten-1.font-weight-bold")
+	private WebElement premiumTools;
+	
+	@FindAll({@FindBy(css = ".v-list-item__title.accent--text.font-weight-regular")})
+	private List<WebElement> premiumToolsFeatures;
+	
+	
 	public void clickOnMenu() {
-		menu.click();
+		click(menu);
 	}
 
 	
 
 	
 	public void navigateToTitlesCover(String listitem, String groupofTitle) {
-		clickOnMenu();
+		
 		for (WebElement webElement : menuList) {		
-			if (webElement.getText().equalsIgnoreCase(listitem)) {
-				webElement.click();	
+			if (getText(webElement).equalsIgnoreCase(listitem)) {
+				click(webElement);
 				if (groupTitle.get(1).isDisplayed()) {
 					for (WebElement title : groupTitle) {
-						if (title.getText().equals(groupofTitle)) {
+						if (getText(title).equalsIgnoreCase(groupofTitle)) {
 
-							title.click();
+							click(title);
 
 						      break;
 					}
 				}
-					break;
+					
 
 			}
+				break;
 			
 			}
 
@@ -78,28 +87,43 @@ public class Menu extends Baseclass {
 
 	}
 	public String getTitleHeading() {
-		return groupTitleDisplay.getText();
+		return getText(groupTitleDisplay);
 	}
 
 	
 	
 	public void navigetToStaticFeaturs(String listitem) {
-		clickOnMenu();
+		
 		for (WebElement webElement :features) {
 			if (webElement.getText().equalsIgnoreCase(listitem)) {
-				webElement.click();
+				click(webElement);
 				break;
 			}
 			}
 		}
 		
+	public void clickOnPremiumtools() {
+		click(premiumTools);
+	}
+	
+	
+	public void clickOnPremiumToolfeature(String feature) {
+		for (WebElement webElement : premiumToolsFeatures) {
+			if (webElement.getText().equalsIgnoreCase(feature)) {
+				click(webElement);
+				break;
+			}
+			
+		}
+	}
+	
 	
 	public void clickOnMainMenu() {
-		mainMenu.click();
+		click(mainMenu);
 	}
 	
 	public void closeMainmenu() {
-		menuClose.click();
+		click(menuClose);
 	}
 	
 	}

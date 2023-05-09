@@ -1,0 +1,45 @@
+package com.Digitalcodes.pageobject;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.Digitalcodes.utilities.Baseclass;
+
+public class TitleCover_Page extends Baseclass{
+
+	WebDriver driver;
+	
+	@SuppressWarnings("static-access")
+	public TitleCover_Page() {
+		this.driver=super.driver;
+		PageFactory.initElements(driver, this);
+	}
+	@FindAll({ @FindBy(xpath = "//div[@class=\"row row--dense justify-center\"]/div") })
+	private List<WebElement> listOfTitles;
+	
+
+	
+	public String clickOnTitlesCover(String title) {
+		String bookName = null;
+		for (WebElement webElement : listOfTitles) {
+			if (getText(webElement).equalsIgnoreCase(title)) {
+				bookName=getText(webElement);
+				click(webElement);
+				break;
+			}
+			
+		}
+		return bookName;
+		
+
+	}
+	
+	
+	
+	
+}
