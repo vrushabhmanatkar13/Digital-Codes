@@ -1,27 +1,27 @@
 package com.Digitalcodes.pageobject;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import com.Digitalcodes.utilities.Baseclass;
 
-public class Header{
+public class Header extends Baseclass{
 	
 	
 	WebDriver driver;
 	
-	public Header(WebDriver driver) {
-		this.driver=driver;
+	@SuppressWarnings("static-access")
+	public Header() {
+		this.driver=super.driver;
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath = "//span[@class=\"v-btn__content\"]/div")
-	  WebElement SignIn;
+	  private WebElement SignIn;
 	
 	@FindBy(xpath = "//span[@class='v-btn__content']//div[@class='row row--dense align-center']")
 	private WebElement person;
@@ -42,15 +42,14 @@ public class Header{
 	private WebElement shoppingcart;
 	
 	public void clickSignIn() {
-			SignIn.click();
+			click(SignIn);
 		
 	}
 	
 	
 	public String getSubscrptionType() {
 		
-		Baseclass.wait.until(ExpectedConditions.visibilityOf(subscriptiontype));
-		return subscriptiontype.getText();
+		return getText(subscriptiontype);
 	}
 	
 	public void holdOnSubscriptionType() {
@@ -58,12 +57,12 @@ public class Header{
 	}
 	
 	public String getName() {
-		Baseclass.wait.until(ExpectedConditions.visibilityOf(Name));
-		return Name.getText();
+		
+		return getText(Name);
 	}
 	
 	public String getEmail() {
-		return Email.getText();
+		return getText(Email);
 	}
 	
 	

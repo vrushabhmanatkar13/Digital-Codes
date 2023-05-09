@@ -7,8 +7,10 @@
         <methods>
           <include name="afterSuite"/>
           <include name="setdata"/>
-          <include name="markFavoriteTitle"/>
+          <include name="beforeTest"/>
           <include name="log_result"/>
+          <include name="verifyUserInformation"/>
+          <include name="login"/>
         </methods>
       </class> <!-- com.Digitalcodes.testcases.TC_Loginpage -->
     </classes>

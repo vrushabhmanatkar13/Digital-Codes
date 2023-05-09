@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="tagName" value="Smoke"/>
+  <parameter name="tagname" value="smoke"/>
+  <parameter name="platform" value="local"/>
   <listeners>
     <listener class-name="com.Digitalcodes.testcases.LogResult"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.Digitalcodes.testcases.TC_Loginpage">
+      <class name="com.Digitalcodes.testcases.TC_Title_page">
         <methods>
           <include name="afterSuite"/>
           <include name="setdata"/>
-          <include name="createNotes_atSection"/>
+          <include name="beforeTest"/>
+          <include name="createBookmark_atSection"/>
           <include name="log_result"/>
+          <include name="beforeClassTitlepage"/>
+          <include name="beforeMethodTitlepage"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.TC_Loginpage -->
+      </class> <!-- com.Digitalcodes.testcases.TC_Title_page -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

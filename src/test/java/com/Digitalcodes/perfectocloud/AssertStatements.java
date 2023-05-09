@@ -1,8 +1,6 @@
-package com.Digitalcodes.utilities;
+package com.Digitalcodes.perfectocloud;
 
 import org.testng.Assert;
-
-import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
 
 public class AssertStatements {
 	

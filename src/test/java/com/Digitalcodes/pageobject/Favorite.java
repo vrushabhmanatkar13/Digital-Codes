@@ -5,12 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Favorite {
+import com.Digitalcodes.utilities.Baseclass;
+
+public class Favorite extends Baseclass{
 
 	WebDriver driver;
 
-	public Favorite(WebDriver driver) {
-		this.driver = driver;
+	@SuppressWarnings("static-access")
+	public Favorite() {
+		this.driver =super.driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -19,7 +22,7 @@ public class Favorite {
 
 	public String getTitleName() {
 
-		return titleName.getText();
+		return getText(titleName);
 	}
 
 }
