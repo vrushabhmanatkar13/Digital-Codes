@@ -1,0 +1,49 @@
+{
+  "username": "complete.user@iccsafe.info",
+  "password": "Digital@123",
+  "full-name": "Complete User",
+  "subscription-type": "Premium Complete",
+  "favorite": "Add to Favorites",
+  "unfavorite": "Remove from Favorites",
+  "mynotes-text": "You currently do not have any annotations or bookmarks for this book.",
+  "notes-text": "User create Note",
+  "bookmark-text": "User create Bookmark",
+  "tag-name": "Test",
+  "share-successful":"Section link shared successfully!",
+  "share-content-successful":"Content shared successfully!",
+  "notes-edit-text":"User edit note",
+  "bookmark-edit-text":"User edit bookmark",
+  
+  "Page-titles":{
+  "home":"Digital Codes",
+  "library":"My Library",
+  "quick-access":"Quick Access",
+  "content-search":"Content Search Results",
+  "project-tags":"My Project Tags",
+  "my-notes-bookmark":"My Notes",
+  "sharing-history":"Sharing History",
+  "licenses-configuration":"Licenses"
+  },
+  
+  "Premium": {
+    "tag": "PREMIUM",
+    "Access-title": "You have an active premium subscription to access this title"
+  },
+  
+  
+  "I-codes":{
+  "section": "I-Codes",
+  "sub-section": "2021 I-Codes",
+  "title": "2021 International Building Code (IBC)",
+  "chapter": "CHAPTER 2 DEFINITIONS"
+  },
+  "collection":{
+  "section":"Collection",
+  "collection-title":"",
+  "title":"",
+  "chapter":""
+  }
+  
+  
+  
+}

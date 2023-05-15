@@ -2,6 +2,9 @@ package com.Digitalcodes.pageobject;
 
 
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -20,13 +23,18 @@ public class TitleLanding_Page extends Baseclass {
 		PageFactory.initElements(driver, this);
 	}
 
+	//get Title Name
 	
+	@FindBy(xpath = "//h1[@class=\"font-weight-regular\"]")
+	private WebElement titleName;
+	
+	//get tag name
     @FindBy(xpath = "//span[@class=\"v-chip__content\"]//a")
     private WebElement tag;
-	
+	//active premium text
 	@FindBy(xpath = "//p[@class='mb-0 primary--text']" )
 	private WebElement activepremium;
-	
+	//favorite
 	@FindBy(xpath = "//button[normalize-space()='favorite_border']")
 	private WebElement favorite;
 	
@@ -35,6 +43,20 @@ public class TitleLanding_Page extends Baseclass {
 	
 	@FindBy(xpath = "//button[text()='favorite']")
 	private WebElement unfavorite;
+	
+	//Current Viewing (Change Version)
+	
+	@FindBy(xpath = "//div[@class=\"my-6\"]//div[@aria-haspopup=\"listbox\"]")
+	private WebElement versionListBox;
+	
+	@FindBy(xpath = "(//div[@class=\"text-right col\"])[1]")
+	private WebElement currentlyViewing1;
+	
+	@FindBy(xpath = "(//div[@role=\"option\"])[2]")
+	private WebElement secondVersion;
+	
+	@FindBy(xpath = "(//div[@class=\"text-right col\"])[2]")
+	private WebElement currentlyViewing2;
 	
 	
 	public String getTagName() throws Exception {
@@ -66,8 +88,37 @@ public class TitleLanding_Page extends Baseclass {
     public void clickOnUnFavorite() {
     	click(unfavorite);
     }
+    
+    public String getTitleHeading() {
+    	String titlename = null;
+    	//first we get child element of parent element
+    	List<WebElement> childelement = titleName.findElements(By.xpath("./*"));
+    	//iterate it and replace all text of child element 
+    	for (WebElement webElement : childelement) {
+    		titlename=getText(titleName).replaceAll(getText(webElement), "").trim();
+			
+		}
+    	
+       	return titlename;
+    }
 
     
-    
+    public boolean changeVersion() throws Exception {
+    	
+    	click(versionListBox);
+    	
+    	if (isDisplayed(currentlyViewing1)) {
+    		click(secondVersion);
+    		Thread.sleep(3000);
+    		click(versionListBox);
+    	
+    		return isDisplayed(currentlyViewing2);
+    		
+    	}
+    	else {
+			throw new Exception("Currently Viewing Text is Present");
+		}
+    	
+    }
 }
 

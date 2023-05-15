@@ -43,9 +43,28 @@ public class TOC extends Baseclass{
 	@FindBy(xpath = "//p[@class=\"mb-0\"]/a")
 	private WebElement notesection;
 	
+	@FindBy(xpath = "//div[@class=\"container\"]//i[@class='v-icon notranslate mdi mdi-menu-down theme--light']")
+	private WebElement tagListbox;
 	
+	@FindBy(xpath = "//div[@class='v-list-item theme--light']//div[@class='v-list-item__title']")
+	private WebElement tagName;
 	
+	@FindBy(xpath = "//div[@class='v-simple-checkbox']/i")
+	private WebElement tagCheckBox;
 	
+	//Move Notes 
+	
+	@FindBy(xpath = "//span[normalize-space()='Move Notes']")
+	private WebElement moveNotesButton;
+	
+	@FindBy(xpath = "//p[@class=\"text-center pt-8\"]")
+	private WebElement noNotesMsgInmovenotes;
+	
+	@FindBy(xpath = "//span[normalize-space()='Close']")
+	private WebElement closeButton;
+	
+	@FindBy(xpath = "//span[normalize-space()='Manage Notes']")
+	private WebElement manageNotesButton;
 	
 	public void clickCodesSection() {
 		  codessection.click();
@@ -115,5 +134,27 @@ public class TOC extends Baseclass{
 		return notes;
 	}
 	
+	public String getTagNameInMyNotes() {
+		click(tagListbox);
+		return getText(tagName);
+		
+	}
 	
+	public boolean clickCheckBox() {
+		click(tagCheckBox);
+		
+		return tagCheckBox.isSelected();
+	}
+	
+	public boolean clickMoveNote() {
+		click(moveNotesButton);
+		boolean text=isDisplayed(noNotesMsgInmovenotes);
+		click(closeButton);
+		return text;
+	}
+	public String clickManageNotes() {
+		click(manageNotesButton);
+		 
+		return getTitle();
+	}
 }

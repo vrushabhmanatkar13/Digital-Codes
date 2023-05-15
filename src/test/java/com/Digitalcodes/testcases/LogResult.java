@@ -1,22 +1,28 @@
 package com.Digitalcodes.testcases;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
+
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Listeners;
-@Listeners
+
+import com.Digitalcodes.utilities.Sparkreport;
+
 public class LogResult extends Prerequisites_Teardown implements ITestListener {
 
 	//public static Properties prop;
-	
+	 @Override
 	  public void onTestStart(ITestResult result) {
 	   
 		try {
 			
 			  
-			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,prop.getProperty("browserName"));
+			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,PLATFORM +"  :-  "+ BEOWSER_NAME);
 			
-			testStart(result.getMethod().getDescription(),"null"); 
+			testStart(result.getMethod().getDescription(),Sparkreport.TAGNAME); 
 			
 		//System.out.println(result.getMethod().getId());
 			 
@@ -30,7 +36,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	  
 	  }
 	 
-
+	 @Override
 	public void onTestSuccess(ITestResult result) {
             
 		try {
@@ -38,7 +44,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 			report.create_info(result.getMethod().getDescription());
 			report.test_pass(result.getMethod().getMethodName());
 			
-			System.out.println(result.getMethod().getMethodName()+ " <------------ Passed -------->");
+			System.out.println(result.getMethod().getMethodName() + " : PASSED");
 		
 
 		} catch (IOException e) {
@@ -46,15 +52,17 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 			e.printStackTrace();
 		}
 	}
-
+	 @Override
 	public void onTestFailure(ITestResult result) {
 		
 		try {
 			report.create_info(result.getMethod().getDescription());
-			report.test_fail(result.getMethod().getMethodName() + " is failed due to"+"/n" +result.getThrowable(), result);
+			report.test_fail(result.getMethod().getMethodName()+" "+ result.getThrowable(), result);
 			
-			System.out.println(result.getMethod().getMethodName() + " <----------- Failed -------->");
+			System.out.println(result.getMethod().getMethodName() + " : FAILED");
+			System.out.println("     ");
 			result.getThrowable().printStackTrace();
+			System.out.println("     ");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -62,10 +70,12 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 		}
 
 	}
-
+	 @Override
 	public void onTestSkipped(ITestResult result) {
 		report.create_info(result.getMethod().getDescription());
 		report.test_skip(result.getMethod().getMethodName());
+		
+		System.out.println(result.getMethod().getMethodName() + " : SKIPED");
 	}
 
 	/*
@@ -75,16 +85,20 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	 */
 
 	
-	/*
-	 * public void onFinish(ITestContext context) {
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * }
-	 */
+	 @Override
+	  public void onFinish(ITestContext context) {
+	  
+	  try {
+		Desktop.getDesktop().browse(new File(Sparkreport.REPORTPATH).toURI());
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+	  
+	  
+	  
+	  
+	  }
+	 
 	
 	
 	 
