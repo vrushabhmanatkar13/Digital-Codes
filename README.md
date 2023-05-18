@@ -5,9 +5,13 @@ This Project for Automating E2E functionality for PREMIUM, SINGLE, REGISTER, and
 
 
 Tools And technalogy :- 
+
 Langauge - JAVA_1.8
+
 Tool - SELENIUM_4.8
+
 Freamework - TESTNG_7.4 Hybrid (Data drivern)
+
 Reporting - EXTENT REPORT & ALLURE REPORT
 
 
