@@ -19,24 +19,30 @@ public class TitleCover_Page extends Baseclass{
 		this.driver=super.driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	@FindAll({ @FindBy(xpath = "//div[@class=\"row row--dense justify-center\"]/div") })
 	private List<WebElement> listOfTitles;
 	
+	@FindBy(xpath = "//h1[@class='primary--text display-1']")
+	private WebElement groupTitleDisplay;
 
 	
-	public String clickOnTitlesCover(String title) {
-		String bookName = null;
+	public TitleLanding_Page clickOnTitlesCover(String title) {
+		
 		for (WebElement webElement : listOfTitles) {
 			if (getText(webElement).equalsIgnoreCase(title)) {
-				bookName=getText(webElement);
+				
 				click(webElement);
 				break;
 			}
 			
 		}
-		return bookName;
+		return new TitleLanding_Page();
 		
 
+	}
+	public String getHeading() {
+		return getText(groupTitleDisplay);
 	}
 	
 	

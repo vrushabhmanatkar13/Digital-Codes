@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 15 15:54:20 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>533 seconds (533050 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection()'><b>verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to create bookmark at section</td>
+<td></td>
+<td>101</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection()'><b>verifyDeleteBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to Delete Bookmark from Section</td>
+<td></td>
+<td>6</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage()'><b>verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag</td>
+<td></td>
+<td>9</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyMyNotes_FromTOC()'><b>verifyMyNotes_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify my notes From TOC when user have no any notes </td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleCovePage_Test.navigateToGroupTitles()'><b>navigateToGroupTitles</b><br>Test class: com.Digitalcodes.testcases.TitleCovePage_Test<br>Test method: Verify user able to navigate to Group of Title</td>
+<td></td>
+<td>3</td>
+<td>com.Digitalcodes.testcases.TitleCovePage_Test@382db087</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection()'><b>verifyDeleteNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to delete Notes from Section</td>
+<td></td>
+<td>6</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyPrintSection_FromSection()'><b>verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to Print Section </td>
+<td></td>
+<td>5</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyNavigateToSection_FromTOC()'><b>verifyNavigateToSection_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to naviagate Section from TOC</td>
+<td></td>
+<td>20</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyMarkFavoriteTitle()'><b>verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to mark favorite and title should be displayed in favorites</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Login_Test.verifyUserInformation()'><b>verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
+<td></td>
+<td>0</td>
+<td>com.Digitalcodes.testcases.Login_Test@1068e947</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareNote_FromSction()'><b>verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share note from section</td>
+<td></td>
+<td>11</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Login_Test.login()'><b>login</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls</td>
+<td></td>
+<td>9</td>
+<td>com.Digitalcodes.testcases.Login_Test@1068e947</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection()'><b>verifyEditBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to edit Bookamrk from Section</td>
+<td></td>
+<td>12</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection()'><b>verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to create notes at section</td>
+<td></td>
+<td>79</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection()'><b>verifyShareBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share bookmark from Section</td>
+<td></td>
+<td>95</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection()'><b>verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to edit notes from Section</td>
+<td></td>
+<td>11</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyRemoveFavoriteTitle()'><b>verifyRemoveFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to remove favorite title</td>
+<td></td>
+<td>4</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareSection_FromSection()'><b>verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share the section</td>
+<td></td>
+<td>82</td>
+<td>com.Digitalcodes.testcases.TitleLandingPage_Test@3d0f8e03</td></tr>
+</table><p>
+</body>
+</html>

@@ -36,6 +36,7 @@ public class SetCapbilites {
 		//chrome.setPlatformName("Windows");
 		//chrome.setBrowserVersion("latest");
 		// chrome.merge(setCapabilities(browserName));
+		
 		return chrome;
 	}
 
@@ -49,7 +50,6 @@ public class SetCapbilites {
 			firefox.addArguments("-headless");
 
 		}
-		firefox.addArguments("--remote-allow-origins=*");
 		//firefox.setPlatformName("Windows");
 		//firefox.setBrowserVersion("latest");
 

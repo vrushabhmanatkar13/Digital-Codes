@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Digital Codes">
 <parameter name="tagname" value="smoke"></parameter>
-<parameter name="platform" value="local"></parameter>
+
 <listeners>
 <listener class-name="com.Digitalcodes.testcases.LogResult"></listener>
 </listeners>
@@ -11,11 +11,11 @@
 	
 	<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.Digitalcodes.testcases.TC_Loginpage" >
+			<class name="com.Digitalcodes.testcases.Login_Test" >
 			</class>
-			 <class name="com.Digitalcodes.testcases.TC_GroupOfTitles_page" >
+			 <class name="com.Digitalcodes.testcases.TitleCovePage_Test" >
 			 </class>
-			<class name="com.Digitalcodes.testcases.TC_Title_page" > 
+			<class name="com.Digitalcodes.testcases.TitleLandingPage_Test" > 
 			</class>
 	 	</classes>
 		

@@ -2,19 +2,26 @@ package com.Digitalcodes.utilities;
 
 import java.time.Duration;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import com.Digitalcodes.capabilities.SetCapbilites;
+import com.Digitalcodes.perfectocloud.AssertStatements;
 import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
+import com.Digitalcodes.testcases.Prerequisites_Teardown;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -35,6 +42,7 @@ public class Baseclass extends Perfecto_Capabailites{
 		 if (platform.equalsIgnoreCase("Perfecto")) {
 				cap=new com.Digitalcodes.perfectocloud.Perfecto_Capabailites();
 				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless);
+				driver.manage().window().maximize();
 		       action=new Actions(driver);
 			 return driver;
 			 }
@@ -42,8 +50,8 @@ public class Baseclass extends Perfecto_Capabailites{
 				else {
 					if (browserName.equalsIgnoreCase("Chrome")) {
 						WebDriverManager.chromedriver().setup();
-						WebDriver Cdriver = new ChromeDriver(SetCapbilites.getChromecapabalites(incognito, headless));
-						System.out.println(browserName + "Browser launched");
+						ChromeOptions chromeoption=SetCapbilites.getChromecapabalites(incognito, headless);
+						WebDriver Cdriver = new ChromeDriver(chromeoption);
 						driver = Cdriver;
 
 					}
@@ -52,7 +60,7 @@ public class Baseclass extends Perfecto_Capabailites{
 						WebDriverManager.firefoxdriver().setup();
 
 						WebDriver Fdriver = new FirefoxDriver(SetCapbilites.getFirefoxcapabalites(incognito, headless));
-						System.out.println(browserName + " Browser launched");
+					
 						driver = Fdriver;
 					}
 					driver.manage().window().maximize();
@@ -66,6 +74,27 @@ public class Baseclass extends Perfecto_Capabailites{
 
 	}
 	
+	
+	public static String fatechPlatformName(Properties prop, String platformName) throws Exception {
+
+		String finalPlatform=platformName=(Boolean) null ? prop.getProperty("PlatformName") :platformName;
+		
+		if (finalPlatform.isEmpty()) {
+			throw new Exception("Platform Name Not Passed, Please pass it as maven properties: -Dplatform=local or perfecto");
+		}
+		return finalPlatform;
+		
+	}
+	
+	public static String fatechBrowserName(Properties prop, String browserName) throws Exception {
+		String finalBrowser=browserName.isEmpty() ? prop.getProperty("BrowserName") :browserName;
+		if (finalBrowser.isEmpty()) {
+			throw new Exception("Browser Name Not Passed, Please pass it as maven properties: -Dbrowser=chrome or firefox");
+		}
+		
+		return finalBrowser;
+	}
+	
 	public static String getTitle() {
 		
 		return driver.getTitle();
@@ -74,6 +103,9 @@ public class Baseclass extends Perfecto_Capabailites{
 	// Implicit wait
 	public void implicitWait(long sec) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
+		
+	}
+	public void pageLoadTimeout(long sec) {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(sec));
 	}
 	
@@ -94,7 +126,7 @@ public class Baseclass extends Perfecto_Capabailites{
 	}
  
 	// close browser
-	public void closeBrowser() {
+	public static void closeWindow() {
 		driver.close();
 	}
 	
@@ -115,17 +147,17 @@ public class Baseclass extends Perfecto_Capabailites{
 	
 	public static void switchToWindow() throws Exception {
 		Win_id = driver.getWindowHandle();
+		
 		Set<String> next_win = driver.getWindowHandles();
-		Iterator<String> itr = next_win.iterator();
-		while (itr.hasNext()) {
-			String Win_id1 = itr.next();
-			if (!Win_id1.equals(Win_id)) {
-				driver.switchTo().window(Win_id1);
-			} else {
-				throw new Exception("New Window not opened");
-			}
+		for (String string : next_win) {
+			if(!string.equals(Win_id)) {
 
+				driver.switchTo().window(string);
+				break;
+			}
 		}
+		
+		
 	}
 
 	//----------return back to main window------>>
@@ -142,12 +174,14 @@ public class Baseclass extends Perfecto_Capabailites{
 	}
 
 	public void click(WebElement e) {
-		wait.until(ExpectedConditions.visibilityOf(e));
+		wait.until(ExpectedConditions.elementToBeClickable(e));
+		wait.until(ExpectedConditions.elementToBeClickable(e));
 		e.click();
 	}
 	
 	public void sendKeys(WebElement e,String s) {
 		wait.until(ExpectedConditions.visibilityOf(e));
+		wait.until(ExpectedConditions.elementToBeClickable(e));
 		e.clear();
 		e.sendKeys(s);
 	}
@@ -157,9 +191,36 @@ public class Baseclass extends Perfecto_Capabailites{
 		return e.getText();
 	}
 	
+	public static String jsonValue(String key) {
+		return Prerequisites_Teardown.json.get(key).asText();
+	}
 	
+	public static String jsonArrayValue(String parentkey, String key) {
+		return Prerequisites_Teardown.json.get(parentkey).get(key).asText();
+	}
 	
+	public static void assertEquals(String actual,String expecated) {
+		AssertStatements.assertEquals(actual,expecated);
+		Assert.assertEquals(actual,expecated);
+	}
 	
+	public static void assertTrue(boolean Booleanvalue) {
+		Assert.assertTrue(Booleanvalue);
+		AssertStatements.assertBoolean(Booleanvalue, "");
+	}
+	public static void assertFalse(boolean booleanvalue) {
+		Assert.assertFalse(booleanvalue);
+		AssertStatements.assertBoolean(booleanvalue, "");
+	}
 	
+	public static boolean isDisplayed(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOfAllElements(e));
+		return e.isDisplayed();
+	}
+	
+	public static void switchToWindow_byindex() {
+	 List<String> windowid=(List<String>) driver.getWindowHandles();
+	 driver.switchTo().window(windowid.get(1));
+	}
 	
 }

@@ -2,7 +2,14 @@ package com.Digitalcodes.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+
 import java.util.Properties;
+
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 
 public class LoadPropertiesfile {
 
@@ -15,7 +22,12 @@ public class LoadPropertiesfile {
 		return prop;
 	}
 	
-   
+	public JsonNode readJson(String JsonFilepath) throws IOException {
+		
+ 
+	   ObjectMapper mapper=new ObjectMapper();
+	   JsonNode node =mapper.readTree(new File(JsonFilepath));
+	    return node;
 	
-
+	}
 }

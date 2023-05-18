@@ -8,9 +8,13 @@ import java.util.Date;
 
 import org.testng.ITestResult;
 
+import com.Digitalcodes.perfectocloud.PerfectoLabUtils;
+import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -19,27 +23,32 @@ public class Sparkreport {
 	public ExtentSparkReporter spark;
 	private static ExtentReports extent;
 	private static  ExtentTest test;
-	private String tagname; 
+	public static String TAGNAME;
+	public static String REPORTPATH;
 	
 	public Sparkreport(String title,String report_name,String hostname, String tagname) {
-		String Dateformat=new SimpleDateFormat("YYYY-MM-DD").format(new Date());
+	//	String Dateformat=new SimpleDateFormat("YYYY-MM-DD").format(new Date());
 		
-		
+		REPORTPATH=System.getProperty("user.dir")+"\\Report\\Reportsparkreport.html";
 
-		spark=new ExtentSparkReporter(System.getProperty("user.dir")+"\\Report\\"+Dateformat+"\\Reportsparkreport.html");
-		extent=new ExtentReports();
-		extent.attachReporter(spark);
-	    spark.config().setDocumentTitle(title);
+		spark=new ExtentSparkReporter(REPORTPATH);
+		spark.config().setDocumentTitle(title);
 	    spark.config().setReportName(report_name);
 	    spark.config().setTheme(Theme.DARK);
-	    extent.setSystemInfo("System info", hostname);
-	    this.tagname=tagname;
+	    
+		extent=new ExtentReports();
+		extent.attachReporter(spark);
+	    extent.setSystemInfo("Enviroment/Platform ", hostname);
+	    extent.setSystemInfo("OS ", System.getProperty("os.name"));
+	    extent.setSystemInfo("Java Version ", System.getProperty("java.version"));
+	    
+	    TAGNAME=tagname;
 		
 	}
 	
 	public void create_test(String name, String auth_name, String device) {
 	
-		test=extent.createTest(name).assignAuthor(auth_name).assignCategory(tagname).assignDevice(device);
+		test=extent.createTest(name).assignAuthor(auth_name).assignCategory(TAGNAME).assignDevice(device);
 	}
 	
 	public void create_info(String name) {
@@ -55,12 +64,21 @@ public class Sparkreport {
 		test.log(Status.FAIL, name);
 		test.addScreenCaptureFromPath(TakeScreenshot.Take_screenshot(result));
 		
+		
+		
 	}
 	public void test_skip(String name) {
 		test.log(Status.SKIP, name);
 	}
 	public static void flush() {
 		extent.flush();
+	}
+	
+	
+	
+	public static void Step(String step) {
+		test.log(Status.INFO, step);
+		Perfecto_Capabailites.stepStart(step);
 	}
 
 }

@@ -70,7 +70,7 @@ public class Codes_Section extends Baseclass {
 	@FindBy(xpath = "(//span[contains(text(),'Save')])[2]")
 	private WebElement saveButton_Tag;
 
-	@FindBy(xpath = "(//div[@aria-haspopup=\"listbox\"]//span)[1]")
+	@FindBy(xpath = "//div[@class=\"col\"]//div[@aria-haspopup=\"listbox\"]")
 	private WebElement tagListBox;
 
 	@FindAll({ @FindBy(xpath = "//div[contains(@id,\"list-item-\")]") })
@@ -86,7 +86,67 @@ public class Codes_Section extends Baseclass {
 
 	@FindBy(xpath = "//h5[@class=\"font-weight-regular left\"][2]")
 	WebElement getCreatedBy;
+	
+	
+	//Share section
+	
+	@FindBy(xpath = "//i[@title=\"Share\"]")
+	private WebElement share;
+	
+	@FindBy(xpath = "//input[@data-qa=\"share-section-modal-email-0\"]")
+	private WebElement emailInput;
+	
+	@FindBy(xpath = "//span[contains(text(),'Add More')]")
+	private WebElement addmore;
+	
+	@FindBy(xpath = "//input[@data-qa=\"share-section-modal-email-1\"]")
+	private WebElement newemailInput;
+	@FindBy(xpath = "//span[contains(text(),'Remove')]")
+	private WebElement remove;
+	
+	@FindBy(xpath = "//button[@data-qa=\"share-section-modal-share\"]")
+	private WebElement shareButton;
+	
+	@FindBy(xpath = "//div[@class=\"v-alert v-sheet theme--dark success\"]//div[@class=\"v-alert__content\"]")
+	private WebElement sharesucessfullyMsg;
+	
+	@FindBy(xpath = "//span[contains(text(),'Close')]")
+	private WebElement closeButton;
 
+	//Print section
+	
+	@FindBy(xpath = "//i[@title=\"Print\"]")
+	private WebElement print;
+	@FindBy(xpath = "//embed")
+	private WebElement pdf;
+	
+	//Share note
+	@FindBy(xpath = "//i[text()='share']")
+	private WebElement shareIcon;
+	
+	@FindBy(xpath = "//label[text()='Enter email address']/following::input")
+	private WebElement emailinput;
+	
+	@FindBy(xpath = "//span[contains(text(),'Submit')]")
+	private WebElement submitButton;
+	
+	//Edit note
+	
+	@FindBy(xpath = "//i[text()='edit']")
+	private WebElement editIcon;
+	
+	@FindBy(xpath = "//div[@class=\"ql-editor\"]")
+	private WebElement filledtextcontainer;
+	
+	//Delete Note
+	
+	@FindBy(xpath = "//i[text()='delete']")
+	private WebElement deleteIcon;
+	
+	@FindBy(xpath = "//div[@class=\"v-dialog v-dialog--active\"]//button[@class=\"v-btn v-btn--contained theme--light v-size--default error\"]")
+	private WebElement removeButton;
+	
+	
 	public String getChapterName() {
 		return getText(chapterHeading);
 	}
@@ -142,6 +202,7 @@ public class Codes_Section extends Baseclass {
 		sendKeys(tagNameInput, tagname);
 
 		click(saveButton_Tag);
+		
 
 	}
 
@@ -169,6 +230,70 @@ public class Codes_Section extends Baseclass {
 	public String getCreatedBy() {
 		return getText(getCreatedBy).substring(12);
 
+	}
+	
+	
+	public String shareSection(String email) {
+		click(share);
+		sendKeys(emailInput, email);
+		click(addmore);
+		if(newemailInput.isDisplayed()) {
+			click(remove);
+		}		
+		click(shareButton);
+		String message=getText(sharesucessfullyMsg);
+		click(closeButton);
+		
+		return message;
+	}
+	
+	public boolean printSection() {
+		
+		
+		click(print);
+		
+		try {
+			Baseclass.switchToWindow();
+			Thread.sleep(5000);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		boolean viewPdf=isDisplayed(pdf);
+		 Baseclass.closeWindow();
+		 Baseclass.retrunToMainWindow();
+		 return viewPdf;
+	}
+	
+	
+	
+	public String shareNotes_Bookmark(String email) {
+		click(shareIcon);
+		sendKeys(emailinput, email);
+		click(submitButton);
+		String successfulMsg=getText(sharesucessfullyMsg);
+		click(closeButton);
+		return successfulMsg;
+	}
+	
+	public void editNotes_Bookmark(String text) throws InterruptedException {
+		click(editIcon);
+		
+		Thread.sleep(5000);
+		filledtextcontainer.clear();
+		
+		sendKeys(textcontainer, text);
+		click(saveButton_Notes);
+		
+	}
+	
+	
+	public void deleteNotes__Bookmark() throws InterruptedException {
+		click(deleteIcon);
+		click(removeButton);
+		Thread.sleep(3000);
+		
 	}
 
 }
