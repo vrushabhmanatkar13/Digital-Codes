@@ -50,7 +50,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy17.clear(Unknown Source)
-at com.Digitalcodes.pageobject.Codes_Section.textbox_note_bookmark(Codes_Section.java:139)
+at com.Digitalcodes.pageobject.TitleSection_Page.textbox_note_bookmark(Codes_Section.java:139)
 at com.Digitalcodes.capabilities.TestCase.TC_Loginpage.TC8(TC_Loginpage.java:155)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

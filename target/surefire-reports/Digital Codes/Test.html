@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 15 16:47:38 IST 2023</td>
+<td>Started on:</td><td>Wed May 17 10:48:16 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>628 seconds (628199 ms)</td>
+<tr><td>Total time:</td><td>540 seconds (540052 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,244 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection()'><b>verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to edit notes from Section</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;ql-editor ql-blank&quot;]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter()'><b>TC19_verifyLinksOnChapter</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify links On Chapter</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&quot;newIccStyles v-sheet theme--light&quot;]&apos;] (tried for 90 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:183)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:286)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection(TitleLandingPage_Test.java:399)
+	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:221)
+	at com.Digitalcodes.pageobject.Codes_Section.hoverOnTitleLink(Codes_Section.java:324)
+	at com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter(I_Codes_Test.java:537)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace747858371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace747858371'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;ql-editor ql-blank&quot;]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:183)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:286)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection(TitleLandingPage_Test.java:399)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>95</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection()'><b>verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to create notes at section</td>
-<td><div><pre>java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection(TitleLandingPage_Test.java:211)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50317758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50317758'><pre>java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection(TitleLandingPage_Test.java:211)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>63</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection()'><b>verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to create bookmark at section</td>
-<td><div><pre>java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection(TitleLandingPage_Test.java:271)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace417396884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace417396884'><pre>java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection(TitleLandingPage_Test.java:271)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>84</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Login_Test.verifyUserInformation()'><b>verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;v-list-item__title white--text&quot;]/h4] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:190)
-	at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
-	at com.Digitalcodes.testcases.Login_Test.verifyUserInformation(Login_Test.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace536353549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace536353549'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;v-list-item__title white--text&quot;]/h4] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:190)
-	at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
-	at com.Digitalcodes.testcases.Login_Test.verifyUserInformation(Login_Test.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>95</td>
-<td>com.Digitalcodes.testcases.Login_Test@2d7275fc</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection()'><b>verifyShareBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share bookmark from Section</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-v-368dc876=&quot;&quot; aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (44, 32). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;newIccStyles v-sheet theme--light&quot;]&quot;}
   (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[normalize-space()=&apos;menu&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+Command: [b2476ef68e37923b900ac34b12f83c43, findElement {using=xpath, value=//div[@class=&quot;newIccStyles v-sheet theme--light&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2476ef68e37923b900ac34b12f83c43
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -320,26 +99,65 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Menu.clickOnMenu(Menu.java:57)
-	at com.Digitalcodes.pageobject.Menu.navigateToTitlesCover(Menu.java:64)
-	at com.Digitalcodes.pageobject.Implimation_AbstractClass.navigetToTitle(Implimation_AbstractClass.java:13)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection(TitleLandingPage_Test.java:424)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:267)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233951323", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233951323'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&quot;newIccStyles v-sheet theme--light&quot;]&apos;] (tried for 90 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:221)
+	at com.Digitalcodes.pageobject.Codes_Section.hoverOnTitleLink(Codes_Section.java:324)
+	at com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter(I_Codes_Test.java:537)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace660617447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace660617447'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-v-368dc876=&quot;&quot; aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (44, 32). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;newIccStyles v-sheet theme--light&quot;]&quot;}
   (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[normalize-space()=&apos;menu&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+Command: [b2476ef68e37923b900ac34b12f83c43, findElement {using=xpath, value=//div[@class=&quot;newIccStyles v-sheet theme--light&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2476ef68e37923b900ac34b12f83c43
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -352,393 +170,20 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Menu.clickOnMenu(Menu.java:57)
-	at com.Digitalcodes.pageobject.Menu.navigateToTitlesCover(Menu.java:64)
-	at com.Digitalcodes.pageobject.Implimation_AbstractClass.navigetToTitle(Implimation_AbstractClass.java:13)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection(TitleLandingPage_Test.java:424)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:267)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
 </pre></div></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection()'><b>verifyDeleteNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to delete Notes from Section</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection(TitleLandingPage_Test.java:411)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932167714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1932167714'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection(TitleLandingPage_Test.java:411)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection()'><b>verifyDeleteBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to Delete Bookmark from Section</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection(TitleLandingPage_Test.java:475)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1853475889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1853475889'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection(TitleLandingPage_Test.java:475)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage()'><b>verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: (//div[@class=&quot;text-right col&quot;])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:217)
-	at com.Digitalcodes.pageobject.TitleLanding_Page.changeVersion(TitleLanding_Page.java:114)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage(TitleLandingPage_Test.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace719355325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace719355325'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: (//div[@class=&quot;text-right col&quot;])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:217)
-	at com.Digitalcodes.pageobject.TitleLanding_Page.changeVersion(TitleLanding_Page.java:114)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage(TitleLandingPage_Test.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>98</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection()'><b>verifyEditBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to edit Bookamrk from Section</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1177, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;edit&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:281)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection(TitleLandingPage_Test.java:464)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace616662732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace616662732'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1177, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;edit&apos;]]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:281)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection(TitleLandingPage_Test.java:464)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>153</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -748,50 +193,95 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleCovePage_Test.navigateToGroupTitles()'><b>navigateToGroupTitles</b><br>Test class: com.Digitalcodes.testcases.TitleCovePage_Test<br>Test method: Verify user able to navigate to Group of Title</td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC03_navigateToGroupTitles()'><b>TC03_navigateToGroupTitles</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to navigate to Group of Title</td>
 <td></td>
-<td>3</td>
-<td>com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de</td></tr>
+<td>1</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyMarkFavoriteTitle()'><b>verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to mark favorite and title should be displayed in favorites</td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC11_verifyShareSection_FromSection()'><b>TC11_verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to share the section</td>
+<td></td>
+<td>31</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC14_verifyEditNotes_FromSection()'><b>TC14_verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to edit notes from Section</td>
+<td></td>
+<td>12</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC12_verifyPrintSection_FromSection()'><b>TC12_verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to Print Section </td>
 <td></td>
 <td>6</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareSection_FromSection()'><b>verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share the section</td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC13_verifyShareNote_FromSction()'><b>TC13_verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to share note from section</td>
 <td></td>
-<td>77</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>12</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Login_Test.login()'><b>login</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls</td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC17_verifyEditBookmark_FromSection()'><b>TC17_verifyEditBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to edit Bookamrk from Section</td>
 <td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.Login_Test@2d7275fc</td></tr>
+<td>11</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareNote_FromSction()'><b>verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to share note from section</td>
+<td title='com.Digitalcodes.testcases.Login_Test.TC01_login()'><b>TC01_login</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls</td>
 <td></td>
-<td>9</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>10</td>
+<td>com.Digitalcodes.testcases.Login_Test@67dba613</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyMyNotes_FromTOC()'><b>verifyMyNotes_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify my notes From TOC when user have no any notes </td>
-<td></td>
-<td>5</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyNavigateToSection_FromTOC()'><b>verifyNavigateToSection_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to naviagate Section from TOC</td>
-<td></td>
-<td>15</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyPrintSection_FromSection()'><b>verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to Print Section </td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC18_verifyDeleteBookmark_FromSection()'><b>TC18_verifyDeleteBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to Delete Bookmark from Section</td>
 <td></td>
 <td>5</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.TitleLandingPage_Test.verifyRemoveFavoriteTitle()'><b>verifyRemoveFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.TitleLandingPage_Test<br>Test method: Verify user able to remove favorite title</td>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC06_verifyRemoveFavoriteTitle()'><b>TC06_verifyRemoveFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to remove favorite title</td>
 <td></td>
 <td>4</td>
-<td>com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77</td></tr>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC16_verifyShareBookmark_FromSection()'><b>TC16_verifyShareBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to share bookmark from Section</td>
+<td></td>
+<td>30</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
+<td></td>
+<td>70</td>
+<td>com.Digitalcodes.testcases.Login_Test@67dba613</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC15_verifyDeleteNotes_FromSection()'><b>TC15_verifyDeleteNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to delete Notes from Section</td>
+<td></td>
+<td>6</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag,Version,Releated Titles</td>
+<td></td>
+<td>17</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC05_verifyMarkFavoriteTitle()'><b>TC05_verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to mark favorite and title should be displayed in favorites</td>
+<td></td>
+<td>12</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC07_verifyMyNotes_FromTOC()'><b>TC07_verifyMyNotes_FromTOC</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify my notes From TOC when user have no any notes </td>
+<td></td>
+<td>5</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC08_verifyNavigateToSection_FromTOC()'><b>TC08_verifyNavigateToSection_FromTOC</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to naviagate Section from TOC</td>
+<td></td>
+<td>16</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to create notes at section</td>
+<td></td>
+<td>23</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.I_Codes_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.I_Codes_Test<br>Test method: Verify user able to create bookmark at section</td>
+<td></td>
+<td>43</td>
+<td>com.Digitalcodes.testcases.I_Codes_Test@3a022576</td></tr>
 </table><p>
 </body>
 </html>

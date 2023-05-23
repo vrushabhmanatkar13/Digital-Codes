@@ -35,9 +35,9 @@ public class Perfecto_Capabailites extends SetCapbilites {
 	
 	
 	
-	public static Map<String, Object> perfectoOptions(String securityToken) {
+	public static Map<String, Object> perfectoOptions(String securityToken,String resolution) {
 		Map<String, Object> perfectoOptions = new HashMap<>();
-		perfectoOptions.put("resolution", "1920x1080");
+		perfectoOptions.put("resolution", resolution);
 		perfectoOptions.put("securityToken", securityToken);
 		perfectoOptions.put("platformVersion", "10");
 	
@@ -46,13 +46,13 @@ public class Perfecto_Capabailites extends SetCapbilites {
 		
 	}
 
-	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless) throws Exception {
+	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless,String resolution) throws Exception {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			chrome=getChromecapabalites(incognito, headless);
 			chrome.setPlatformName("Windows");
 			chrome.setBrowserVersion("latest");
-			chrome.setCapability("perfecto:options", perfectoOptions(securityToken));
+			chrome.setCapability("perfecto:options", perfectoOptions(securityToken,resolution));
 		    
 			 Rdriver = new RemoteWebDriver(
 					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),chrome);
@@ -61,7 +61,7 @@ public class Perfecto_Capabailites extends SetCapbilites {
 			firefox=getFirefoxcapabalites(incognito, headless);
 			firefox.setPlatformName("Windows");
 			firefox.setBrowserVersion("latest");
-			firefox.setCapability("perfecto:options", perfectoOptions(securityToken));
+			firefox.setCapability("perfecto:options", perfectoOptions(securityToken,resolution));
 			
 			 Rdriver = new RemoteWebDriver(
 					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),firefox);
@@ -120,6 +120,19 @@ public class Perfecto_Capabailites extends SetCapbilites {
 		if (PLATFORM.equalsIgnoreCase("Perfecto")) {
 
 			if (actual.equals(expected)) {
+				reportiumClient.reportiumAssert("Actual and Expecated text is matched", true);
+			} else {
+				reportiumClient.reportiumAssert("Actual and Expecated text is not matched", false);
+
+			}
+
+		}
+
+	}
+	public static void AssertEquels(int actual, int expected) {
+		if (PLATFORM.equalsIgnoreCase("Perfecto")) {
+
+			if (actual==expected) {
 				reportiumClient.reportiumAssert("Actual and Expecated text is matched", true);
 			} else {
 				reportiumClient.reportiumAssert("Actual and Expecated text is not matched", false);

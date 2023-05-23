@@ -3,31 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Digitalcodes.testcases.TitleLandingPage_Test">
+      <class name="com.Digitalcodes.testcases.Title_Collection_Test">
         <methods>
-          <include name="verifyDeleteNotes_FromSection"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="verifyMarkFavoriteTitle"/>
-          <include name="verifyShareSection_FromSection"/>
-          <include name="verifyShareBookmark_FromSection"/>
-          <include name="verifyCreateBookmark_atSection"/>
-          <include name="verifyNavigateToSection_FromTOC"/>
-          <include name="verifyPrintSection_FromSection"/>
-          <include name="verifyShareNote_FromSction"/>
-          <include name="beforeClass"/>
-          <include name="verifyRemoveFavoriteTitle"/>
-          <include name="beforeClassTitlepage"/>
-          <include name="verifyCreateNotes_atSection"/>
-          <include name="verifyEditNotes_FromSection"/>
-          <include name="beforeSuite"/>
-          <include name="verifyDeleteBookmark_FromSection"/>
-          <include name="verifyMyNotes_FromTOC"/>
-          <include name="verifyTitleLandingPage"/>
-          <include name="log_result"/>
-          <include name="verifyEditBookmark_FromSection"/>
+          <include name="data"/>
+          <include name="beforeclassCollection"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.TitleLandingPage_Test -->
+      </class> <!-- com.Digitalcodes.testcases.Title_Collection_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,42 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="24" passed="9" failed="9" skipped="0">
+<testng-results ignored="3" total="22" passed="18" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-15T16:47:38 IST" name="Digital Codes" finished-at="2023-05-15T16:58:07 IST" duration-ms="628199">
+  <suite started-at="2023-05-17T10:48:16 IST" name="Digital Codes" finished-at="2023-05-17T10:57:16 IST" duration-ms="540052">
     <groups>
     </groups>
-    <test started-at="2023-05-15T16:47:38 IST" name="Test" finished-at="2023-05-15T16:58:07 IST" duration-ms="628199">
-      <class name="com.Digitalcodes.testcases.TitleLandingPage_Test">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:49:42 IST" name="beforeClass" finished-at="2023-05-15T16:49:42 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-05-17T10:48:16 IST" name="Test" finished-at="2023-05-17T10:57:16 IST" duration-ms="540052">
+      <class name="com.Digitalcodes.testcases.I_Codes_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:49:59 IST" name="beforeClass" finished-at="2023-05-17T10:49:59 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeClassTitlepage()[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:49:42 IST" name="beforeClassTitlepage" finished-at="2023-05-15T16:49:43 IST" duration-ms="1073" status="PASS">
+        <test-method is-config="true" signature="beforeClassTitlepage()[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:49:59 IST" name="beforeClassTitlepage" finished-at="2023-05-17T10:50:03 IST" duration-ms="3871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassTitlepage -->
-        <test-method signature="verifyTitleLandingPage()[pri:3, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:49:43 IST" name="verifyTitleLandingPage" description="Verify User able to Navigate to Title Landing page and verify Tag" finished-at="2023-05-15T16:51:22 IST" duration-ms="98778" status="FAIL">
+        <test-method signature="TC03_navigateToGroupTitles()[pri:1, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:03 IST" name="TC03_navigateToGroupTitles" description="Verify user able to navigate to Group of Title" finished-at="2023-05-17T10:50:04 IST" duration-ms="1857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_navigateToGroupTitles -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:05 IST" name="log_result" finished-at="2023-05-17T10:50:07 IST" duration-ms="2333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC03_navigateToGroupTitles status=SUCCESS method=I_Codes_Test.TC03_navigateToGroupTitles()[pri:1, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC04_verifyTitleLandingPage()[pri:2, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:07 IST" name="TC04_verifyTitleLandingPage" description="Verify User able to Navigate to Title Landing page and verify Tag,Version,Releated Titles" finished-at="2023-05-17T10:50:25 IST" duration-ms="17691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_verifyTitleLandingPage -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:25 IST" name="log_result" finished-at="2023-05-17T10:50:27 IST" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC04_verifyTitleLandingPage status=SUCCESS method=I_Codes_Test.TC04_verifyTitleLandingPage()[pri:2, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC05_verifyMarkFavoriteTitle()[pri:3, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:27 IST" name="TC05_verifyMarkFavoriteTitle" description="Verify user able to mark favorite and title should be displayed in favorites" finished-at="2023-05-17T10:50:39 IST" duration-ms="12443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_verifyMarkFavoriteTitle -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:39 IST" name="log_result" finished-at="2023-05-17T10:50:41 IST" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC05_verifyMarkFavoriteTitle status=SUCCESS method=I_Codes_Test.TC05_verifyMarkFavoriteTitle()[pri:3, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC06_verifyRemoveFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:41 IST" name="TC06_verifyRemoveFavoriteTitle" description="Verify user able to remove favorite title" finished-at="2023-05-17T10:50:46 IST" duration-ms="4371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_verifyRemoveFavoriteTitle -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:46 IST" name="log_result" finished-at="2023-05-17T10:50:48 IST" duration-ms="2111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC06_verifyRemoveFavoriteTitle status=SUCCESS method=I_Codes_Test.TC06_verifyRemoveFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC07_verifyMyNotes_FromTOC()[pri:5, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:48 IST" name="TC07_verifyMyNotes_FromTOC" description="Verify my notes From TOC when user have no any notes " finished-at="2023-05-17T10:50:53 IST" duration-ms="5274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_verifyMyNotes_FromTOC -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:53 IST" name="log_result" finished-at="2023-05-17T10:50:55 IST" duration-ms="2100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC07_verifyMyNotes_FromTOC status=SUCCESS method=I_Codes_Test.TC07_verifyMyNotes_FromTOC()[pri:5, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC08_verifyNavigateToSection_FromTOC()[pri:6, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:50:55 IST" name="TC08_verifyNavigateToSection_FromTOC" description="Verify user able to naviagate Section from TOC" finished-at="2023-05-17T10:51:12 IST" duration-ms="16891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08_verifyNavigateToSection_FromTOC -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:51:12 IST" name="log_result" finished-at="2023-05-17T10:51:14 IST" duration-ms="2103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC08_verifyNavigateToSection_FromTOC status=SUCCESS method=I_Codes_Test.TC08_verifyNavigateToSection_FromTOC()[pri:6, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC09_verifyCreateNotes_atSection()[pri:7, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:51:14 IST" name="TC09_verifyCreateNotes_atSection" description="Verify user able to create notes at section" finished-at="2023-05-17T10:51:38 IST" duration-ms="23348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09_verifyCreateNotes_atSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:51:38 IST" name="log_result" finished-at="2023-05-17T10:51:40 IST" duration-ms="2074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC09_verifyCreateNotes_atSection status=SUCCESS method=I_Codes_Test.TC09_verifyCreateNotes_atSection()[pri:7, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC10_verifyCreateBookmark_atSection()[pri:8, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:51:40 IST" name="TC10_verifyCreateBookmark_atSection" description="Verify user able to create bookmark at section" finished-at="2023-05-17T10:52:23 IST" duration-ms="43715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_verifyCreateBookmark_atSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:52:23 IST" name="log_result" finished-at="2023-05-17T10:52:25 IST" duration-ms="2082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC10_verifyCreateBookmark_atSection status=SUCCESS method=I_Codes_Test.TC10_verifyCreateBookmark_atSection()[pri:8, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC11_verifyShareSection_FromSection()[pri:9, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:52:25 IST" name="TC11_verifyShareSection_FromSection" description="Verify user able to share the section" finished-at="2023-05-17T10:52:57 IST" duration-ms="31871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11_verifyShareSection_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:52:57 IST" name="log_result" finished-at="2023-05-17T10:52:59 IST" duration-ms="2081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC11_verifyShareSection_FromSection status=SUCCESS method=I_Codes_Test.TC11_verifyShareSection_FromSection()[pri:9, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC12_verifyPrintSection_FromSection()[pri:10, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:52:59 IST" name="TC12_verifyPrintSection_FromSection" description="Verify user able to Print Section " finished-at="2023-05-17T10:53:06 IST" duration-ms="6182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12_verifyPrintSection_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:06 IST" name="log_result" finished-at="2023-05-17T10:53:08 IST" duration-ms="2074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC12_verifyPrintSection_FromSection status=SUCCESS method=I_Codes_Test.TC12_verifyPrintSection_FromSection()[pri:10, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC13_verifyShareNote_FromSction()[pri:11, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:08 IST" name="TC13_verifyShareNote_FromSction" description="Verify user able to share note from section" finished-at="2023-05-17T10:53:20 IST" duration-ms="12369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13_verifyShareNote_FromSction -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:20 IST" name="log_result" finished-at="2023-05-17T10:53:22 IST" duration-ms="2114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC13_verifyShareNote_FromSction status=SUCCESS method=I_Codes_Test.TC13_verifyShareNote_FromSction()[pri:11, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC14_verifyEditNotes_FromSection()[pri:12, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:22 IST" name="TC14_verifyEditNotes_FromSection" description="Verify user able to edit notes from Section" finished-at="2023-05-17T10:53:34 IST" duration-ms="12103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_verifyEditNotes_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:34 IST" name="log_result" finished-at="2023-05-17T10:53:36 IST" duration-ms="2074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC14_verifyEditNotes_FromSection status=SUCCESS method=I_Codes_Test.TC14_verifyEditNotes_FromSection()[pri:12, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC15_verifyDeleteNotes_FromSection()[pri:13, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:36 IST" name="TC15_verifyDeleteNotes_FromSection" description="Verify user able to delete Notes from Section" finished-at="2023-05-17T10:53:43 IST" duration-ms="6350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15_verifyDeleteNotes_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:43 IST" name="log_result" finished-at="2023-05-17T10:53:45 IST" duration-ms="2060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC15_verifyDeleteNotes_FromSection status=SUCCESS method=I_Codes_Test.TC15_verifyDeleteNotes_FromSection()[pri:13, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC16_verifyShareBookmark_FromSection()[pri:14, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:53:45 IST" name="TC16_verifyShareBookmark_FromSection" description="Verify user able to share bookmark from Section" finished-at="2023-05-17T10:54:16 IST" duration-ms="30775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_verifyShareBookmark_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:16 IST" name="log_result" finished-at="2023-05-17T10:54:18 IST" duration-ms="2139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC16_verifyShareBookmark_FromSection status=SUCCESS method=I_Codes_Test.TC16_verifyShareBookmark_FromSection()[pri:14, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC17_verifyEditBookmark_FromSection()[pri:15, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:18 IST" name="TC17_verifyEditBookmark_FromSection" description="Verify user able to edit Bookamrk from Section" finished-at="2023-05-17T10:54:30 IST" duration-ms="11588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC17_verifyEditBookmark_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:30 IST" name="log_result" finished-at="2023-05-17T10:54:32 IST" duration-ms="2044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC17_verifyEditBookmark_FromSection status=SUCCESS method=I_Codes_Test.TC17_verifyEditBookmark_FromSection()[pri:15, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC18_verifyDeleteBookmark_FromSection()[pri:16, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:32 IST" name="TC18_verifyDeleteBookmark_FromSection" description="Verify user able to Delete Bookmark from Section" finished-at="2023-05-17T10:54:37 IST" duration-ms="5806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_verifyDeleteBookmark_FromSection -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:37 IST" name="log_result" finished-at="2023-05-17T10:54:39 IST" duration-ms="2077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_verifyDeleteBookmark_FromSection status=SUCCESS method=I_Codes_Test.TC18_verifyDeleteBookmark_FromSection()[pri:16, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC19_verifyLinksOnChapter()[pri:17, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:54:39 IST" name="TC19_verifyLinksOnChapter" description="Verify links On Chapter" finished-at="2023-05-17T10:57:13 IST" duration-ms="153645" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: (//div[@class="text-right col"])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
+              <![CDATA[Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="newIccStyles v-sheet theme--light"]'] (tried for 90 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: (//div[@class="text-right col"])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="newIccStyles v-sheet theme--light"]'] (tried for 90 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:217)
-at com.Digitalcodes.pageobject.TitleLanding_Page.changeVersion(TitleLanding_Page.java:114)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage(TitleLandingPage_Test.java:65)
+at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:221)
+at com.Digitalcodes.pageobject.Codes_Section.hoverOnTitleLink(Codes_Section.java:324)
+at com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter(I_Codes_Test.java:537)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,735 +299,58 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="newIccStyles v-sheet theme--light"]"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2476ef68e37923b900ac34b12f83c43, findElement {using=xpath, value=//div[@class="newIccStyles v-sheet theme--light"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2476ef68e37923b900ac34b12f83c43
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:267)
+at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 35 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitleLandingPage -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:23 IST" name="log_result" finished-at="2023-05-15T16:51:25 IST" duration-ms="2109" status="PASS">
+        </test-method> <!-- TC19_verifyLinksOnChapter -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576]" started-at="2023-05-17T10:57:14 IST" name="log_result" finished-at="2023-05-17T10:57:16 IST" duration-ms="2079" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTitleLandingPage status=FAILURE method=TitleLandingPage_Test.verifyTitleLandingPage()[pri:3, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
+                <![CDATA[[TestResult name=TC19_verifyLinksOnChapter status=FAILURE method=I_Codes_Test.TC19_verifyLinksOnChapter()[pri:17, instance:com.Digitalcodes.testcases.I_Codes_Test@3a022576] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method signature="verifyMarkFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:25 IST" name="verifyMarkFavoriteTitle" description="Verify user able to mark favorite and title should be displayed in favorites" finished-at="2023-05-15T16:51:31 IST" duration-ms="6126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMarkFavoriteTitle -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:31 IST" name="log_result" finished-at="2023-05-15T16:51:33 IST" duration-ms="2041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMarkFavoriteTitle status=SUCCESS method=TitleLandingPage_Test.verifyMarkFavoriteTitle()[pri:4, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyRemoveFavoriteTitle()[pri:5, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:33 IST" name="verifyRemoveFavoriteTitle" description="Verify user able to remove favorite title" finished-at="2023-05-15T16:51:37 IST" duration-ms="4227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRemoveFavoriteTitle -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:37 IST" name="log_result" finished-at="2023-05-15T16:51:39 IST" duration-ms="2037" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyRemoveFavoriteTitle status=SUCCESS method=TitleLandingPage_Test.verifyRemoveFavoriteTitle()[pri:5, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyMyNotes_FromTOC()[pri:6, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:39 IST" name="verifyMyNotes_FromTOC" description="Verify my notes From TOC when user have no any notes " finished-at="2023-05-15T16:51:45 IST" duration-ms="5519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyNotes_FromTOC -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:45 IST" name="log_result" finished-at="2023-05-15T16:51:47 IST" duration-ms="2052" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMyNotes_FromTOC status=SUCCESS method=TitleLandingPage_Test.verifyMyNotes_FromTOC()[pri:6, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyNavigateToSection_FromTOC()[pri:7, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:51:47 IST" name="verifyNavigateToSection_FromTOC" description="Verify user able to naviagate Section from TOC" finished-at="2023-05-15T16:52:02 IST" duration-ms="15211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToSection_FromTOC -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:52:02 IST" name="log_result" finished-at="2023-05-15T16:52:04 IST" duration-ms="2050" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNavigateToSection_FromTOC status=SUCCESS method=TitleLandingPage_Test.verifyNavigateToSection_FromTOC()[pri:7, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyCreateNotes_atSection()[pri:8, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:52:04 IST" name="verifyCreateNotes_atSection" description="Verify user able to create notes at section" finished-at="2023-05-15T16:53:08 IST" duration-ms="63944" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection(TitleLandingPage_Test.java:211)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateNotes_atSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:53:08 IST" name="log_result" finished-at="2023-05-15T16:53:10 IST" duration-ms="2086" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCreateNotes_atSection status=FAILURE method=TitleLandingPage_Test.verifyCreateNotes_atSection()[pri:8, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyCreateBookmark_atSection()[pri:9, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:53:10 IST" name="verifyCreateBookmark_atSection" description="Verify user able to create bookmark at section" finished-at="2023-05-15T16:54:35 IST" duration-ms="84496" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection(TitleLandingPage_Test.java:271)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateBookmark_atSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:54:35 IST" name="log_result" finished-at="2023-05-15T16:54:37 IST" duration-ms="2126" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCreateBookmark_atSection status=FAILURE method=TitleLandingPage_Test.verifyCreateBookmark_atSection()[pri:9, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyShareSection_FromSection()[pri:10, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:54:37 IST" name="verifyShareSection_FromSection" description="Verify user able to share the section" finished-at="2023-05-15T16:55:54 IST" duration-ms="77250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShareSection_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:55:54 IST" name="log_result" finished-at="2023-05-15T16:55:56 IST" duration-ms="2039" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyShareSection_FromSection status=SUCCESS method=TitleLandingPage_Test.verifyShareSection_FromSection()[pri:10, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyPrintSection_FromSection()[pri:11, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:55:56 IST" name="verifyPrintSection_FromSection" description="Verify user able to Print Section " finished-at="2023-05-15T16:56:02 IST" duration-ms="5482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPrintSection_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:56:02 IST" name="log_result" finished-at="2023-05-15T16:56:04 IST" duration-ms="2071" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPrintSection_FromSection status=SUCCESS method=TitleLandingPage_Test.verifyPrintSection_FromSection()[pri:11, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyShareNote_FromSction()[pri:12, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:56:04 IST" name="verifyShareNote_FromSction" description="Verify user able to share note from section" finished-at="2023-05-15T16:56:13 IST" duration-ms="9507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShareNote_FromSction -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:56:13 IST" name="log_result" finished-at="2023-05-15T16:56:15 IST" duration-ms="2050" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyShareNote_FromSction status=SUCCESS method=TitleLandingPage_Test.verifyShareNote_FromSction()[pri:12, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyEditNotes_FromSection()[pri:13, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:56:15 IST" name="verifyEditNotes_FromSection" description="Verify user able to edit notes from Section" finished-at="2023-05-15T16:57:51 IST" duration-ms="95615" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="ql-editor ql-blank"]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="ql-editor ql-blank"]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:183)
-at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:286)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection(TitleLandingPage_Test.java:399)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditNotes_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:57:51 IST" name="log_result" finished-at="2023-05-15T16:57:53 IST" duration-ms="2056" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditNotes_FromSection status=FAILURE method=TitleLandingPage_Test.verifyEditNotes_FromSection()[pri:13, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyDeleteNotes_FromSection()[pri:14, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:57:53 IST" name="verifyDeleteNotes_FromSection" description="Verify user able to delete Notes from Section" finished-at="2023-05-15T16:57:54 IST" duration-ms="1181" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection(TitleLandingPage_Test.java:411)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteNotes_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:57:54 IST" name="log_result" finished-at="2023-05-15T16:57:56 IST" duration-ms="2037" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeleteNotes_FromSection status=FAILURE method=TitleLandingPage_Test.verifyDeleteNotes_FromSection()[pri:14, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyShareBookmark_FromSection()[pri:15, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:57:56 IST" name="verifyShareBookmark_FromSection" description="Verify user able to share bookmark from Section" finished-at="2023-05-15T16:57:58 IST" duration-ms="1172" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i data-v-368dc876="" aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (44, 32). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[normalize-space()='menu']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-368dc876="" aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (44, 32). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[normalize-space()='menu']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-at com.Digitalcodes.pageobject.Menu.clickOnMenu(Menu.java:57)
-at com.Digitalcodes.pageobject.Menu.navigateToTitlesCover(Menu.java:64)
-at com.Digitalcodes.pageobject.Implimation_AbstractClass.navigetToTitle(Implimation_AbstractClass.java:13)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection(TitleLandingPage_Test.java:424)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShareBookmark_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:57:58 IST" name="log_result" finished-at="2023-05-15T16:58:00 IST" duration-ms="2057" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyShareBookmark_FromSection status=FAILURE method=TitleLandingPage_Test.verifyShareBookmark_FromSection()[pri:15, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyEditBookmark_FromSection()[pri:16, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:58:00 IST" name="verifyEditBookmark_FromSection" description="Verify user able to edit Bookamrk from Section" finished-at="2023-05-15T16:58:01 IST" duration-ms="1231" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1177, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='edit']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1177, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='edit']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:281)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection(TitleLandingPage_Test.java:464)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditBookmark_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:58:01 IST" name="log_result" finished-at="2023-05-15T16:58:03 IST" duration-ms="2024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditBookmark_FromSection status=FAILURE method=TitleLandingPage_Test.verifyEditBookmark_FromSection()[pri:16, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method signature="verifyDeleteBookmark_FromSection()[pri:17, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:58:03 IST" name="verifyDeleteBookmark_FromSection" description="Verify user able to Delete Bookmark from Section" finished-at="2023-05-15T16:58:04 IST" duration-ms="1219" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection(TitleLandingPage_Test.java:475)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteBookmark_FromSection -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77]" started-at="2023-05-15T16:58:05 IST" name="log_result" finished-at="2023-05-15T16:58:07 IST" duration-ms="2050" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeleteBookmark_FromSection status=FAILURE method=TitleLandingPage_Test.verifyDeleteBookmark_FromSection()[pri:17, instance:com.Digitalcodes.testcases.TitleLandingPage_Test@2b662a77] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-      </class> <!-- com.Digitalcodes.testcases.TitleLandingPage_Test -->
-      <class name="com.Digitalcodes.testcases.TitleCovePage_Test">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de]" started-at="2023-05-15T16:49:37 IST" name="beforeClass" finished-at="2023-05-15T16:49:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethodsGroupoftitles()[pri:0, instance:com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de]" started-at="2023-05-15T16:49:37 IST" name="beforeMethodsGroupoftitles" finished-at="2023-05-15T16:49:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodsGroupoftitles -->
-        <test-method signature="navigateToGroupTitles()[pri:2, instance:com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de]" started-at="2023-05-15T16:49:37 IST" name="navigateToGroupTitles" description="Verify user able to navigate to Group of Title" finished-at="2023-05-15T16:49:40 IST" duration-ms="3276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToGroupTitles -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de]" started-at="2023-05-15T16:49:40 IST" name="log_result" finished-at="2023-05-15T16:49:42 IST" duration-ms="2080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigateToGroupTitles status=SUCCESS method=TitleCovePage_Test.navigateToGroupTitles()[pri:2, instance:com.Digitalcodes.testcases.TitleCovePage_Test@36bc55de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-      </class> <!-- com.Digitalcodes.testcases.TitleCovePage_Test -->
+      </class> <!-- com.Digitalcodes.testcases.I_Codes_Test -->
       <class name="com.Digitalcodes.testcases.Login_Test">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:37 IST" name="beforeSuite" finished-at="2023-05-15T16:47:38 IST" duration-ms="1268" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:12 IST" name="beforeSuite" finished-at="2023-05-17T10:48:16 IST" duration-ms="3615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -808,7 +361,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:38 IST" name="beforeTest" finished-at="2023-05-15T16:47:48 IST" duration-ms="9680" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:16 IST" name="beforeTest" finished-at="2023-05-17T10:48:33 IST" duration-ms="17077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -819,97 +372,41 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:48 IST" name="beforeClass" finished-at="2023-05-15T16:47:48 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:33 IST" name="beforeClass" finished-at="2023-05-17T10:48:33 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:1, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:48 IST" name="login" description="User able to Login with valid creditionls" finished-at="2023-05-15T16:47:57 IST" duration-ms="8414" status="PASS">
+        <test-method signature="TC01_login()[pri:1, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:33 IST" name="TC01_login" description="User able to Login with valid creditionls" finished-at="2023-05-17T10:48:43 IST" duration-ms="10142" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:57 IST" name="log_result" finished-at="2023-05-15T16:47:59 IST" duration-ms="2366" status="PASS">
+        </test-method> <!-- TC01_login -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:43 IST" name="log_result" finished-at="2023-05-17T10:48:46 IST" duration-ms="2837" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=Login_Test.login()[pri:1, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc] output={null}]]]>
+                <![CDATA[[TestResult name=TC01_login status=SUCCESS method=Login_Test.TC01_login()[pri:1, instance:com.Digitalcodes.testcases.Login_Test@67dba613] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method signature="verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:47:59 IST" name="verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " finished-at="2023-05-15T16:49:34 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.login" duration-ms="95549" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:190)
-at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
-at com.Digitalcodes.testcases.Login_Test.verifyUserInformation(Login_Test.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TC02_verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:48:46 IST" name="TC02_verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " finished-at="2023-05-17T10:49:57 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_login" duration-ms="70562" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserInformation -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:49:35 IST" name="log_result" finished-at="2023-05-15T16:49:37 IST" duration-ms="2074" status="PASS">
+        </test-method> <!-- TC02_verifyUserInformation -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:49:57 IST" name="log_result" finished-at="2023-05-17T10:49:59 IST" duration-ms="2171" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserInformation status=FAILURE method=Login_Test.verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc] output={null}]]]>
+                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@2d7275fc]" started-at="2023-05-15T16:58:07 IST" name="afterSuite" finished-at="2023-05-15T16:58:08 IST" duration-ms="1000" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@67dba613]" started-at="2023-05-17T10:57:17 IST" name="afterSuite" finished-at="2023-05-17T10:57:18 IST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

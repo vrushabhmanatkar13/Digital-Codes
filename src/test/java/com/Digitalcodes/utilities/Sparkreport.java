@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 
 import com.Digitalcodes.perfectocloud.PerfectoLabUtils;
 import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
+import com.Digitalcodes.testcases.Title_SectionPage_Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -17,6 +18,9 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 
 public class Sparkreport {
 	
@@ -75,10 +79,13 @@ public class Sparkreport {
 	}
 	
 	
-	
+	@Step("{step}")
 	public static void Step(String step) {
 		test.log(Status.INFO, step);
+		Allure.step(step);
 		Perfecto_Capabailites.stepStart(step);
 	}
 
+	
+	
 }

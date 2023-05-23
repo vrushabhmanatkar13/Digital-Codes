@@ -1,17 +1,18 @@
 package com.Digitalcodes.utilities;
 
 import java.time.Duration;
-import java.util.Iterator;
+
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
 import com.Digitalcodes.capabilities.SetCapbilites;
-import com.Digitalcodes.perfectocloud.AssertStatements;
+
 import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
 import com.Digitalcodes.testcases.Prerequisites_Teardown;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,12 +37,12 @@ public class Baseclass extends Perfecto_Capabailites{
 	public static WebDriver driver;
 	
 	//---------------Launch Browser with capability--------------->>
-	public WebDriver browserLaunch(String incognito,String headless,String browserName,String platform, String securityToken,String cloudName, String tag) throws Exception {
+	public WebDriver browserLaunch(String incognito,String headless,String browserName,String platform, String securityToken,String cloudName, String tag, String resolution, String width, String hight) throws Exception {
 
 		
 		 if (platform.equalsIgnoreCase("Perfecto")) {
 				cap=new com.Digitalcodes.perfectocloud.Perfecto_Capabailites();
-				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless);
+				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless,resolution);
 				driver.manage().window().maximize();
 		       action=new Actions(driver);
 			 return driver;
@@ -63,7 +64,9 @@ public class Baseclass extends Perfecto_Capabailites{
 					
 						driver = Fdriver;
 					}
+					driver.manage().window().setSize(setDimension(width, hight));
 					driver.manage().window().maximize();
+					
 					action = new Actions(driver);
 					return driver;
 				}
@@ -73,26 +76,32 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 
 	}
-	
-	
-	public static String fatechPlatformName(Properties prop, String platformName) throws Exception {
 
-		String finalPlatform=platformName=(Boolean) null ? prop.getProperty("PlatformName") :platformName;
-		
-		if (finalPlatform.isEmpty()) {
-			throw new Exception("Platform Name Not Passed, Please pass it as maven properties: -Dplatform=local or perfecto");
+	/*
+	 * Fatech Platform Name As local Or Perfecto
+	*/
+	public static String fatechPlatformName(Properties prop) throws Exception {
+		String platform=System.getProperty("PlatformName");
+
+		if (platform==null) {
+			return prop.getProperty("PlatformName");
 		}
-		return finalPlatform;
+		else {
+			return platform;
+		}
 		
 	}
 	
-	public static String fatechBrowserName(Properties prop, String browserName) throws Exception {
-		String finalBrowser=browserName.isEmpty() ? prop.getProperty("BrowserName") :browserName;
-		if (finalBrowser.isEmpty()) {
-			throw new Exception("Browser Name Not Passed, Please pass it as maven properties: -Dbrowser=chrome or firefox");
+	public static String fatechBrowserName(Properties prop) throws Exception {
+		String finalBrowser= System.getProperty("BrowserName");
+		if (finalBrowser==null) {
+			return prop.getProperty("BrowserName");
+		}
+		else {
+			return finalBrowser;
 		}
 		
-		return finalBrowser;
+		
 	}
 	
 	public static String getTitle() {
@@ -135,6 +144,11 @@ public class Baseclass extends Perfecto_Capabailites{
 	public static void navigateToBack() {
 		driver.navigate().back();
 	}
+	 public static Dimension setDimension(String width,String hight) {
+		 
+		 Dimension resolution=new Dimension(Integer.valueOf(width), Integer.valueOf(hight));
+		 return resolution;
+	 }
 	
 	
     //scroll upto element
@@ -169,12 +183,10 @@ public class Baseclass extends Perfecto_Capabailites{
 	public static Alert handleAlert() {	
 		Alert alert=driver.switchTo().alert();
 		return alert;
-		
-		
 	}
 
 	public void click(WebElement e) {
-		wait.until(ExpectedConditions.elementToBeClickable(e));
+		wait.until(ExpectedConditions.visibilityOf(e));
 		wait.until(ExpectedConditions.elementToBeClickable(e));
 		e.click();
 	}
@@ -200,17 +212,21 @@ public class Baseclass extends Perfecto_Capabailites{
 	}
 	
 	public static void assertEquals(String actual,String expecated) {
-		AssertStatements.assertEquals(actual,expecated);
+		Perfecto_Capabailites.AssertEquels(actual, expecated);
+		Assert.assertEquals(actual,expecated);
+	}
+	public static void assertEquals(int actual,int expecated) {
+		Perfecto_Capabailites.AssertEquels(actual, expecated);
 		Assert.assertEquals(actual,expecated);
 	}
 	
 	public static void assertTrue(boolean Booleanvalue) {
 		Assert.assertTrue(Booleanvalue);
-		AssertStatements.assertBoolean(Booleanvalue, "");
+		Perfecto_Capabailites.Assert("", Booleanvalue);
 	}
 	public static void assertFalse(boolean booleanvalue) {
 		Assert.assertFalse(booleanvalue);
-		AssertStatements.assertBoolean(booleanvalue, "");
+		Perfecto_Capabailites.Assert("", booleanvalue);
 	}
 	
 	public static boolean isDisplayed(WebElement e) {

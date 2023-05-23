@@ -62,6 +62,11 @@ public class Menu extends Baseclass {
 	
 	public TitleCover_Page navigateToTitlesCover(String listitem, String groupofTitle) {
 		clickOnMenu();
+		
+		if (mainMenu.isDisplayed()) {
+			clickOnMainMenu();
+		}
+		
 		for (WebElement webElement : menuList) {		
 			if (getText(webElement).equalsIgnoreCase(listitem)) {
 				click(webElement);
@@ -84,6 +89,19 @@ public class Menu extends Baseclass {
 		}
 		return new TitleCover_Page();
 
+	}
+	
+	
+	public TitleCover_Page navigateToCollections() {
+		clickOnMenu();
+		for (WebElement webElement : menuList) {
+			if (getText(webElement).equalsIgnoreCase("Collections")) {
+				click(webElement);
+				break;
+			}
+		}
+		
+		return new TitleCover_Page();
 	}
 	
 

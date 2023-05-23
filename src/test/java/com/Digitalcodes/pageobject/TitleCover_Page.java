@@ -42,6 +42,9 @@ public class TitleCover_Page extends Baseclass{
 
 	}
 	public String getHeading() {
+		
+		
+		
 		return getText(groupTitleDisplay);
 	}
 	

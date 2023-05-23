@@ -1,15 +1,21 @@
 package com.Digitalcodes.testcases;
 
 import java.awt.Desktop;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Listeners;
 
 import com.Digitalcodes.utilities.Sparkreport;
+import com.Digitalcodes.utilities.TakeScreenshot;
+
+import io.qameta.allure.Allure;
 
 public class LogResult extends Prerequisites_Teardown implements ITestListener {
 
@@ -20,9 +26,9 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 		try {
 			
 			  
-			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,PLATFORM +"  :-  "+ BEOWSER_NAME);
+			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,PLATFORM +"   :-  "+ BEOWSER_NAME);
 			
-			testStart(result.getMethod().getDescription(),Sparkreport.TAGNAME); 
+			testStart(result.getMethod().getMethodName(),Sparkreport.TAGNAME); 
 			
 		//System.out.println(result.getMethod().getId());
 			 
@@ -57,8 +63,10 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 		
 		try {
 			report.create_info(result.getMethod().getDescription());
-			report.test_fail(result.getMethod().getMethodName()+" "+ result.getThrowable(), result);
+			report.test_fail(result.getThrowable()+"", result);
 			
+			//Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );
+			TakeScreenshot.allure_screenshot();
 			System.out.println(result.getMethod().getMethodName() + " : FAILED");
 			System.out.println("     ");
 			result.getThrowable().printStackTrace();
@@ -90,6 +98,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	  
 	  try {
 		Desktop.getDesktop().browse(new File(Sparkreport.REPORTPATH).toURI());
+		
 	} catch (IOException e) {
 		e.printStackTrace();
 	}

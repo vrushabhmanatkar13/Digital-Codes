@@ -3,6 +3,7 @@ package com.Digitalcodes.utilities;
 import java.io.File;
 import java.io.FileInputStream;
 
+import org.apache.poi.ddf.EscherColorRef.SysIndexProcedure;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,12 +12,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Load_Excle {
 	private static XSSFSheet sheet;
 	private static XSSFWorkbook workbook = null;
-	public Load_Excle(String sheet_name) {
+	public Load_Excle() {
 		
 		try {
 			FileInputStream excle_file = new FileInputStream(new File(System.getProperty("user.dir")+"\\TestData\\DigitalCodes data.xlsx"));
 			workbook = new XSSFWorkbook(excle_file);
-			sheet = workbook.getSheet(sheet_name);
+			
 		} catch (Exception e) {
 
 			e.printStackTrace();
@@ -26,36 +27,37 @@ public class Load_Excle {
 	
 	
 	//It is user when @Dataprovider tag used in any test cases
-	public Object[][] getDataFromExcle(int row) {
-
-		int last_row = sheet.getPhysicalNumberOfRows();
+	public Object[][] getDataFromExcle(String sheet_name) {
+		sheet = workbook.getSheet(sheet_name);
+		int last_row = sheet.getLastRowNum();
 		int last_clum = sheet.getRow(0).getLastCellNum();
-		System.out.println(last_row);
-		System.out.println(last_clum);
+		
+		
 		Object[][] data = new Object[last_row][last_clum];
-		System.out.println(data.length);
+		
 
-		int ri = 0;
-		for (int i = 1; i <= row; i++, ri++) {
-			int cj = 0;
-			for (int j = 0; j < last_clum; j++, cj++) {
+		
+		for (int i = 0; i<last_row; i++) {
+			
+			for (int j = 0; j <last_clum; j++) {
 
-				CellType cell = sheet.getRow(i).getCell(j).getCellType();
+				CellType cell = sheet.getRow(i+1).getCell(j).getCellType();
 				switch (cell) {
 				case STRING:
-					data[ri][cj] = readString(i, j);
+					data[i][j] = sheet.getRow(i+1).getCell(j).getStringCellValue();
 					break;
 				case NUMERIC:
-					data[ri][cj] = readNumric(i, j);
+					data[i][j] = sheet.getRow(i+1).getCell(j).getNumericCellValue();
 					break;
-				default:
-					break;
-
+                
 				}
-				System.out.println(data[ri][cj]);
+					
+			System.out.println(data[i][j]);
 			}
+			
+			
 		}
-
+		
 		return data;
 
 	}
@@ -99,12 +101,39 @@ public class Load_Excle {
 
 		data = sheet.getRow(row).getCell(index).getStringCellValue();
 
-		//System.out.println(data);
+
 
 		return data;
 
 	}
+	
+	
+	
+	 public Object[][] getDataFromExcle(String sheet_name,int row){
+		 sheet = workbook.getSheet(sheet_name);
+		int last_clum = sheet.getRow(0).getLastCellNum();
+		Object[][] data =new Object[row][last_clum];
+		
+		for (int j = 0; j <last_clum; j++) {
 
+			CellType cell = sheet.getRow(row).getCell(j).getCellType();
+			switch (cell) {
+			case STRING:
+				data[row-1][j] = sheet.getRow(row).getCell(j).getStringCellValue();
+				break;
+			case NUMERIC:
+				data[row-1][j] = sheet.getRow(row).getCell(j).getNumericCellValue();
+				break;
+			}
+			
+		}
+		return data;
+	}
+	 
+	 
+
+
+	 
 	
 	
 	
