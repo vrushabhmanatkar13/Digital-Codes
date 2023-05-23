@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Digitalcodes.utilities.Baseclass;
 
-public class Login_page extends Baseclass {
+public class Login_Page extends Baseclass {
 
 	
 	@SuppressWarnings("static-access")
-	public Login_page() {
+	public Login_Page() {
 		this.driver = super.driver;
 		PageFactory.initElements(driver, this);
 	}

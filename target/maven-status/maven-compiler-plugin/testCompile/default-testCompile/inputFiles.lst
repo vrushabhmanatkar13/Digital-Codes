@@ -3,17 +3,17 @@ D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\L
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\MyLibrarypage.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\Load_Excle.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Login_page.java
-D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\TitleLandingPage_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\MyNotesandBookmark_Page.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\I_Codes_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Login_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\TakeScreenshot.java
-D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\perfectocloud\AssertStatements.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Favorite.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\Baseclass.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Menu.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\perfectocloud\PerfectoLabUtils.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\perfectocloud\Perfecto_Capabailites.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\LoadPropertiesfile.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Collections_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\capabilities\SetCapbilites.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Header.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Prerequisites_Teardown.java
@@ -21,7 +21,6 @@ D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Collection_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\Sparkreport.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\CommanSteps.java
-D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\TitleCovePage_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Codes_Section.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Implimation_AbstractClass.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\TitleCover_Page.java

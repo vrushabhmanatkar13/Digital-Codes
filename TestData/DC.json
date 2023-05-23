@@ -1,14 +1,11 @@
 {
-  "username": "complete.user@iccsafe.info",
-  "password": "Digital@123",
-  "full-name": "Complete User",
-  "subscription-type": "Premium Complete",
+
   "favorite": "Add to Favorites",
   "unfavorite": "Remove from Favorites",
   "mynotes-text": "You currently do not have any annotations or bookmarks for this book.",
   "notes-text": "User create Note",
   "bookmark-text": "User create Bookmark",
-  "tag-name": "Test",
+  "tag-name": "Automation",
   "share-successful":"Section link shared successfully!",
   "share-content-successful":"Content shared successfully!",
   "notes-edit-text":"User edit note",
@@ -27,22 +24,15 @@
   
   "Premium": {
     "tag": "PREMIUM",
-    "Access-title": "You have an active premium subscription to access this title"
+    "Basic-Plus":"BASIC PLUS",
+    "Access-title": "You have an active premium subscription to access this title",
+    "non-Access-title":"This title is not included within your current Premium Complete subscription. To access the contents and features, please purchase a subscription to this title."
   },
-  
-  
-  "I-codes":{
-  "section": "I-Codes",
-  "sub-section": "2021 I-Codes",
-  "title": "2021 International Building Code (IBC)",
-  "chapter": "CHAPTER 2 DEFINITIONS"
-  },
-  "collection":{
-  "section":"Collection",
-  "collection-title":"",
-  "title":"",
-  "chapter":""
+  "Basic":{
+  "tag":"BASIC",
+  "Access-title":"Upgrade to Premium"
   }
+  
   
   
   

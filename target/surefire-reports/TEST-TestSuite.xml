@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="632.016" tests="18" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="549.766" tests="19" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Vrushabh Manatkar\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="sun.awt.enableExtraMouseButtons" value="true"/>
-    <property name="java.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;"/>
+    <property name="java.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-testng\2.22.0\allure-testng-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-java-commons\2.22.0\allure-java-commons-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-model\2.22.0\allure-model-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-test-filter\2.22.0\allure-test-filter-2.22.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
-    <property name="sun.java.command" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire4817084304232594401\surefirebooter-20230515164736301_3.jar C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire4817084304232594401 2023-05-15T16-47-35_943-jvmRun1 surefire-20230515164736301_1tmp surefire_0-20230515164736301_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire8025801642760428751\surefirebooter-20230517104805031_3.jar C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire8025801642760428751 2023-05-17T10-48-04_640-jvmRun1 surefire-20230517104805031_1tmp surefire_0-20230517104805031_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;"/>
+    <property name="surefire.test.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-testng\2.22.0\allure-testng-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-java-commons\2.22.0\allure-java-commons-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-model\2.22.0\allure-model-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-test-filter\2.22.0\allure-test-filter-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Vrushabh Manatkar"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire4817084304232594401\surefirebooter-20230515164736301_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire8025801642760428751\surefirebooter-20230517104805031_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
@@ -40,7 +40,7 @@
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\Vrushabh Manatkar\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -51,45 +51,141 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Perfecto\Perfecto-Connect-windows64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17.0.5\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Vrushabh Manatkar\Downloads\apache-maven-3.8.7\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platforms-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\build-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\;C:\Users\Vrushabh Manatkar\AppData\Local\Microsoft\WindowsApps;C:\Users\Vrushabh Manatkar\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\emulator;C:\Program Files\Java\jdk-17.0.5\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Perfecto\Perfecto-Connect-windows64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17.0.5\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Vrushabh Manatkar\Downloads\apache-maven-3.8.7\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platforms-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\build-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform;C:\allure-2.22.0\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\;C:\Users\Vrushabh Manatkar\AppData\Local\Microsoft\WindowsApps;C:\Users\Vrushabh Manatkar\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\emulator;C:\Program Files\Java\jdk-17.0.5\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="login" classname="com.Digitalcodes.testcases.Login_Test" time="8.414">
+  <testcase name="TC01_login" classname="com.Digitalcodes.testcases.Login_Test" time="10.083">
     <system-out><![CDATA[Platform Name :- local
 Browser Name :- chrome
  
 https://codes-stage.iccsafe.org/
  
-login : PASSED
+TC01_login : PASSED
 ]]></system-out>
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 9209
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 39246
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 15, 2023 4:47:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 17, 2023 10:48:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 112
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserInformation" classname="com.Digitalcodes.testcases.Login_Test" time="96.122">
-    <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;v-list-item__title white--text&quot;]/h4] (tried for 90 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+  <testcase name="TC02_verifyUserInformation" classname="com.Digitalcodes.testcases.Login_Test" time="70.574">
+    <system-out><![CDATA[=======================================================
+  
+TC02_verifyUserInformation : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC03_navigateToGroupTitles" classname="com.Digitalcodes.testcases.I_Codes_Test" time="2.049">
+    <system-out><![CDATA[=======================================================
+  
+TC03_navigateToGroupTitles : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC04_verifyTitleLandingPage" classname="com.Digitalcodes.testcases.I_Codes_Test" time="17.716">
+    <system-out><![CDATA[=======================================================
+  
+TC04_verifyTitleLandingPage : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC05_verifyMarkFavoriteTitle" classname="com.Digitalcodes.testcases.I_Codes_Test" time="12.44">
+    <system-out><![CDATA[=======================================================
+  
+TC05_verifyMarkFavoriteTitle : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC06_verifyRemoveFavoriteTitle" classname="com.Digitalcodes.testcases.I_Codes_Test" time="4.363">
+    <system-out><![CDATA[=======================================================
+  
+TC06_verifyRemoveFavoriteTitle : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC07_verifyMyNotes_FromTOC" classname="com.Digitalcodes.testcases.I_Codes_Test" time="5.296">
+    <system-out><![CDATA[=======================================================
+  
+TC07_verifyMyNotes_FromTOC : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC08_verifyNavigateToSection_FromTOC" classname="com.Digitalcodes.testcases.I_Codes_Test" time="16.884">
+    <system-out><![CDATA[=======================================================
+  
+TC08_verifyNavigateToSection_FromTOC : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC09_verifyCreateNotes_atSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="23.336">
+    <system-out><![CDATA[=======================================================
+  
+TC09_verifyCreateNotes_atSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC10_verifyCreateBookmark_atSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="43.694">
+    <system-out><![CDATA[=======================================================
+  
+TC10_verifyCreateBookmark_atSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC11_verifyShareSection_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="31.851">
+    <system-out><![CDATA[=======================================================
+  
+TC11_verifyShareSection_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC12_verifyPrintSection_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="6.181">
+    <system-out><![CDATA[=======================================================
+  
+TC12_verifyPrintSection_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC13_verifyShareNote_FromSction" classname="com.Digitalcodes.testcases.I_Codes_Test" time="12.356">
+    <system-out><![CDATA[=======================================================
+  
+TC13_verifyShareNote_FromSction : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC14_verifyEditNotes_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="12.089">
+    <system-out><![CDATA[=======================================================
+  
+TC14_verifyEditNotes_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC15_verifyDeleteNotes_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="6.335">
+    <system-out><![CDATA[=======================================================
+  
+TC15_verifyDeleteNotes_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC16_verifyShareBookmark_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="30.945">
+    <system-out><![CDATA[=======================================================
+  
+TC16_verifyShareBookmark_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC17_verifyEditBookmark_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="11.571">
+    <system-out><![CDATA[=======================================================
+  
+TC17_verifyEditBookmark_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC18_verifyDeleteBookmark_FromSection" classname="com.Digitalcodes.testcases.I_Codes_Test" time="5.794">
+    <system-out><![CDATA[=======================================================
+  
+TC18_verifyDeleteBookmark_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC19_verifyLinksOnChapter" classname="com.Digitalcodes.testcases.I_Codes_Test" time="154.315">
+    <failure message="Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&quot;newIccStyles v-sheet theme--light&quot;]&apos;] (tried for 90 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="newIccStyles v-sheet theme--light"]'] (tried for 90 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:190)
-	at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
-	at com.Digitalcodes.testcases.Login_Test.verifyUserInformation(Login_Test.java:43)
+	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:221)
+	at com.Digitalcodes.pageobject.Codes_Section.hoverOnTitleLink(Codes_Section.java:324)
+	at com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter(I_Codes_Test.java:537)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -122,24 +218,51 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyUserInformation : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="newIccStyles v-sheet theme--light"]"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+Command: [b2476ef68e37923b900ac34b12f83c43, findElement {using=xpath, value=//div[@class="newIccStyles v-sheet theme--light"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2476ef68e37923b900ac34b12f83c43
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:267)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
+]]></failure>
+    <system-out><![CDATA[=======================================================
+  
+TC19_verifyLinksOnChapter : FAILED
+     
+     
+]]></system-out>
+    <system-err><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="newIccStyles v-sheet theme--light"]'] (tried for 90 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:190)
-	at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
-	at com.Digitalcodes.testcases.Login_Test.verifyUserInformation(Login_Test.java:43)
+	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:221)
+	at com.Digitalcodes.pageobject.Codes_Section.hoverOnTitleLink(Codes_Section.java:324)
+	at com.Digitalcodes.testcases.I_Codes_Test.TC19_verifyLinksOnChapter(I_Codes_Test.java:537)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,449 +295,15 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="navigateToGroupTitles" classname="com.Digitalcodes.testcases.TitleCovePage_Test" time="3.271">
-    <system-out><![CDATA[=======================================================
-  
-navigateToGroupTitles : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyTitleLandingPage" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="99.254">
-    <failure message="Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: (//div[@class=&quot;text-right col&quot;])[2]]] (tried for 90 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: (//div[@class="text-right col"])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:217)
-	at com.Digitalcodes.pageobject.TitleLanding_Page.changeVersion(TitleLanding_Page.java:114)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage(TitleLandingPage_Test.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyTitleLandingPage : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: (//div[@class="text-right col"])[2]]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.isDisplayed(Baseclass.java:217)
-	at com.Digitalcodes.pageobject.TitleLanding_Page.changeVersion(TitleLanding_Page.java:114)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyTitleLandingPage(TitleLandingPage_Test.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyMarkFavoriteTitle" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="6.122">
-    <system-out><![CDATA[=======================================================
-  
-verifyMarkFavoriteTitle : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyRemoveFavoriteTitle" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="4.226">
-    <system-out><![CDATA[=======================================================
-  
-verifyRemoveFavoriteTitle : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyMyNotes_FromTOC" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="5.529">
-    <system-out><![CDATA[=======================================================
-  
-verifyMyNotes_FromTOC : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyNavigateToSection_FromTOC" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="15.209">
-    <system-out><![CDATA[=======================================================
-  
-verifyNavigateToSection_FromTOC : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyCreateNotes_atSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="64.135">
-    <failure message="expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection(TitleLandingPage_Test.java:211)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyCreateNotes_atSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateNotes_atSection(TitleLandingPage_Test.java:211)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyCreateBookmark_atSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="84.863">
-    <failure message="expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection(TitleLandingPage_Test.java:271)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyCreateBookmark_atSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[java.lang.AssertionError: expected [null (null)] but found [Complete User (complete.user@iccsafe.info)]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.perfectocloud.AssertStatements.assertEquals(AssertStatements.java:10)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:203)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyCreateBookmark_atSection(TitleLandingPage_Test.java:271)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyShareSection_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="77.237">
-    <system-out><![CDATA[=======================================================
-  
-verifyShareSection_FromSection : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyPrintSection_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="5.487">
-    <system-out><![CDATA[=======================================================
-  
-verifyPrintSection_FromSection : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyShareNote_FromSction" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="9.511">
-    <system-out><![CDATA[=======================================================
-  
-verifyShareNote_FromSction : PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="verifyEditNotes_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="95.867">
-    <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //div[@class=&quot;ql-editor ql-blank&quot;]] (tried for 90 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="ql-editor ql-blank"]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:183)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:286)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection(TitleLandingPage_Test.java:399)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyEditNotes_FromSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //div[@class="ql-editor ql-blank"]] (tried for 90 second(s) with 500 milliseconds interval)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:183)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:286)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditNotes_FromSection(TitleLandingPage_Test.java:399)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyDeleteNotes_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="1.358">
-    <failure message="element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="newIccStyles v-sheet theme--light"]"}
   (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
+Command: [b2476ef68e37923b900ac34b12f83c43, findElement {using=xpath, value=//div[@class="newIccStyles v-sheet theme--light"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53351/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2476ef68e37923b900ac34b12f83c43
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -627,533 +316,17 @@ Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection(TitleLandingPage_Test.java:411)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyDeleteNotes_FromSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteNotes_FromSection(TitleLandingPage_Test.java:411)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyShareBookmark_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="1.41">
-    <failure message="element click intercepted: Element &lt;i data-v-368dc876=&quot;&quot; aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (44, 32). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[normalize-space()=&apos;menu&apos;]]&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <i data-v-368dc876="" aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (44, 32). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[normalize-space()='menu']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Menu.clickOnMenu(Menu.java:57)
-	at com.Digitalcodes.pageobject.Menu.navigateToTitlesCover(Menu.java:64)
-	at com.Digitalcodes.pageobject.Implimation_AbstractClass.navigetToTitle(Implimation_AbstractClass.java:13)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection(TitleLandingPage_Test.java:424)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyShareBookmark_FromSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-368dc876="" aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (44, 32). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[normalize-space()='menu']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Menu.clickOnMenu(Menu.java:57)
-	at com.Digitalcodes.pageobject.Menu.navigateToTitlesCover(Menu.java:64)
-	at com.Digitalcodes.pageobject.Implimation_AbstractClass.navigetToTitle(Implimation_AbstractClass.java:13)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyShareBookmark_FromSection(TitleLandingPage_Test.java:424)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyEditBookmark_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="1.379">
-    <failure message="element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1177, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;edit&apos;]]&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1177, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='edit']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:281)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection(TitleLandingPage_Test.java:464)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyEditBookmark_FromSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1177, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_30990}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='edit']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.editNotes_Bookmark(Codes_Section.java:281)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyEditBookmark_FromSection(TitleLandingPage_Test.java:464)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></system-err>
-  </testcase>
-  <testcase name="verifyDeleteBookmark_FromSection" classname="com.Digitalcodes.testcases.TitleLandingPage_Test" time="1.394">
-    <failure message="element click intercepted: Element &lt;i aria-hidden=&quot;true&quot; class=&quot;v-icon notranslate material-icons theme--light&quot;&gt;...&lt;/i&gt; is not clickable at point (1225, 525). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=113.0.5672.93)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -&gt; xpath: //i[text()=&apos;delete&apos;]]&#10;Session ID: 8afa82f68d9d307534e9ccf3bb694bdd" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection(TitleLandingPage_Test.java:475)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[=======================================================
-  
-verifyDeleteBookmark_FromSection : FAILED
-     
-     
-]]></system-out>
-    <system-err><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i aria-hidden="true" class="v-icon notranslate material-icons theme--light">...</i> is not clickable at point (1225, 525). Other element would receive the click: <div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8afa82f68d9d307534e9ccf3bb694bdd, clickElement {id=B372068ADEB3CA26689CAC1D30F873BF_element_31160}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8afa82f68d9d307534e9ccf3bb694bdd)] -> xpath: //i[text()='delete']]
-Session ID: 8afa82f68d9d307534e9ccf3bb694bdd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:179)
-	at com.Digitalcodes.pageobject.Codes_Section.deleteNotes__Bookmark(Codes_Section.java:293)
-	at com.Digitalcodes.testcases.TitleLandingPage_Test.verifyDeleteBookmark_FromSection(TitleLandingPage_Test.java:475)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:267)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
 ]]></system-err>
   </testcase>
 </testsuite>

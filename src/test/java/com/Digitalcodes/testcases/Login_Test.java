@@ -1,30 +1,61 @@
 package com.Digitalcodes.testcases;
 
-import com.Digitalcodes.pageobject.Login_page;
+import com.Digitalcodes.pageobject.Login_Page;
 import com.Digitalcodes.utilities.Sparkreport;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Login_Test extends Prerequisites_Teardown {
 
 	public static String EMAIL;
 	public static String NAME;
+    public static String SUBSCRIPTION;
+    
+   
+	
+	
+	  @DataProvider(name="Dynamic") 
+	  public Object[][] getData() throws Exception{
+      if (USER.equalsIgnoreCase("PREMIUM")){ 
+		  return excel.getDataFromExcle("Users",1); }
+	  else if(USER.equalsIgnoreCase("SINGLE")) {
+		  return excel.getDataFromExcle("Users",2);
+	  }
+	  else if (USER.equalsIgnoreCase("BASIC")) {
+		  return excel.getDataFromExcle("Users",3);
+	  }
+	  else {
+		  throw new Exception("Please Select User like : Premium, Single, Basic");
+	  }
+	  
+	  
+	  }
+	  
+	  
+	  
+	 	
+	
+	@Test(priority = 1, description = "User able to Login with valid creditionls", dataProvider = "Dynamic",groups = {"Smoke","Regeration"})
 
-	@Test(priority = 1, description = "User able to Login with valid creditionls")
-
-	public void login() throws InterruptedException {
-		Login_page login = new Login_page();
+	public void TC01_loginValidData(String Username, String Password, String Name, String Subscription) throws InterruptedException {
 		
+		EMAIL=Username;
+		NAME=Name;
+		SUBSCRIPTION=Subscription;
 		
+		Login_Page login = new Login_Page();
 		header.clickSignIn();
 		Sparkreport.Step("Click SignIN");
 		
-		login.login(jsonValue("username"), jsonValue("password"));
-		Sparkreport.Step("Enter username " + jsonValue("username"));
-		Sparkreport.Step("Enter password " + jsonValue("password"));
+		login.login(Username, Password);
+		Sparkreport.Step("Enter username " +Username);
+		Sparkreport.Step("Enter password " + Password);
 		Sparkreport.Step("Click SignIn Button");
 		report.create_info("Page Title is " + getTitle());
-		Thread.sleep(6000);
+		Thread.sleep(4000);
 
 		// Verifying Url and Title of Page
 		assertEquals(driver.getCurrentUrl(), prop.getProperty("Url") + "dashboard/library");
@@ -32,14 +63,15 @@ public class Login_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(dependsOnMethods = "login", description = "Verify User able to displyed Subscription type, Name, email ")
-	public void verifyUserInformation() {
+	@Test(dependsOnMethods = "TC01_loginValidData", dataProvider = "Dynamic",description = "Verify User able to displyed Subscription type, Name, email ",groups = {"Smoke","Regeration"})
+	public void TC02_verifyUserInformation(String Username, String Password, String Name, String Subscription) throws InterruptedException {
 
 
 		String subscription = header.getSubscrptionType();
 		
 		header.holdOnSubscriptionType();
 		Sparkreport.Step("Hover on "+ subscription);
+		Thread.sleep(2000);
 		NAME = header.getName();
 		EMAIL = header.getEmail();
 
@@ -49,9 +81,9 @@ public class Login_Test extends Prerequisites_Teardown {
 		report.create_info("User Email is " + EMAIL);
 		report.create_info("Page Title is " + driver.getTitle());
 
-		assertEquals(subscription, jsonValue("subscription-type"));
-		assertEquals(NAME, jsonValue("full-name"));
-		assertEquals(EMAIL, jsonValue("username"));
+		assertEquals(subscription,SUBSCRIPTION);
+		assertEquals(NAME, Name);
+		assertEquals(EMAIL,Username);
 
 	}
 

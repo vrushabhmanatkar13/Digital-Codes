@@ -7,6 +7,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 
+import io.qameta.allure.Attachment;
+
 public class TakeScreenshot extends Baseclass{
 	
 	public static String Take_screenshot(ITestResult result) throws IOException {
@@ -19,6 +21,12 @@ public class TakeScreenshot extends Baseclass{
 		File dest=new File(path);
 		FileUtils.copyFile(src, dest);
 		return  path;
+	}
+	
+	
+	@Attachment(value = "ScreenShot",type = "image/png")
+	public static byte[] allure_screenshot() {
+		return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 	}
 
 }
