@@ -3,8 +3,7 @@ package com.Digitalcodes.testcases;
 import com.Digitalcodes.pageobject.Login_Page;
 import com.Digitalcodes.utilities.Sparkreport;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
