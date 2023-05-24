@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 import com.Digitalcodes.pageobject.TitleSection_Page;
 
-import com.Digitalcodes.pageobject.Abstract_CommanMathods_Implinmation;
+
 import com.Digitalcodes.pageobject.MenuMyNotesandBookmark_Page;
 import com.Digitalcodes.pageobject.TableOfContent_Page;
-import com.Digitalcodes.pageobject.TitleCover_Page;
+
 import com.Digitalcodes.pageobject.TitleLanding_Page;
 import com.Digitalcodes.utilities.Baseclass;
 import com.Digitalcodes.utilities.Sparkreport;
@@ -561,7 +561,6 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				
 				String childsection=section.getChildSubSectionName();
 				
-				section.doubleClikcOn_ChildSection();
 				section.doubleClikcOn_ChildSection();
 				Sparkreport.Step("Double Click ");
 				

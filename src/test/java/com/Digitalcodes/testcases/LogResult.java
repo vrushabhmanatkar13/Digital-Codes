@@ -65,8 +65,8 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 			report.create_info(result.getMethod().getDescription());
 			report.test_fail(result.getThrowable()+"", result);
 			
-			//Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );
-			TakeScreenshot.allure_screenshot();
+			Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );
+			//TakeScreenshot.allure_screenshot();
 			System.out.println(result.getMethod().getMethodName() + " : FAILED");
 			System.out.println("     ");
 			result.getThrowable().printStackTrace();

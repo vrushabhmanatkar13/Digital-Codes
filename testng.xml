@@ -13,10 +13,12 @@
 	<parameter name="User" value="PREMIUM"></parameter>
 		<classes>
 			<class name="com.Digitalcodes.testcases.Login_Test" />
-	       <class name="com.Digitalcodes.testcases.Title_LandingPage_Test" /> 
-	         <class name="com.Digitalcodes.testcases.TableOfContent_Test"/> 
+	     <!--    <class name="com.Digitalcodes.testcases.Title_LandingPage_Test" /> -->
+	      <!--    <class name="com.Digitalcodes.testcases.TableOfContent_Test"/> -->
 			<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" >
-          
+          <methods>
+          <include name="TC24_verifyCreateNotes_atChildSubsection"></include>
+          </methods>
 			</class>
 		 
 			

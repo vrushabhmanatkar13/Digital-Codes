@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Digital_Codes">
-              <span class="suite-name border-passed">Digital Codes</span>
+              <span class="suite-name border-failed">Digital Codes</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Digital_Codes" class="hide-methods failed suite-Digital_Codes"> (hide)</a> <!-- hide-methods failed suite-Digital_Codes -->
+                      <a href="#" panel-name="suite-Digital_Codes" class="show-methods failed suite-Digital_Codes"> (show)</a> <!-- show-methods failed suite-Digital_Codes -->
+                    </span>
+                    <div class="method-list-content failed suite-Digital_Codes">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Login_Test" hash-for-method="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Digital_Codes -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,12 +123,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Login_Test" hash-for-method="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC24_verifyCreateNotes_atChildSubsection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC24_verifyCreateNotes_atChildSubsection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Digital_Codes -->
@@ -129,6 +138,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Digital_Codes" class="panel Digital_Codes">
+          <div class="suite-Digital_Codes-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Login_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">
+                  </a> <!-- TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete) -->
+                  <span class="method-name">TC02_verifyUserInformation</span>
+                  <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8b81c2d8a6d843f7d5c35dc7ec3bc10e)] -&gt; xpath: //div[@class=&quot;v-list-item__title white--text&quot;]/h4] (tried for 90 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64131}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64131/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b81c2d8a6d843f7d5c35dc7ec3bc10e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:202)
+	at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
+	at com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation(Login_Test.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify User able to displyed Subscription type, Name, email )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-failed -->
           <div class="suite-Digital_Codes-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -137,12 +178,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
-                  </a> <!-- TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
-                  <span class="method-name">TC19_verifyLinksOnChapter</span>
+                  <a name="TC24_verifyCreateNotes_atChildSubsection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC24_verifyCreateNotes_atChildSubsection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC24_verifyCreateNotes_atChildSubsection</span>
                   <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
                   <em>
-(Verify links On Chapter)                  </em>
+(Verify user able to create notes at Sub-Section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,16 +202,6 @@
                   <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
                   <em>
 (User able to Login with valid creditionls)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">
-                  </a> <!-- TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete) -->
-                  <span class="method-name">TC02_verifyUserInformation</span>
-                  <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
-                  <em>
-(Verify User able to displyed Subscription type, Name, email )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,7 +227,7 @@
       &lt;class name=&quot;com.Digitalcodes.testcases.Login_Test&quot;/&gt;
       &lt;class name=&quot;com.Digitalcodes.testcases.Title_SectionPage_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TC19_verifyLinksOnChapter&quot;/&gt;
+          &lt;include name=&quot;TC24_verifyCreateNotes_atChildSubsection&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.Digitalcodes.testcases.Title_SectionPage_Test --&gt;
     &lt;/classes&gt;
@@ -234,7 +265,7 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">TC19_verifyLinksOnChapter</span>
+                <span class="method-in-group-name">TC24_verifyCreateNotes_atChildSubsection</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -247,6 +278,10 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">TC02_verifyUserInformation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC24_verifyCreateNotes_atChildSubsection</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -268,22 +303,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC19_verifyLinksOnChapter')
-data.setCell(0, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
-data.setCell(0, 3, 51681);
+data.setCell(0, 1, 'TC02_verifyUserInformation')
+data.setCell(0, 2, 'com.Digitalcodes.testcases.Login_Test')
+data.setCell(0, 3, 98192);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC01_loginValidData')
-data.setCell(1, 2, 'com.Digitalcodes.testcases.Login_Test')
-data.setCell(1, 3, 10093);
+data.setCell(1, 1, 'TC24_verifyCreateNotes_atChildSubsection')
+data.setCell(1, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(1, 3, 38603);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC02_verifyUserInformation')
+data.setCell(2, 1, 'TC01_loginValidData')
 data.setCell(2, 2, 'com.Digitalcodes.testcases.Login_Test')
-data.setCell(2, 3, 2686);
+data.setCell(2, 3, 16592);
 window.suiteTableData['Digital_Codes']= { tableData: data, tableDiv: 'times-div-Digital_Codes'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Digital_Codes">
               </div> <!-- times-div-Digital_Codes -->
             </div> <!-- times-div -->
@@ -318,11 +353,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">TC23_verifyPrintSection_FromSubSection</span>
                 <br/>
+                <span class="ignored-method-name">TC19_verifyLinksOnChapter</span>
+                <br/>
                 <span class="ignored-method-name">TC21_verifyCreateBookmark_atSubsection</span>
                 <br/>
                 <span class="ignored-method-name">TC14_verifyEditNotes_FromSection</span>
-                <br/>
-                <span class="ignored-method-name">TC24_verifyCreateNotes_atChildSubsection</span>
                 <br/>
                 <span class="ignored-method-name">TC22_verifyShareSection_FromSubSection</span>
                 <br/>
@@ -361,53 +396,55 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome, PREMIUM)</span>
-                <span class="method-start">3258 ms</span>
+                <span class="method-start">4595 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">23411 ms</span>
+                <span class="method-start">28461 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
-                <span class="method-start">23635 ms</span>
+                <span class="method-start">28829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">log_result([TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang....)</span>
-                <span class="method-start">34306 ms</span>
+                <span class="method-start">45863 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
-                <span class="method-start">35924 ms</span>
+                <span class="method-start">47337 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">log_result([TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformat...)</span>
-                <span class="method-start">38621 ms</span>
+                <span class="method-name">log_result([TestResult name=TC02_verifyUserInformation status=FAILURE method=Login_Test.TC02_verifyUserInformat...)</span>
+                <span class="method-start">146582 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">38670 ms</span>
+                <span class="method-start">146720 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassTitlepage</span>
-                <span class="method-start">38672 ms</span>
+                <span class="method-start">146723 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
-                <span class="method-start">38699 ms</span>
+                <span class="method-name">TC24_verifyCreateNotes_atChildSubsection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">146739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">log_result([TestResult name=TC19_verifyLinksOnChapter status=SUCCESS method=Title_SectionPage_Test.TC19_verifyL...)</span>
-                <span class="method-start">90397 ms</span>
+                <span class="method-name">log_result([TestResult name=TC24_verifyCreateNotes_atChildSubsection status=SUCCESS method=Title_SectionPage_Te...)</span>
+                <span class="method-start">185361 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Digitalcodes.testcases.Login_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">91697 ms</span>
+                <span class="method-start">186874 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

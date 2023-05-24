@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="20" total="23" passed="3">
+<testng-results skipped="0" failed="1" ignored="20" total="23" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Digital Codes" duration-ms="87201" started-at="2023-05-24T02:01:30 IST" finished-at="2023-05-24T02:02:57 IST">
+  <suite name="Digital Codes" duration-ms="180872" started-at="2023-05-24T11:43:35 IST" finished-at="2023-05-24T11:46:36 IST">
     <groups>
       <group name="Smoke">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Title_SectionPage_Test.TC24_verifyCreateNotes_atChildSubsection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="TC24_verifyCreateNotes_atChildSubsection" class="com.Digitalcodes.testcases.Title_SectionPage_Test"/>
       </group> <!-- Smoke -->
       <group name="Regeration">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Title_SectionPage_Test.TC19_verifyLinksOnChapter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707]" name="TC19_verifyLinksOnChapter" class="com.Digitalcodes.testcases.Title_SectionPage_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Title_SectionPage_Test.TC24_verifyCreateNotes_atChildSubsection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="TC24_verifyCreateNotes_atChildSubsection" class="com.Digitalcodes.testcases.Title_SectionPage_Test"/>
       </group> <!-- Regeration -->
     </groups>
-    <test name="Test" duration-ms="87201" started-at="2023-05-24T02:01:30 IST" finished-at="2023-05-24T02:02:57 IST">
+    <test name="Test" duration-ms="180872" started-at="2023-05-24T11:43:35 IST" finished-at="2023-05-24T11:46:36 IST">
       <class name="com.Digitalcodes.testcases.Login_Test">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="beforeSuite" is-config="true" duration-ms="3249" started-at="2023-05-24T02:01:26 IST" finished-at="2023-05-24T02:01:30 IST">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="beforeSuite" is-config="true" duration-ms="4577" started-at="2023-05-24T11:43:30 IST" finished-at="2023-05-24T11:43:35 IST">
           <params>
             <param index="0">
               <value>
@@ -27,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="beforeTest" is-config="true" duration-ms="20039" started-at="2023-05-24T02:01:30 IST" finished-at="2023-05-24T02:01:50 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="beforeTest" is-config="true" duration-ms="23763" started-at="2023-05-24T11:43:35 IST" finished-at="2023-05-24T11:43:58 IST">
           <params>
             <param index="0">
               <value>
@@ -43,11 +44,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="beforeClass" is-config="true" duration-ms="144" started-at="2023-05-24T02:01:50 IST" finished-at="2023-05-24T02:01:50 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="beforeClass" is-config="true" duration-ms="276" started-at="2023-05-24T11:43:59 IST" finished-at="2023-05-24T11:43:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="TC01_loginValidData" duration-ms="10093" started-at="2023-05-24T02:01:50 IST" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-05-24T02:02:00 IST">
+        <test-method status="PASS" signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="TC01_loginValidData" duration-ms="16592" started-at="2023-05-24T11:43:59 IST" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-05-24T11:44:16 IST">
           <params>
             <param index="0">
               <value>
@@ -73,18 +74,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_loginValidData -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="log_result" is-config="true" duration-ms="1566" started-at="2023-05-24T02:02:01 IST" finished-at="2023-05-24T02:02:02 IST">
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="log_result" is-config="true" duration-ms="1440" started-at="2023-05-24T11:44:16 IST" finished-at="2023-05-24T11:44:17 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@85ec632] output={null}]]]>
+                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65ef722a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method name="TC02_verifyUserInformation" signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" status="PASS" duration-ms="2686" finished-at="2023-05-24T02:02:05 IST" started-at="2023-05-24T02:02:02 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" data-provider="Dynamic" description="Verify User able to displyed Subscription type, Name, email ">
+        <test-method name="TC02_verifyUserInformation" signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" status="FAIL" duration-ms="98192" finished-at="2023-05-24T11:45:56 IST" started-at="2023-05-24T11:44:17 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" data-provider="Dynamic" description="Verify User able to displyed Subscription type, Name, email ">
           <params>
             <param index="0">
               <value>
@@ -107,35 +108,87 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8b81c2d8a6d843f7d5c35dc7ec3bc10e)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64131}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64131/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b81c2d8a6d843f7d5c35dc7ec3bc10e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (8b81c2d8a6d843f7d5c35dc7ec3bc10e)] -> xpath: //div[@class="v-list-item__title white--text"]/h4] (tried for 90 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64131}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64131/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b81c2d8a6d843f7d5c35dc7ec3bc10e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:202)
+at com.Digitalcodes.pageobject.Header.getName(Header.java:61)
+at com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation(Login_Test.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_verifyUserInformation -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="log_result" is-config="true" duration-ms="42" started-at="2023-05-24T02:02:05 IST" finished-at="2023-05-24T02:02:05 IST">
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="log_result" is-config="true" duration-ms="127" started-at="2023-05-24T11:45:57 IST" finished-at="2023-05-24T11:45:57 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632] output={null}]]]>
+                <![CDATA[[TestResult name=TC02_verifyUserInformation status=FAILURE method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@85ec632]" name="afterSuite" is-config="true" duration-ms="6109" started-at="2023-05-24T02:02:58 IST" finished-at="2023-05-24T02:03:04 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65ef722a]" name="afterSuite" is-config="true" duration-ms="2190" started-at="2023-05-24T11:46:37 IST" finished-at="2023-05-24T11:46:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.Digitalcodes.testcases.Login_Test -->
       <class name="com.Digitalcodes.testcases.Title_SectionPage_Test">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707]" name="beforeClass" is-config="true" duration-ms="2" started-at="2023-05-24T02:02:05 IST" finished-at="2023-05-24T02:02:05 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="beforeClass" is-config="true" duration-ms="3" started-at="2023-05-24T11:45:57 IST" finished-at="2023-05-24T11:45:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeClassTitlepage()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707]" name="beforeClassTitlepage" is-config="true" duration-ms="22" started-at="2023-05-24T02:02:05 IST" finished-at="2023-05-24T02:02:05 IST">
+        <test-method status="PASS" signature="beforeClassTitlepage()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="beforeClassTitlepage" is-config="true" duration-ms="14" started-at="2023-05-24T11:45:57 IST" finished-at="2023-05-24T11:45:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassTitlepage -->
-        <test-method status="PASS" signature="TC19_verifyLinksOnChapter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707]" name="TC19_verifyLinksOnChapter" duration-ms="51681" started-at="2023-05-24T02:02:05 IST" description="Verify links On Chapter" data-provider="SingleTitle" finished-at="2023-05-24T02:02:57 IST">
+        <test-method status="PASS" signature="TC24_verifyCreateNotes_atChildSubsection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="TC24_verifyCreateNotes_atChildSubsection" duration-ms="38603" started-at="2023-05-24T11:45:57 IST" description="Verify user able to create notes at Sub-Section" data-provider="SingleTitle" finished-at="2023-05-24T11:46:35 IST">
           <params>
             <param index="0">
               <value>
@@ -160,12 +213,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC19_verifyLinksOnChapter -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707]" name="log_result" is-config="true" duration-ms="53" started-at="2023-05-24T02:02:57 IST" finished-at="2023-05-24T02:02:57 IST">
+        </test-method> <!-- TC24_verifyCreateNotes_atChildSubsection -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728]" name="log_result" is-config="true" duration-ms="57" started-at="2023-05-24T11:46:35 IST" finished-at="2023-05-24T11:46:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC19_verifyLinksOnChapter status=SUCCESS method=Title_SectionPage_Test.TC19_verifyLinksOnChapter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@6b5f8707] output={null}]]]>
+                <![CDATA[[TestResult name=TC24_verifyCreateNotes_atChildSubsection status=SUCCESS method=Title_SectionPage_Test.TC24_verifyCreateNotes_atChildSubsection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@5a12c728] output={null}]]]>
               </value>
             </param>
           </params>

@@ -3,7 +3,7 @@ package com.Digitalcodes.utilities;
 import java.io.File;
 import java.io.FileInputStream;
 
-import org.apache.poi.ddf.EscherColorRef.SysIndexProcedure;
+
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -53,6 +53,7 @@ public class Load_Excle {
 				}
 					
 			System.out.println(data[i][j]);
+			System.out.println(" ");
 			}
 			
 			

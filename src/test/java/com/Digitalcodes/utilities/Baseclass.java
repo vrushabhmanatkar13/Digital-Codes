@@ -2,7 +2,7 @@ package com.Digitalcodes.utilities;
 
 import java.time.Duration;
 
-import java.util.List;
+
 import java.util.Properties;
 import java.util.Set;
 
@@ -234,9 +234,6 @@ public class Baseclass extends Perfecto_Capabailites{
 		return e.isDisplayed();
 	}
 	
-	public static void switchToWindow_byindex() {
-	 List<String> windowid=(List<String>) driver.getWindowHandles();
-	 driver.switchTo().window(windowid.get(1));
-	}
+	
 	
 }

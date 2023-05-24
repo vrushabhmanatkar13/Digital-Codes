@@ -9,17 +9,17 @@
     <parameter name="User" value="PREMIUM"/>
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.Digitalcodes.testcases.Title_SectionPage_Test">
+      <class name="com.Digitalcodes.testcases.Login_Test">
         <methods>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="beforeClassTitlepage"/>
           <include name="beforeSuite"/>
-          <include name="TC19_verifyLinksOnChapter" invocation-numbers="0"/>
+          <include name="TC02_verifyUserInformation" invocation-numbers="0"/>
           <include name="log_result"/>
+          <include name="TC01_loginValidData"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Title_SectionPage_Test -->
+      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Digital Codes] -->

@@ -71,6 +71,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Favorites");
 		String favtitlename = new MenuFavorite_Page().getTitleName();
+		Thread.sleep(3000);
 		menu.clickOnMainMenu();
 		menu.closeMainmenu();
 		report.create_info("Title Name is :- " + favtitlename);
