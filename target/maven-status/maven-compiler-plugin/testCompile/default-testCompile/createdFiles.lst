@@ -15,6 +15,7 @@ com\Digitalcodes\pageobject\Login_Page.class
 com\Digitalcodes\utilities\TakeScreenshot.class
 com\Digitalcodes\pageobject\TitleCover_Page.class
 com\Digitalcodes\testcases\Login_Test.class
+com\Digitalcodes\utilities\PojoClass.class
 com\Digitalcodes\testcases\LogResult.class
 com\Digitalcodes\perfectocloud\PerfectoLabUtils.class
 com\Digitalcodes\utilities\Baseclass.class

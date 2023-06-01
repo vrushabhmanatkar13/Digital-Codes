@@ -94,7 +94,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 3, description = "Verify User able to Change Version, Releated Titles, Categories", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regeration" })
-	public void TC20_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title,
+	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);

@@ -92,10 +92,10 @@ public class Menu extends Baseclass {
 	}
 	
 	
-	public TitleCover_Page navigateToCollections() {
+	public TitleCover_Page navigateToCollections(String section) {
 		clickOnMenu();
 		for (WebElement webElement : menuList) {
-			if (getText(webElement).equalsIgnoreCase("Collections")) {
+			if (getText(webElement).equalsIgnoreCase(section)) {
 				click(webElement);
 				break;
 			}

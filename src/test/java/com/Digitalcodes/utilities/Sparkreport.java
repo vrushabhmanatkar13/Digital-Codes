@@ -33,7 +33,7 @@ public class Sparkreport {
 	public Sparkreport(String title,String report_name,String hostname, String tagname) {
 	//	String Dateformat=new SimpleDateFormat("YYYY-MM-DD").format(new Date());
 		
-		REPORTPATH=System.getProperty("user.dir")+"\\Report\\Reportsparkreport.html";
+		REPORTPATH=System.getProperty("user.dir")+"\\Report\\"+tagname+"Reportsparkreport.html";
 
 		spark=new ExtentSparkReporter(REPORTPATH);
 		spark.config().setDocumentTitle(title);

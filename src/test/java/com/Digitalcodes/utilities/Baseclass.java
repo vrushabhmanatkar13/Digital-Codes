@@ -37,12 +37,12 @@ public class Baseclass extends Perfecto_Capabailites{
 	public static WebDriver driver;
 	
 	//---------------Launch Browser with capability--------------->>
-	public WebDriver browserLaunch(String incognito,String headless,String browserName,String platform, String securityToken,String cloudName, String tag, String resolution, String width, String hight) throws Exception {
+	public WebDriver browserLaunch(String incognito,String headless,String browserName,String platform, String securityToken,String cloudName, String tag, String width, String hight) throws Exception {
 
 		
 		 if (platform.equalsIgnoreCase("Perfecto")) {
 				cap=new com.Digitalcodes.perfectocloud.Perfecto_Capabailites();
-				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless,resolution);
+				driver=cap.Perfecto(browserName, securityToken, cloudName, tag,incognito,headless,width,hight);
 				driver.manage().window().maximize();
 		       action=new Actions(driver);
 			 return driver;
@@ -64,7 +64,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					
 						driver = Fdriver;
 					}
-					driver.manage().window().setSize(setDimension(width, hight));
+					driver.manage().window().setSize(new Dimension(Integer.parseInt(width), Integer.parseInt(hight)));
 					driver.manage().window().maximize();
 					
 					action = new Actions(driver);
@@ -178,6 +178,18 @@ public class Baseclass extends Perfecto_Capabailites{
 	public static void retrunToMainWindow() {
 		driver.switchTo().window(Win_id);
 	}
+	
+	
+	public static boolean verifyNewWindow() {
+		Set<String> next_win = driver.getWindowHandles();
+		if (next_win.size()>2) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 	
 	//-----Handle alert------------------------->>
 	public static Alert handleAlert() {	

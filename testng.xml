@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Digital Codes">
-<parameter name="tagname" value="smoke"></parameter>
+<parameter name="tagname" value="Smoke"></parameter>
 
 <listeners>
 <listener class-name="com.Digitalcodes.testcases.LogResult"></listener>
@@ -13,12 +13,13 @@
 	<parameter name="User" value="PREMIUM"></parameter>
 		<classes>
 			<class name="com.Digitalcodes.testcases.Login_Test" />
-	     <!--    <class name="com.Digitalcodes.testcases.Title_LandingPage_Test" /> -->
-	      <!--    <class name="com.Digitalcodes.testcases.TableOfContent_Test"/> -->
-			<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" >
-          <methods>
-          <include name="TC24_verifyCreateNotes_atChildSubsection"></include>
-          </methods>
+	        <class name="com.Digitalcodes.testcases.Title_LandingPage_Test" /> 
+	        <class name="com.Digitalcodes.testcases.TableOfContent_Test"/> 
+		 	<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" >
+        
+			</class> 
+			<class name="com.Digitalcodes.testcases.Title_Collection_Test">
+		
 			</class>
 		 
 			
