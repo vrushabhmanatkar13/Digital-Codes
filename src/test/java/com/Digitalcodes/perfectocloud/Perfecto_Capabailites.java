@@ -35,9 +35,9 @@ public class Perfecto_Capabailites extends SetCapbilites {
 	
 	
 	
-	public static Map<String, Object> perfectoOptions(String securityToken,String resolution) {
+	public static Map<String, Object> perfectoOptions(String securityToken,String width,String hight) {
 		Map<String, Object> perfectoOptions = new HashMap<>();
-		perfectoOptions.put("resolution", resolution);
+		perfectoOptions.put("resolution", width+"x"+hight);
 		perfectoOptions.put("securityToken", securityToken);
 		perfectoOptions.put("platformVersion", "10");
 	
@@ -46,13 +46,13 @@ public class Perfecto_Capabailites extends SetCapbilites {
 		
 	}
 
-	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless,String resolution) throws Exception {
+	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless,String width,String hight) throws Exception {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			chrome=getChromecapabalites(incognito, headless);
 			chrome.setPlatformName("Windows");
 			chrome.setBrowserVersion("latest");
-			chrome.setCapability("perfecto:options", perfectoOptions(securityToken,resolution));
+			chrome.setCapability("perfecto:options", perfectoOptions(securityToken,width,hight));
 		    
 			 Rdriver = new RemoteWebDriver(
 					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),chrome);
@@ -61,7 +61,7 @@ public class Perfecto_Capabailites extends SetCapbilites {
 			firefox=getFirefoxcapabalites(incognito, headless);
 			firefox.setPlatformName("Windows");
 			firefox.setBrowserVersion("latest");
-			firefox.setCapability("perfecto:options", perfectoOptions(securityToken,resolution));
+			firefox.setCapability("perfecto:options", perfectoOptions(securityToken,width,hight));
 			
 			 Rdriver = new RemoteWebDriver(
 					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),firefox);

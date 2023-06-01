@@ -146,7 +146,7 @@ public class TitleLanding_Page extends Baseclass {
     	
     	for (WebElement webElement : releatedTitles) {
     	
-    		Baseclass.action.moveToElement(webElement).build().perform();
+    		Baseclass.scrollUptoElement(webElement);
 			String url=webElement.getAttribute("href");
 			HttpURLConnection openUrl=(HttpURLConnection)(new URL(url).openConnection());
 			openUrl.setRequestMethod("HEAD");

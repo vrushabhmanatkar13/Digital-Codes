@@ -52,8 +52,7 @@ public class Load_Excle {
                 
 				}
 					
-			System.out.println(data[i][j]);
-			System.out.println(" ");
+			
 			}
 			
 			
@@ -76,7 +75,8 @@ public class Load_Excle {
 	
 	//it use when need to get specific cell value depending on row and colume name
 	// read all row and verify data of particular cell
-	public String getCellValue(int row, String columeName) {
+	public String getCellValue(String sheetname,int row, String columeName) {
+		sheet=workbook.getSheet(sheetname);
 		String data = null;
 		int index = 0;
 		int cellnum = sheet.getRow(0).getLastCellNum();
@@ -132,6 +132,7 @@ public class Load_Excle {
 	}
 	 
 	 
+	
 
 
 	 

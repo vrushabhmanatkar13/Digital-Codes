@@ -54,7 +54,8 @@ public class Prerequisites_Teardown extends Baseclass {
 	static String TAGNAME;
 	static String BEOWSER_NAME;
 	static final String ENVIROMENT = "Stage";
-	static String RESOLUTION;
+	static String WIDTH;
+	static String HIGHT;
 
 	// Users
 	public static String USER;
@@ -86,7 +87,9 @@ public class Prerequisites_Teardown extends Baseclass {
 			INCOGNITO = prop.getProperty("incognito");
 			HEADLESS = prop.getProperty("headless");
 			SECURITY_TOCKEN = prop.getProperty("securityToken");
-			RESOLUTION=prop.getProperty("Resolution");
+			WIDTH=prop.getProperty("width");
+			HIGHT=prop.getProperty("hight");
+			
 			TAGNAME = tagname;
 
 		} catch (Exception e) {
@@ -103,7 +106,7 @@ public class Prerequisites_Teardown extends Baseclass {
 		try {
 			// Baseclass.fatechBrowserName(prop, System.getProperty("browser"));
 
-			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,RESOLUTION,"1920","1080");
+			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,WIDTH,HIGHT);
 			baseclass.navigateToUrl(prop.getProperty("Url"));
 			baseclass.implicitWait(IMPLICIT_WAIT);
 			baseclass.pageLoadTimeout(PAGE_LOAD_WAIT);
@@ -162,8 +165,16 @@ public class Prerequisites_Teardown extends Baseclass {
 	}
 
 	@DataProvider(name = "Title")
-	public Object[][] getAllTitles() {
-		return excel.getDataFromExcle("Titles");
+	public Object[][] getAllTitles() throws Exception {
+		if (TAGNAME.equalsIgnoreCase("Smoke")) {
+			return excel.getDataFromExcle("Titles", 1);
+		}
+		if (TAGNAME.equalsIgnoreCase("Regression")) {
+			return excel.getDataFromExcle("Titles");
+		}
+		else {
+			throw new Exception("Suite Name Not Selected in TestNG.xml File"); 
+		}
 	}
 
 }

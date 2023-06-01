@@ -319,7 +319,7 @@ public class TitleSection_Page extends Baseclass {
 		click(tagListBox);
 
 		for (WebElement webElement : listTagName) {
-			if (webElement.getText().equals(tagname)) {
+			if (getText(webElement).equalsIgnoreCase(tagname)) {
 				click(webElement);
 				break;
 			}
@@ -403,21 +403,31 @@ public class TitleSection_Page extends Baseclass {
 	
 	
 	public boolean printSection() {
-		
+		boolean viewPdf=false;
 		click(print);
 		
 		try {
 			Baseclass.switchToWindow();
 			Thread.sleep(5000);
+			viewPdf=isDisplayed(pdf);
+			 Baseclass.closeWindow();
+			 Baseclass.retrunToMainWindow();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		boolean viewPdf=isDisplayed(pdf);
-		 Baseclass.closeWindow();
-		 Baseclass.retrunToMainWindow();
+		
 		 return viewPdf;
+	}
+	
+	public void clickOnPrintIcon() {
+		click(print);
+	}
+	
+	public boolean printSection_NewWindow() {
+		
+		 return isDisplayed(pdf);
 	}
 	
 	

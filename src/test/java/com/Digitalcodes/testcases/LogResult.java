@@ -26,7 +26,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 		try {
 			
 			  
-			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name") ,PLATFORM +"   :-  "+ BEOWSER_NAME);
+			report.create_test(result.getMethod().getMethodName(), prop.getProperty("Auth_Name"),PLATFORM +"   :-  "+ BEOWSER_NAME);
 			
 			testStart(result.getMethod().getMethodName(),Sparkreport.TAGNAME); 
 			
@@ -47,7 +47,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
             
 		try {
 			
-			report.create_info(result.getMethod().getDescription());
+			report.create_info("Description :-  "+result.getMethod().getDescription());
 			report.test_pass(result.getMethod().getMethodName());
 			
 			System.out.println(result.getMethod().getMethodName() + " : PASSED");
@@ -62,7 +62,7 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		
 		try {
-			report.create_info(result.getMethod().getDescription());
+			report.create_info("Description :-  "+result.getMethod().getDescription());
 			report.test_fail(result.getThrowable()+"", result);
 			
 			Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );

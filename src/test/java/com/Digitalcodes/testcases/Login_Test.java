@@ -65,7 +65,7 @@ public class Login_Test extends Prerequisites_Teardown {
 	@Test(dependsOnMethods = "TC01_loginValidData", dataProvider = "Dynamic",description = "Verify User able to displyed Subscription type, Name, email ",groups = {"Smoke","Regeration"})
 	public void TC02_verifyUserInformation(String Username, String Password, String Name, String Subscription) throws InterruptedException {
 
-
+          Thread.sleep(3000);
 		String subscription = header.getSubscrptionType();
 		
 		header.holdOnSubscriptionType();
@@ -79,7 +79,7 @@ public class Login_Test extends Prerequisites_Teardown {
 		report.create_info("User Name is " + NAME);
 		report.create_info("User Email is " + EMAIL);
 		report.create_info("Page Title is " + driver.getTitle());
-
+        
 		assertEquals(subscription,SUBSCRIPTION);
 		assertEquals(NAME, Name);
 		assertEquals(EMAIL,Username);
