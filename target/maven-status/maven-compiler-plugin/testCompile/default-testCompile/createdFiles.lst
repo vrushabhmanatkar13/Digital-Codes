@@ -5,6 +5,7 @@ com\Digitalcodes\utilities\Load_Excle$1.class
 com\Digitalcodes\testcases\Title_LandingPage_Test.class
 com\Digitalcodes\pageobject\Header.class
 com\Digitalcodes\perfectocloud\Perfecto_Capabailites.class
+com\Digitalcodes\testcases\LogResult_ITestListner.class
 com\Digitalcodes\utilities\Load_Excle.class
 com\Digitalcodes\pageobject\MenuFavorite_Page.class
 com\Digitalcodes\pageobject\Menu.class
@@ -16,11 +17,12 @@ com\Digitalcodes\utilities\TakeScreenshot.class
 com\Digitalcodes\pageobject\TitleCover_Page.class
 com\Digitalcodes\testcases\Login_Test.class
 com\Digitalcodes\utilities\PojoClass.class
-com\Digitalcodes\testcases\LogResult.class
 com\Digitalcodes\perfectocloud\PerfectoLabUtils.class
 com\Digitalcodes\utilities\Baseclass.class
 com\Digitalcodes\pageobject\TitleSection_Page.class
 com\Digitalcodes\testcases\TableOfContent_Test.class
+com\Digitalcodes\testcases\Title_Commentary_Test.class
+com\Digitalcodes\testcases\Title_Basic_Test.class
 com\Digitalcodes\pageobject\MenuMyNotesandBookmark_Page.class
 com\Digitalcodes\pageobject\TableOfContent_Page.class
 com\Digitalcodes\testcases\Title_SectionPage_Test.class
