@@ -27,6 +27,8 @@ public class TitleCover_Page extends Baseclass{
 	private WebElement groupTitleDisplay;
 
 	
+	
+	
 	public TitleLanding_Page clickOnTitlesCover(String title) {
 		
 		for (WebElement webElement : listOfTitles) {
@@ -42,11 +44,11 @@ public class TitleCover_Page extends Baseclass{
 
 	}
 	public String getHeading() {
-		
-		
-		
 		return getText(groupTitleDisplay);
 	}
+	
+	
+	
 	
 	
 	

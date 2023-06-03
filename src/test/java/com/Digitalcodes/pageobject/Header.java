@@ -29,7 +29,7 @@ public class Header extends Baseclass{
 	@FindBy(xpath = "//div[@class=\"v-toolbar__items\"]//h4")                       
 	private WebElement subscriptiontype;
 	
-	@FindBy(xpath = "//div[@class=\"v-list-item__title white--text\"]/h4")
+	@FindBy(xpath = "//h4[@class='pb-1 primary--text txt text-capitalize']")
 	private WebElement Name;
 	 
 	@FindBy(xpath = "//div[@class=\"v-list-item__title white--text\"]/h5")

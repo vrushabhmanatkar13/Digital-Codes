@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import com.Digitalcodes.capabilities.SetCapbilites;
@@ -17,9 +17,7 @@ import com.perfecto.reportium.client.ReportiumClient;
 import com.perfecto.reportium.test.TestContext;
 import com.perfecto.reportium.test.result.TestResult;
 import com.perfecto.reportium.test.result.TestResultFactory;
-import com.perfecto.reportium.test.result.TestResultFailure;
-import com.perfecto.reportium.test.result.TestResultSuccess;
-import com.perfecto.reportium.test.result.TestResultVisitor;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

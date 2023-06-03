@@ -13,19 +13,20 @@ import com.Digitalcodes.utilities.Sparkreport;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.perfecto.reportium.client.ReportiumClient;
 
-import org.testng.ITestContext;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
+
 import org.testng.annotations.Parameters;
 
-//@Listeners(com.Digitalcodes.testcases.LogResult.class)
+//@Listeners(com.Digitalcodes.testcases.LogResult_ITestListner.class)
 public class Prerequisites_Teardown extends Baseclass {
 
 	public static Properties prop;
@@ -38,7 +39,7 @@ public class Prerequisites_Teardown extends Baseclass {
 	// wait time
 	static final long IMPLICIT_WAIT = 20;
 	static final long PAGE_LOAD_WAIT = 5;
-	static final long WEBDRIVER_WAIT = 90;
+	static final long WEBDRIVER_WAIT = 60;
 
 	// Objects
 	public static Header header;
@@ -71,7 +72,7 @@ public class Prerequisites_Teardown extends Baseclass {
 
 			excel = new Load_Excle();
 
-			report = new Sparkreport(prop.getProperty("Title"), prop.getProperty("Report_Name"),ENVIROMENT + " / " + PLATFORM, tagname);
+			
 			baseclass = new Baseclass();
 
 			// System.out.println("Properties file are loaded ====================>>");
@@ -105,6 +106,8 @@ public class Prerequisites_Teardown extends Baseclass {
 
 		try {
 			// Baseclass.fatechBrowserName(prop, System.getProperty("browser"));
+			
+			report = new Sparkreport(prop.getProperty("Title"), prop.getProperty("Report_Name"),ENVIROMENT + " / " + PLATFORM, USER ,TAGNAME);
 
 			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,WIDTH,HIGHT);
 			baseclass.navigateToUrl(prop.getProperty("Url"));
@@ -149,11 +152,17 @@ public class Prerequisites_Teardown extends Baseclass {
 		System.out.println("  ");
 
 	}
-
+	
+	@AfterTest(alwaysRun = true)
+	public void afterTest() {
+		driver.quit();
+	}
+	
+	
 	@AfterSuite(alwaysRun = true)
 	public void afterSuite() {
-		closeWindow();
-		driver.quit();
+		
+		
 		getReporturl();
 
 	}

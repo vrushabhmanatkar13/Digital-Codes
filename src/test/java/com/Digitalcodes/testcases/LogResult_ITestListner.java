@@ -10,14 +10,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Listeners;
+
 
 import com.Digitalcodes.utilities.Sparkreport;
-import com.Digitalcodes.utilities.TakeScreenshot;
+
 
 import io.qameta.allure.Allure;
 
-public class LogResult extends Prerequisites_Teardown implements ITestListener {
+public class LogResult_ITestListner extends Prerequisites_Teardown implements ITestListener {
 
 	//public static Properties prop;
 	 @Override
@@ -62,7 +62,10 @@ public class LogResult extends Prerequisites_Teardown implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		
 		try {
+			
+            
 			report.create_info("Description :-  "+result.getMethod().getDescription());
+			
 			report.test_fail(result.getThrowable()+"", result);
 			
 			Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );

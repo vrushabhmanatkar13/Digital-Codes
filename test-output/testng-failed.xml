@@ -3,54 +3,29 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Digital Codes]">
   <parameter name="tagname" value="Smoke"/>
   <listeners>
-    <listener class-name="com.Digitalcodes.testcases.LogResult"/>
+    <listener class-name="com.Digitalcodes.testcases.LogResult_ITestListner"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="User" value="PREMIUM"/>
     <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.Digitalcodes.testcases.Title_SectionPage_Test">
-        <methods>
-          <include name="TC22_verifyShareSection_FromSubSection" invocation-numbers="0"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeClassTitlepage"/>
-          <include name="beforeSuite"/>
-          <include name="TC20_verifyCreateNotes_atSubsection" invocation-numbers="0"/>
-          <include name="TC19_verifyLinksOnChapter" invocation-numbers="0"/>
-          <include name="TC21_verifyCreateBookmark_atSubsection" invocation-numbers="0"/>
-          <include name="log_result"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.Digitalcodes.testcases.Title_SectionPage_Test -->
-      <class name="com.Digitalcodes.testcases.Login_Test">
+      <class name="com.Digitalcodes.testcases.Title_Basic_Test">
         <methods>
           <include name="afterSuite"/>
+          <include name="TC33_verifyNgviateToBasicTitle" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="beforeSuite"/>
-          <include name="TC02_verifyUserInformation" invocation-numbers="0"/>
+          <include name="afterTest"/>
           <include name="log_result"/>
-          <include name="TC01_loginValidData"/>
+          <include name="beforeclass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
-      <class name="com.Digitalcodes.testcases.Title_Collection_Test">
-        <methods>
-          <include name="TC33_verifyPrintSection_CollectionTitles"/>
-          <include name="afterSuite"/>
-          <include name="TC29_verifySection_collectionTitles"/>
-          <include name="beforeTest"/>
-          <include name="TC30_verifyCreateNotes_collectionTitles"/>
-          <include name="beforeClass"/>
-          <include name="TC31_verifyCreateBookmark_collectionTitles"/>
-          <include name="beforeSuite"/>
-          <include name="beforeclassCollection"/>
-          <include name="TC28_verifyCollectionLandingPage" invocation-numbers="0"/>
-          <include name="log_result"/>
-          <include name="TC32_verifyShareSection_CollectionTitles"/>
-          <include name="afterMethod_Collection"/>
-        </methods>
-      </class> <!-- com.Digitalcodes.testcases.Title_Collection_Test -->
+      </class> <!-- com.Digitalcodes.testcases.Title_Basic_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Digital Codes] -->
