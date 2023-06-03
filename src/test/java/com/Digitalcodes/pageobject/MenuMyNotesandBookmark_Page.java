@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 import com.Digitalcodes.utilities.Baseclass;
 
@@ -80,13 +80,6 @@ public void removeNotes_Bookmark() {
 	click(removeButton);
 	
 	click(removeButton2);
-	
-	try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		
-		e.printStackTrace();
-	}
 }
 	
 	

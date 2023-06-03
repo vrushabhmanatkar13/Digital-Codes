@@ -3,19 +3,17 @@ package com.Digitalcodes.utilities;
 
 import java.io.IOException;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 import org.testng.ITestResult;
 
-import com.Digitalcodes.perfectocloud.PerfectoLabUtils;
+
 import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
-import com.Digitalcodes.testcases.Title_SectionPage_Test;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
+
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -30,10 +28,10 @@ public class Sparkreport {
 	public static String TAGNAME;
 	public static String REPORTPATH;
 	
-	public Sparkreport(String title,String report_name,String hostname, String tagname) {
+	public Sparkreport(String title,String report_name,String hostname,String user, String tagname) {
 	//	String Dateformat=new SimpleDateFormat("YYYY-MM-DD").format(new Date());
 		
-		REPORTPATH=System.getProperty("user.dir")+"\\Report\\"+tagname+"Reportsparkreport.html";
+		REPORTPATH=System.getProperty("user.dir")+"\\Report\\"+user+"_"+tagname+"_SparkReport.html";
 
 		spark=new ExtentSparkReporter(REPORTPATH);
 		spark.config().setDocumentTitle(title);
@@ -46,7 +44,7 @@ public class Sparkreport {
 	    extent.setSystemInfo("OS ", System.getProperty("os.name"));
 	    extent.setSystemInfo("Java Version ", System.getProperty("java.version"));
 	    
-	    TAGNAME=tagname;
+	    TAGNAME=tagname+"_"+user;
 		
 	}
 	
@@ -57,6 +55,7 @@ public class Sparkreport {
 	
 	public void create_info(String name) {
 		test.log(Status.INFO, name);
+		System.out.println(name);
 	}
 	public void test_pass(String name) throws IOException {
 		
@@ -84,8 +83,10 @@ public class Sparkreport {
 		test.log(Status.INFO, step);
 		Allure.step(step);
 		Perfecto_Capabailites.stepStart(step);
+		System.out.println(step);
 	}
 
+	
 	
 	
 }

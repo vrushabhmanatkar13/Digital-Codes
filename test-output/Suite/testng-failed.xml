@@ -4,7 +4,7 @@
   <parameter name="tagname" value="smoke"/>
   <parameter name="platform" value="Perfecto"/>
   <listeners>
-    <listener class-name="com.Digitalcodes.testcases.LogResult"/>
+    <listener class-name="com.Digitalcodes.testcases.LogResult_ITestListner"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="Browser" value="chrome"/>

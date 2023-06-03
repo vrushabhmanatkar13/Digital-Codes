@@ -37,13 +37,11 @@ public class Login_Test extends Prerequisites_Teardown {
 	  
 	 	
 	
-	@Test(priority = 1, description = "User able to Login with valid creditionls", dataProvider = "Dynamic",groups = {"Smoke","Regeration"})
+	@Test(priority = 1, description = "User able to Login with valid creditionls", dataProvider = "Dynamic",groups = {"Smoke","Regression"})
 
 	public void TC01_loginValidData(String Username, String Password, String Name, String Subscription) throws InterruptedException {
 		
-		EMAIL=Username;
-		NAME=Name;
-		SUBSCRIPTION=Subscription;
+		
 		
 		Login_Page login = new Login_Page();
 		header.clickSignIn();
@@ -62,28 +60,29 @@ public class Login_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(dependsOnMethods = "TC01_loginValidData", dataProvider = "Dynamic",description = "Verify User able to displyed Subscription type, Name, email ",groups = {"Smoke","Regeration"})
+	@Test(dependsOnMethods = "TC01_loginValidData", dataProvider = "Dynamic",description = "Verify User able to displyed Subscription type, Name, email ",groups = {"Smoke","Regression"})
 	public void TC02_verifyUserInformation(String Username, String Password, String Name, String Subscription) throws InterruptedException {
 
-          Thread.sleep(3000);
-		String subscription = header.getSubscrptionType();
+         Thread.sleep(10000);
+	    SUBSCRIPTION = header.getSubscrptionType();
+		
 		
 		header.holdOnSubscriptionType();
-		Sparkreport.Step("Hover on "+ subscription);
-		Thread.sleep(2000);
+		Sparkreport.Step("Hover on "+ SUBSCRIPTION);
+		
+		Thread.sleep(4000);
 		NAME = header.getName();
 		EMAIL = header.getEmail();
 
 		// Verify Subscription type - UserName - Email
-		report.create_info("Subscripton Types is " + subscription);
+		report.create_info("Subscripton Types is " + SUBSCRIPTION);
 		report.create_info("User Name is " + NAME);
 		report.create_info("User Email is " + EMAIL);
 		report.create_info("Page Title is " + driver.getTitle());
         
-		assertEquals(subscription,SUBSCRIPTION);
+		assertEquals(SUBSCRIPTION,Subscription);
 		assertEquals(NAME, Name);
 		assertEquals(EMAIL,Username);
-
 	}
 
 }
