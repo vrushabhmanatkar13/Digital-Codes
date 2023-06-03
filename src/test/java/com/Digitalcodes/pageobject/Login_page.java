@@ -10,7 +10,6 @@ import com.Digitalcodes.utilities.Baseclass;
 public class Login_Page extends Baseclass {
 
 	
-	@SuppressWarnings("static-access")
 	public Login_Page() {
 		this.driver = super.driver;
 		PageFactory.initElements(driver, this);
