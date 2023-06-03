@@ -12,8 +12,7 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		
 		<reportium-sdk.version>RELEASE</reportium-sdk.version>
 		<aspectj.version>1.8.10</aspectj.version>
 		<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
