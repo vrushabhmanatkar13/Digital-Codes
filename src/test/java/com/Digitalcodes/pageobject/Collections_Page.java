@@ -23,8 +23,8 @@ public class Collections_Page extends Baseclass{
 	@FindBy(xpath = "//div[@class='v-data-iterator']//a[@target='_blank']")
 	private List<WebElement> includeTitles;
 	
-	@FindBy (xpath = "//div[@target='_blank']//p[@class='mb-0 font-weight-bold']")
-	private List<WebElement> recentlyAdded;
+	@FindBy(xpath = "(//div[@class=\"row row--dense\"]//p[@class=\"mb-0 font-weight-bold\"])[1]")
+	private WebElement recentlyAdded;
 	
 	public String getHeading() {
 		return getText(heading);
@@ -38,6 +38,8 @@ public class Collections_Page extends Baseclass{
 			if (getText(webElement).equalsIgnoreCase(title)) {
 		     
 				click(webElement);
+				
+				Baseclass.switchToWindow();
 				break;
 			}
 			
@@ -45,18 +47,12 @@ public class Collections_Page extends Baseclass{
 		}
 	}
 	
-	public void clickRecentlyAddedTitles(String title) throws Exception {
-		for (WebElement webElement : recentlyAdded) {
-			Baseclass.scrollUptoElement(webElement);
-			if (getText(webElement).equalsIgnoreCase(title)) {
-				click(webElement);
-				break;
-			}
-			else {
-				throw new Exception(title +" is Not Displyed on Current Webpage");
-			}
-			
-		}
+	public String clickOnRecentlyAddedTitles() throws Exception {
+		
+		 String text=getText(recentlyAdded);
+		 click(recentlyAdded);
+		 Baseclass.switchToWindow();
+		 return text;
 	}
 	
 }

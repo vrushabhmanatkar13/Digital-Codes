@@ -3,12 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Digitalcodes.testcases.Title_Collection_Test">
+      <class name="com.Digitalcodes.testcases.Title_Commentary_Test">
         <methods>
-          <include name="data"/>
-          <include name="beforeclassCollection"/>
+          <include name="TC34_verifyHideCommentary"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="log_result"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Title_Collection_Test -->
+      </class> <!-- com.Digitalcodes.testcases.Title_Commentary_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

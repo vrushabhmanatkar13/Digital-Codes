@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 import com.Digitalcodes.utilities.Baseclass;
+
+import net.bytebuddy.asm.MemberSubstitution.FieldValue;
 
 public class TableOfContent_Page extends Baseclass{
 	
@@ -25,7 +27,7 @@ public class TableOfContent_Page extends Baseclass{
 	@FindBy(xpath = "//div[contains(text(),'Code Sections')]")
 	private WebElement codessection;
 	
-	@FindAll({ @FindBy(xpath = "//p[@class='mb-0 py-2 body-2']/a") })
+	@FindAll({ @FindBy(xpath = "//p[@class='mb-0 py-2 body-2']") })
 	private List<WebElement> list_section;
 
 	@FindAll({ @FindBy(xpath = "//div[@class=\"row ma-0 row--dense align-center pl-3\"]//a") })
@@ -66,18 +68,33 @@ public class TableOfContent_Page extends Baseclass{
 	@FindBy(xpath = "//span[normalize-space()='Manage Notes']")
 	private WebElement manageNotesButton;
 	
+	//Lock on Toc
+	
+	@FindBy(xpath = "//div[@class='white v-card v-sheet v-sheet--outlined theme--dark']")
+	private WebElement locklabel;
+	
+	@FindBy(xpath = "//div[@class='white v-card v-sheet v-sheet--outlined theme--dark']//button")
+	private WebElement subscribedNow;
+	
+	@FindBy(xpath = "//div[@class='primary--text text-lg text-center mb-2']")
+    private WebElement titleName;	
+	
+	@FindBy(xpath = "//i[@class='v-icon notranslate mdi mdi-close theme--light']")
+	private WebElement crossicon;
+	
+	@FindBy(xpath = "//div[@class='white v-card v-sheet v-sheet--outlined theme--dark']//p")
+	private WebElement notPremiumtext;
+	
 	public void clickCodesSection() {
 		  codessection.click();
 	  }
 	
 	public String navigateToChapter(String section) throws Exception {
 		 String chaptername=null;
-		 Baseclass.wait.until(ExpectedConditions.visibilityOfAllElements(list_section));
+		
 		 
 		for (WebElement webElement : list_section) {
-
-			if (webElement.getText().equalsIgnoreCase(section)) {
-				Thread.sleep(2000);
+			if (getText(webElement).equalsIgnoreCase(section)) {
 				chaptername=getText(webElement);
 				webElement.click();
            
@@ -155,5 +172,20 @@ public class TableOfContent_Page extends Baseclass{
 		click(manageNotesButton);
 		 
 		return getTitle();
+	}
+	
+	public String getNotPremiumText() {
+		return getText(notPremiumtext);
+	}
+	
+	public boolean locklabelisDisplayed() {
+		return isDisplayed(locklabel);
+	}
+	
+	public String clickSubscribedNow() {
+		click(subscribedNow);
+		String text=getText(titleName);
+		click(crossicon);
+		return text;
 	}
 }

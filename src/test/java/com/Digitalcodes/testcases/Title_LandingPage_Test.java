@@ -14,13 +14,13 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 	TitleCover_Page coverpage;
 	String titlename;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void beforeClass() {
 		coverpage = new TitleCover_Page();
 	}
 
 	@Test(priority = 1, description = "Verify User able to Navigate to Title Landing page and verify Tag", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Smoke", "Regeration" })
+			"Smoke", "Regression" })
 	public void TC04_verifyTitleLandingPage(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
 
@@ -50,7 +50,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(priority = 2, description = "Verify user able to mark favorite & unfavorite and title should be displayed in favorites", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Smoke" })
+			"Smoke","Regression" })
 	public void TC05_verifyMarkFavoriteTitle(String Section, String Sub_section, String Title, String Chapter)
 			throws InterruptedException {
 
@@ -93,7 +93,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(priority = 3, description = "Verify User able to Change Version, Releated Titles, Categories", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Regeration" })
+			"Regression" })
 	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
 
@@ -114,7 +114,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		String category = title.getCategoryText();
 		String heading = coverpage.getHeading();
 		Sparkreport.Step("Click on category");
-		Thread.sleep(2000);
+		
 
 		assertTrue(currentlyviewing);
 		assertEquals(code, 200);

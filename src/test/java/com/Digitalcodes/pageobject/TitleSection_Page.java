@@ -1,6 +1,6 @@
 package com.Digitalcodes.pageobject;
 
-import java.util.Iterator;
+
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -109,7 +109,7 @@ public class TitleSection_Page extends Baseclass {
 	@FindBy(xpath = "//div[@class=\"col\"]//div[@aria-haspopup=\"listbox\"]")
 	private WebElement tagListBox;
 
-	@FindAll({ @FindBy(xpath = "//div[contains(@id,\"list-item-\")]") })
+	@FindAll({ @FindBy(xpath = "//div[@role='option']") })
 	private List<WebElement> listTagName;
 
 	//My Notes at Chapter after create notes 
@@ -155,7 +155,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	@FindBy(xpath = "//i[@title=\"Print\"]")
 	private WebElement print;
-	@FindBy(xpath = "//embed")
+	@FindBy(xpath = "//embed[@type=\"application/pdf\"]")
 	private WebElement pdf;
 	
 	
@@ -196,6 +196,21 @@ public class TitleSection_Page extends Baseclass {
 	
 	@FindBy(xpath = "(//a[@class=\"chapter_reference\"])[1]")
 	private WebElement chapterlink;
+	
+	
+	//Notes-Bookmark View 
+	
+	@FindBy(xpath = "//div[@class=\"v-card-item text note-bookmark-list-item\"]")
+	private WebElement bookmark_notes;
+	
+	
+	///Commentary Page
+	
+	@FindBy(xpath = "//div[@class='py-0 col col-auto']/button")
+	private WebElement hideButton;
+	
+	
+	
 	
 	
 	public String getChapterName() {
@@ -327,6 +342,11 @@ public class TitleSection_Page extends Baseclass {
 		}
 		return getText(tagListBox);
 	}
+	
+	
+	public boolean Notes_BookmarkisDisplayed() {
+		return isDisplayed(bookmark_notes);
+	}
 
 	public String getDescription() {
 		return getText(descriptionText);
@@ -408,10 +428,9 @@ public class TitleSection_Page extends Baseclass {
 		
 		try {
 			Baseclass.switchToWindow();
-			Thread.sleep(5000);
+			
 			viewPdf=isDisplayed(pdf);
-			 Baseclass.closeWindow();
-			 Baseclass.retrunToMainWindow();
+			Baseclass.closeWindow();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -438,7 +457,7 @@ public class TitleSection_Page extends Baseclass {
 				click(webElement);
 				click(printthissection);
 				Baseclass.switchToWindow();
-				Thread.sleep(3000);
+				
 				 viewPdf=isDisplayed(pdf);
 				 Baseclass.closeWindow();
 				 Baseclass.retrunToMainWindow();
@@ -457,7 +476,7 @@ public class TitleSection_Page extends Baseclass {
 				click(webElement);
 				click(printAllsection);
 				Baseclass.switchToWindow();
-				Thread.sleep(3000);
+				
 				 viewPdf=isDisplayed(pdf);
 				 Baseclass.closeWindow();
 				 Baseclass.retrunToMainWindow();
@@ -474,7 +493,7 @@ public class TitleSection_Page extends Baseclass {
 			if (webElement.getAttribute("id").equals(sectionid+"_print")) {
 				click(webElement);
 				Baseclass.switchToWindow();
-				Thread.sleep(3000);
+				
 				viewPdf=isDisplayed(pdf);
 				 Baseclass.closeWindow();
 				 Baseclass.retrunToMainWindow();
@@ -498,7 +517,7 @@ public class TitleSection_Page extends Baseclass {
 	public void editNotes_Bookmark(String text) throws InterruptedException {
 		click(editIcon);
 		
-		Thread.sleep(5000);
+		
 		filledtextcontainer.clear();
 		
 		sendKeys(textcontainer, text);
@@ -510,40 +529,43 @@ public class TitleSection_Page extends Baseclass {
 	public void deleteNotes__Bookmark() throws InterruptedException {
 		click(deleteIcon);
 		click(removeButton);
-		Thread.sleep(3000);
+		
 		
 	}
 	
-	
-	
+	public String getTitlelinkText() {
+		return getText(titleLink);
+	}
+	public String getChapterlinkText() {
+		return getText(chapterlink);
+	}
 
 	public boolean clickOnTitleLink() {
-		try {
-			Baseclass.action.moveToElement(titleLink);
-			Thread.sleep(2000);
-			Baseclass.action.click(titleLink).build().perform();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Baseclass.action.moveToElement(titleLink);
 		
-		return new TitleLanding_Page().landingPage();
+		Baseclass.action.click(titleLink).build().perform();
+		
+		return new TitleLanding_Page().getTitleNameisDisplayed();
 	}
 	
 	
 	public boolean clickOnChapterLink() {
 		
-		try {
-	
 		Baseclass.action.moveToElement(chapterlink).build().perform();
-		Thread.sleep(2000);
+		
 		Baseclass.action.click(chapterlink).build().perform();
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
 		return isDisplayed(titleofChapter);
 	}
+	
+	
+	//Hide Commenterary
+	
+	
+	public String clickHideButton() {
+		click(hideButton);
+		return getText(hideButton);
+	}
+	
 	
 
 }

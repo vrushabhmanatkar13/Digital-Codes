@@ -14,7 +14,7 @@ public abstract class CommanSteps {
 	public abstract TitleLanding_Page navigetToTitle(String list, String groupofTitle, String Title);
 	
 	
-	public abstract void navigateToCollectionTitle(String section,String subsection, String title) throws Exception;
+	
 }
 
 

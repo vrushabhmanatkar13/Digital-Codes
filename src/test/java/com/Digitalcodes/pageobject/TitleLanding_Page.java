@@ -6,10 +6,9 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
+
 import java.util.List;
 
-import org.apache.commons.compress.archivers.zip.X000A_NTFS;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,8 +30,6 @@ public class TitleLanding_Page extends Baseclass {
 	}
 
 	//get Title Name
-	@FindBy(xpath = "(//div[@class=\"container container--fluid\"]//div[@class=\"col\"])[1]")
-     private WebElement landingpage;
 	
 	@FindBy(xpath = "//h1[@class=\"font-weight-regular\"]")
 	private WebElement titleName;
@@ -55,7 +52,7 @@ public class TitleLanding_Page extends Baseclass {
 	
 	//Current Viewing (Change Version)
 	
-	@FindBy(xpath = "//div[@class=\"my-6\"]//div[@aria-haspopup=\"listbox\"]")
+	@FindBy(xpath = "//div[@class='my-6']//div[@class='v-input__append-inner']")
 	private WebElement versionListBox;
 	
 	@FindBy(xpath = "(//div[@class=\"text-right col\"])[1]")
@@ -75,6 +72,11 @@ public class TitleLanding_Page extends Baseclass {
 	//Categories
 	@FindBy(xpath = "(//a/span[@class=\"v-chip__content\"])[1]")
 	private WebElement categories;
+	
+	//Not Premium text
+	
+	@FindBy(xpath = "//p[@class='accent--text mb-0']")
+	private WebElement Notpremiumtext;
 	
 	
 	public String getTagName() throws Exception {
@@ -190,8 +192,13 @@ public class TitleLanding_Page extends Baseclass {
     	
     }
     
-   public boolean landingPage() {
-	   return isDisplayed(landingpage);
+   public boolean getTitleNameisDisplayed() {
+	   return isDisplayed(titleName);
    }
+   
+   public String getNotPremiumText() {
+	   return getText(Notpremiumtext);
+   }
+   
 }
 

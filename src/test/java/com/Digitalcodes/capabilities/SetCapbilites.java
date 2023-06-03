@@ -31,7 +31,8 @@ public class SetCapbilites {
 			chrome.addArguments("--incognito");
 		}
 		if (headless.equalsIgnoreCase("true")) {
-			chrome.addArguments("-headless");
+			chrome.addArguments("--headless=new");
+			chrome.addArguments("--enable-automation");
 		}
 
 		chrome.addArguments("--remote-allow-origins=*");
@@ -47,8 +48,8 @@ public class SetCapbilites {
 			firefox.addArguments("--incognito");
 		}
 		if (headless.equalsIgnoreCase("true")) {
-			firefox.addArguments("-headless");
-
+			firefox.addArguments("--headless=new");
+            firefox.addArguments("--enable-automation");
 		}
 		
 		return firefox;

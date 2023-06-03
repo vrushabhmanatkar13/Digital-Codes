@@ -1,7 +1,7 @@
 package com.Digitalcodes.testcases;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
 import com.Digitalcodes.pageobject.TitleSection_Page;
@@ -139,7 +139,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 
-		Thread.sleep(3000);
+		
 
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Note Created at :- " + section.getChapterName());
@@ -168,7 +168,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 4, description = "Verify user able to share the section", dataProvider = "Title", groups = {
+	@Test(priority = 4, description = "Verify user able to share the section", dataProvider = "SingleTitle", groups = {
 			"Smoke","Regression" })
 	public void TC11_verifyShareSection_FromSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -197,9 +197,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 5, description = "Verify user able to Print Section", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(dependsOnMethods = "TC11_verifyShareSection_FromSection", description = "Verify user able to Print Section", groups = {
 			"Smoke","Regression" })
-	public void TC12_verifyPrintSection_FromSection(String Section, String Sub_section, String Title, String Chapter)
+	public void TC12_verifyPrintSection_FromSection()
 			throws Exception {
 		/*
 		 * menu.navigateToTitlesCover(Section,Sub_section);
@@ -216,13 +216,15 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		 */
 
 		boolean pdfprint = section.printSection();
+		
+		 Baseclass.retrunToMainWindow();
 		Sparkreport.Step("Click Print");
 
 		assertTrue(pdfprint);
 
 	}
 
-	@Test(priority = 6, description = "Verify user able to share note from section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 5, description = "Verify user able to share note from section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke","Regression" })
 	public void TC13_verifyShareNote_FromSction(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -252,7 +254,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 
-		Thread.sleep(4000);
+		
 		String SuccessfullyMsg = section.shareNotes_Bookmark(Login_Test.EMAIL);
 		Sparkreport.Step("Click Share");
 		Sparkreport.Step("Enter email");
@@ -271,7 +273,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click edit");
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
-		Thread.sleep(3000);
+		
 		report.create_info("Description is :- " + section.getDescription());
 
 		assertEquals(section.getDescription(), jsonValue("notes-edit-text"));
@@ -281,19 +283,21 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Smoke","Regression" })
 	public void TC15_verifyDeleteNotes_FromSection() throws Exception {
 
+		boolean note_bookmakr=section.Notes_BookmarkisDisplayed();
 		section.deleteNotes__Bookmark();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
 
 		tableOfContent_Page.clickOnMyNotes();
-
+        
 		report.create_info("Text in My Notes after delete notes :- " + tableOfContent_Page.getTextInMyNotes());
 		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
+		assertFalse(note_bookmakr);
 
 	}
 
-	@Test(priority = 9, description = "Verify user able to share bookmark from Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Smoke","Regression" })
+	@Test(priority = 6, description = "Verify user able to share bookmark from Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+			"Regression" })
 	public void TC16_verifyShareBookmark_FromSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
 
@@ -321,7 +325,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 
-		Thread.sleep(2000);
+		
 		String SuccessfullyMsg = section.shareNotes_Bookmark(Login_Test.EMAIL);
 		Sparkreport.Step("Click Share");
 		Sparkreport.Step("Enter email");
@@ -332,14 +336,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test( description = "Verify user able to edit Bookamrk from Section", dependsOnMethods = "TC16_verifyShareBookmark_FromSection", groups = {
-			"Smoke","Regression" })
+			"Regression" })
 	public void TC17_verifyEditBookmark_FromSection() throws Exception {
 
 		section.editNotes_Bookmark(jsonValue("bookmark-edit-text"));
 		Sparkreport.Step("Click edit");
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
-		Thread.sleep(3000);
+		
 		report.create_info("Description is :- " + section.getDescription());
 
 		assertEquals(section.getDescription(), jsonValue("bookmark-edit-text"));
@@ -349,6 +353,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC18_verifyDeleteBookmark_FromSection() throws Exception {
 
+		boolean note_bookmakr=section.Notes_BookmarkisDisplayed();
 		section.deleteNotes__Bookmark();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
@@ -357,9 +362,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		report.create_info("Text in My Notes after delete bookmark :- " + tableOfContent_Page.getTextInMyNotes());
 
 		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
+		assertFalse(note_bookmakr);
 	}
 
-	@Test(priority = 10, description = "Verify links On Chapter", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 7, description = "Verify links On Chapter", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke","Regression" })
 	public void TC19_verifyLinksOnChapter(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -373,6 +379,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);
 
+		report.create_info("Text of Link is :- " + section.getTitlelinkText());
+		
 		boolean page = section.clickOnTitleLink();
 		Sparkreport.Step("Click on title Link");
 		Baseclass.navigateToBack();
@@ -380,7 +388,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		String subchap1 = tableOfContent_Page.navigateToSubChapter(1);
 		Sparkreport.Step("Click Sub Chapter " + subchap1);
-
+        
+		report.create_info("Text of Link is :- "+ section.getChapterlinkText());
+		
 		boolean chapter = section.clickOnChapterLink();
 		Sparkreport.Step("Click on chapter Link");
 		Baseclass.navigateToBack();
@@ -390,7 +400,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertTrue(chapter);
 	}
 	
-	@Test(priority = 11,description = "Verify user able to create notes at Sub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
+	@Test(priority = 8,description = "Verify user able to create notes at Sub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
 	"Regression" })
 	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -416,7 +426,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Thread.sleep(1000);
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-		Thread.sleep(2000);
+		
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		
@@ -448,7 +458,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		
 	}
 	
-	@Test(priority = 11,description = "Verify user able to create Bookmark at Sub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
+	@Test(priority = 9,description = "Verify user able to create Bookmark at Sub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
 			"Regression" })
 			public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -463,7 +473,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				String subsection=tableOfContent_Page.navigateToSubChapter(0);
 				Sparkreport.Step("Click Sub Section " + subsection);
 				
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				section.creteBookmark_FromSubSection(section.getSessionID_FromSubChapter(),jsonValue("bookmark-text"));
 				Sparkreport.Step("Click Bookmark icon");
@@ -472,7 +482,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				Thread.sleep(1000);
 				section.selectTag(Section);
 				Sparkreport.Step("Select Tag Name");
-				Thread.sleep(2000);
+				
 				section.clickOnSaveButton();
 				Sparkreport.Step("Click Save");
 				
@@ -504,7 +514,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				
 			}
 	
-			@Test(priority = 12, description = "Verify user able to share the Subsection", dataProvider = "SingleTitle", groups = {
+			@Test(priority = 10, description = "Verify user able to share the Subsection", dataProvider = "SingleTitle", groups = {
 					"Regression" })
 			public void TC22_verifyShareSection_FromSubSection(String Section, String Sub_section, String Title,String Chapter) throws Exception {
 
@@ -533,7 +543,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 			}
 
-			@Test(priority = 13, description = "Verify user able to Print SubSection", groups = { "Regression" })
+			@Test(priority = 11, description = "Verify user able to Print SubSection", groups = { "Regression" })
 			public void TC23_verifyPrintSection_FromSubSection() throws Exception {
 
 				boolean pdfprint = section.printThisSubSection(section.getSessionID_FromSubChapter());
@@ -547,7 +557,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			}
 			
 			
-			@Test(priority = 14,description = "Verify user able to create notes at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
+			@Test(priority = 12,description = "Verify user able to create notes at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
 					"Regression" })
 			 public void TC24_verifyCreateNotes_atChildSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -606,10 +616,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				
 			}
 			
-			@Test(priority = 15,description = "Verify user able to create Bookmark at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
+			@Test(priority = 13,description = "Verify user able to create Bookmark at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
 					"Regression" })
 					public void TC25_verifyCreateBookmark_atChildSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
-						landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+					  commanstep.navigetToTitle(Section, Sub_section, Title);
 						Sparkreport.Step("Click menu");
 						Sparkreport.Step("Click Listitem " + Section);
 						Sparkreport.Step("Click subList " + Sub_section);
@@ -622,7 +632,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 						Sparkreport.Step("Click Sub Section ");
 						
 						String childsection=section.getChildSubSectionName();
-						Thread.sleep(2000);
+						
 						
 						section.clickOnApps(section.getSectionID_FromChildSection());
 						Sparkreport.Step("Click Apps");
@@ -631,10 +641,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 						Sparkreport.Step("Click Bookmark icon");
 						Sparkreport.Step("Enter Decription in textBox");
 						
-						Thread.sleep(2000);
+						
 						section.selectTag(Section);
 						Sparkreport.Step("Select Tag Name");
-						Thread.sleep(2000);
+						
 						section.clickOnSaveButton();
 						Sparkreport.Step("Click Save");
 						
@@ -667,11 +677,11 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 						
 					}
 			
-			@Test(priority = 16,description = "Verify user able to share section at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
+			@Test(priority = 14,description = "Verify user able to share section at ChildSub-Section", dataProvider = "SingleTitle",dataProviderClass =Prerequisites_Teardown.class, groups = {
 					"Regression" })
 			public void TC26_verifyShareSection_atChildSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 			          
-				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+				commanstep.navigetToTitle(Section, Sub_section, Title);
 				Sparkreport.Step("Click menu");
 				Sparkreport.Step("Click Listitem " + Section);
 				Sparkreport.Step("Click subList " + Sub_section);
@@ -684,7 +694,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				Sparkreport.Step("Click Sub Section ");
 				
 				section.getChildSubSectionName();
-				Thread.sleep(2000);
+				
 				
 				section.clickOnApps(section.getSectionID_FromChildSection());
 				Sparkreport.Step("Click Apps");
@@ -693,14 +703,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				Sparkreport.Step("Click Share Icon ");
 				Sparkreport.Step("Enter Email Address");
 				Sparkreport.Step("Click on Share");
-				report.create_info("Message after share Section - "+message);
+				report.create_info("Message after share Section :- "+message);
 				
 				assertEquals(message, jsonValue("share-successful"));
 				
 			
 			}
 			
-			@Test(priority = 17, description = "Verify user able to Print SubSection", groups = { "Regression" })
+			@Test(priority = 15, description = "Verify user able to Print SubSection", groups = { "Regression" })
 			public void TC27_verifyPrintSection_FromChildSubSection() throws Exception {
 
 				boolean pdf = section.printChildSubSection(section.getSectionID_FromChildSection());

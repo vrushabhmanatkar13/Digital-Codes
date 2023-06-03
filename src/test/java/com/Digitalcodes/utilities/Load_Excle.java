@@ -49,6 +49,8 @@ public class Load_Excle {
 				case NUMERIC:
 					data[i][j] = sheet.getRow(i+1).getCell(j).getNumericCellValue();
 					break;
+				default:
+					break;
                 
 				}
 					
@@ -113,17 +115,19 @@ public class Load_Excle {
 	 public Object[][] getDataFromExcle(String sheet_name,int row){
 		 sheet = workbook.getSheet(sheet_name);
 		int last_clum = sheet.getRow(0).getLastCellNum();
-		Object[][] data =new Object[row][last_clum];
+		Object[][] data =new Object[1][last_clum];
 		
 		for (int j = 0; j <last_clum; j++) {
 
 			CellType cell = sheet.getRow(row).getCell(j).getCellType();
 			switch (cell) {
 			case STRING:
-				data[row-1][j] = sheet.getRow(row).getCell(j).getStringCellValue();
+				data[0][j] = sheet.getRow(row).getCell(j).getStringCellValue();
 				break;
 			case NUMERIC:
-				data[row-1][j] = sheet.getRow(row).getCell(j).getNumericCellValue();
+				data[0][j] = sheet.getRow(row).getCell(j).getNumericCellValue();
+				break;
+			default:
 				break;
 			}
 			
