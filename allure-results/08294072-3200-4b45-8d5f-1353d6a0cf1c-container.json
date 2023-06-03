@@ -1,1 +1,0 @@
-{"uuid":"08294072-3200-4b45-8d5f-1353d6a0cf1c","name":"com.Digitalcodes.testcases.Login_Test","children":["84b879db-3d1b-40fa-9ffe-8b9138dd48c9"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1685815617005,"stop":1685815617241}],"afters":[],"start":1685815569671,"stop":1685815618241}
