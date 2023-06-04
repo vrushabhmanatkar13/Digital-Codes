@@ -80,7 +80,7 @@ public class Login_Test extends Prerequisites_Teardown {
 		report.create_info("User Name is " + NAME);
 		report.create_info("User Email is " + EMAIL);
 		report.create_info("Page Title is " + driver.getTitle());
-        
+		Thread.sleep(4000);
 		assertEquals(SUBSCRIPTION,Subscription);
 		assertEquals(NAME, Name);
 		assertEquals(EMAIL,Username);
