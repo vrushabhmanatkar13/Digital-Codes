@@ -27,8 +27,8 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		menu.navigateToTitlesCover(Section, Sub_section);
 	
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
+		Sparkreport.Step("Click " + Section);
+		Sparkreport.Step("Click " + Sub_section);
 		
 		report.create_info("Page Title is " + getTitle());
 		String heading = coverpage.getHeading().replace(" Building Codes", "");
@@ -36,7 +36,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		assertEquals(getTitle(), heading + " Building Codes - ICC Digital Codes");
 		
 		title = coverpage.clickOnTitlesCover(Title);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click " + Title);
 		titlename = title.getTitleHeading();
 		
 		report.create_info("Subscription Tag is " + title.getTagName());
@@ -57,9 +57,9 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		menu.navigateToTitlesCover(Section, Sub_section);
 		coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click " + Section);
+		Sparkreport.Step("Click " + Sub_section);
+		Sparkreport.Step("Click " + Title);
 		Thread.sleep(2000);
 
 		title.clickOnFavorite();
@@ -100,9 +100,9 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		menu.navigateToTitlesCover(Section, Sub_section);
 		coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		boolean currentlyviewing = title.changeVersion();
 		Sparkreport.Step("Click Current Viewing ListBox");

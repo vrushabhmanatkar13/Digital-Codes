@@ -31,9 +31,9 @@ public class Title_Commentary_Test extends Prerequisites_Teardown{
 	public void TC34_verifyHideCommentary(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);

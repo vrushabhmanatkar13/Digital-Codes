@@ -36,9 +36,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
@@ -55,9 +55,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
@@ -118,9 +118,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
@@ -177,9 +177,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
@@ -306,9 +306,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
@@ -375,9 +375,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);
@@ -408,9 +408,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Listitem " + Section);
-		Sparkreport.Step("Click subList " + Sub_section);
-		Sparkreport.Step("Click Title " + Title);
+		Sparkreport.Step("Click  " + Section);
+		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + Title);
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);
@@ -466,9 +466,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 				Sparkreport.Step("Click menu");
-				Sparkreport.Step("Click Listitem " + Section);
-				Sparkreport.Step("Click subList " + Sub_section);
-				Sparkreport.Step("Click Title " + Title);
+				Sparkreport.Step("Click  " + Section);
+				Sparkreport.Step("Click  " + Sub_section);
+				Sparkreport.Step("Click  " + Title);
 
 				String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 				Sparkreport.Step("Click Chapter " + actChapter);
@@ -523,9 +523,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 				Sparkreport.Step("Click menu");
-				Sparkreport.Step("Click Listitem " + Section);
-				Sparkreport.Step("Click subList " + Sub_section);
-				Sparkreport.Step("Click Title " + Title);
+				Sparkreport.Step("Click  " + Section);
+				Sparkreport.Step("Click  " + Sub_section);
+				Sparkreport.Step("Click  " + Title);
 
 				String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 				Sparkreport.Step("Click Chapter " + chapterName);
@@ -565,9 +565,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			 public void TC24_verifyCreateNotes_atChildSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 				landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 				Sparkreport.Step("Click menu");
-				Sparkreport.Step("Click Listitem " + Section);
-				Sparkreport.Step("Click subList " + Sub_section);
-				Sparkreport.Step("Click Title " + Title);
+				Sparkreport.Step("Click  " + Section);
+				Sparkreport.Step("Click  " + Sub_section);
+				Sparkreport.Step("Click  " + Title);
 
 				String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 				Sparkreport.Step("Click Chapter " + actChapter);
@@ -624,9 +624,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 					public void TC25_verifyCreateBookmark_atChildSubsection(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 					  commanstep.navigetToTitle(Section, Sub_section, Title);
 						Sparkreport.Step("Click menu");
-						Sparkreport.Step("Click Listitem " + Section);
-						Sparkreport.Step("Click subList " + Sub_section);
-						Sparkreport.Step("Click Title " + Title);
+						Sparkreport.Step("Click  " + Section);
+						Sparkreport.Step("Click  " + Sub_section);
+						Sparkreport.Step("Click  " + Title);
 
 						String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 						Sparkreport.Step("Click Chapter " + actChapter);
@@ -686,9 +686,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			          
 				commanstep.navigetToTitle(Section, Sub_section, Title);
 				Sparkreport.Step("Click menu");
-				Sparkreport.Step("Click Listitem " + Section);
-				Sparkreport.Step("Click subList " + Sub_section);
-				Sparkreport.Step("Click Title " + Title);
+				Sparkreport.Step("Click  " + Section);
+				Sparkreport.Step("Click  " + Sub_section);
+				Sparkreport.Step("Click  " + Title);
 
 				String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 				Sparkreport.Step("Click Chapter " + actChapter);
