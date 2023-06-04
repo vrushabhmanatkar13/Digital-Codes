@@ -64,7 +64,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.doubleClickOnTitle_Section();
 		Sparkreport.Step("Double Click on text");
-
+       
+		Thread.sleep(2000);
 		section.createNote_FromSection(jsonValue("notes-text"));
 		Sparkreport.Step("Click Note icon");
 		Sparkreport.Step("Enter Decription in textBox");
@@ -126,7 +127,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnApps(section.getSessionID_FromChapter());
 		Sparkreport.Step("Click Apps");
-
+        
+		Thread.sleep(2000);
 		section.createBookamrk_FromSection(jsonValue("bookmark-text"));
 		Sparkreport.Step("Click Bookmark");
 		Sparkreport.Step("Enter Decription in textBox");
@@ -274,8 +276,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
 		
+		Thread.sleep(2000);
 		report.create_info("Description is :- " + section.getDescription());
-
+         
 		assertEquals(section.getDescription(), jsonValue("notes-edit-text"));
 	}
 

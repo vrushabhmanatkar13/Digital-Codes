@@ -266,6 +266,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	public void createBookamrk_FromSection(String bookamrk) {
 		click(bookmarkicon);
+		
 		textcontainer.clear();
 		sendKeys(textcontainer, bookamrk);
 	}

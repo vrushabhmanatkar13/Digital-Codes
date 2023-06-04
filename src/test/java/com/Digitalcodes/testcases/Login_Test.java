@@ -1,6 +1,6 @@
 package com.Digitalcodes.testcases;
 
-import com.Digitalcodes.pageobject.Login_Page;
+import com.Digitalcodes.pageobject.LoginPage;
 import com.Digitalcodes.utilities.Sparkreport;
 
 
@@ -18,12 +18,13 @@ public class Login_Test extends Prerequisites_Teardown {
 	
 	  @DataProvider(name="Dynamic") 
 	  public Object[][] getData() throws Exception{
-      if (USER.equalsIgnoreCase("PREMIUM")){ 
-		  return excel.getDataFromExcle("Users",1); }
-	  else if(USER.equalsIgnoreCase("SINGLE")) {
+      if (Prerequisites_Teardown.USER.equalsIgnoreCase("PREMIUM")) { 
+		  return excel.getDataFromExcle("Users",1); 
+		  }
+	  else if(Prerequisites_Teardown.USER.equalsIgnoreCase("SINGLE")) {
 		  return excel.getDataFromExcle("Users",2);
 	  }
-	  else if (USER.equalsIgnoreCase("BASIC")) {
+	  else if (Prerequisites_Teardown.USER.equalsIgnoreCase("BASIC")) {
 		  return excel.getDataFromExcle("Users",3);
 	  }
 	  else {
@@ -43,7 +44,7 @@ public class Login_Test extends Prerequisites_Teardown {
 		
 		
 		
-		Login_Page login = new Login_Page();
+		LoginPage login = new LoginPage();
 		header.clickSignIn();
 		Sparkreport.Step("Click SignIN");
 		
