@@ -86,7 +86,7 @@ public class Prerequisites_Teardown extends Baseclass {
 			
 			
 			INCOGNITO = prop.getProperty("incognito");
-			HEADLESS = prop.getProperty("headless");
+			HEADLESS = Baseclass.selectHeadless(prop);
 			SECURITY_TOCKEN = prop.getProperty("securityToken");
 			WIDTH=prop.getProperty("width");
 			HIGHT=prop.getProperty("hight");

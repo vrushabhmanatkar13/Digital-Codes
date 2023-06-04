@@ -104,6 +104,16 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 	}
 	
+	public static String selectHeadless(Properties prop) {
+		String headless=System.getProperty("headless");
+		if (headless==null) {
+			return prop.getProperty("headless");
+		}
+		else {
+			return headless;
+		}
+	}
+	
 	public static String getTitle() {
 		
 		return driver.getTitle();
