@@ -22,6 +22,8 @@ public class TableOfContent_Test extends Prerequisites_Teardown {
 
 		tableOfContent_Page.clickOnMyNotes();
 		Sparkreport.Step("Click My Notes");
+		
+		Thread.sleep(3000);
 		String textInmynotes = tableOfContent_Page.getTextInMyNotes();
 		report.create_info("Text in My Notes :- " + textInmynotes);
 
