@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Digital_Codes">
-              <span class="suite-name border-passed">Digital Codes</span>
+              <span class="suite-name border-failed">Digital Codes</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Digital_Codes">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">19 methods, 2 failed,  1 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Digital_Codes" class="hide-methods failed suite-Digital_Codes"> (hide)</a> <!-- hide-methods failed suite-Digital_Codes -->
+                      <a href="#" panel-name="suite-Digital_Codes" class="show-methods failed suite-Digital_Codes"> (show)</a> <!-- show-methods failed suite-Digital_Codes -->
+                    </span>
+                    <div class="method-list-content failed suite-Digital_Codes">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Login_Test" hash-for-method="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC14_verifyEditNotes_FromSection">TC14_verifyEditNotes_FromSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Digital_Codes -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Digital_Codes" class="hide-methods skipped suite-Digital_Codes"> (hide)</a> <!-- hide-methods skipped suite-Digital_Codes -->
+                      <a href="#" panel-name="suite-Digital_Codes" class="show-methods skipped suite-Digital_Codes"> (show)</a> <!-- show-methods skipped suite-Digital_Codes -->
+                    </span>
+                    <div class="method-list-content skipped suite-Digital_Codes">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC15_verifyDeleteNotes_FromSection">TC15_verifyDeleteNotes_FromSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Digital_Codes -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,12 +142,77 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Login_Test" hash-for-method="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_LandingPage_Test" hash-for-method="TC04_verifyTitleLandingPage(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC04_verifyTitleLandingPage(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_LandingPage_Test" hash-for-method="TC05_verifyMarkFavoriteTitle(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC05_verifyMarkFavoriteTitle(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.TableOfContent_Test" hash-for-method="TC07_verifyMyNotes_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC07_verifyMyNotes_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC08_verifyNavigateToSection_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC08_verifyNavigateToSection_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC09_verifyCreateNotes_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC09_verifyCreateNotes_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC10_verifyCreateBookmark_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC10_verifyCreateBookmark_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC11_verifyShareSection_FromSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC11_verifyShareSection_FromSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC12_verifyPrintSection_FromSection">TC12_verifyPrintSection_FromSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC13_verifyShareNote_FromSction(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC13_verifyShareNote_FromSction(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_SectionPage_Test" hash-for-method="TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_Collection_Test" hash-for-method="TC28_verifyCollectionLandingPage(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">TC28_verifyCollectionLandingPage(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_Collection_Test" hash-for-method="TC29_verifySection_collectionTitles(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">TC29_verifySection_collectionTitles(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_Basic_Test" hash-for-method="TC33_verifyNgviateToBasicTitle(Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition)">TC33_verifyNgviateToBasicTitle(Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_Commentary_Test" hash-for-method="TC34_verifyHideCommentary(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy C...)">TC34_verifyHideCommentary(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy C...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Digital_Codes" title="com.Digitalcodes.testcases.Title_Collection_Test" hash-for-method="TC34_verifyRecentlyAddedTitle_Collection(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">TC34_verifyRecentlyAddedTitle_Collection(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Digital_Codes -->
@@ -129,30 +227,203 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Digital_Codes" class="panel Digital_Codes">
-          <div class="suite-Digital_Codes-class-passed">
+          <div class="suite-Digital_Codes-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Digitalcodes.testcases.Login_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">
-                  </a> <!-- TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete) -->
-                  <span class="method-name">TC01_loginValidData</span>
-                  <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
+                  <a name="TC14_verifyEditNotes_FromSection">
+                  </a> <!-- TC14_verifyEditNotes_FromSection -->
+                  <span class="method-name">TC14_verifyEditNotes_FromSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [User edit note] but found [User create Note]
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:228)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection(Title_SectionPage_Test.java:279)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(User able to Login with valid creditionls)                  </em>
+(Verify user able to edit notes from Section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-failed -->
+          <div class="suite-Digital_Codes-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Login_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">
                   </a> <!-- TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete) -->
                   <span class="method-name">TC02_verifyUserInformation</span>
                   <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Premium Complete] but found [Sign In]
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:228)
+	at com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation(Login_Test.java:84)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verify User able to displyed Subscription type, Name, email )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-failed -->
+          <div class="suite-Digital_Codes-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15_verifyDeleteNotes_FromSection">
+                  </a> <!-- TC15_verifyDeleteNotes_FromSection -->
+                  <span class="method-name">TC15_verifyDeleteNotes_FromSection</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@9257031] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user able to delete Notes from Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-skipped -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_Collection_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC28_verifyCollectionLandingPage(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">
+                  </a> <!-- TC28_verifyCollectionLandingPage(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL) -->
+                  <span class="method-name">TC28_verifyCollectionLandingPage</span>
+                  <span class="parameters">(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                  <em>
+(Verify user able to navigate to Collection title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC29_verifySection_collectionTitles(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">
+                  </a> <!-- TC29_verifySection_collectionTitles(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL) -->
+                  <span class="method-name">TC29_verifySection_collectionTitles</span>
+                  <span class="parameters">(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                  <em>
+(Verify user able to navigate to Section on Collection title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC34_verifyRecentlyAddedTitle_Collection(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)">
+                  </a> <!-- TC34_verifyRecentlyAddedTitle_Collection(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL) -->
+                  <span class="method-name">TC34_verifyRecentlyAddedTitle_Collection</span>
+                  <span class="parameters">(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                  <em>
+(Verify user able to Navigate to Recently Added titles of Collection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-passed -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_Commentary_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC34_verifyHideCommentary(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy C...)">
+                  </a> <!-- TC34_verifyHideCommentary(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy C...) -->
+                  <span class="method-name">TC34_verifyHideCommentary</span>
+                  <span class="parameters">(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use)</span>
+                  <em>
+(Verify User able to Hide commentary section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-passed -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_verifyNavigateToSection_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC08_verifyNavigateToSection_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC08_verifyNavigateToSection_FromTOC</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to naviagate Section from TableOfContent_Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_verifyCreateNotes_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC09_verifyCreateNotes_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC09_verifyCreateNotes_atSection</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to create notes at section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_verifyCreateBookmark_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC10_verifyCreateBookmark_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC10_verifyCreateBookmark_atSection</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to create bookmark at section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11_verifyShareSection_FromSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC11_verifyShareSection_FromSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC11_verifyShareSection_FromSection</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to share the section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC12_verifyPrintSection_FromSection">
+                  </a> <!-- TC12_verifyPrintSection_FromSection -->
+                  <span class="method-name">TC12_verifyPrintSection_FromSection</span>
+                  <em>
+(Verify user able to Print Section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13_verifyShareNote_FromSction(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC13_verifyShareNote_FromSction(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC13_verifyShareNote_FromSction</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to share note from section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC19_verifyLinksOnChapter</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify links On Chapter)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +442,70 @@
                   <span class="parameters">(Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition)</span>
                   <em>
 (Verify user able to navigate to Non-accsiable title )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-passed -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.TableOfContent_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_verifyMyNotes_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC07_verifyMyNotes_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC07_verifyMyNotes_FromTOC</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify my notes From Table Of Content when user have no any notes )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-passed -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Login_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)">
+                  </a> <!-- TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete) -->
+                  <span class="method-name">TC01_loginValidData</span>
+                  <span class="parameters">(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
+                  <em>
+(User able to Login with valid creditionls)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Codes-class-passed -->
+          <div class="suite-Digital_Codes-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Digitalcodes.testcases.Title_LandingPage_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC04_verifyTitleLandingPage(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC04_verifyTitleLandingPage(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC04_verifyTitleLandingPage</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify User able to Navigate to Title Landing page and verify Tag)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05_verifyMarkFavoriteTitle(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)">
+                  </a> <!-- TC05_verifyMarkFavoriteTitle(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS) -->
+                  <span class="method-name">TC05_verifyMarkFavoriteTitle</span>
+                  <span class="parameters">(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                  <em>
+(Verify user able to mark favorite & unfavorite and title should be displayed in favorites)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,6 +534,11 @@
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.Digitalcodes.testcases.Login_Test&quot;/&gt;
+      &lt;class name=&quot;com.Digitalcodes.testcases.Title_LandingPage_Test&quot;/&gt;
+      &lt;class name=&quot;com.Digitalcodes.testcases.TableOfContent_Test&quot;/&gt;
+      &lt;class name=&quot;com.Digitalcodes.testcases.Title_SectionPage_Test&quot;/&gt;
+      &lt;class name=&quot;com.Digitalcodes.testcases.Title_Collection_Test&quot;/&gt;
+      &lt;class name=&quot;com.Digitalcodes.testcases.Title_Commentary_Test&quot;/&gt;
       &lt;class name=&quot;com.Digitalcodes.testcases.Title_Basic_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -213,7 +553,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,6 +563,14 @@
             <span class="header-content">Groups for Digital Codes</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regeration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC07_verifyMyNotes_FromTOC</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
@@ -235,7 +583,59 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">TC04_verifyTitleLandingPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC05_verifyMarkFavoriteTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC08_verifyNavigateToSection_FromTOC</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC09_verifyCreateNotes_atSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC10_verifyCreateBookmark_atSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC11_verifyShareSection_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC12_verifyPrintSection_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC13_verifyShareNote_FromSction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC14_verifyEditNotes_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC15_verifyDeleteNotes_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC19_verifyLinksOnChapter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC29_verifySection_collectionTitles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">TC33_verifyNgviateToBasicTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC34_verifyHideCommentary</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -251,7 +651,71 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">TC04_verifyTitleLandingPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC05_verifyMarkFavoriteTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC07_verifyMyNotes_FromTOC</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC08_verifyNavigateToSection_FromTOC</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC09_verifyCreateNotes_atSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC10_verifyCreateBookmark_atSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC11_verifyShareSection_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC12_verifyPrintSection_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC13_verifyShareNote_FromSction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC14_verifyEditNotes_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC15_verifyDeleteNotes_FromSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC19_verifyLinksOnChapter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC28_verifyCollectionLandingPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC29_verifySection_collectionTitles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">TC33_verifyNgviateToBasicTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC34_verifyHideCommentary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC34_verifyRecentlyAddedTitle_Collection</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -271,24 +735,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC02_verifyUserInformation')
-data.setCell(0, 2, 'com.Digitalcodes.testcases.Login_Test')
-data.setCell(0, 3, 14336);
+data.setCell(0, 1, 'TC05_verifyMarkFavoriteTitle')
+data.setCell(0, 2, 'com.Digitalcodes.testcases.Title_LandingPage_Test')
+data.setCell(0, 3, 53273);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC33_verifyNgviateToBasicTitle')
-data.setCell(1, 2, 'com.Digitalcodes.testcases.Title_Basic_Test')
-data.setCell(1, 3, 11167);
+data.setCell(1, 1, 'TC19_verifyLinksOnChapter')
+data.setCell(1, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(1, 3, 49612);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC01_loginValidData')
-data.setCell(2, 2, 'com.Digitalcodes.testcases.Login_Test')
-data.setCell(2, 3, 7542);
+data.setCell(2, 1, 'TC07_verifyMyNotes_FromTOC')
+data.setCell(2, 2, 'com.Digitalcodes.testcases.TableOfContent_Test')
+data.setCell(2, 3, 48173);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC28_verifyCollectionLandingPage')
+data.setCell(3, 2, 'com.Digitalcodes.testcases.Title_Collection_Test')
+data.setCell(3, 3, 44980);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC10_verifyCreateBookmark_atSection')
+data.setCell(4, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(4, 3, 41166);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC09_verifyCreateNotes_atSection')
+data.setCell(5, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(5, 3, 32804);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC34_verifyHideCommentary')
+data.setCell(6, 2, 'com.Digitalcodes.testcases.Title_Commentary_Test')
+data.setCell(6, 3, 26557);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC11_verifyShareSection_FromSection')
+data.setCell(7, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(7, 3, 23246);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC02_verifyUserInformation')
+data.setCell(8, 2, 'com.Digitalcodes.testcases.Login_Test')
+data.setCell(8, 3, 19214);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC08_verifyNavigateToSection_FromTOC')
+data.setCell(9, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(9, 3, 17618);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC33_verifyNgviateToBasicTitle')
+data.setCell(10, 2, 'com.Digitalcodes.testcases.Title_Basic_Test')
+data.setCell(10, 3, 14219);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC04_verifyTitleLandingPage')
+data.setCell(11, 2, 'com.Digitalcodes.testcases.Title_LandingPage_Test')
+data.setCell(11, 3, 12291);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC34_verifyRecentlyAddedTitle_Collection')
+data.setCell(12, 2, 'com.Digitalcodes.testcases.Title_Collection_Test')
+data.setCell(12, 3, 10611);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC01_loginValidData')
+data.setCell(13, 2, 'com.Digitalcodes.testcases.Login_Test')
+data.setCell(13, 3, 8451);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC29_verifySection_collectionTitles')
+data.setCell(14, 2, 'com.Digitalcodes.testcases.Title_Collection_Test')
+data.setCell(14, 3, 8182);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC13_verifyShareNote_FromSction')
+data.setCell(15, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(15, 3, 6790);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC14_verifyEditNotes_FromSection')
+data.setCell(16, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(16, 3, 2158);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC12_verifyPrintSection_FromSection')
+data.setCell(17, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(17, 3, 1991);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC15_verifyDeleteNotes_FromSection')
+data.setCell(18, 2, 'com.Digitalcodes.testcases.Title_SectionPage_Test')
+data.setCell(18, 3, 0);
 window.suiteTableData['Digital_Codes']= { tableData: data, tableDiv: 'times-div-Digital_Codes'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Digital_Codes">
               </div> <!-- times-div-Digital_Codes -->
             </div> <!-- times-div -->
@@ -303,9 +831,78 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Digital_Codes" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">40 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Digitalcodes.testcases.Title_Collection_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">TC31_verifyCreateBookmark_collectionTitles</span>
+                <br/>
+                <span class="ignored-method-name">TC33_verifyPrintSection_CollectionTitles</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">TC30_verifyCreateNotes_collectionTitles</span>
+                <br/>
+                <span class="ignored-method-name">TC32_verifyShareSection_CollectionTitles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Digitalcodes.testcases.Title_Commentary_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">TC26_verifyShareSection_atChildSubsection</span>
+                <br/>
+                <span class="ignored-method-name">TC23_verifyPrintSection_FromSubSection</span>
+                <br/>
+                <span class="ignored-method-name">TC21_verifyCreateBookmark_atSubsection</span>
+                <br/>
+                <span class="ignored-method-name">TC27_verifyPrintSection_FromChildSubSection</span>
+                <br/>
+                <span class="ignored-method-name">TC24_verifyCreateNotes_atChildSubsection</span>
+                <br/>
+                <span class="ignored-method-name">TC18_verifyDeleteBookmark_FromSection</span>
+                <br/>
+                <span class="ignored-method-name">TC22_verifyShareSection_FromSubSection</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">TC16_verifyShareBookmark_FromSection</span>
+                <br/>
+                <span class="ignored-method-name">TC20_verifyCreateNotes_atSubsection</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">TC25_verifyCreateBookmark_atChildSubsection</span>
+                <br/>
+                <span class="ignored-method-name">TC17_verifyEditBookmark_FromSection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.Digitalcodes.testcases.Title_Basic_Test</span>
               <div class="ignored-methods-div">
@@ -316,6 +913,34 @@ return data;
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
                 <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Digitalcodes.testcases.TableOfContent_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Digitalcodes.testcases.Title_LandingPage_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">TC06_verifyChangeVersion_ReleatedTitles_Categories</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -334,57 +959,240 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome, PREMIUM)</span>
-                <span class="method-start">2153 ms</span>
+                <span class="method-start">3555 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">18316 ms</span>
+                <span class="method-start">27173 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC01_loginValidData(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
-                <span class="method-start">18439 ms</span>
+                <span class="method-start">27453 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">log_result([TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang....)</span>
-                <span class="method-start">26200 ms</span>
+                <span class="method-start">36219 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC02_verifyUserInformation(complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete)</span>
-                <span class="method-start">26992 ms</span>
+                <span class="method-start">37569 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">log_result([TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformat...)</span>
-                <span class="method-start">41333 ms</span>
+                <span class="method-name">log_result([TestResult name=TC02_verifyUserInformation status=FAILURE method=Login_Test.TC02_verifyUserInformat...)</span>
+                <span class="method-start">57250 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Digitalcodes.testcases.Title_LandingPage_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">57414 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC04_verifyTitleLandingPage(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">57419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC04_verifyTitleLandingPage status=SUCCESS method=Title_LandingPage_Test.TC04_verif...)</span>
+                <span class="method-start">69733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC05_verifyMarkFavoriteTitle(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">69797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC05_verifyMarkFavoriteTitle status=SUCCESS method=Title_LandingPage_Test.TC05_veri...)</span>
+                <span class="method-start">123090 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Digitalcodes.testcases.TableOfContent_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">123268 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC07_verifyMyNotes_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">123270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC07_verifyMyNotes_FromTOC status=SUCCESS method=TableOfContent_Test.TC07_verifyMyN...)</span>
+                <span class="method-start">171461 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Digitalcodes.testcases.Title_SectionPage_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">171605 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassTitlepage</span>
+                <span class="method-start">171607 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC08_verifyNavigateToSection_FromTOC(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">171618 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC08_verifyNavigateToSection_FromTOC status=SUCCESS method=Title_SectionPage_Test.T...)</span>
+                <span class="method-start">189250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC09_verifyCreateNotes_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">189338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC09_verifyCreateNotes_atSection status=SUCCESS method=Title_SectionPage_Test.TC09_...)</span>
+                <span class="method-start">222181 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC10_verifyCreateBookmark_atSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">222314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC10_verifyCreateBookmark_atSection status=SUCCESS method=Title_SectionPage_Test.TC...)</span>
+                <span class="method-start">263489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC11_verifyShareSection_FromSection(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">263614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC11_verifyShareSection_FromSection status=SUCCESS method=Title_SectionPage_Test.TC...)</span>
+                <span class="method-start">286871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC12_verifyPrintSection_FromSection</span>
+                <span class="method-start">287019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC12_verifyPrintSection_FromSection status=SUCCESS method=Title_SectionPage_Test.TC...)</span>
+                <span class="method-start">289021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC13_verifyShareNote_FromSction(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">289118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC13_verifyShareNote_FromSction status=SUCCESS method=Title_SectionPage_Test.TC13_v...)</span>
+                <span class="method-start">295920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC14_verifyEditNotes_FromSection</span>
+                <span class="method-start">296019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC14_verifyEditNotes_FromSection status=FAILURE method=Title_SectionPage_Test.TC14_...)</span>
+                <span class="method-start">298824 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC15_verifyDeleteNotes_FromSection</span>
+                <span class="method-start">298858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC19_verifyLinksOnChapter(I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS)</span>
+                <span class="method-start">298883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC19_verifyLinksOnChapter status=SUCCESS method=Title_SectionPage_Test.TC19_verifyL...)</span>
+                <span class="method-start">348499 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Digitalcodes.testcases.Title_Collection_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">348592 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclassCollection</span>
+                <span class="method-start">348595 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC28_verifyCollectionLandingPage(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                <span class="method-start">348608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod_Collection</span>
+                <span class="method-start">393627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC28_verifyCollectionLandingPage status=SUCCESS method=Title_Collection_Test.TC28_v...)</span>
+                <span class="method-start">393813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC29_verifySection_collectionTitles(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                <span class="method-start">394032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod_Collection</span>
+                <span class="method-start">402231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC29_verifySection_collectionTitles status=SUCCESS method=Title_Collection_Test.TC2...)</span>
+                <span class="method-start">402553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC34_verifyRecentlyAddedTitle_Collection(Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL)</span>
+                <span class="method-start">402761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod_Collection</span>
+                <span class="method-start">413386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC34_verifyRecentlyAddedTitle_Collection status=SUCCESS method=Title_Collection_Tes...)</span>
+                <span class="method-start">413603 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Digitalcodes.testcases.Title_Commentary_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">413866 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC34_verifyHideCommentary(Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy C...)</span>
+                <span class="method-start">413890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">log_result([TestResult name=TC34_verifyHideCommentary status=SUCCESS method=Title_Commentary_Test.TC34_verifyHi...)</span>
+                <span class="method-start">440464 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Digitalcodes.testcases.Title_Basic_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">41372 ms</span>
+                <span class="method-start">440521 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeclass</span>
-                <span class="method-start">41373 ms</span>
+                <span class="method-start">440522 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC33_verifyNgviateToBasicTitle(Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition)</span>
-                <span class="method-start">41378 ms</span>
+                <span class="method-start">440525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">log_result([TestResult name=TC33_verifyNgviateToBasicTitle status=SUCCESS method=Title_Basic_Test.TC33_verifyNg...)</span>
-                <span class="method-start">52554 ms</span>
+                <span class="method-start">454753 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Digitalcodes.testcases.Login_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">52600 ms</span>
+                <span class="method-start">454830 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">54294 ms</span>
+                <span class="method-start">457543 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

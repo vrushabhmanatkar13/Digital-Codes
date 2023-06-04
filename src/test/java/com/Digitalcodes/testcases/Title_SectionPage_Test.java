@@ -274,8 +274,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
 		
+		Thread.sleep(2000);
 		report.create_info("Description is :- " + section.getDescription());
-
+         
 		assertEquals(section.getDescription(), jsonValue("notes-edit-text"));
 	}
 
