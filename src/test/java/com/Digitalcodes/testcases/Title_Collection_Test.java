@@ -73,12 +73,12 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  
 	 
 	  coverpage.clickOnTitlesCover(subsection);
-	  Sparkreport.Step("Click on "+ subsection);
+	  Sparkreport.Step("Click "+ subsection);
 	  Thread.sleep(6000);
 	  
 	  collectionpgae.clickIncludeTitles(title);
 	 
-	  Sparkreport.Step("Click on "+ title);
+	  Sparkreport.Step("Click "+ title);
 	  
 	   String titlename = landingpage.getTitleHeading();
 	   String activetext=landingpage.getActivepremiumText();
@@ -102,9 +102,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		
 		  collectionpgae.clickIncludeTitles(title);
 		
-		 Sparkreport.Step("Click on "+ title);  
+		 Sparkreport.Step("Click "+ title);  
 		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click on Chapter "+ cahptername);
+		 Sparkreport.Step("Click Chapter "+ cahptername);
 		 
 		 
 		 assertEquals(cahptername, chapter);
@@ -116,10 +116,10 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		
 		  collectionpgae.clickIncludeTitles(title);
 		  
-		  Sparkreport.Step("Click on "+ title);
+		  Sparkreport.Step("Click "+ title);
 		  
 		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click on Chapter "+ cahptername);
+		 Sparkreport.Step("Click "+ cahptername);
 		 
 			section.doubleClickOnTitle_Section();
 			Sparkreport.Step("Double Click on text");
@@ -175,10 +175,10 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		
 		 collectionpgae.clickIncludeTitles(title);
 		  
-		  Sparkreport.Step("Click on "+ title);
+		  Sparkreport.Step("Click "+ title);
 		  
 		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click on Chapter "+ cahptername);
+		 Sparkreport.Step("Click "+ cahptername);
 		 
 
 			section.clickOnApps(section.getSessionID_FromChapter());
@@ -230,10 +230,10 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		
 		 collectionpgae.clickIncludeTitles(title);
 		 
-		  Sparkreport.Step("Click on "+ title);
+		  Sparkreport.Step("Click "+ title);
 		  
 		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click on Chapter "+ cahptername);
+		 Sparkreport.Step("Click "+ cahptername);
 		 
 			section.clickOnApps(section.getSessionID_FromChapter());
 			Sparkreport.Step("Click Apps");
@@ -256,10 +256,10 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		
 		  collectionpgae.clickIncludeTitles(title);
 		 		 
-		  Sparkreport.Step("Click on "+ title);
+		  Sparkreport.Step("Click "+ title);
 		  
 		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click on Chapter "+ cahptername);
+		 Sparkreport.Step("Click "+ cahptername);
 		
 			section.clickOnApps(section.getSessionID_FromChapter());
 			Sparkreport.Step("Click Apps");
@@ -279,7 +279,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  public void TC34_verifyRecentlyAddedTitle_Collection(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		  String recentlyTitle= collectionpgae.clickOnRecentlyAddedTitles();
-		  Sparkreport.Step("Click on "+ recentlyTitle);
+		  Sparkreport.Step("Click "+ recentlyTitle);
 		  report.create_info("Recently Added Title :- "+ recentlyTitle);
 		  
 		  
