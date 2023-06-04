@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,961.28" tests="19" errors="0" skipped="1" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Vrushabh Manatkar\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-testng\2.22.0\allure-testng-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-java-commons\2.22.0\allure-java-commons-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-model\2.22.0\allure-model-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-test-filter\2.22.0\allure-test-filter-2.22.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
+    <property name="sun.java.command" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire6880082384235587536\surefirebooter-20230604165842622_3.jar C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire6880082384235587536 2023-06-04T16-58-42_016-jvmRun1 surefire-20230604165842622_1tmp surefire_0-20230604165842622_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\eclipse-workspace\com.Digitalcodes\target\test-classes;D:\eclipse-workspace\com.Digitalcodes\target\classes;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\slf4j-api\2.0.3\slf4j-api-2.0.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.10.1\maven-compiler-plugin-3.10.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.11.1\plexus-compiler-api-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.1\plexus-utils-3.4.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.11.1\plexus-compiler-manager-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.11.1\plexus-compiler-javac-2.11.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\pm-webdriver\18.6.0.0\pm-webdriver-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-java\1.1.1\reportium-java-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfecto\reporting-sdk\reportium-testng\1.1.1\reportium-testng-1.1.1.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\perfectomobile\http-client\18.6.0.0\http-client-18.6.0.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Vrushabh Manatkar\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-testng\2.22.0\allure-testng-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-java-commons\2.22.0\allure-java-commons-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-model\2.22.0\allure-model-2.22.0.jar;C:\Users\Vrushabh Manatkar\.m2\repository\io\qameta\allure\allure-test-filter\2.22.0\allure-test-filter-2.22.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Vrushabh Manatkar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="PlatformName" value="local"/>
+    <property name="basedir" value="D:\eclipse-workspace\com.Digitalcodes"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Vrushabh Manatkar\AppData\Local\Temp\surefire6880082384235587536\surefirebooter-20230604165842622_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
+    <property name="user.name" value="Vrushabh Manatkar"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Vrushabh Manatkar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\VRUSHA~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="D:\eclipse-workspace\com.Digitalcodes"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Perfecto\Perfecto-Connect-windows64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17.0.5\bin\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Vrushabh Manatkar\Downloads\apache-maven-3.8.7\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platforms-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\build-tools;C:\Users\Vrushabh Manatkar\AppData\Local\Android\Sdk\platform;C:\allure-2.22.0\bin;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Vrushabh Manatkar\AppData\Local\Programs\Python\Python311\;C:\Users\Vrushabh Manatkar\AppData\Local\Microsoft\WindowsApps;C:\Users\Vrushabh Manatkar\AppData\Roaming\npm;C:\Program Files\nodejs\;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;%ANDROID_HOME%\emulator;C:\Program Files\Java\jdk-17.0.5\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="TC01_loginValidData[complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete](1)" classname="com.Digitalcodes.testcases.Login_Test" time="33.17">
+    <system-out><![CDATA[Platform Name :- local
+Browser Name :- chrome
+ 
+https://codes-stage.iccsafe.org/
+ 
+Click SignIN
+Enter username complete.user@iccsafe.info
+Enter password Digital@123
+Click SignIn Button
+Page Title is Login
+Description :-  User able to Login with valid creditionls
+TC01_loginValidData : PASSED
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 37612
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 04, 2023 4:59:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 112
+]]></system-err>
+  </testcase>
+  <testcase name="TC02_verifyUserInformation[complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete](1)" classname="com.Digitalcodes.testcases.Login_Test" time="51.078">
+    <system-out><![CDATA[=======================================================
+  
+Hover on Premium Complete
+Subscripton Types is Premium Complete
+User Name is Complete User
+User Email is complete.user@iccsafe.info
+Page Title is My Library
+Description :-  Verify User able to displyed Subscription type, Name, email 
+TC02_verifyUserInformation : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC04_verifyTitleLandingPage[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_LandingPage_Test" time="14.341">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Page Title is 2021 I-Codes Building Codes - ICC Digital Codes
+Click Title 2021 International Building Code (IBC)
+Subscription Tag is PREMIUM
+Subscription is You have an active premium subscription to access this title
+Description :-  Verify User able to Navigate to Title Landing page and verify Tag
+TC04_verifyTitleLandingPage : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC05_verifyMarkFavoriteTitle[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_LandingPage_Test" time="88.164">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Blank Heart icon
+Text after mark favorite :- Remove from Favorites
+Click menu
+Click Favorites
+Title Name is :- 2021 International Building Code (IBC)
+Click Filled Heart icon
+Text after mark unfavorite :- Add to Favorites
+Description :-  Verify user able to mark favorite & unfavorite and title should be displayed in favorites
+TC05_verifyMarkFavoriteTitle : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC07_verifyMyNotes_FromTOC[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.TableOfContent_Test" time="78.35">
+    <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (efc02c62ac141d4248ea85eeaabc3f57)] -&gt; xpath: //div[@role=&quot;listbox&quot;]//div[@class=&quot;v-list-item__content&quot;]] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56613/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: efc02c62ac141d4248ea85eeaabc3f57" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (efc02c62ac141d4248ea85eeaabc3f57)] -> xpath: //div[@role="listbox"]//div[@class="v-list-item__content"]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56613/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efc02c62ac141d4248ea85eeaabc3f57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:214)
+	at com.Digitalcodes.pageobject.TableOfContent_Page.getTagNameInMyNotes(TableOfContent_Page.java:155)
+	at com.Digitalcodes.testcases.TableOfContent_Test.TC07_verifyMyNotes_FromTOC(TableOfContent_Test.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click My Notes
+Text in My Notes :- You currently do not have any annotations or bookmarks for this book.
+Description :-  Verify my notes From Table Of Content when user have no any notes 
+TC07_verifyMyNotes_FromTOC : FAILED
+     
+     
+]]></system-out>
+    <system-err><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (efc02c62ac141d4248ea85eeaabc3f57)] -> xpath: //div[@role="listbox"]//div[@class="v-list-item__content"]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56613/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efc02c62ac141d4248ea85eeaabc3f57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:214)
+	at com.Digitalcodes.pageobject.TableOfContent_Page.getTagNameInMyNotes(TableOfContent_Page.java:155)
+	at com.Digitalcodes.testcases.TableOfContent_Test.TC07_verifyMyNotes_FromTOC(TableOfContent_Test.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+  <testcase name="TC08_verifyNavigateToSection_FromTOC[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="14.893">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Chapter CHAPTER 2 DEFINITIONS
+Chapter Name :- CHAPTER 2 DEFINITIONS
+Description :-  Verify user able to naviagate Section from TableOfContent_Page
+TC08_verifyNavigateToSection_FromTOC : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC09_verifyCreateNotes_atSection[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="27.715">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Chapter CHAPTER 2 DEFINITIONS
+Double Click on text
+Click Note icon
+Enter Decription in textBox
+Click New Tag
+Enter TagName
+Click Save
+Click Tag DropDown
+Select Tag Name
+Click Save
+Note Created at :- CHAPTER 2 DEFINITIONS
+Tag Name :- I-Codes
+Description is :- User create Note
+Note Created by :- Complete User (complete.user@iccsafe.info)
+Click My Notes
+Chapter Name at my notes :- CHAPTER 2 DEFINITIONS
+Description :-  Verify user able to create notes at section
+TC09_verifyCreateNotes_atSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC10_verifyCreateBookmark_atSection[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="26.602">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Chapter CHAPTER 2 DEFINITIONS
+Click Apps
+Click Bookmark
+Enter Decription in textBox
+Click Tag DropDown
+Select Tag Name
+Click Save
+Tag Name :- I-Codes
+Note Created at :- CHAPTER 2 DEFINITIONS
+Description is :- User create Bookmark
+Note Created by :- Complete User (complete.user@iccsafe.info)
+Click My Notes
+Chapter Name at my notes :- CHAPTER 2 DEFINITIONS
+Description :-  Verify user able to create bookmark at section
+TC10_verifyCreateBookmark_atSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC11_verifyShareSection_FromSection[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="17.47">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Chapter CHAPTER 2 DEFINITIONS
+Click Apps
+Click Share
+Enter email
+Click AddMore
+Click Remove
+Click Share Button
+Click Close
+Successful message :- Section link shared successfully!
+Description :-  Verify user able to share the section
+TC11_verifyShareSection_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC12_verifyPrintSection_FromSection" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="2.081">
+    <system-out><![CDATA[=======================================================
+  
+Click Print
+Description :-  Verify user able to Print Section
+TC12_verifyPrintSection_FromSection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC13_verifyShareNote_FromSction[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="6.502">
+    <system-out><![CDATA[=======================================================
+  
+Double Click on text
+Click Note icon
+Enter Decription in textBox
+Click Tag DropDown
+Select Tag Name
+Click Save
+Click Share
+Enter email
+Click Submit
+Successful message :- Content shared successfully!
+Description :-  Verify user able to share note from section
+TC13_verifyShareNote_FromSction : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC14_verifyEditNotes_FromSection" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="2.695">
+    <failure message="expected [User edit note] but found [User create Note]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [User edit note] but found [User create Note]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:228)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection(Title_SectionPage_Test.java:279)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[=======================================================
+  
+Click edit
+Enter edited text
+Click Save
+Description is :- User create Note
+Description :-  Verify user able to edit notes from Section
+TC14_verifyEditNotes_FromSection : FAILED
+     
+     
+]]></system-out>
+    <system-err><![CDATA[java.lang.AssertionError: expected [User edit note] but found [User create Note]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:228)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection(Title_SectionPage_Test.java:279)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+  <testcase name="TC15_verifyDeleteNotes_FromSection" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="0">
+    <skipped message="Method Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection()[pri:0, instance:com.Digitalcodes.testcases.Title_SectionPage_Test@736f3e9e] depends on not successfully finished methods"/>
+    <system-out><![CDATA[=======================================================
+  
+Verify user able to delete Notes from Section
+TC15_verifyDeleteNotes_FromSection : SKIPED
+]]></system-out>
+  </testcase>
+  <testcase name="TC19_verifyLinksOnChapter[I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS](1)" classname="com.Digitalcodes.testcases.Title_SectionPage_Test" time="40.097">
+    <system-out><![CDATA[Click menu
+Click Listitem I-Codes
+Click subList 2021 I-Codes
+Click Title 2021 International Building Code (IBC)
+Click Chapter CHAPTER 2 DEFINITIONS
+Text of Link is :- International Energy Conservation Code
+Click on title Link
+Navigate to back
+Click Sub Chapter SECTION 202 DEFINITIONS
+Text of Link is :- Chapter 11
+Click on chapter Link
+Navigate to back
+Description :-  Verify links On Chapter
+TC19_verifyLinksOnChapter : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC28_verifyCollectionLandingPage[Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL](1)" classname="com.Digitalcodes.testcases.Title_Collection_Test" time="19.235">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Collections
+Page Title is Collections Building Codes - ICC Digital Codes
+Click on Premium Complete
+Click on 2023 Analysis of Changes, 2023 NEC
+Title Name is 2023 Analysis of Changes, 2023 NEC
+Subscription Tag is PREMIUM
+You have an active premium subscription to access this title
+Description :-  Verify user able to navigate to Collection title
+TC28_verifyCollectionLandingPage : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC29_verifySection_collectionTitles[Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL](1)" classname="com.Digitalcodes.testcases.Title_Collection_Test" time="5.439">
+    <system-out><![CDATA[=======================================================
+  
+Click on 2023 Analysis of Changes, 2023 NEC
+Click on Chapter CHAPTER 1 GENERAL
+Description :-  Verify user able to navigate to Section on Collection title
+TC29_verifySection_collectionTitles : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC34_verifyRecentlyAddedTitle_Collection[Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL](1)" classname="com.Digitalcodes.testcases.Title_Collection_Test" time="3.98">
+    <system-out><![CDATA[=======================================================
+  
+Click on 2021 International Energy Conservation Code 2nd printing
+Recently Added Title :- 2021 International Energy Conservation Code 2nd printing
+Description :-  Verify user able to Navigate to Recently Added titles of Collection
+TC34_verifyRecentlyAddedTitle_Collection : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC34_verifyHideCommentary[Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use](1)" classname="com.Digitalcodes.testcases.Title_Commentary_Test" time="1,488.509">
+    <system-out><![CDATA[=======================================================
+  
+Click menu
+Click Listitem Commentaries
+Click subList 2021 Commentaries
+Click Title 2021 IBC Code and Commentary Volume 1 (IBC)
+Click Chapter Chapter 3: Occupancy Classification and Use
+Click Hide Commentary
+Text after Click on Hide Button :- Show Commentary
+Click Show Commentary
+Description :-  Verify User able to Hide commentary section
+TC34_verifyHideCommentary : PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC33_verifyNgviateToBasicTitle[Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition](1)" classname="com.Digitalcodes.testcases.Title_Basic_Test" time="0.001">
+    <system-out><![CDATA[=======================================================
+  
+Click Menu
+Click Publisher
+Click Wiley
+Click 2021 Building Codes Illustrated, 7th Edition
+This title is not included within your current Premium Complete subscription. To access the contents and features, please purchase a subscription to this title.
+Purchase the Building Codes Illustrated, 7th Edition and make it part of your Premium subscription
+Description :-  Verify user able to navigate to Non-accsiable title 
+TC33_verifyNgviateToBasicTitle : PASSED
+]]></system-out>
+  </testcase>
+</testsuite>
