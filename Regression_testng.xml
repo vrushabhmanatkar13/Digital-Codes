@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Digital Codes">
+<suite name="Digital Codes Regression test">
 <parameter name="tagname" value="Regression"></parameter>
 
 <listeners>
@@ -8,7 +8,7 @@
 
 </listeners>
 
-	<test name="Test" preserve-order="true">
+	<test name="Regression for Premium user" preserve-order="true">
 	<parameter name="Browser" value="chrome"></parameter>
 	<parameter name="User" value="PREMIUM"></parameter>
 	<groups>

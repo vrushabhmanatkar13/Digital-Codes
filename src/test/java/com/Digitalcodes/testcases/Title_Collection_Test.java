@@ -55,7 +55,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	
 	@AfterMethod(alwaysRun = true)
     public void afterMethod_Collection() {
-		    closeWindow();
+		   closeWindow();
 		   retrunToMainWindow();
 	}
 	
@@ -106,7 +106,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		 String cahptername= toc.navigateToChapter(chapter);
 		 Sparkreport.Step("Click Chapter "+ cahptername);
 		 
-		 
+		 Thread.sleep(5000);
 		 assertEquals(cahptername, chapter);
 		
 	  }

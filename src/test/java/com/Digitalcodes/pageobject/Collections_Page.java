@@ -31,7 +31,7 @@ public class Collections_Page extends Baseclass{
 	}
 	
 	public void clickIncludeTitles(String title) throws Exception {
-		
+		  Baseclass.getParentWindow();
 		
 		for (WebElement webElement : includeTitles) {
 			
@@ -48,7 +48,7 @@ public class Collections_Page extends Baseclass{
 	}
 	
 	public String clickOnRecentlyAddedTitles() throws Exception {
-		
+		  Baseclass.getParentWindow();
 		 String text=getText(recentlyAdded);
 		 click(recentlyAdded);
 		 Baseclass.switchToWindow();
