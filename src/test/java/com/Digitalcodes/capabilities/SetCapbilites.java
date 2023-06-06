@@ -36,7 +36,8 @@ public class SetCapbilites {
 		}
 
 		chrome.addArguments("--remote-allow-origins=*");
-		
+		chrome.addArguments("force-device-scale-factor=0.90");
+		chrome.addArguments("high-dpi-support=0.90");
 		
 		return chrome;
 	}
@@ -51,6 +52,8 @@ public class SetCapbilites {
 			firefox.addArguments("--headless=new");
             firefox.addArguments("--enable-automation");
 		}
+		firefox.addArguments("force-device-scale-factor=0.85");
+		firefox.addArguments("high-dpi-support=0.85");
 		
 		return firefox;
 	}

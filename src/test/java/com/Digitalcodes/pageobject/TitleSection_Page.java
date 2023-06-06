@@ -137,6 +137,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	@FindBy(xpath = "//input[@data-qa=\"share-section-modal-email-1\"]")
 	private WebElement newemailInput;
+	
 	@FindBy(xpath = "//span[contains(text(),'Remove')]")
 	private WebElement remove;
 	
@@ -155,6 +156,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	@FindBy(xpath = "//i[@title=\"Print\"]")
 	private WebElement print;
+	
 	@FindBy(xpath = "//embed[@type=\"application/pdf\"]")
 	private WebElement pdf;
 	
@@ -424,6 +426,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	
 	public boolean printSection() {
+		Baseclass.getParentWindow();
 		boolean viewPdf=false;
 		click(print);
 		
@@ -453,6 +456,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	public boolean printThisSubSection(String sectionid) throws Exception {
 		boolean viewPdf = false;
+		Baseclass.getParentWindow();
 		for (WebElement webElement : printIcon) {
 			if (webElement.getAttribute("id").equals(sectionid+"_print")) {
 				click(webElement);
@@ -472,6 +476,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	public boolean printSubSection(String sectionid) throws Exception {
 		boolean viewPdf = false;
+		Baseclass.getParentWindow();
 		for (WebElement webElement : printIcon) {
 			if (webElement.getAttribute("id").equals(sectionid+"_print")) {
 				click(webElement);
@@ -490,6 +495,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	public boolean printChildSubSection(String sectionid) throws Exception {
 		boolean viewPdf=false;
+		Baseclass.getParentWindow();
 		for (WebElement webElement : printIcon) {
 			if (webElement.getAttribute("id").equals(sectionid+"_print")) {
 				click(webElement);
@@ -522,6 +528,7 @@ public class TitleSection_Page extends Baseclass {
 		filledtextcontainer.clear();
 		
 		sendKeys(textcontainer, text);
+		Thread.sleep(2000);
 		click(saveButton_Notes);
 		
 	}

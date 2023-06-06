@@ -1,8 +1,7 @@
 package com.Digitalcodes.utilities;
 
 import java.time.Duration;
-
-
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
@@ -64,6 +63,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					
 						driver = Fdriver;
 					}
+					
 					driver.manage().window().setSize(new Dimension(Integer.parseInt(width), Integer.parseInt(hight)));
 					driver.manage().window().maximize();
 					
@@ -168,14 +168,17 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 	}
  //------------------------switch to new tab------------------------------>>
+	public static void getParentWindow() {
+		Win_id = driver.getWindowHandle();
+	}
 	
 	public static void switchToWindow() throws Exception {
-		Win_id = driver.getWindowHandle();
+		
 		
 		Set<String> next_win = driver.getWindowHandles();
 		for (String string : next_win) {
 			if(!string.equals(Win_id)) {
-
+        
 				driver.switchTo().window(string);
 				break;
 			}
@@ -186,6 +189,7 @@ public class Baseclass extends Perfecto_Capabailites{
 
 	//----------return back to main window------>>
 	public static void retrunToMainWindow() {
+		
 		driver.switchTo().window(Win_id);
 	}
 	
@@ -197,6 +201,13 @@ public class Baseclass extends Perfecto_Capabailites{
 		}
 		else {
 			return false;
+		}
+	}
+	
+	public static void switchToWindow_index() {
+		Set<String> next_win = driver.getWindowHandles();
+		if (next_win.size()>1) {
+		driver.switchTo().window(Win_id);
 		}
 	}
 	
@@ -224,6 +235,7 @@ public class Baseclass extends Perfecto_Capabailites{
 		wait.until(ExpectedConditions.visibilityOf(e));
 		return e.getText();
 	}
+	
 	
 	public static String jsonValue(String key) {
 		return Prerequisites_Teardown.json.get(key).asText();
@@ -256,6 +268,7 @@ public class Baseclass extends Perfecto_Capabailites{
 		return e.isDisplayed();
 	}
 	
+
 	
 	
 }
