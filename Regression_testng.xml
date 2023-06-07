@@ -5,7 +5,7 @@
 
 <listeners>
 <listener class-name="com.Digitalcodes.testcases.LogResult_ITestListner"></listener>
-
+  <listener class-name="com.Digitalcodes.testcases.LogResult_IReporterListner"></listener>
 </listeners>
 
 	<test name="Regression for Premium user" preserve-order="true">

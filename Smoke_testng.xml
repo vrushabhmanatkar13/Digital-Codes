@@ -4,10 +4,10 @@
 	<parameter name="tagname" value="Smoke"></parameter>
 
 	<listeners>
-		<listener
-			class-name="com.Digitalcodes.testcases.LogResult_ITestListner"></listener>
-
+		<listener class-name="com.Digitalcodes.testcases.LogResult_ITestListner"></listener>
+       <listener class-name="com.Digitalcodes.testcases.LogResult_IReporterListner"></listener>
 	</listeners>
+
 
 	<test name="Smoke test for Premium user" preserve-order="true">
 		<parameter name="Browser" value="chrome"></parameter>
@@ -27,8 +27,6 @@
 			<class name="com.Digitalcodes.testcases.Title_Commentary_Test" />
 			<class name="com.Digitalcodes.testcases.Title_Basic_Test" />
 			<class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test" />
-
-
 
 
 		</classes>
