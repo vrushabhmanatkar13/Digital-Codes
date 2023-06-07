@@ -34,9 +34,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							<configuration>
-								<outputName>Smoke</outputName>
-							</configuration>
+							
 
 						</configuration>
 						<dependencies>
@@ -69,9 +67,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Regression_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							<configuration>
-								<outputName>Regression</outputName>
-							</configuration>
+							
 						</configuration>
 						<dependencies>
 							<dependency>
