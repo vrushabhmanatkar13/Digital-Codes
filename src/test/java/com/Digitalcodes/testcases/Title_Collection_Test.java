@@ -83,14 +83,14 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	   report.create_info("Subscription Tag is " + landingpage.getTagName());
 	   report.create_info(activetext);
 	   
-	   closeWindow();
-	   retrunToMainWindow();
+	  
 	   
 	   assertEquals(title, titlename);
 	   assertEquals(landingpage.getTagName(), jsonArrayValue("Premium", "tag"));
 	   assertEquals(activetext,jsonArrayValue("Premium", "Access-title"));
 	   
-	   
+	   closeWindow();
+	   retrunToMainWindow();
 		
 	  
 	  }
@@ -105,7 +105,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		 String cahptername= toc.navigateToChapter(chapter);
 		 Sparkreport.Step("Click Chapter "+ cahptername);
 		 
-		 Thread.sleep(5000);
+		 Thread.sleep(3000);
 		 
 		 closeWindow();
 		 retrunToMainWindow();
