@@ -16,19 +16,27 @@
     <classes>
       <class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test">
         <methods>
-          <include name="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="TC35_verifyActionsOnSection_QuickAccess"/>
-          <include name="TC34_verifyAccessSection_QuickAccess"/>
           <include name="beforeClass"/>
           <include name="beforeSuite"/>
-          <include name="TC38_verifyAlreadyCreatedBookmark_QuickAccess"/>
           <include name="afterTest"/>
-          <include name="TC37_verifyRecentlyQuickAccessedSections_QuickAccess"/>
           <include name="log_result"/>
         </methods>
       </class> <!-- com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test -->
+      <class name="com.Digitalcodes.testcases.Login_Test">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="TC02_verifyUserInformation" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="log_result"/>
+          <include name="TC01_loginValidData"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
     </classes>
   </test> <!-- Smoke test for Premium user(failed) -->
 </suite> <!-- Failed suite [Digital Codes Smoke test] -->
