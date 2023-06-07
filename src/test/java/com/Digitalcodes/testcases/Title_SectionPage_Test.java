@@ -288,6 +288,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		report.create_info("Text in My Notes after delete notes :- " + tableOfContent_Page.getTextInMyNotes());
 		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
+		
 		//assertFalse(note_bookmakr);
 
 	}
