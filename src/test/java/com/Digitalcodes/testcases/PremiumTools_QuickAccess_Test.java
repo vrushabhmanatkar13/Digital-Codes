@@ -164,7 +164,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		//assertFalse(note_bookmakr);
 	}
 	
-	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = { "Smoke",
+	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = {
 	"Regression" })
 	public void TC37_verifyRecentlyQuickAccessedSections_QuickAccess() throws Exception {
 		menu.navigateToPremiumToolFeaturs("Quick Access");
@@ -183,12 +183,12 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	public void TC38_verifyAlreadyCreatedBookmark_QuickAccess() throws Exception {
 		Baseclass.refreshBrowser();
 		
-		String titleName = quickaccess.inputTitleName("2021 IBC");
-		Sparkreport.Step("Enter IBC");
+		String titleName = quickaccess.inputTitleName("IRC");
+		Sparkreport.Step("Enter IRC");
 		report.create_info("Title :- " + titleName);
 
-		String section = quickaccess.inputSectionName("301.1");
-		Sparkreport.Step("Enter 301");
+		String section = quickaccess.inputSectionName("R");
+		Sparkreport.Step("Enter R");
 		report.create_info("Section :- " + section);
 		
 		Thread.sleep(1000);
