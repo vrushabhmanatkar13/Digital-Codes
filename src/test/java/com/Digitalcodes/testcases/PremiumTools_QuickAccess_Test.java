@@ -135,6 +135,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		
 	   	menu.navigateToPremiumToolFeaturs("Sharing History");
 		sharingHistorypage.clickOnvIcon();
+		Thread.sleep(3000);
 		 assertEquals(sharingHistorypage.titleName(), titleName);
 		 assertEquals(sharingHistorypage.getSectionName(), section);
 		 assertEquals(sharingHistorypage.getDescription(),jsonValue("bookmark-text"));
