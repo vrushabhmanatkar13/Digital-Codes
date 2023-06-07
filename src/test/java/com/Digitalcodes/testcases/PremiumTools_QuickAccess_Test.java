@@ -120,8 +120,8 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		
 	}
 
-	@Test(dependsOnMethods = "TC35_verifyActionsOnSection_QuickAccess",description = "Verify user able to Share, Edit, Delete Bookmark from Quick Access",groups = { 
-	"Regression" })
+	@Test(priority = 3,description = "Verify user able to Share, Edit, Delete Bookmark from Quick Access",groups = { 
+	"Smoke","Regression" })
 	public void TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess() throws Exception {
 		
 		String SuccessfullyMsg = sectionpage.shareNotes_Bookmark(Login_Test.EMAIL);
@@ -163,7 +163,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		//assertFalse(note_bookmakr);
 	}
 	
-	@Test(priority = 3,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = { "Smoke",
+	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = { "Smoke",
 	"Regression" })
 	public void TC37_verifyRecentlyQuickAccessedSections_QuickAccess() throws Exception {
 		menu.navigateToPremiumToolFeaturs("Quick Access");
@@ -177,7 +177,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	}
 	
 	
-	@Test(priority = 4,description = "Verify User able to View already created Bookmark at Quick Access",groups = {
+	@Test(priority = 5,description = "Verify User able to View already created Bookmark at Quick Access",groups = {
 	"Regression" })
 	public void TC38_verifyAlreadyCreatedBookmark_QuickAccess() throws Exception {
 		Baseclass.refreshBrowser();
