@@ -53,11 +53,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	}
 
 	
-	@AfterMethod(alwaysRun = true)
-    public void afterMethod_Collection() {
-		   closeWindow();
-		   retrunToMainWindow();
-	}
+	
 	
 	
 	  @Test(priority = 1,description ="Verify user able to navigate to Collection title",dataProvider = "collection" ,groups = {"Smoke"})
@@ -87,11 +83,14 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	   report.create_info("Subscription Tag is " + landingpage.getTagName());
 	   report.create_info(activetext);
 	   
+	   closeWindow();
+	   retrunToMainWindow();
+	   
 	   assertEquals(title, titlename);
 	   assertEquals(landingpage.getTagName(), jsonArrayValue("Premium", "tag"));
 	   assertEquals(activetext,jsonArrayValue("Premium", "Access-title"));
 	   
-	  
+	   
 		
 	  
 	  }
@@ -107,7 +106,12 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		 Sparkreport.Step("Click Chapter "+ cahptername);
 		 
 		 Thread.sleep(5000);
+		 
+		 closeWindow();
+		 retrunToMainWindow();
 		 assertEquals(cahptername, chapter);
+		 
+		 
 		
 	  }
 	 
@@ -157,7 +161,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			report.create_info("Chapter Name at my notes :- " + toc.getChapterNameInMynotes());
 
 			assertEquals(toc.getChapterNameInMynotes(), chapter);
-
+			 
+			
 			menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
 			MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
 
@@ -166,7 +171,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
 
 			mynote_bookmark.removeNotes_Bookmark();
-			
+			closeWindow();
+			retrunToMainWindow();
 		  
 	  }
 	
@@ -212,6 +218,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 
 			assertEquals(toc.getChapterNameInMynotes(), chapter);
 
+			
 			menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
 			MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
 
@@ -220,7 +227,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
 
 			mynote_bookmark.removeNotes_Bookmark();
-		
+			 closeWindow();
+			 retrunToMainWindow();
 	  
 	  
 	  }
@@ -246,6 +254,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			Sparkreport.Step("Click Share Button");
 			Sparkreport.Step("Click Close");
 			report.create_info("Successful message :- " + message);
+			 closeWindow();
+			 retrunToMainWindow();
 			assertEquals(message, jsonValue("share-successful"));
 			
 	  }
@@ -270,6 +280,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		 	Baseclass.switchToWindow();
 		 	
 			Sparkreport.Step("Click Print");
+			 closeWindow();
+			 retrunToMainWindow();
 			assertTrue(pdfprint);
 	  }
 	  
@@ -287,7 +299,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		  String tag=landingpage.getTagName();
 		  String activetext=landingpage.getActivepremiumText();
 		   
-		   
+		  closeWindow();
+		  retrunToMainWindow(); 
+		  
 		   assertEquals(titlename, recentlyTitle);
 		   assertEquals(tag,jsonArrayValue("Premium", "tag"));
 		   assertEquals(activetext, jsonArrayValue("Premium", "Access-title"));
