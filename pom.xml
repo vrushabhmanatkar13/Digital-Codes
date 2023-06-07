@@ -19,9 +19,9 @@
 	<profiles>
 		<profile>
 			<id>Smoke</id>
-		<activation>
-		<activeByDefault>true</activeByDefault>
-		</activation>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -34,7 +34,10 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							
+							<configuration>
+								<outputName>Smoke</outputName>
+							</configuration>
+
 						</configuration>
 						<dependencies>
 							<dependency>
@@ -52,8 +55,8 @@
 		<profile>
 			<id>Regression</id>
 			<activation>
-		<activeByDefault>true</activeByDefault>
-		</activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -66,7 +69,9 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Regression_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							<shutdown>kill</shutdown>
+							<configuration>
+								<outputName>Regression</outputName>
+							</configuration>
 						</configuration>
 						<dependencies>
 							<dependency>
