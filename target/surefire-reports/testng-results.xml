@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-07T20:29:50 IST" name="Digital Codes Smoke test" finished-at="2023-06-07T20:30:38 IST" duration-ms="47898">
+  <suite started-at="2023-06-07T21:03:30 IST" name="Smoke test" finished-at="2023-06-07T21:04:32 IST" duration-ms="61317">
     <groups>
       <group name="Regression">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-06-07T20:29:50 IST" name="Smoke test for Premium user" finished-at="2023-06-07T20:30:38 IST" duration-ms="47898">
+    <test started-at="2023-06-07T21:03:30 IST" name="Smoke test for Premium user" finished-at="2023-06-07T21:04:32 IST" duration-ms="61317">
       <class name="com.Digitalcodes.testcases.Login_Test">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:29:47 IST" name="beforeSuite" finished-at="2023-06-07T20:29:50 IST" duration-ms="2335" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:03:28 IST" name="beforeSuite" finished-at="2023-06-07T21:03:30 IST" duration-ms="2240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:29:50 IST" name="beforeTest" finished-at="2023-06-07T20:30:08 IST" duration-ms="18683" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:03:30 IST" name="beforeTest" finished-at="2023-06-07T21:03:54 IST" duration-ms="23726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:08 IST" name="beforeClass" finished-at="2023-06-07T20:30:09 IST" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:03:54 IST" name="beforeClass" finished-at="2023-06-07T21:03:54 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:09 IST" name="TC01_loginValidData" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-06-07T20:30:18 IST" duration-ms="9852" status="PASS">
+        <test-method signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:03:54 IST" name="TC01_loginValidData" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-06-07T21:04:11 IST" duration-ms="16792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,18 +72,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_loginValidData -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:19 IST" name="log_result" finished-at="2023-06-07T20:30:20 IST" duration-ms="1457" status="PASS">
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:04:11 IST" name="log_result" finished-at="2023-06-07T21:04:14 IST" duration-ms="2295" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@65004ff6] output={null}]]]>
+                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@49aa766b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:20 IST" name="TC02_verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " data-provider="Dynamic" finished-at="2023-06-07T20:30:37 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" duration-ms="16513" status="PASS">
+        <test-method signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:04:14 IST" name="TC02_verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " data-provider="Dynamic" finished-at="2023-06-07T21:04:30 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" duration-ms="16726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,26 +109,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_verifyUserInformation -->
-        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:37 IST" name="log_result" finished-at="2023-06-07T20:30:37 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:04:31 IST" name="log_result" finished-at="2023-06-07T21:04:31 IST" duration-ms="509" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6] output={null}]]]>
+                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:37 IST" name="afterTest" finished-at="2023-06-07T20:30:38 IST" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:04:31 IST" name="afterTest" finished-at="2023-06-07T21:04:32 IST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@65004ff6]" started-at="2023-06-07T20:30:39 IST" name="afterSuite" finished-at="2023-06-07T20:30:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@49aa766b]" started-at="2023-06-07T21:04:33 IST" name="afterSuite" finished-at="2023-06-07T21:04:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.Digitalcodes.testcases.Login_Test -->
     </test> <!-- Smoke test for Premium user -->
-  </suite> <!-- Digital Codes Smoke test -->
+  </suite> <!-- Smoke test -->
 </testng-results>
