@@ -123,6 +123,7 @@ public class Prerequisites_Teardown extends Baseclass {
 
 			System.out.println("Platform Name :- " + PLATFORM);
 			System.out.println("Browser Name :- " + BROWSER_NAME);
+			System.out.println("Headless Mode :- "+ HEADLESS);
 			System.out.println(" ");
 
 			System.out.println(driver.getCurrentUrl());

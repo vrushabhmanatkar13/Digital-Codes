@@ -13,7 +13,7 @@ import org.testng.ITestResult;
 
 
 import com.Digitalcodes.utilities.Sparkreport;
-
+import com.Digitalcodes.utilities.TakeScreenshot;
 
 import io.qameta.allure.Allure;
 
@@ -68,8 +68,8 @@ public class LogResult_ITestListner extends Prerequisites_Teardown implements IT
 			
 			report.test_fail(result.getThrowable()+"", result);
 			
-			Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );
-			//TakeScreenshot.allure_screenshot();
+			//Allure.addAttachment(result.getMethod().getMethodName(), new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)) );
+			TakeScreenshot.allure_screenshot();
 			System.out.println(result.getMethod().getMethodName() + " : FAILED");
 			System.out.println("     ");
 			result.getThrowable().printStackTrace();
