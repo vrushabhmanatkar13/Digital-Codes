@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Digital Codes Regression test">
+<suite name="Regression test">
 <parameter name="tagname" value="Regression"></parameter>
 
 <listeners>
@@ -22,6 +22,7 @@
 	        <class name="com.Digitalcodes.testcases.TableOfContent_Test"/> 
 		 	<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" />
 			<class name="com.Digitalcodes.testcases.Title_Collection_Test" />
+			<class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test" />
 	 	</classes>
 		
 	</test> <!-- Test -->

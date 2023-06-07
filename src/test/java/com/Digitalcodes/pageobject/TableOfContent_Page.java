@@ -96,7 +96,7 @@ public class TableOfContent_Page extends Baseclass{
 		for (WebElement webElement : list_section) {
 			if (getText(webElement).equalsIgnoreCase(section)) {
 				chaptername=getText(webElement);
-				webElement.click();
+				click(webElement);
            
 				break;
 				 

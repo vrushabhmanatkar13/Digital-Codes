@@ -259,35 +259,38 @@ public class TitleSection_Page extends Baseclass {
 		Baseclass.action.doubleClick(textchildSection).build().perform();
 	}
 
-	public void createNote_FromSection(String notetext) {
+	public void createNote_FromSection(String notetext) throws InterruptedException {
 		click(note);
+		Thread.sleep(1000);
 		textcontainer.clear();
 		sendKeys(textcontainer, notetext);
 
 	}
 	
-	public void createBookamrk_FromSection(String bookamrk) {
+	public void createBookamrk_FromSection(String bookamrk) throws InterruptedException {
 		click(bookmarkicon);
-		
+		 Thread.sleep(1000);
 		textcontainer.clear();
 		sendKeys(textcontainer, bookamrk);
 	}
 	
 	
-	public void createNote_FromSubSection(String sectionId,String notetext) {
+	public void createNote_FromSubSection(String sectionId,String notetext) throws InterruptedException {
 		for (WebElement webElement : noteicon) {
 			if (webElement.getAttribute("id").equals(sectionId+"_note")) {
 			        click(webElement);
+			        Thread.sleep(1000);
 			        textcontainer.clear();
 					sendKeys(textcontainer, notetext);
 			}
 		}
 	}
 	
-	public void creteBookmark_FromSubSection(String sectionId, String bookmarktext) {
+	public void creteBookmark_FromSubSection(String sectionId, String bookmarktext) throws InterruptedException {
 		for (WebElement webElement : Bookmarkicon) {
 			if (webElement.getAttribute("id").equals(sectionId+"_bookmark")) {
 			     click(webElement);
+			     Thread.sleep(1000);
 			     textcontainer.clear();
 				sendKeys(textcontainer, bookmarktext);
 			}
@@ -297,20 +300,22 @@ public class TitleSection_Page extends Baseclass {
 	}
 	
 	
-	public void creatNote_FromChildSubSection(String sectionId, String notetext) {
+	public void creatNote_FromChildSubSection(String sectionId, String notetext) throws InterruptedException {
 		for (WebElement webElement : noteicon) {
 			if (webElement.getAttribute("id").equals(sectionId+"_note")) {
 		        click(webElement);
+		        Thread.sleep(1000);
 		        textcontainer.clear();
 				sendKeys(textcontainer, notetext);
 		}
 		}
 	}
 	
-	public void createBookmark_FromChildSubSection(String sectionId, String bookmarktext) {
+	public void createBookmark_FromChildSubSection(String sectionId, String bookmarktext) throws InterruptedException {
 		for (WebElement webElement : Bookmarkicon) {
 			if (webElement.getAttribute("id").equals(sectionId+"_bookmark")) {
 			     click(webElement);
+			     Thread.sleep(1000);
 			     textcontainer.clear();
 				sendKeys(textcontainer, bookmarktext);
 			}
