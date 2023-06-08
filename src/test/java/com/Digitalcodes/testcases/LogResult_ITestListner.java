@@ -2,12 +2,11 @@
 package com.Digitalcodes.testcases;
 
 import java.awt.Desktop;
-import java.io.ByteArrayInputStream;
+
 import java.io.File;
 import java.io.IOException;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -16,7 +15,7 @@ import org.testng.ITestResult;
 import com.Digitalcodes.utilities.Sparkreport;
 import com.Digitalcodes.utilities.TakeScreenshot;
 
-import io.qameta.allure.Allure;
+
 
 public class LogResult_ITestListner extends Prerequisites_Teardown implements ITestListener {
 
