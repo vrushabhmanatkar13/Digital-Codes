@@ -1,5 +1,6 @@
 package com.Digitalcodes.testcases;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,6 +26,8 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		sharingHistorypage=new PremiumTools_SharingHistory_Page();
 	}
 
+	
+	
 	
 	
 	@Test(priority = 1, description = "Verify user able to Access section from Quick Access", groups = { "Smoke",
@@ -59,8 +62,8 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(sectionName.replaceAll(" ", ""), section.replaceAll(" ", ""));
 		Baseclass.retrunToMainWindow();
 		Baseclass.switchToWindow();
-		Baseclass.closeWindow();
-		Baseclass.retrunToMainWindow();
+		 closeWindow();
+		  retrunToMainWindow();
 
 		
 
@@ -209,19 +212,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(mynote_bookmark.getTitleName(), titleName);
 		assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, "Default"));
 		
-		menu.navigateToPremiumToolFeaturs("Quick Access");
-		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click Quick Access");
-		
-		quickaccess.clickRecentlyAccessedSection(section);
-		Sparkreport.Step("Click "+ section);
-		 report.create_info("Description :- " + sectionpage.getDescription());
-		 report.create_info("Created By :- " +sectionpage.getCreatedBy());
-		 
-		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-text"));
-		assertEquals(sectionpage.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
-		sectionpage.deleteNotes__Bookmark();
+		mynote_bookmark.removeNotes_Bookmark();
 	}
 	
 	

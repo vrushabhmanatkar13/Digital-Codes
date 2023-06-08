@@ -32,6 +32,12 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		landingpage=new TitleLanding_Page();
 	}
 	
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod() {
+		 closeWindow();
+		 retrunToMainWindow();
+	}
+	
 	
 	@DataProvider(name="collection")
 	public Object[][] getCollectionData() throws Exception{
@@ -75,7 +81,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  collectionpgae.clickIncludeTitles(title);
 	 
 	  Sparkreport.Step("Click "+ title);
-	  
+	  Thread.sleep(2000);
 	   String titlename = landingpage.getTitleHeading();
 	   String activetext=landingpage.getActivepremiumText();
 	  
@@ -89,8 +95,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	   assertEquals(landingpage.getTagName(), jsonArrayValue("Premium", "tag"));
 	   assertEquals(activetext,jsonArrayValue("Premium", "Access-title"));
 	   
-	   closeWindow();
-	   retrunToMainWindow();
+	  
 		
 	  
 	  }
@@ -99,16 +104,22 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  @Test(priority = 2,description = "Verify user able to navigate to Section on Collection title",dataProvider = "collection",groups = {"Smoke","Regression"})
 	  public void TC29_verifySection_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		
-		  collectionpgae.clickIncludeTitles(title);
-		
+		  menu.navigateToCollections(Section);
+		  Sparkreport.Step("Click menu"); 
+		  Sparkreport.Step("Click "+Section); 
+		  
+		  coverpage.clickOnTitlesCover(subsection);
+		  Sparkreport.Step("Click "+ subsection);
+		  Thread.sleep(6000);
+		  
+		 collectionpgae.clickIncludeTitles(title);
 		 Sparkreport.Step("Click "+ title);  
 		 String cahptername= toc.navigateToChapter(chapter);
 		 Sparkreport.Step("Click Chapter "+ cahptername);
 		 
 		 Thread.sleep(3000);
 		 
-		 closeWindow();
-		 retrunToMainWindow();
+		
 		 assertEquals(cahptername, chapter);
 		 
 		 
@@ -117,13 +128,19 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	 
 	  @Test(priority = 3, description = "Verify user able to create Notes on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
 	  public void TC30_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-		
+		  menu.navigateToCollections(Section);
+		  Sparkreport.Step("Click menu"); 
+		  Sparkreport.Step("Click "+Section); 
+		  
+		  coverpage.clickOnTitlesCover(subsection);
+		  Sparkreport.Step("Click "+ subsection);
+		  Thread.sleep(6000);
 		  collectionpgae.clickIncludeTitles(title);
 		  
-		  Sparkreport.Step("Click "+ title);
+		   Sparkreport.Step("Click "+ title);
 		  
-		 String cahptername= toc.navigateToChapter(chapter);
-		 Sparkreport.Step("Click "+ cahptername);
+		   String cahptername= toc.navigateToChapter(chapter);
+		   Sparkreport.Step("Click "+ cahptername);
 		 
 			section.doubleClickOnTitle_Section();
 			Sparkreport.Step("Double Click on text");
@@ -145,12 +162,12 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			section.clickOnSaveButton();
 			Sparkreport.Step("Click Save");
 
-			
+			Thread.sleep(1000);
 			report.create_info("Note Created at :- " + section.getChapterName());
 			report.create_info("Tag Name :- " + section.getTagName());
 			report.create_info("Description is :- " + section.getDescription());
 			report.create_info("Note Created by :- " + section.getCreatedBy());
-
+             
 			assertEquals(section.getTagName(), Section);
 			assertEquals(section.getDescription(), jsonValue("notes-text"));
 			assertEquals(section.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
@@ -171,8 +188,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
 
 			mynote_bookmark.removeNotes_Bookmark();
-			closeWindow();
-			retrunToMainWindow();
+			
 		  
 	  }
 	
@@ -202,7 +218,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			Sparkreport.Step("Click Save");
 
 			
-
+            Thread.sleep(1000);
 			report.create_info("Tag Name :- " + section.getTagName());
 			report.create_info("Note Created at :- " + section.getChapterName());
 			report.create_info("Description is :- " + section.getDescription());
@@ -227,8 +243,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
 
 			mynote_bookmark.removeNotes_Bookmark();
-			 closeWindow();
-			 retrunToMainWindow();
+			
 	  
 	  
 	  }
@@ -254,8 +269,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			Sparkreport.Step("Click Share Button");
 			Sparkreport.Step("Click Close");
 			report.create_info("Successful message :- " + message);
-			 closeWindow();
-			 retrunToMainWindow();
+			
 			assertEquals(message, jsonValue("share-successful"));
 			
 	  }
@@ -280,8 +294,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		 	Baseclass.switchToWindow();
 		 	
 			Sparkreport.Step("Click Print");
-			 closeWindow();
-			 retrunToMainWindow();
+			
 			assertTrue(pdfprint);
 	  }
 	  
@@ -299,8 +312,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 		  String tag=landingpage.getTagName();
 		  String activetext=landingpage.getActivepremiumText();
 		   
-		  closeWindow();
-		  retrunToMainWindow(); 
+		
 		  
 		   assertEquals(titlename, recentlyTitle);
 		   assertEquals(tag,jsonArrayValue("Premium", "tag"));
