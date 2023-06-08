@@ -159,12 +159,12 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
 		
 		sectionpage.deleteNotes__Bookmark();
-		//Thread.sleep(3000);
-		//boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
+		Thread.sleep(2000);
+		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
 		
-		//assertFalse(note_bookmakr);
+		assertFalse(note_bookmakr);
 	}
 	
 	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = {

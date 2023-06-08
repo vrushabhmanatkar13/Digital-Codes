@@ -28,7 +28,6 @@
 			<class name="com.Digitalcodes.testcases.Title_Basic_Test" />
 			<class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test" />
 
-
 		</classes>
 
 	</test> <!-- Test -->

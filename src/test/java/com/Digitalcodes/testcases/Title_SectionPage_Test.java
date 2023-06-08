@@ -279,7 +279,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Smoke", "Regression" })
 	public void TC15_verifyDeleteNotes_FromSection() throws Exception {
 		section.deleteNotes__Bookmark();
-		//boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
+		boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
 		
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
@@ -289,7 +289,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		report.create_info("Text in My Notes after delete notes :- " + tableOfContent_Page.getTextInMyNotes());
 		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
 		
-		//assertFalse(note_bookmakr);
+		assertFalse(note_bookmakr);
 
 	}
 
@@ -349,8 +349,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC18_verifyDeleteBookmark_FromSection() throws Exception {
 
-		boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
+		
 		section.deleteNotes__Bookmark();
+		boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
 

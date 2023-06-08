@@ -158,7 +158,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			section.selectTag(Section);
 			Sparkreport.Step("Click Tag DropDown");
 			Sparkreport.Step("Select Tag Name");
-
+			Thread.sleep(2000);
 			section.clickOnSaveButton();
 			Sparkreport.Step("Click Save");
 
