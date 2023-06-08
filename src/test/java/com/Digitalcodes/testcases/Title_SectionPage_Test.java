@@ -80,7 +80,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Note Created at :- " + section.getChapterName());
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
@@ -137,7 +137,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Thread.sleep(1000);
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Note Created at :- " + section.getChapterName());
 		report.create_info("Description is :- " + section.getDescription());
@@ -425,7 +425,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Note Created at :- " + subsection);
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
@@ -480,7 +480,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Bookmark Created at :- " + subsection);
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
@@ -577,10 +577,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Thread.sleep(1000);
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-		Thread.sleep(1000);
+		
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Note Created at :- " + childsection);
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
@@ -634,10 +634,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-
+		Thread.sleep(1000);
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
-
+		Thread.sleep(1000);
 		report.create_info("Bookmark Created at :- " + childsection);
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
