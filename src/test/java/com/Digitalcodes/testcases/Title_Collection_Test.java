@@ -56,7 +56,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	
 	
 	
-	  @Test(priority = 1,description ="Verify user able to navigate to Collection title",dataProvider = "collection" ,groups = {"Smoke"})
+	  @Test(priority = 1,description ="Verify user able to navigate to Collection title",dataProvider = "collection" ,groups = {"Smoke","Regression"})
 	  public void TC28_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter) throws Exception { 
 		  
 	  menu.navigateToCollections(Section);
