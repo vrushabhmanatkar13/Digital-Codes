@@ -66,21 +66,23 @@ public class Login_Test extends Prerequisites_Teardown {
 
          Thread.sleep(12000);
 	    SUBSCRIPTION = header.getSubscrptionType();
-		
+		NAME=Name;
+		EMAIL=Username;
 		
 		header.holdOnSubscriptionType();
 		Sparkreport.Step("Hover on "+ SUBSCRIPTION);
 		
 		Thread.sleep(4000);
-		NAME = header.getName();
-		EMAIL = header.getEmail();
-
+		String NAME = header.getName();
+		String EMAIL = header.getEmail();
+   
 		// Verify Subscription type - UserName - Email
 		report.create_info("Subscripton Types is " + SUBSCRIPTION);
 		report.create_info("User Name is " + NAME);
 		report.create_info("User Email is " + EMAIL);
 		report.create_info("Page Title is " + driver.getTitle());
 		
+		Thread.sleep(6000);
 		assertEquals(SUBSCRIPTION,Subscription);
 		assertEquals(NAME, Name);
 		assertEquals(EMAIL,Username);
