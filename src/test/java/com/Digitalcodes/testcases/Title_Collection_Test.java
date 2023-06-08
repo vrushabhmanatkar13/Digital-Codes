@@ -162,7 +162,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 			section.clickOnSaveButton();
 			Sparkreport.Step("Click Save");
 
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			report.create_info("Note Created at :- " + section.getChapterName());
 			report.create_info("Tag Name :- " + section.getTagName());
 			report.create_info("Description is :- " + section.getDescription());
