@@ -27,26 +27,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 1, description = "Verify user able to naviagate Section from TableOfContent_Page", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Smoke", "Regression" })
-	public void TC08_verifyNavigateToSection_FromTOC(String Section, String Sub_section, String Title, String Chapter)
-			throws Exception {
-
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
-		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click  " + Section);
-		Sparkreport.Step("Click  " + Sub_section);
-		Sparkreport.Step("Click  " + Title);
-
-		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
-		Sparkreport.Step("Click Chapter " + chapterName);
-		report.create_info("Chapter Name :- " + section.getChapterName());
-
-		assertEquals(section.getChapterName(), chapterName);
-
-	}
-
-	@Test(priority = 2, description = "Verify user able to create notes at section", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	
+	@Test(priority = 1, description = "Verify user able to create notes at section", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke", "Regression" })
 	public void TC09_verifyCreateNotes_atSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -59,7 +41,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
-
+		report.create_info("Chapter Name :- " + section.getChapterName());
+		assertEquals(section.getChapterName(), chapterName);
+		
+		
 		section.doubleClickOnTitle_Section();
 		Sparkreport.Step("Double Click on text");
 
@@ -108,7 +93,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 3, description = "Verify user able to create bookmark at section", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 2, description = "Verify user able to create bookmark at section", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke", "Regression" })
 	public void TC10_verifyCreateBookmark_atSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -164,7 +149,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 4, description = "Verify user able to share the section", dataProvider = "SingleTitle", groups = {
+	@Test(priority = 3, description = "Verify user able to share the section", dataProvider = "SingleTitle", groups = {
 			"Smoke", "Regression" })
 	public void TC11_verifyShareSection_FromSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -219,7 +204,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 5, description = "Verify user able to share note from section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 4, description = "Verify user able to share note from section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke", "Regression" })
 	public void TC13_verifyShareNote_FromSction(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -293,7 +278,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 6, description = "Verify user able to share bookmark from Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 5, description = "Verify user able to share bookmark from Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC16_verifyShareBookmark_FromSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -362,7 +347,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertFalse(note_bookmakr);
 	}
 
-	@Test(priority = 7, description = "Verify links On Chapter", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 6, description = "Verify links On Chapter", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Smoke", "Regression" })
 	public void TC19_verifyLinksOnChapter(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -397,7 +382,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertTrue(chapter);
 	}
 
-	@Test(priority = 8, description = "Verify user able to create notes at Sub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 7, description = "Verify user able to create notes at Sub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -453,7 +438,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 9, description = "Verify user able to create Bookmark at Sub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 8, description = "Verify user able to create Bookmark at Sub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -508,7 +493,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 10, description = "Verify user able to share the Subsection", dataProvider = "SingleTitle", groups = {
+	@Test(priority = 9, description = "Verify user able to share the Subsection", dataProvider = "SingleTitle", groups = {
 			"Regression" })
 	public void TC22_verifyShareSection_FromSubSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
@@ -537,7 +522,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 11, description = "Verify user able to Print SubSection", groups = { "Regression" })
+	@Test(priority = 10, description = "Verify user able to Print SubSection", groups = { "Regression" })
 	public void TC23_verifyPrintSection_FromSubSection() throws Exception {
 
 		boolean pdfprint = section.printThisSubSection(section.getSessionID_FromSubChapter());
@@ -550,7 +535,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertTrue(pdfprint1);
 	}
 
-	@Test(priority = 12, description = "Verify user able to create notes at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 11, description = "Verify user able to create notes at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC24_verifyCreateNotes_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
@@ -608,7 +593,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 13, description = "Verify user able to create Bookmark at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 12, description = "Verify user able to create Bookmark at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC25_verifyCreateBookmark_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
@@ -666,7 +651,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 14, description = "Verify user able to share section at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 13, description = "Verify user able to share section at ChildSub-Section", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
 			"Regression" })
 	public void TC26_verifyShareSection_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
@@ -698,7 +683,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 15, description = "Verify user able to Print SubSection", groups = { "Regression" })
+	@Test(priority = 14, description = "Verify user able to Print SubSection", groups = { "Regression" })
 	public void TC27_verifyPrintSection_FromChildSubSection() throws Exception {
 
 		boolean pdf = section.printChildSubSection(section.getSectionID_FromChildSection());
