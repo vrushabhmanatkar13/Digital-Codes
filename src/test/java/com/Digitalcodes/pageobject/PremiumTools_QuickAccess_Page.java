@@ -26,7 +26,7 @@ public class PremiumTools_QuickAccess_Page extends Baseclass {
 	@FindBy(xpath = "//div[@class='col-lg-6 col']//input[@placeholder='Start typing to Search']")
 	private WebElement inputSection;
 
-	@FindBy(xpath = "(//div[@role='option']//p[@class='mb-0'])[1]")
+	@FindBy(xpath = "(//div[contains(@id,'list-item-')]//p[@class=\"mb-0\"])[1]")
 	private WebElement titleName;
 
 	@FindBy(xpath = "//div[@aria-haspopup='listbox']//div[@class='v-select__selections']")
