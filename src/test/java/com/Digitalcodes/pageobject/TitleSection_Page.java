@@ -353,7 +353,13 @@ public class TitleSection_Page extends Baseclass {
 	
 	
 	public boolean Notes_BookmarkisDisplayed() {
+		try {
 		return isDisplayed(bookmark_notes);
+		}
+		catch (Exception e) {
+			return false;
+		}
+			
 	}
 
 	public String getDescription() {
