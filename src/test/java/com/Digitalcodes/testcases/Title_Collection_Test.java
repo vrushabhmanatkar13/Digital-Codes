@@ -63,7 +63,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	
 	
 	  @Test(priority = 1,description ="Verify user able to navigate to Collection title",dataProvider = "collection" ,groups = {"Smoke","Regression"})
-	  public void TC28_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter) throws Exception { 
+	  public void TC27_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter) throws Exception { 
 		  
 	  menu.navigateToCollections(Section);
 	  Sparkreport.Step("Click menu"); 
@@ -102,7 +102,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  
 	  
 	  @Test(priority = 2,description = "Verify user able to navigate to Section on Collection title",dataProvider = "collection",groups = {"Smoke","Regression"})
-	  public void TC29_verifySection_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC28_verifySection_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		  menu.navigateToCollections(Section);
 		  Sparkreport.Step("Click menu"); 
@@ -127,7 +127,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  }
 	 
 	  @Test(priority = 3, description = "Verify user able to create Notes on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC30_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC29_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		  menu.navigateToCollections(Section);
 		  Sparkreport.Step("Click menu"); 
 		  Sparkreport.Step("Click "+Section); 
@@ -193,7 +193,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  }
 	
 	  @Test(priority = 4, description = "Verify user able to create Bookmark on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC31_verifyCreateBookmark_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC30_verifyCreateBookmark_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		 collectionpgae.clickIncludeTitles(title);
 		  
@@ -249,7 +249,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  }
 	  
 	  @Test(priority = 5, description = "Verify user able to Share section on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC32_verifyShareSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC31_verifyShareSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		 collectionpgae.clickIncludeTitles(title);
 		 
@@ -276,7 +276,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  
 
 	  @Test(priority = 6, description = "Verify user able to Print section on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC33_verifyPrintSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC32_verifyPrintSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		  collectionpgae.clickIncludeTitles(title);
 		 		 
@@ -301,7 +301,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown{
 	  
 	  
 	  @Test(priority = 7,description = "Verify user able to Navigate to Recently Added titles of Collection",dataProvider = "Premium Complete",groups = {"Smoke"})
-	  public void TC34_verifyRecentlyAddedTitle_Collection(String Section, String subsection, String title, String chapter) throws Exception {
+	  public void TC33_verifyRecentlyAddedTitle_Collection(String Section, String subsection, String title, String chapter) throws Exception {
 		
 		  String recentlyTitle= collectionpgae.clickOnRecentlyAddedTitles();
 		  Sparkreport.Step("Click "+ recentlyTitle);

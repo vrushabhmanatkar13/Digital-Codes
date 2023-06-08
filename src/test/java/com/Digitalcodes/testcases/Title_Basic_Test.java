@@ -26,7 +26,7 @@ public class Title_Basic_Test extends Prerequisites_Teardown{
 	
 	
 	@Test(priority = 1,description = "Verify user able to navigate to Non-accsiable title ",dataProvider = "Basic",groups = {"Smoke","Regression"})
-	public void TC33_verifyNgviateToBasicTitle(String Section, String Sub_section,String title) {
+	public void TC34_verifyNgviateToBasicTitle(String Section, String Sub_section,String title) {
 		landingpage=commanstep.navigetToTitle(Section, Sub_section, title);
 		Sparkreport.Step("Click Menu");
 		Sparkreport.Step("Click "+ Section);
