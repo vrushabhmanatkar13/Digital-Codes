@@ -27,7 +27,7 @@ public class TableOfContent_Page extends Baseclass{
 	@FindBy(xpath = "//div[contains(text(),'Code Sections')]")
 	private WebElement codessection;
 	
-	@FindAll({ @FindBy(xpath = "//p[@class='mb-0 py-2 body-2']") })
+	@FindAll({ @FindBy(xpath = "//p[@class='mb-0 py-2 body-2']/a") })
 	private List<WebElement> list_section;
 
 	@FindAll({ @FindBy(xpath = "//div[@class=\"row ma-0 row--dense align-center pl-3\"]//a") })
