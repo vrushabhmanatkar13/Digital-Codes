@@ -261,7 +261,7 @@ public class TitleSection_Page extends Baseclass {
 
 	public void createNote_FromSection(String notetext) throws InterruptedException {
 		click(note);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		textcontainer.clear();
 		sendKeys(textcontainer, notetext);
 
