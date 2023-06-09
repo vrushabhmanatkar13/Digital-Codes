@@ -352,7 +352,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	public void TC19_verifyLinksOnChapter(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
 
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
@@ -386,7 +386,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
@@ -442,7 +442,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
@@ -498,7 +498,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	public void TC22_verifyShareSection_FromSubSection(String Section, String Sub_section, String Title, String Chapter)
 			throws Exception {
 
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
@@ -539,7 +539,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC24_verifyCreateNotes_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter) throws Exception {
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+	    commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
