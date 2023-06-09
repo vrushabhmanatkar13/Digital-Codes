@@ -211,7 +211,9 @@ public class TitleSection_Page extends Baseclass {
 	@FindBy(xpath = "//div[@class='py-0 col col-auto']/button")
 	private WebElement hideButton;
 	
-	
+	//ASTM Link 
+	@FindBy(xpath = "(//span//a[contains(.,'ASTM ')])[1]")
+	private WebElement ASTMlink;
 	
 	
 	
@@ -579,12 +581,23 @@ public class TitleSection_Page extends Baseclass {
 	
 	//Hide Commenterary
 	
-	
 	public String clickHideButton() {
 		click(hideButton);
 		return getText(hideButton);
 	}
 	
+	//ASTM LINK
 	
+	public String getLinkText() {
+	//	Baseclass.scrollUptoElement(ASTMlink);
+		return getText(ASTMlink);
+	}
+	
+	
+	
+	public void clickASTMLink() {
+		
+		Baseclass.action.moveToElement(ASTMlink).click(ASTMlink).build().perform();
+	}
 
 }

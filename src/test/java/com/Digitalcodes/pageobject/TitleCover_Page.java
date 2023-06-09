@@ -26,7 +26,9 @@ public class TitleCover_Page extends Baseclass{
 	@FindBy(xpath = "//h1[@class='primary--text display-1']")
 	private WebElement groupTitleDisplay;
 
-	
+	//ASTM Standers Cover page
+	@FindBy(xpath = "//h2[@class='font-weight-regular white--text']")
+	private List<WebElement> categories;
 	
 	
 	public TitleLanding_Page clickOnTitlesCover(String title) {
@@ -47,6 +49,17 @@ public class TitleCover_Page extends Baseclass{
 		return getText(groupTitleDisplay);
 	}
 	
+	
+	public void clickASTMCategories(String category) {
+		for (WebElement webElement : categories) {
+			if (getText(webElement).equalsIgnoreCase(category)) {
+				click(webElement);
+				break;
+				
+			}
+		}
+		
+	}
 	
 	
 	
