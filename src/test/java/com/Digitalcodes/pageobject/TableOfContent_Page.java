@@ -85,6 +85,11 @@ public class TableOfContent_Page extends Baseclass{
 	@FindBy(xpath = "//div[@class='white v-card v-sheet v-sheet--outlined theme--dark']//p")
 	private WebElement notPremiumtext;
 	
+	//ASTM chapter Name
+	@FindBy(xpath = "//p[@class='mb-0 py-2 body-2 pl-2']/a")
+	private WebElement chapterName;
+	
+	
 	public void clickCodesSection() {
 		  codessection.click();
 	  }
@@ -187,5 +192,9 @@ public class TableOfContent_Page extends Baseclass{
 		String text=getText(titleName);
 		click(crossicon);
 		return text;
+	}
+	
+	public void clickChapter() {
+		click(chapterName);
 	}
 }

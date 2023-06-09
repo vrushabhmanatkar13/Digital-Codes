@@ -19,15 +19,15 @@
 		</groups>
 		<classes>
 			<class name="com.Digitalcodes.testcases.Login_Test" />
-
-			<class name="com.Digitalcodes.testcases.Title_LandingPage_Test" />
+            <class name="com.Digitalcodes.testcases.Title_LandingPage_Test" />
 			<class name="com.Digitalcodes.testcases.TableOfContent_Test" />
-			<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" />
-			<class name="com.Digitalcodes.testcases.Title_Collection_Test" />
+			<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" /> 
+			<class name="com.Digitalcodes.testcases.Title_Collection_Test" />		
 			<class name="com.Digitalcodes.testcases.Title_Commentary_Test" />
 			<class name="com.Digitalcodes.testcases.Title_Basic_Test" />
+			 <class name="com.Digitalcodes.testcases.Title_ASTMStanderds_Test" />
 			<class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test" />
-
+           
 		</classes>
 
 	</test> <!-- Test -->

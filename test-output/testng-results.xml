@@ -1,129 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="24" passed="15">
+<testng-results skipped="0" failed="0" ignored="4" total="9" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression test" duration-ms="275628" started-at="2023-06-08T13:39:17 IST" finished-at="2023-06-08T13:43:53 IST">
+  <suite name="Smoke test" duration-ms="80906" started-at="2023-06-09T23:23:38 IST" finished-at="2023-06-09T23:24:59 IST">
     <groups>
       <group name="Regression">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC34_verifyAccessSection_QuickAccess()[pri:1, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC34_verifyAccessSection_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC35_verifyActionsOnSection_QuickAccess()[pri:2, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC35_verifyActionsOnSection_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess()[pri:3, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC37_verifyRecentlyQuickAccessedSections_QuickAccess()[pri:4, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC37_verifyRecentlyQuickAccessedSections_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC38_verifyAlreadyCreatedBookmark_QuickAccess()[pri:5, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC38_verifyAlreadyCreatedBookmark_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="Title_Collection_Test.TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC28_verifyCollectionLandingPage" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC29_verifySection_collectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC30_verifyCreateNotes_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC30_verifyCreateNotes_collectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC31_verifyCreateBookmark_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC31_verifyCreateBookmark_collectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC32_verifyShareSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC32_verifyShareSection_CollectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC33_verifyPrintSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC33_verifyPrintSection_CollectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC33_verifyNavigateToASTM_FromLinks(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC33_verifyNavigateToASTM_FromLinks" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC35_verifyNavigateToASTM" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC36_verifyASTMSection()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC36_verifyASTMSection" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC34_verifyAccessSection_QuickAccess()[pri:1, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC34_verifyAccessSection_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC35_verifyActionsOnSection_QuickAccess()[pri:2, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC35_verifyActionsOnSection_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess()[pri:3, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess" class="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test"/>
-        <method signature="Title_Collection_Test.TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC28_verifyCollectionLandingPage" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
-        <method signature="Title_Collection_Test.TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC29_verifySection_collectionTitles" class="com.Digitalcodes.testcases.Title_Collection_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC33_verifyNavigateToASTM_FromLinks(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC33_verifyNavigateToASTM_FromLinks" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC35_verifyNavigateToASTM" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
+        <method signature="Title_ASTMStanderds_Test.TC36_verifyASTMSection()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC36_verifyASTMSection" class="com.Digitalcodes.testcases.Title_ASTMStanderds_Test"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Regression for Premium user" duration-ms="275628" started-at="2023-06-08T13:39:17 IST" finished-at="2023-06-08T13:43:53 IST">
-      <class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="beforeClass" is-config="true" duration-ms="9" started-at="2023-06-08T13:42:47 IST" finished-at="2023-06-08T13:42:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC34_verifyAccessSection_QuickAccess()[pri:1, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC34_verifyAccessSection_QuickAccess" duration-ms="13933" started-at="2023-06-08T13:42:47 IST" description="Verify user able to Access section from Quick Access" finished-at="2023-06-08T13:43:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC34_verifyAccessSection_QuickAccess -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="log_result" is-config="true" duration-ms="36" started-at="2023-06-08T13:43:01 IST" finished-at="2023-06-08T13:43:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC34_verifyAccessSection_QuickAccess status=SUCCESS method=PremiumTools_QuickAccess_Test.TC34_verifyAccessSection_QuickAccess()[pri:1, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC35_verifyActionsOnSection_QuickAccess()[pri:2, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC35_verifyActionsOnSection_QuickAccess" duration-ms="12447" started-at="2023-06-08T13:43:01 IST" description="Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access" finished-at="2023-06-08T13:43:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC35_verifyActionsOnSection_QuickAccess -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="log_result" is-config="true" duration-ms="22" started-at="2023-06-08T13:43:13 IST" finished-at="2023-06-08T13:43:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC35_verifyActionsOnSection_QuickAccess status=SUCCESS method=PremiumTools_QuickAccess_Test.TC35_verifyActionsOnSection_QuickAccess()[pri:2, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess()[pri:3, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess" duration-ms="21256" started-at="2023-06-08T13:43:13 IST" description="Verify user able to Share, Edit, Delete Bookmark from Quick Access" finished-at="2023-06-08T13:43:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="log_result" is-config="true" duration-ms="30" started-at="2023-06-08T13:43:35 IST" finished-at="2023-06-08T13:43:35 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess status=SUCCESS method=PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess()[pri:3, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC37_verifyRecentlyQuickAccessedSections_QuickAccess()[pri:4, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC37_verifyRecentlyQuickAccessedSections_QuickAccess" duration-ms="3845" started-at="2023-06-08T13:43:35 IST" description="Verify user able to view Recently Accessed Section at Quick Access" finished-at="2023-06-08T13:43:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC37_verifyRecentlyQuickAccessedSections_QuickAccess -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="log_result" is-config="true" duration-ms="20" started-at="2023-06-08T13:43:38 IST" finished-at="2023-06-08T13:43:39 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC37_verifyRecentlyQuickAccessedSections_QuickAccess status=SUCCESS method=PremiumTools_QuickAccess_Test.TC37_verifyRecentlyQuickAccessedSections_QuickAccess()[pri:4, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC38_verifyAlreadyCreatedBookmark_QuickAccess()[pri:5, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="TC38_verifyAlreadyCreatedBookmark_QuickAccess" duration-ms="13206" started-at="2023-06-08T13:43:39 IST" description="Verify User able to View already created Bookmark at Quick Access" finished-at="2023-06-08T13:43:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC38_verifyAlreadyCreatedBookmark_QuickAccess -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372]" name="log_result" is-config="true" duration-ms="26" started-at="2023-06-08T13:43:52 IST" finished-at="2023-06-08T13:43:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC38_verifyAlreadyCreatedBookmark_QuickAccess status=SUCCESS method=PremiumTools_QuickAccess_Test.TC38_verifyAlreadyCreatedBookmark_QuickAccess()[pri:5, instance:com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@46292372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-      </class> <!-- com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test -->
+    <test name="Smoke test for Premium user" duration-ms="80906" started-at="2023-06-09T23:23:38 IST" finished-at="2023-06-09T23:24:59 IST">
       <class name="com.Digitalcodes.testcases.Login_Test">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="beforeSuite" is-config="true" duration-ms="4039" started-at="2023-06-08T13:39:13 IST" finished-at="2023-06-08T13:39:17 IST">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="beforeSuite" is-config="true" duration-ms="2078" started-at="2023-06-09T23:23:36 IST" finished-at="2023-06-09T23:23:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Regression]]>
+                <![CDATA[Smoke]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="beforeTest" is-config="true" duration-ms="22185" started-at="2023-06-08T13:39:17 IST" finished-at="2023-06-08T13:39:39 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="beforeTest" is-config="true" duration-ms="14170" started-at="2023-06-09T23:23:38 IST" finished-at="2023-06-09T23:23:52 IST">
           <params>
             <param index="0">
               <value>
@@ -139,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="beforeClass" is-config="true" duration-ms="74" started-at="2023-06-08T13:39:39 IST" finished-at="2023-06-08T13:39:39 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="beforeClass" is-config="true" duration-ms="66" started-at="2023-06-09T23:23:52 IST" finished-at="2023-06-09T23:23:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="TC01_loginValidData" duration-ms="8504" started-at="2023-06-08T13:39:39 IST" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-06-08T13:39:48 IST">
+        <test-method status="PASS" signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="TC01_loginValidData" duration-ms="7798" started-at="2023-06-09T23:23:52 IST" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-06-09T23:24:00 IST">
           <params>
             <param index="0">
               <value>
@@ -169,18 +78,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_loginValidData -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="log_result" is-config="true" duration-ms="939" started-at="2023-06-08T13:39:48 IST" finished-at="2023-06-08T13:39:49 IST">
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="log_result" is-config="true" duration-ms="746" started-at="2023-06-09T23:24:00 IST" finished-at="2023-06-09T23:24:01 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a] output={null}]]]>
+                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method name="TC02_verifyUserInformation" signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" status="PASS" duration-ms="16444" finished-at="2023-06-08T13:40:06 IST" started-at="2023-06-08T13:39:49 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" data-provider="Dynamic" description="Verify User able to displyed Subscription type, Name, email ">
+        <test-method name="TC02_verifyUserInformation" signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" status="PASS" duration-ms="22348" finished-at="2023-06-09T23:24:23 IST" started-at="2023-06-09T23:24:01 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" data-provider="Dynamic" description="Verify User able to displyed Subscription type, Name, email ">
           <params>
             <param index="0">
               <value>
@@ -206,364 +115,130 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_verifyUserInformation -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="log_result" is-config="true" duration-ms="36" started-at="2023-06-08T13:40:06 IST" finished-at="2023-06-08T13:40:06 IST">
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="log_result" is-config="true" duration-ms="38" started-at="2023-06-09T23:24:23 IST" finished-at="2023-06-09T23:24:23 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a] output={null}]]]>
+                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="afterTest" is-config="true" duration-ms="997" started-at="2023-06-08T13:43:52 IST" finished-at="2023-06-08T13:43:53 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="afterTest" is-config="true" duration-ms="856" started-at="2023-06-09T23:24:58 IST" finished-at="2023-06-09T23:24:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6ac4944a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2023-06-08T13:43:53 IST" finished-at="2023-06-08T13:43:53 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@1a1d3c1a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2023-06-09T23:25:00 IST" finished-at="2023-06-09T23:25:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.Digitalcodes.testcases.Login_Test -->
-      <class name="com.Digitalcodes.testcases.Title_Collection_Test">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="beforeClass" is-config="true" duration-ms="1" started-at="2023-06-08T13:40:06 IST" finished-at="2023-06-08T13:40:06 IST">
+      <class name="com.Digitalcodes.testcases.Title_ASTMStanderds_Test">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="beforeClass" is-config="true" duration-ms="3" started-at="2023-06-09T23:24:23 IST" finished-at="2023-06-09T23:24:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeclassCollection()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="beforeclassCollection" is-config="true" duration-ms="12" started-at="2023-06-08T13:40:06 IST" finished-at="2023-06-08T13:40:06 IST">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="beforeclass" is-config="true" duration-ms="9" started-at="2023-06-09T23:24:23 IST" finished-at="2023-06-09T23:24:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeclassCollection -->
-        <test-method status="PASS" signature="TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC28_verifyCollectionLandingPage" duration-ms="32707" started-at="2023-06-08T13:40:06 IST" description="Verify user able to navigate to Collection title" data-provider="collection" finished-at="2023-06-08T13:40:38 IST">
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="TC33_verifyNavigateToASTM_FromLinks(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC33_verifyNavigateToASTM_FromLinks" duration-ms="23676" started-at="2023-06-09T23:24:23 IST" description="Verify user able to navigate to ASTM Standerds thorugh link" data-provider="SingleTitle" finished-at="2023-06-09T23:24:47 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Collections]]>
+                <![CDATA[I-Codes]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Premium Complete]]>
+                <![CDATA[2021 I-Codes]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
+                <![CDATA[2021 International Building Code (IBC)]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
+                <![CDATA[CHAPTER 2 DEFINITIONS]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC28_verifyCollectionLandingPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="80" started-at="2023-06-08T13:40:38 IST" finished-at="2023-06-08T13:40:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="59" started-at="2023-06-08T13:40:39 IST" finished-at="2023-06-08T13:40:39 IST">
+        </test-method> <!-- TC33_verifyNavigateToASTM_FromLinks -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="log_result" is-config="true" duration-ms="37" started-at="2023-06-09T23:24:47 IST" finished-at="2023-06-09T23:24:47 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC28_verifyCollectionLandingPage status=SUCCESS method=Title_Collection_Test.TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
+                <![CDATA[[TestResult name=TC33_verifyNavigateToASTM_FromLinks status=SUCCESS method=Title_ASTMStanderds_Test.TC33_verifyNavigateToASTM_FromLinks(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC28_verifyCollectionLandingPage" duration-ms="13108" started-at="2023-06-08T13:40:39 IST" description="Verify user able to navigate to Collection title" data-provider="collection" finished-at="2023-06-08T13:40:52 IST">
+        <test-method status="PASS" signature="TC35_verifyNavigateToASTM(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC35_verifyNavigateToASTM" duration-ms="5518" started-at="2023-06-09T23:24:47 IST" description="Verify user able to navigate to ASTM Standerds Landing page" data-provider="ASTM" finished-at="2023-06-09T23:24:53 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Collections]]>
+                <![CDATA[Standards]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[2023 Energy Collection]]>
+                <![CDATA[ASTM Standards]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[2021 CFR Part 3285 Model Manufactured Home Installation Standards]]>
+                <![CDATA[Iron and Steel Materials]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Subpart C— Site Preparation]]>
+                <![CDATA[ASTM A1003/A1003M-15]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A1003/A1003M-15]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC28_verifyCollectionLandingPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="74" started-at="2023-06-08T13:40:52 IST" finished-at="2023-06-08T13:40:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="38" started-at="2023-06-08T13:40:52 IST" finished-at="2023-06-08T13:40:52 IST">
+        </test-method> <!-- TC35_verifyNavigateToASTM -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="log_result" is-config="true" duration-ms="50" started-at="2023-06-09T23:24:53 IST" finished-at="2023-06-09T23:24:53 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC28_verifyCollectionLandingPage status=SUCCESS method=Title_Collection_Test.TC28_verifyCollectionLandingPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
+                <![CDATA[[TestResult name=TC35_verifyNavigateToASTM status=SUCCESS method=Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC29_verifySection_collectionTitles" duration-ms="25329" started-at="2023-06-08T13:40:52 IST" description="Verify user able to navigate to Section on Collection title" data-provider="collection" finished-at="2023-06-08T13:41:17 IST">
+        <test-method status="PASS" signature="TC36_verifyASTMSection()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="TC36_verifyASTMSection" duration-ms="5190" started-at="2023-06-09T23:24:53 IST" description="Verify user able to Access ASTM title " depends-on-methods="com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM" finished-at="2023-06-09T23:24:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC36_verifyASTMSection -->
+        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6]" name="log_result" is-config="true" duration-ms="24" started-at="2023-06-09T23:24:58 IST" finished-at="2023-06-09T23:24:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Premium Complete]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC29_verifySection_collectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="92" started-at="2023-06-08T13:41:17 IST" finished-at="2023-06-08T13:41:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="57" started-at="2023-06-08T13:41:17 IST" finished-at="2023-06-08T13:41:17 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC29_verifySection_collectionTitles status=SUCCESS method=Title_Collection_Test.TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
+                <![CDATA[[TestResult name=TC36_verifyASTMSection status=SUCCESS method=Title_ASTMStanderds_Test.TC36_verifyASTMSection()[pri:0, instance:com.Digitalcodes.testcases.Title_ASTMStanderds_Test@c0b41d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC29_verifySection_collectionTitles" duration-ms="20764" started-at="2023-06-08T13:41:17 IST" description="Verify user able to navigate to Section on Collection title" data-provider="collection" finished-at="2023-06-08T13:41:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2023 Energy Collection]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2021 CFR Part 3285 Model Manufactured Home Installation Standards]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Subpart C— Site Preparation]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC29_verifySection_collectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="74" started-at="2023-06-08T13:41:38 IST" finished-at="2023-06-08T13:41:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="45" started-at="2023-06-08T13:41:38 IST" finished-at="2023-06-08T13:41:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC29_verifySection_collectionTitles status=SUCCESS method=Title_Collection_Test.TC29_verifySection_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC30_verifyCreateNotes_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC30_verifyCreateNotes_collectionTitles" duration-ms="30585" started-at="2023-06-08T13:41:38 IST" description="Verify user able to create Notes on Collection titles" data-provider="Premium Complete" finished-at="2023-06-08T13:42:09 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Premium Complete]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC30_verifyCreateNotes_collectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="90" started-at="2023-06-08T13:42:09 IST" finished-at="2023-06-08T13:42:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="93" started-at="2023-06-08T13:42:09 IST" finished-at="2023-06-08T13:42:09 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC30_verifyCreateNotes_collectionTitles status=SUCCESS method=Title_Collection_Test.TC30_verifyCreateNotes_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC31_verifyCreateBookmark_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC31_verifyCreateBookmark_collectionTitles" duration-ms="17383" started-at="2023-06-08T13:42:09 IST" description="Verify user able to create Bookmark on Collection titles" data-provider="Premium Complete" finished-at="2023-06-08T13:42:26 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Premium Complete]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC31_verifyCreateBookmark_collectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="81" started-at="2023-06-08T13:42:26 IST" finished-at="2023-06-08T13:42:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="58" started-at="2023-06-08T13:42:27 IST" finished-at="2023-06-08T13:42:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC31_verifyCreateBookmark_collectionTitles status=SUCCESS method=Title_Collection_Test.TC31_verifyCreateBookmark_collectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC32_verifyShareSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC32_verifyShareSection_CollectionTitles" duration-ms="9808" started-at="2023-06-08T13:42:27 IST" description="Verify user able to Share section on Collection titles" data-provider="Premium Complete" finished-at="2023-06-08T13:42:36 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Premium Complete]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC32_verifyShareSection_CollectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="86" started-at="2023-06-08T13:42:36 IST" finished-at="2023-06-08T13:42:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="95" started-at="2023-06-08T13:42:37 IST" finished-at="2023-06-08T13:42:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC32_verifyShareSection_CollectionTitles status=SUCCESS method=Title_Collection_Test.TC32_verifyShareSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-        <test-method status="PASS" signature="TC33_verifyPrintSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="TC33_verifyPrintSection_CollectionTitles" duration-ms="10045" started-at="2023-06-08T13:42:37 IST" description="Verify user able to Print section on Collection titles" data-provider="Premium Complete" finished-at="2023-06-08T13:42:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Collections]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Premium Complete]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2023 Analysis of Changes, 2023 NEC]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CHAPTER 1 GENERAL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC33_verifyPrintSection_CollectionTitles -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="afterMethod" is-config="true" duration-ms="78" started-at="2023-06-08T13:42:47 IST" finished-at="2023-06-08T13:42:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf]" name="log_result" is-config="true" duration-ms="80" started-at="2023-06-08T13:42:47 IST" finished-at="2023-06-08T13:42:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC33_verifyPrintSection_CollectionTitles status=SUCCESS method=Title_Collection_Test.TC33_verifyPrintSection_CollectionTitles(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.Digitalcodes.testcases.Title_Collection_Test@3fcdcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- log_result -->
-      </class> <!-- com.Digitalcodes.testcases.Title_Collection_Test -->
-    </test> <!-- Regression for Premium user -->
-  </suite> <!-- Regression test -->
+      </class> <!-- com.Digitalcodes.testcases.Title_ASTMStanderds_Test -->
+    </test> <!-- Smoke test for Premium user -->
+  </suite> <!-- Smoke test -->
 </testng-results>
