@@ -119,7 +119,7 @@ public class Prerequisites_Teardown extends Baseclass {
 			Baseclass.refreshBrowser();
 
 			BEOWSER_NAME = BROWSER_NAME;
-			Prerequisites_Teardown.USER = USER;
+			this.USER = USER;
 
 			System.out.println("Platform Name :- " + PLATFORM);
 			System.out.println("Browser Name :- " + BROWSER_NAME);
