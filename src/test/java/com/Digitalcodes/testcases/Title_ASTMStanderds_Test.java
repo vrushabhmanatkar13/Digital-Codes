@@ -34,7 +34,7 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown{
 	}
 	
 	@Test(priority = 1,description = "Verify user able to navigate to ASTM Standerds thorugh link",dataProvider = "SingleTitle",dataProviderClass = Prerequisites_Teardown.class, groups = {"Smoke","Regression"})
-	public void TC33_verifyNavigateToASTM_FromLinks(String Section, String Sub_section, String Title, String Chapter) throws Exception {
+	public void TC34_verifyNavigateToASTM_FromLinks(String Section, String Sub_section, String Title, String Chapter) throws Exception {
 		
 		landingpage=commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
