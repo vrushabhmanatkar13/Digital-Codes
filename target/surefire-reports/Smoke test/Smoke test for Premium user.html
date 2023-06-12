@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Smoke test for Premium user</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 12 14:36:15 IST 2023</td>
+<td>Started on:</td><td>Mon Jun 12 22:10:28 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>539 seconds (539913 ms)</td>
+<tr><td>Total time:</td><td>541 seconds (541439 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Smoke </td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:263)
 	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:277)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598473161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace598473161'><pre>java.lang.AssertionError: expected [false] but found [true]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537194698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537194698'><pre>java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertFalse(Assert.java:67)
@@ -121,113 +121,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>3</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess()'><b>TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Share, Edit, Delete Bookmark from Quick Access</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=114.0.5735.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a32efa4753ceccb5bdef7bc147bb0b30, isElementDisplayed {id=6ADDAFAF8C4B837DCCB9A740F07E3FEF_element_94064}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57043/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a32efa4753ceccb5bdef7bc147bb0b30)] -&gt; xpath: //div[@class=&apos;caption cl description&apos;]]
-Session ID: a32efa4753ceccb5bdef7bc147bb0b30
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:236)
-	at com.Digitalcodes.pageobject.TitleSection_Page.getDescription(TitleSection_Page.java:368)
-	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess(PremiumTools_QuickAccess_Test.java:157)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332367388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1332367388'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=114.0.5735.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a32efa4753ceccb5bdef7bc147bb0b30, isElementDisplayed {id=6ADDAFAF8C4B837DCCB9A740F07E3FEF_element_94064}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57043/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a32efa4753ceccb5bdef7bc147bb0b30)] -&gt; xpath: //div[@class=&apos;caption cl description&apos;]]
-Session ID: a32efa4753ceccb5bdef7bc147bb0b30
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at jdk.internal.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:236)
-	at com.Digitalcodes.pageobject.TitleSection_Page.getDescription(TitleSection_Page.java:368)
-	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess(PremiumTools_QuickAccess_Test.java:157)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>30</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6dd91637</td></tr>
+<td>2</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -237,115 +132,120 @@ Session ID: a32efa4753ceccb5bdef7bc147bb0b30
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
 <td></td>
-<td>12</td>
-<td>com.Digitalcodes.testcases.Title_Basic_Test@10876a6</td></tr>
+<td>30</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC35_verifyActionsOnSection_QuickAccess()'><b>TC35_verifyActionsOnSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access</td>
+<td title='com.Digitalcodes.testcases.Title_Commentary_Test.TC34_verifyHideCommentary()'><b>TC34_verifyHideCommentary</b><br>Test class: com.Digitalcodes.testcases.Title_Commentary_Test<br>Test method: Verify User able to Hide commentary section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
 <td></td>
-<td>22</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6dd91637</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@65bb9029</td></tr>
+<td>20</td>
+<td>com.Digitalcodes.testcases.Title_Commentary_Test@45792847</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC05_verifyMarkFavoriteTitle()'><b>TC05_verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify user able to mark favorite & unfavorite and title should be displayed in favorites<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
 <td></td>
 <td>28</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@65bb9029</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC34_verifyAccessSection_QuickAccess()'><b>TC34_verifyAccessSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Access section from Quick Access</td>
-<td></td>
-<td>30</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6dd91637</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Login_Test.TC01_loginValidData()'><b>TC01_loginValidData</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls<br>Parameters: complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Login_Test@281f23f2</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email <br>Parameters: complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete</td>
-<td></td>
-<td>22</td>
-<td>com.Digitalcodes.testcases.Login_Test@281f23f2</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC29_verifySection_collectionTitles()'><b>TC29_verifySection_collectionTitles</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to navigate to Section on Collection title<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
-<td></td>
-<td>19</td>
-<td>com.Digitalcodes.testcases.Title_Collection_Test@215a34b4</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC33_verifyNavigateToASTM_FromLinks()'><b>TC33_verifyNavigateToASTM_FromLinks</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds thorugh link<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>23</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@71870da7</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC19_verifyLinksOnChapter()'><b>TC19_verifyLinksOnChapter</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify links On Chapter<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>56</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@250b236d</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC12_verifyPrintSection_FromSection()'><b>TC12_verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print Section</td>
 <td></td>
-<td>3</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>1</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC34_verifyRecentlyAddedTitle_Collection()'><b>TC34_verifyRecentlyAddedTitle_Collection</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to Navigate to Recently Added titles of Collection<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
-<td></td>
-<td>2</td>
-<td>com.Digitalcodes.testcases.Title_Collection_Test@215a34b4</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC13_verifyShareNote_FromSction()'><b>TC13_verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share note from section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
 <td></td>
 <td>12</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@250b236d</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC28_verifyCollectionLandingPage()'><b>TC28_verifyCollectionLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to navigate to Collection title<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC38_verifyActionsOnSection_QuickAccess()'><b>TC38_verifyActionsOnSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access</td>
 <td></td>
-<td>18</td>
-<td>com.Digitalcodes.testcases.Title_Collection_Test@215a34b4</td></tr>
+<td>16</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6b68cb27</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.TableOfContent_Test.TC07_verifyMyNotes_FromTOC()'><b>TC07_verifyMyNotes_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TableOfContent_Test<br>Test method: Verify my notes From Table Of Content when user have no any notes <br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
 <td></td>
-<td>57</td>
-<td>com.Digitalcodes.testcases.TableOfContent_Test@1bfe3203</td></tr>
+<td>17</td>
+<td>com.Digitalcodes.testcases.TableOfContent_Test@61f3fbb8</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC28_verifyCollectionLandingPage()'><b>TC28_verifyCollectionLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to navigate to Collection title<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
+<td></td>
+<td>28</td>
+<td>com.Digitalcodes.testcases.Title_Collection_Test@71870da7</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC19_verifyLinksOnChapter()'><b>TC19_verifyLinksOnChapter</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify links On Chapter<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td></td>
+<td>39</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC34_verifyRecentlyAddedTitle_Collection()'><b>TC34_verifyRecentlyAddedTitle_Collection</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to Navigate to Recently Added titles of Collection<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
+<td></td>
+<td>3</td>
+<td>com.Digitalcodes.testcases.Title_Collection_Test@71870da7</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Collection_Test.TC29_verifySection_collectionTitles()'><b>TC29_verifySection_collectionTitles</b><br>Test class: com.Digitalcodes.testcases.Title_Collection_Test<br>Test method: Verify user able to navigate to Section on Collection title<br>Parameters: Collections, Premium Complete, 2023 Analysis of Changes, 2023 NEC, CHAPTER 1 GENERAL</td>
+<td></td>
+<td>32</td>
+<td>com.Digitalcodes.testcases.Title_Collection_Test@71870da7</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td></td>
+<td>32</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection()'><b>TC14_verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit notes from Section</td>
+<td></td>
+<td>5</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM()'><b>TC35_verifyNavigateToASTM</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds Landing page<br>Parameters: Standards, ASTM Standards, Iron and Steel Materials, ASTM A1003/A1003M-15, A1003/A1003M-15</td>
 <td></td>
 <td>7</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@71870da7</td></tr>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@4e25147a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC37_verifyAccessSection_QuickAccess()'><b>TC37_verifyAccessSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Access section from Quick Access</td>
+<td></td>
+<td>15</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6b68cb27</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC13_verifyShareNote_FromSction()'><b>TC13_verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share note from section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess()'><b>TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Share, Edit, Delete Bookmark from Quick Access</td>
+<td></td>
+<td>104</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@6b68cb27</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC11_verifyShareSection_FromSection()'><b>TC11_verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td></td>
+<td>16</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@10876a6</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC36_verifyASTMSection()'><b>TC36_verifyASTMSection</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to Access ASTM title </td>
 <td></td>
 <td>5</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@71870da7</td></tr>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@4e25147a</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection()'><b>TC14_verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit notes from Section</td>
+<td title='com.Digitalcodes.testcases.Login_Test.TC01_loginValidData()'><b>TC01_loginValidData</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls<br>Parameters: complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete</td>
 <td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>16</td>
+<td>com.Digitalcodes.testcases.Login_Test@65bb9029</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email <br>Parameters: complete.user@iccsafe.info, Digital@123, Complete User, Premium Complete</td>
 <td></td>
-<td>42</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>22</td>
+<td>com.Digitalcodes.testcases.Login_Test@65bb9029</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks()'><b>TC34_verifyNavigateToASTM_FromLinks</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds thorugh link<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
 <td></td>
-<td>41</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
+<td>25</td>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@4e25147a</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC11_verifyShareSection_FromSection()'><b>TC11_verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition</td>
 <td></td>
-<td>32</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@5bcde458</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Commentary_Test.TC34_verifyHideCommentary()'><b>TC34_verifyHideCommentary</b><br>Test class: com.Digitalcodes.testcases.Title_Commentary_Test<br>Test method: Verify User able to Hide commentary section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
-<td></td>
-<td>17</td>
-<td>com.Digitalcodes.testcases.Title_Commentary_Test@35d3ab60</td></tr>
+<td>9</td>
+<td>com.Digitalcodes.testcases.Title_Basic_Test@706cb08</td></tr>
 </table><p>
 </body>
 </html>

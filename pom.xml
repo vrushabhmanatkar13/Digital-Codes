@@ -8,11 +8,11 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<reportium-sdk.version>RELEASE</reportium-sdk.version>
-		<aspectj.version>1.8.10</aspectj.version>
-		<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
+		<aspectj.version>1.9.8</aspectj.version>
+		<suite.File>Smoke_testng.xml</suite.File>
 	</properties>
 
 
@@ -130,9 +130,9 @@
 
 					<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>${suite.File}</suiteXmlFile>
 					</suiteXmlFiles>
-					<shutdown>kill</shutdown>
+					
 				</configuration>
 
 				<dependencies>
@@ -150,8 +150,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>17</source>
+					<target>17</target>
 					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
@@ -177,7 +177,9 @@
 				<groupId>io.qameta.allure</groupId>
 				<artifactId>allure-maven</artifactId>
 				<version>2.12.0</version>
+				
 			</plugin>
+			
 
 		</plugins>
 

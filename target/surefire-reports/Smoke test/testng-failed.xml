@@ -15,17 +15,6 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test">
-        <methods>
-          <include name="TC36_verifyShare_Edit_DeleteBookmakr_QuickAccess"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="log_result"/>
-        </methods>
-      </class> <!-- com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test -->
       <class name="com.Digitalcodes.testcases.Title_SectionPage_Test">
         <methods>
           <include name="afterSuite"/>
