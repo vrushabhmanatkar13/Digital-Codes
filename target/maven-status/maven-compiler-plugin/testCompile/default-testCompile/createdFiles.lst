@@ -1,6 +1,7 @@
 com\Digitalcodes\capabilities\SetCapbilites.class
 com\Digitalcodes\utilities\LoadPropertiesfile.class
 com\Digitalcodes\testcases\Prerequisites_Teardown.class
+com\Digitalcodes\testcases\LogResult_IReporterListner.class
 com\Digitalcodes\utilities\Load_Excle$1.class
 com\Digitalcodes\pageobject\PremiumTools_QuickAccess_Page.class
 com\Digitalcodes\pageobject\PremiumTools_SharingHistory_Page.class
@@ -20,6 +21,7 @@ com\Digitalcodes\pageobject\TitleCover_Page.class
 com\Digitalcodes\testcases\Login_Test.class
 com\Digitalcodes\utilities\PojoClass.class
 com\Digitalcodes\perfectocloud\PerfectoLabUtils.class
+com\Digitalcodes\testcases\Title_ASTMStanderds_Test.class
 com\Digitalcodes\utilities\Baseclass.class
 com\Digitalcodes\pageobject\TitleSection_Page.class
 com\Digitalcodes\testcases\TableOfContent_Test.class

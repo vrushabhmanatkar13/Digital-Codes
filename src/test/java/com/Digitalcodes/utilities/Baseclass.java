@@ -51,6 +51,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					if (browserName.equalsIgnoreCase("Chrome")) {
 						WebDriverManager.chromedriver().setup();
 						ChromeOptions chromeoption=SetCapbilites.getChromecapabalites(incognito, headless);
+					//	SetCapbilites.getlamdatest(chromeoption);
 						WebDriver Cdriver = new ChromeDriver(chromeoption);
 						driver = Cdriver;
 
