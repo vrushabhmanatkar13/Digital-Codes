@@ -12,7 +12,7 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<reportium-sdk.version>RELEASE</reportium-sdk.version>
 		<aspectj.version>1.9.8</aspectj.version>
-		<suite.File>Smoke_testng.xml</suite.File>
+		<suite>Smoke_testng.xml</suite>
 	</properties>
 
 
@@ -34,7 +34,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							
+
 
 						</configuration>
 						<dependencies>
@@ -67,7 +67,7 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>Regression_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							
+
 						</configuration>
 						<dependencies>
 							<dependency>
@@ -127,14 +127,12 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.0</version>
 				<configuration>
-
 					<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suite.File}</suiteXmlFile>
+						<suiteXmlFile>${suite}</suiteXmlFile>
 					</suiteXmlFiles>
-					
+					<shutdown>kill</shutdown>
 				</configuration>
-
 				<dependencies>
 					<dependency>
 						<groupId>org.aspectj</groupId>
@@ -177,21 +175,27 @@
 				<groupId>io.qameta.allure</groupId>
 				<artifactId>allure-maven</artifactId>
 				<version>2.12.0</version>
-				
 			</plugin>
-			
-
 		</plugins>
 
 
 	</build>
 	<dependencies>
+	
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.9.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+<dependency>
+	<groupId>com.epam.healenium</groupId>
+	<artifactId>healenium-web</artifactId>
+	<version>3.4.3</version>
+</dependency>
+
+		
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>

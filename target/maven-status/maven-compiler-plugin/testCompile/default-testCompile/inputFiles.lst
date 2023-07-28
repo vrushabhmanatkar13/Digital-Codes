@@ -1,4 +1,4 @@
-D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\LogResult_IReporterListner.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\ContentSearch_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\PremiumTools_QuickAccess_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Title_Collection_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Title_ASTMStanderds_Test.java
@@ -8,8 +8,8 @@ D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\T
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\PojoClass.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\MenuMyNotesandBookmark_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Abstract_CommanMathods_Implinmation.java
-D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\LogResult_ITestListner.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Login_Test.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Title_Purchase_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\TakeScreenshot.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Title_Commentary_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\LoginPage.java
@@ -18,10 +18,13 @@ D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\T
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\Baseclass.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Menu.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\perfectocloud\PerfectoLabUtils.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\ContentSearch_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\PremiumTools_QuickAccess_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\perfectocloud\Perfecto_Capabailites.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\LoadPropertiesfile.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Registration_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Collections_Page.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\MyCart_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\capabilities\SetCapbilites.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Header.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\Prerequisites_Teardown.java
@@ -30,6 +33,9 @@ D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\TitleLanding_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\MenuFavorite_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\utilities\Sparkreport.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\listners\LogResult_IReporterListner.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\Registration_Page.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\CommanSteps.java
+D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\listners\LogResult_ITestListner.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\testcases\TableOfContent_Test.java
 D:\eclipse-workspace\com.Digitalcodes\src\test\java\com\Digitalcodes\pageobject\TitleCover_Page.java

@@ -3,8 +3,7 @@ package com.Digitalcodes.utilities;
 
 import java.io.IOException;
 
-
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.ITestResult;
 
 
@@ -31,7 +30,7 @@ public class Sparkreport {
 	public Sparkreport(String title,String report_name,String hostname,String user, String tagname) {
 	//	String Dateformat=new SimpleDateFormat("YYYY-MM-DD").format(new Date());
 		
-		REPORTPATH=System.getProperty("user.dir")+"\\Report\\"+tagname+"_SparkReport.html";
+		REPORTPATH=System.getProperty("user.dir")+"\\Report\\DigitalCodes_SparkReport.html";
 
 		spark=new ExtentSparkReporter(REPORTPATH);
 		spark.config().setDocumentTitle(title);
@@ -63,7 +62,6 @@ public class Sparkreport {
 		
 	}
 	public void test_fail(String name, ITestResult result) throws IOException {
-		
 		test.log(Status.FAIL, name);
 		test.addScreenCaptureFromPath(TakeScreenshot.Take_screenshot(result));
 		
@@ -78,7 +76,7 @@ public class Sparkreport {
 	}
 	
 	
-	@Step("{step}")
+	
 	public static void Step(String step) {
 		test.log(Status.INFO, step);
 		Allure.step(step);

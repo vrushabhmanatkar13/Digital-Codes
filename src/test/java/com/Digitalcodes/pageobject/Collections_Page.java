@@ -17,7 +17,7 @@ public class Collections_Page extends Baseclass{
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//h1[@class=\"font-weight-regular\"]")
+	@FindBy(xpath = "//h1[@class='font-weight-regular']")
 	private WebElement heading;
 	
 	@FindBy(xpath = "//div[@class='v-data-iterator']//a[@target='_blank']")

@@ -41,7 +41,7 @@ public class TableOfContent_Test extends Prerequisites_Teardown {
 		Baseclass.navigateToBack();
 
 		assertEquals(textInmynotes, jsonValue("mynotes-text"));
-		assertEquals(text, "Default");
+		assertEquals(text, "No data available");
 		assertTrue(moveNoteText);
 		assertEquals(pageTitle, jsonArrayValue("Page-titles", "my-notes-bookmark"));
 

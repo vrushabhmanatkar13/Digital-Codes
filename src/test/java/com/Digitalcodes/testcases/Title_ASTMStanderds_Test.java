@@ -1,6 +1,6 @@
 package com.Digitalcodes.testcases;
 
-import org.bouncycastle.est.jcajce.JcaHttpAuthBuilder;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -18,7 +18,7 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown{
 	 TitleCover_Page coverpage;
 	 
 	 private String Chapter;
-	 private String Title;
+	
 	 
 	@BeforeClass(alwaysRun = true)
 	public void beforeclass() {
@@ -48,13 +48,15 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown{
 		String text=sectionpage.getLinkText();
 		report.create_info("ASTM LINK text :- "+text);
 		
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		sectionpage.clickASTMLink();
 		Sparkreport.Step("Click "+text);
 		
+		Thread.sleep(2000);
 	    String tag=landingpage.getTagName();
+	  
 	    report.create_info("Tag :- "+tag);
-		assertEquals(tag, jsonArrayValue("Premium", "tag"));
+		assertEquals(tag, jsonArrayValue("Premium", "astm tag"));
 		
 		String category=landingpage.getCategoryText();
 		report.create_info("Categoery :- "+category);
@@ -86,9 +88,8 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown{
 		String activetext= landingpage.getActivepremiumText();
 		report.create_info("Title is "+activetext);
 		this.Chapter=Chapter;
-		this.Title=Title;
 		assertEquals(heading, Sub_section);
-		assertEquals(title, heading + " Building Codes - ICC Digital Codes");
+		assertEquals(title, Sub_section + " Building Codes - ICC Digital Codes");
 		assertEquals(titlename, Title);
 		assertEquals(tagname, jsonArrayValue("Premium", "tag")+" LITE");
 		assertEquals(activetext, jsonArrayValue("Premium","Access-title"));
@@ -100,14 +101,15 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown{
 	@Test(dependsOnMethods ="TC35_verifyNavigateToASTM",description = "Verify user able to Access ASTM title ", groups = {"Smoke","Regression"})
 		public void TC36_verifyASTMSection() throws Exception {
 		
-		        tableOfContent_Page.clickChapter();
-		      Sparkreport.Step("Click "+ Chapter);
-		       Thread.sleep(5000);
-		      String title=getTitle();
-		      report.create_info("Page Title :- "+ title);
-		      
-		      assertEquals(title, Title+" - "+Chapter);
+		       tableOfContent_Page.clickASTMChapter();
+		        Sparkreport.Step("Click "+ Chapter);
+		       assertTrue( sectionpage.pdfViewer());
+		     
+		    
+		     
 		}
+	
+
 	}
 		
 	

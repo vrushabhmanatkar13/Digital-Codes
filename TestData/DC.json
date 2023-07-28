@@ -1,5 +1,15 @@
 {
 
+"valid-data":{
+
+"firstname":"Automation",
+"lastname":"User",
+"security":"What is Your Name?",
+"password":"Digital@123",
+"spam":"h61Q2!x3PH~nhIn0iP&fg"
+
+},
+
   "favorite": "Add to Favorites",
   "unfavorite": "Remove from Favorites",
   "mynotes-text": "You currently do not have any annotations or bookmarks for this book.",
@@ -12,9 +22,17 @@
   "bookmark-edit-text":"User edit bookmark",
   "show-text":"Show Commentary",
   "copied-text":"Content was copied to buffer",
+  "empty cart":"Your cart is empty.",
+  "monthly":"Billed Monthly",
+  "annually":"Billed Annually",
+  "three year":"Billed Every 3 Years",
   
   "Page-titles":{
+  "registration":"Create Your ICC Digital Codes Account",
+  "confirm registration":"Confirm Registration",
+  "success-page":"Success Page",
   "home":"Digital Codes",
+  "login":"Login",
   "library":"My Library",
   "quick-access":"Quick Access",
   "content-search":"Content Search Results",
@@ -23,16 +41,29 @@
   "sharing-history":"Sharing History",
   "licenses-configuration":"Licenses"
   },
+  "Premium tools":{
+  "QA":"Quick Access",
+  "CS":"Content Search",
+  "M-PT":"My Project Tags",
+  "M-NB":"My Notes and Bookmarks",
+  "SH":"Sharing History",
+  "LC":"License Configuration"
+  
+  },
   
   "Premium": {
+   "subscription":"Premium Complete",
     "tag": "PREMIUM",
+    "astm tag":"PREMIUM LITE",
     "Basic-Plus":"BASIC PLUS",
     "Access-title": "You have an active premium subscription to access this title",
     "non-Access-title":"This title is not included within your current Premium Complete subscription. To access the contents and features, please purchase a subscription to this title."
   },
   "Basic":{
+  "subscription":"Basic",
   "tag":"BASIC",
-  "Access-title":"Upgrade to Premium"
+  "Access-title":"Upgrade to Premium",
+  "start trial":"Start Free 14-day Premium Complete Trial"
   }
   
   

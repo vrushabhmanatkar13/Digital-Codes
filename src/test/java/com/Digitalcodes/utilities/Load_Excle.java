@@ -2,12 +2,16 @@ package com.Digitalcodes.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Map;
 
-
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row.MissingCellPolicy;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
 
 public class Load_Excle {
 	private static XSSFSheet sheet;
@@ -29,7 +33,7 @@ public class Load_Excle {
 	//It is user when @Dataprovider tag used in any test cases
 	public Object[][] getDataFromExcle(String sheet_name) {
 		sheet = workbook.getSheet(sheet_name);
-		int last_row = sheet.getLastRowNum();
+		int last_row = sheet.getPhysicalNumberOfRows();
 		int last_clum = sheet.getRow(0).getLastCellNum();
 		
 		
@@ -53,7 +57,9 @@ public class Load_Excle {
 					break;
                 
 				}
-					
+				 if (sheet.getRow(i).getCell(j).getCellType()== CellType.BLANK) {
+					 break;
+				 }
 			
 			}
 			
@@ -64,8 +70,8 @@ public class Load_Excle {
 
 	}
 
-	public static String readString(int i, int j) {
-		return sheet.getRow(i).getCell(1).getStringCellValue();
+	public static String getString(String sheetname,int i, int j) {
+		return workbook.getSheet(sheetname).getRow(i).getCell(1).getStringCellValue();
 
 	}
 
@@ -103,9 +109,6 @@ public class Load_Excle {
 		}
 
 		data = sheet.getRow(row).getCell(index).getStringCellValue();
-
-
-
 		return data;
 
 	}
@@ -135,9 +138,73 @@ public class Load_Excle {
 		return data;
 	}
 	 
-	 
-	
+	 public Object[][] getDataFromExcle(String sheet_name,int startrow, int endrow){
+		 sheet = workbook.getSheet(sheet_name);
+		int last_clum = sheet.getRow(0).getLastCellNum();
+		int numberofrows=endrow-startrow;
+		
+		Object[][] data =new Object[numberofrows+1][last_clum];
+		int size=0;
+		
+		for (int i=startrow ;i<=numberofrows+1 ;i++,size++) {
+		for (int j = 0; j <last_clum; j++) {
 
+			CellType cell = sheet.getRow(i).getCell(j).getCellType();
+			switch (cell) {
+			case STRING:
+				data[size][j] = sheet.getRow(i).getCell(j).getStringCellValue();
+				break;
+			case NUMERIC:
+				data[size][j] = sheet.getRow(i).getCell(j).getNumericCellValue();
+				break;
+			default:
+				break;
+			}
+			
+			
+		}
+	
+			
+		}
+		
+		return data;
+	}
+	
+	 public static Map<String, String> getData(String sheet_name) throws Exception {
+			sheet = workbook.getSheet(sheet_name);
+			int last_row = sheet.getLastRowNum();
+			int last_clum = sheet.getRow(0).getLastCellNum();
+			
+			Map<String, String> data=new HashMap<String, String>();
+         
+			for (int i = 0; i<last_row; i++) {
+				
+				for (int j = 0; j <last_clum; j++) {
+
+					 CellType cell = sheet.getRow(i+1).getCell(j, MissingCellPolicy.RETURN_BLANK_AS_NULL).getCellType();
+					switch (cell) {
+					case STRING:
+						 data.put(sheet.getRow(i+1).getCell(j).getStringCellValue(), sheet.getRow(i+1).getCell(j).getStringCellValue());
+						break;
+					case BLANK:
+						
+						break;
+					default:
+						throw new Exception("Data Not selected");
+						
+	                
+					}
+						
+				
+				}
+				
+				
+			}
+			
+			return data;
+
+		}
+	 
 
 	 
 	

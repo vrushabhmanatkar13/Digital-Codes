@@ -15,9 +15,9 @@ public class Header extends Baseclass{
 	
 	WebDriver driver;
 	
-	@SuppressWarnings("static-access")
+	
 	public Header() {
-		this.driver=super.driver;
+		this.driver=Baseclass.driver;
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath = "//span[@class=\"v-btn__content\"]/div")
@@ -40,6 +40,13 @@ public class Header extends Baseclass{
 	
 	@FindBy(xpath = "//i[text()='shopping_cart']")
 	private WebElement shoppingcart;
+	
+	@FindBy(xpath = "//span[@class='caption']")
+	private WebElement qty;
+	
+	
+	@FindBy(xpath = "//div[contains(text(),'Register')]")
+	private WebElement register;
 	
 	public void clickSignIn() {
 			click(SignIn);
@@ -66,8 +73,20 @@ public class Header extends Baseclass{
 	}
 	
 	
+	public void clickRegister() {
+		Baseclass.action.moveToElement(SignIn).build().perform();
+		click(register);
+	}
 	
+	public String getQtyShoppingCart() {
+		return getText(qty);
+	}
 	
+	public String click_getQtyShoppingCart() {
+		String text= getText(qty);
+		click(shoppingcart);
+		return text;
+	}
 	
 
 }
