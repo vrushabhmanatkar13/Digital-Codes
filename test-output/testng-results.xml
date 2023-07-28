@@ -1,109 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="19" total="23" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-12T21:34:43 IST" name="Default suite" finished-at="2023-06-12T21:34:44 IST" duration-ms="442">
+  <suite started-at="2023-07-28T20:05:22 IST" name="Dev Enviroment Suite" finished-at="2023-07-28T20:23:01 IST" duration-ms="1058834">
     <groups>
       <group name="Regression">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="ContentSearch_Test.TC51_verifyAdvanceTermSearch(java.lang.String,java.lang.String)[pri:7, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" name="TC51_verifyAdvanceTermSearch" class="com.Digitalcodes.testcases.ContentSearch_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation()[pri:2, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
-        <method signature="Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="ContentSearch_Test.TC51_verifyAdvanceTermSearch(java.lang.String,java.lang.String)[pri:7, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" name="TC51_verifyAdvanceTermSearch" class="com.Digitalcodes.testcases.ContentSearch_Test"/>
+        <method signature="ContentSearch_Test.TC57_verifySeeAll(java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" name="TC57_verifySeeAll" class="com.Digitalcodes.testcases.ContentSearch_Test"/>
+        <method signature="Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" name="TC01_loginValidData" class="com.Digitalcodes.testcases.Login_Test"/>
+        <method signature="Login_Test.TC02_verifyUserInformation()[pri:2, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" name="TC02_verifyUserInformation" class="com.Digitalcodes.testcases.Login_Test"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-06-12T21:34:43 IST" name="Default test" finished-at="2023-06-12T21:34:44 IST" duration-ms="442">
+    <test started-at="2023-07-28T20:05:22 IST" name="Regression test for Premium user" finished-at="2023-07-28T20:23:01 IST" duration-ms="1058834">
       <class name="com.Digitalcodes.testcases.Login_Test">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:43 IST" name="beforeSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1686585883285" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'tagname' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in C:\Users\Vrushabh Manatkar\AppData\Local\Temp\testng-eclipse-1465828254\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'tagname' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in C:\Users\Vrushabh Manatkar\AppData\Local\Temp\testng-eclipse-1465828254\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:05:19 IST" name="beforeSuite" finished-at="2023-07-28T20:05:22 IST" duration-ms="2731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Regression]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dev]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:43 IST" name="beforeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1686585883818" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Vrushabh Manatkar\AppData\Local\Temp\testng-eclipse-1465828254\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Vrushabh Manatkar\AppData\Local\Temp\testng-eclipse-1465828254\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:05:23 IST" name="beforeTest" finished-at="2023-07-28T20:21:09 IST" duration-ms="946294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PREMIUM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Existing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:43 IST" name="beforeClass" finished-at="2023-06-12T21:34:44 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:21:09 IST" name="beforeClass" finished-at="2023-07-28T20:21:09 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:44 IST" name="TC01_loginValidData" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-06-12T21:34:44 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
+        <test-method signature="TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:21:09 IST" name="TC01_loginValidData" description="User able to Login with valid creditionls" data-provider="Dynamic" finished-at="2023-07-28T20:21:19 IST" duration-ms="9952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[complete.user@iccsafe.info]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Digital@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Complete]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Premium Complete]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_loginValidData -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:21:19 IST" name="log_result" finished-at="2023-07-28T20:21:21 IST" duration-ms="1678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01_loginValidData status=SUCCESS method=Login_Test.TC01_loginValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC02_verifyUserInformation()[pri:2, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:21:21 IST" name="TC02_verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " finished-at="2023-07-28T20:21:28 IST" duration-ms="6845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyUserInformation -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:21:28 IST" name="log_result" finished-at="2023-07-28T20:21:28 IST" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC02_verifyUserInformation status=SUCCESS method=Login_Test.TC02_verifyUserInformation()[pri:2, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:23:01 IST" name="afterTest" finished-at="2023-07-28T20:23:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@6b0615ae]" started-at="2023-07-28T20:23:03 IST" name="afterSuite" finished-at="2023-07-28T20:23:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
+      <class name="com.Digitalcodes.testcases.ContentSearch_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:21:28 IST" name="beforeClass" finished-at="2023-07-28T20:21:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:21:28 IST" name="beforeclass" finished-at="2023-07-28T20:21:28 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="TC51_verifyAdvanceTermSearch(java.lang.String,java.lang.String)[pri:7, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:21:28 IST" name="TC51_verifyAdvanceTermSearch" description="verify Advance Term Search from Content search" data-provider="Text" finished-at="2023-07-28T20:22:59 IST" duration-ms="90793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Buildings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC51_verifyAdvanceTermSearch -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:22:59 IST" name="log_result" finished-at="2023-07-28T20:22:59 IST" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC51_verifyAdvanceTermSearch status=SUCCESS method=ContentSearch_Test.TC51_verifyAdvanceTermSearch(java.lang.String,java.lang.String)[pri:7, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_result -->
+        <test-method signature="TC57_verifySeeAll(java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:22:59 IST" name="TC57_verifySeeAll" description="verify see all form search suggestion" data-provider="Text" finished-at="2023-07-28T20:23:00 IST" duration-ms="1209" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Buildings]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "com.Digitalcodes.testcases.Login_Test.USER" is null]]>
+              <![CDATA[expected [Buildings] but found [BuildingsBuildings]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "com.Digitalcodes.testcases.Login_Test.USER" is null
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+              <![CDATA[java.lang.AssertionError: expected [Buildings] but found [BuildingsBuildings]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
+at com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySeeAll(ContentSearch_Test.java:468)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -123,127 +216,24 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "com.Digitalcodes.testcases.Login_Test.USER" is null
-at com.Digitalcodes.testcases.Login_Test.getData(Login_Test.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_loginValidData -->
-        <test-method signature="TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:44 IST" name="TC02_verifyUserInformation" description="Verify User able to displyed Subscription type, Name, email " finished-at="2023-06-12T21:34:44 IST" depends-on-methods="com.Digitalcodes.testcases.Login_Test.TC01_loginValidData" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Login_Test.TC02_verifyUserInformation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- TC57_verifySeeAll -->
+        <test-method is-config="true" signature="log_result(org.testng.ITestResult)[pri:0, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a]" started-at="2023-07-28T20:23:01 IST" name="log_result" finished-at="2023-07-28T20:23:01 IST" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC57_verifySeeAll status=FAILURE method=ContentSearch_Test.TC57_verifySeeAll(java.lang.String,java.lang.String)[pri:14, instance:com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02_verifyUserInformation -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:44 IST" name="afterTest" finished-at="2023-06-12T21:34:44 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "com.Digitalcodes.testcases.Prerequisites_Teardown.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "com.Digitalcodes.testcases.Prerequisites_Teardown.driver" is null
-at com.Digitalcodes.testcases.Prerequisites_Teardown.afterTest(Prerequisites_Teardown.java:160)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.afterRun(TestRunner.java:877)
-at org.testng.TestRunner.run(TestRunner.java:599)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.Digitalcodes.testcases.Login_Test@77b9d0c7]" started-at="2023-06-12T21:34:44 IST" name="afterSuite" finished-at="2023-06-12T21:34:44 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "com.Digitalcodes.perfectocloud.Perfecto_Capabailites.PLATFORM" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "com.Digitalcodes.perfectocloud.Perfecto_Capabailites.PLATFORM" is null
-at com.Digitalcodes.perfectocloud.Perfecto_Capabailites.getReporturl(Perfecto_Capabailites.java:164)
-at com.Digitalcodes.testcases.Prerequisites_Teardown.afterSuite(Prerequisites_Teardown.java:168)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- log_result -->
+      </class> <!-- com.Digitalcodes.testcases.ContentSearch_Test -->
+    </test> <!-- Regression test for Premium user -->
+  </suite> <!-- Dev Enviroment Suite -->
 </testng-results>

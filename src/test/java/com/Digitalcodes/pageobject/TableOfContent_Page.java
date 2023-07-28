@@ -33,10 +33,11 @@ public class TableOfContent_Page extends Baseclass{
 	@FindAll({ @FindBy(xpath = "//div[@class=\"row ma-0 row--dense align-center pl-3\"]//a") })
 	private List<WebElement> list_subsection;
 	
-	
+	@FindBy(xpath = "//div[@class='row ma-0 row--dense align-center lightgreen accent2--text pl-3']//p")
+	private WebElement opensection;
 	
 	//My Notes 
-	@FindBy(xpath ="//div[contains(text(),'My Notes')]")
+	@FindBy(xpath ="//div[@class='subheading v-tab grey lighten-3 primary--text']")
 	private WebElement mynotes;
 	
 	@FindBy(xpath ="//p[@class='caption text-center']")
@@ -87,7 +88,7 @@ public class TableOfContent_Page extends Baseclass{
 	
 	//ASTM chapter Name
 	@FindBy(xpath = "//p[@class='mb-0 py-2 body-2 pl-2']/a")
-	private WebElement chapterName;
+	private WebElement astmsection;
 	
 	
 	public void clickCodesSection() {
@@ -194,7 +195,11 @@ public class TableOfContent_Page extends Baseclass{
 		return text;
 	}
 	
-	public void clickChapter() {
-		click(chapterName);
+	public void clickASTMChapter() {
+		click(astmsection);
+	}
+	
+	public String getOpenSectionName() {
+		return getText(opensection);
 	}
 }

@@ -38,8 +38,8 @@ public class SetCapbilites {
 		}
 
 		chrome.addArguments("--remote-allow-origins=*");
-		chrome.addArguments("force-device-scale-factor=0.80");
-		chrome.addArguments("high-dpi-support=0.80");
+		chrome.addArguments("force-device-scale-factor=0.85");
+		chrome.addArguments("high-dpi-support=0.85");
 		
 		return chrome;
 	}

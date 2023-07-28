@@ -33,8 +33,8 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	@Test(priority = 1, description = "Verify user able to Access section from Quick Access", groups = { "Smoke",
 			"Regression" })
 	public void TC37_verifyAccessSection_QuickAccess() throws Exception {
-
-		menu.navigateToPremiumToolFeaturs("Quick Access");
+      
+        menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
 		Sparkreport.Step("Click Quick Access");
@@ -136,7 +136,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 
 		assertEquals(SuccessfullyMsg, jsonValue("share-content-successful"));
 		
-	   	menu.navigateToPremiumToolFeaturs("Sharing History");
+	   	menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
 		sharingHistorypage.clickOnvIcon();
 		Thread.sleep(3000);
 		 assertEquals(sharingHistorypage.titleName(), titleName);
@@ -146,7 +146,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		 assertEquals(sharingHistorypage.getSharedwith(), Login_Test.NAME+"(Pending)");
 		 
 		
-		menu.navigateToPremiumToolFeaturs("Quick Access");
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
 		quickaccess.clickRecentlyAccessedSection(section);
 		Thread.sleep(2000);
 		sectionpage.editNotes_Bookmark(jsonValue("bookmark-edit-text"));
@@ -158,18 +158,17 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
 		
 		sectionpage.deleteNotes__Bookmark();
-		Thread.sleep(2000);
-		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
-		
+		Thread.sleep(2000);
+		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
 		assertFalse(note_bookmakr);
 	}
 	
 	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = {
 	"Regression" })
 	public void TC40_verifyRecentlyQuickAccessedSections_QuickAccess() throws Exception {
-		menu.navigateToPremiumToolFeaturs("Quick Access");
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
 		String RecentlyAccessedSection=quickaccess.getRecentlyAccessedSection(section);
 		 report.create_info("Section Name :- "+ RecentlyAccessedSection);
 		String RecetlyAccessedtitle=quickaccess.getRecentlyAccessedTitleName(titleName);
@@ -188,7 +187,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		String titleName = quickaccess.inputTitleName("IRC");
 		Sparkreport.Step("Enter IRC");
 		report.create_info("Title :- " + titleName);
-
+        Thread.sleep(2000);
 		String section = quickaccess.inputSectionName("R");
 		Sparkreport.Step("Enter R");
 		report.create_info("Section :- " + section);
@@ -199,7 +198,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Enter "+jsonValue("bookmark-text"));
 		Sparkreport.Step("Click Save");
 		
-		menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
 		Sparkreport.Step("Click Menu");
 		Sparkreport.Step("Click Premium Tools");
 		Sparkreport.Step("Click My notes and Bookmarks");
@@ -209,9 +208,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
         report.create_info("Title :- " + mynote_bookmark.getTitleName());
         
 		assertEquals(mynote_bookmark.getTitleName(), titleName);
-		assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, "Default"));
+		assertTrue(mynote_bookmark.verifyDetails(section,Login_Test.NAME, "Default"));
 		
-		mynote_bookmark.removeNotes_Bookmark();
+		mynote_bookmark.removeNotes_Bookmark(jsonValue("bookmark-text"));
 	}
 	
 	

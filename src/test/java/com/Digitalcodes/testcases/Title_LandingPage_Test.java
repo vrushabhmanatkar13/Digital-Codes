@@ -25,12 +25,10 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 			throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
-	
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
 		Sparkreport.Step("Click " + Sub_section);
-		
-		report.create_info("Page Title is " + getTitle());
+		Sparkreport.Step("Page Title is " + getTitle());
 		String heading = coverpage.getHeading().replace(" Building Codes", "");
 		assertEquals(heading, Sub_section);
 		assertEquals(getTitle(), heading + " Building Codes - ICC Digital Codes");
@@ -38,15 +36,15 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		title = coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click " + Title);
 		titlename = title.getTitleHeading();
-		
-		report.create_info("Subscription Tag is " + title.getTagName());
-		report.create_info("Subscription is " + title.getActivepremiumText());
-		
+		Thread.sleep(2000);
+		String tagname=title.getTagName();
+		Sparkreport.Step("Subscription Tag is " + title.getTagName());
+		Sparkreport.Step("Subscription is " + title.getActivepremiumText());
 		
 		assertEquals(titlename, Title);
-		assertEquals(title.getTagName(), jsonArrayValue("Premium", "tag"));
+		assertEquals(tagname, USER);
 		assertEquals(title.getActivepremiumText(), jsonArrayValue("Premium", "Access-title"));
-
+        
 	}
 
 	@Test(priority = 2, description = "Verify user able to mark favorite & unfavorite and title should be displayed in favorites", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
@@ -64,7 +62,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 
 		title.clickOnFavorite();
 		Sparkreport.Step("Click Blank Heart icon");
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		report.create_info("Text after mark favorite :- " + title.getFavoriteText());
 
 		menu.navigetToStaticFeaturs("Favorites");

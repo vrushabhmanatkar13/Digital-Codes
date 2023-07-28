@@ -22,10 +22,12 @@ public class TitleSection_Page extends Baseclass {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath = "//h4[@class='primary--text']")
+	private WebElement titlename;
 	
 	//Chapter Section
 
-	@FindBy(xpath = "//div[@class=\"py-0 col\"]/p[@class=\"mb-0 caption\"]")
+	@FindBy(xpath = "//div[@id='sticky-chapter-info']//div[@class='row row--dense']//div[@class='py-0 col']")
 	private WebElement chapterHeading;
 
 	@FindBy(xpath = "//section[@class=\"chapter\"]")
@@ -58,7 +60,7 @@ public class TitleSection_Page extends Baseclass {
 	@FindBy(xpath = "//div[@class=\"ql-editor ql-blank\"]")
 	private WebElement textcontainer;
 
-	@FindBy(xpath = "(//span[contains(text(),'Save')])[1]")
+	@FindBy(xpath = "(//span[text()='Save'])[1]")
 	private WebElement saveButton_Notes;
 	
 	//Subsection icons
@@ -76,6 +78,7 @@ public class TitleSection_Page extends Baseclass {
 	
 	@FindBy(xpath = "//a[@class=\"print-one-section\"]")
 	private WebElement printthissection;
+	
 	@FindBy(xpath = "//a[@class=\"print-all-sections\"]")
 	private WebElement printAllsection;
 	 
@@ -192,7 +195,7 @@ public class TitleSection_Page extends Baseclass {
 	@FindBy(xpath = "//section[@section-number=\"24199940\"]")
 	private WebElement section;
 	
-	@FindBy(xpath = "(//a[@class=\"book_reference iccpub pubname\"])[1]")
+	@FindAll({@FindBy(xpath = "(//a[@class=\"book_reference iccpub pubname\"])[1]"),@FindBy(xpath = "(//a[@class=\"section_reference\"])[1]")})
 	private WebElement titleLink;
 	
 	
@@ -215,6 +218,8 @@ public class TitleSection_Page extends Baseclass {
 	@FindBy(xpath = "(//span//a[contains(.,'ASTM ')])[1]")
 	private WebElement ASTMlink;
 	
+	@FindBy(xpath="//iframe[@id='pdfViewer']")
+	private WebElement pdfviewer;
 	
 	
 	public String getChapterName() {
@@ -260,17 +265,22 @@ public class TitleSection_Page extends Baseclass {
 	public void doubleClikcOn_ChildSection() {
 		Baseclass.action.doubleClick(textchildSection).build().perform();
 	}
+	
+	public void clickNotesIcon() {
+		click(note);
+	}
 
 	public void createNote_FromSection(String notetext) throws InterruptedException {
-		click(note);
-		Thread.sleep(2000);
-		textcontainer.clear();
+	
 		sendKeys(textcontainer, notetext);
 
 	}
+	public void clickBookmarkIcon() {
+		click(bookmarkicon);
+	}
 	
 	public void createBookamrk_FromSection(String bookamrk) throws InterruptedException {
-		click(bookmarkicon);
+	
 		 Thread.sleep(1000);
 		textcontainer.clear();
 		sendKeys(textcontainer, bookamrk);
@@ -340,16 +350,17 @@ public class TitleSection_Page extends Baseclass {
 
 	}
 
-	public String selectTag(String tagname) {
+	public String selectTag(String tagname) throws InterruptedException {
 		click(tagListBox);
 
 		for (WebElement webElement : listTagName) {
 			if (getText(webElement).equalsIgnoreCase(tagname)) {
+				Thread.sleep(500);
 				click(webElement);
 				break;
 			}
-
 		}
+		 
 		return getText(tagListBox);
 	}
 	
@@ -377,9 +388,13 @@ public class TitleSection_Page extends Baseclass {
 
 	}
 	
+	public void clickShareIcon() {
+		click(share);
+	}
+	
 	
 	public String shareSection(String email) {
-		click(share);
+		
 		sendKeys(emailInput, email);
 		click(addmore);
 		if(newemailInput.isDisplayed()) {
@@ -447,13 +462,13 @@ public class TitleSection_Page extends Baseclass {
 			Baseclass.switchToWindow();
 			
 			viewPdf=isDisplayed(pdf);
-			Baseclass.closeWindow();
+			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		Baseclass.closeWindow();
 		 return viewPdf;
 	}
 	
@@ -536,12 +551,9 @@ public class TitleSection_Page extends Baseclass {
 	
 	public void editNotes_Bookmark(String text) throws InterruptedException {
 		click(editIcon);
-		
-		
 		filledtextcontainer.clear();
-		
 		sendKeys(textcontainer, text);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		click(saveButton_Notes);
 		
 	}
@@ -594,10 +606,17 @@ public class TitleSection_Page extends Baseclass {
 	}
 	
 	
-	
 	public void clickASTMLink() {
 		
-		Baseclass.action.moveToElement(ASTMlink).click(ASTMlink).build().perform();
+		Baseclass.action.click(ASTMlink).build().perform();
 	}
 
+	public String getTitleName() {
+		return getText(titlename);
+	}
+	
+	public boolean pdfViewer() {
+		return isDisplayed(pdfviewer);
+	}
+	
 }

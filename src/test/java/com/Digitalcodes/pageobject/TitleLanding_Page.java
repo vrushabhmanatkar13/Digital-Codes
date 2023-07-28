@@ -70,7 +70,7 @@ public class TitleLanding_Page extends Baseclass {
 	private List<WebElement> releatedTitles;
 	
 	//Categories
-	@FindBy(xpath = "(//a/span[@class=\"v-chip__content\"])[1]")
+	@FindBy(xpath = "(//a/span[@class='v-chip__content'])[1]")
 	private WebElement categories;
 	
 	//Not Premium text
@@ -157,8 +157,6 @@ public class TitleLanding_Page extends Baseclass {
 			
 			
 			  if (code!=200) { 
-				 
-				  System.out.println(getText(webElement) + "Status Code = "+ code);
 				  Sparkreport.Step(getText(webElement) + "Status Code = "+ code);
 				  return code;
 			      } 
@@ -171,21 +169,28 @@ public class TitleLanding_Page extends Baseclass {
     	}
     	else {
     		code=200;
-    		System.out.println("This Title not having Releated Titles");
-    	    Prerequisites_Teardown.report.create_info("This Title not having Releated Titles");
+    		Sparkreport.Step("This Title not having Releated Titles");
     	}
-    	
-    	
-    	
 		return code;
 		
-    	
-    	
     }
     
-   
+    
+    public String getTagNameFromCategory() {
+    	String tagname = null;
+    	 String[] text = getText(categories).split(" ");
+    	 if (text[1].equals("Standards")) {
+    		 tagname="PREMIUM LITE";
+    	 }
+    	 else{
+    		 tagname="PREMIUM";
+    	 }
+    	return tagname;
+    }
+    
+    
+    
     public String getCategoryText() {
-    	
     	String text=getText(categories);
     	click(categories);
     	return text;
