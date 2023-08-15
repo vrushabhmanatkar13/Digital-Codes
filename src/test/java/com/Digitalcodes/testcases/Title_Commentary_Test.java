@@ -14,6 +14,7 @@ public class Title_Commentary_Test extends Prerequisites_Teardown{
 
 	TitleSection_Page sectionpage;
 	TableOfContent_Page tableOfContent_Page;
+	
 	@BeforeClass(alwaysRun = true)
 	public void beforeClass() {
 		sectionpage=new TitleSection_Page();
@@ -21,14 +22,15 @@ public class Title_Commentary_Test extends Prerequisites_Teardown{
 		
 	}
 	
-	@DataProvider(name = "Commentary")
-	public Object[][] getCommentaryData(){
-		return excel.getDataFromExcle("Titles", 2);
+	@DataProvider(name = "Premium Complete Commentries")
+	public Object[][] getCommentaryData() throws Exception{
+		return excel.getDataFromExcle("Titles", "Premium Complete Commentries");
 	}
 	
 	
-	@Test(priority = 1,description = "Verify User able to Hide commentary section",dataProvider = "Commentary",groups = {"Smoke","Regression"})
+	@Test(priority = 1,description = "Verify User able to Hide commentary section",dataProvider = "Premium Complete Commentries",groups = {"Smoke","Regression"})
 	public void TC34_verifyHideCommentary(String Section, String Sub_section, String Title, String Chapter) throws Exception {
+		
 		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
@@ -37,16 +39,20 @@ public class Title_Commentary_Test extends Prerequisites_Teardown{
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);
+		Thread.sleep(2000);
 		
-		Thread.sleep(3000);
-		String hidetext=sectionpage.clickHideButton();
+		String showcommentrytext=sectionpage.clickHideButton();
 		Sparkreport.Step("Click Hide Commentary");
-		report.create_info("Text after Click on Hide Button :- "+hidetext);
+		boolean subtitle=sectionpage.subtitleIsDisplayed();
+		Sparkreport.Step("Text after Click Button :- "+showcommentrytext);
+		assertFalse(subtitle);
+		assertEquals(showcommentrytext, jsonValue("show-text"));
 		
-		assertEquals(hidetext, jsonValue("show-text"));
+		String hidecommentrytext= sectionpage.clickShowButton();
+		Sparkreport.Step("Text after Click Button :- "+hidecommentrytext);
+		assertTrue(sectionpage.subtitleIsDisplayed());
+		assertEquals(hidecommentrytext, jsonValue("hide-text"));
 		
-		sectionpage.clickHideButton();
-		Sparkreport.Step("Click Show Commentary");
 		
 	}
 	

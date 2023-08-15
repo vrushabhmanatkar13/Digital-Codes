@@ -15,6 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.Digitalcodes.utilities.Baseclass;
 
+import net.bytebuddy.implementation.bytecode.Throw;
+
 public class ContentSearch_Page extends Baseclass {
 
 	WebDriver driver;
@@ -200,8 +202,12 @@ public class ContentSearch_Page extends Baseclass {
 	
 	@FindBy(xpath = "(//div[@class='row grey lighten-3 row--dense']//i)[1]")
 	private WebElement seealltext;
+	
+	//Clear Search
+	@FindBy(xpath = "//div[@class='v-toolbar__content']//button[@aria-label='clear icon']")
+	private WebElement clearicon;
 
-	public void search(String text) {
+	public void search(String text)  {
 		searchInputBox.clear();
 		sendKeys(searchInputBox, text);
 
@@ -234,34 +240,45 @@ public class ContentSearch_Page extends Baseclass {
 		return getText(titleNames.get(0));
 	}
 
-	public String getSearchResultText(String search) {
-		String text=null;
+	public boolean getSearchResultText(String search) throws Exception {
+		boolean text=false;
 		List<String> longtext=new ArrayList<String>();
-     if (search.split("\\s").length==1) {
-    	 text=getText(resulttext.get(0));
-     }
-     else {
-    	 for (int i=0;i<=2;i++) {
-    		
-    		 longtext.add(getText(resulttext.get(i)));
+    
+    	 for (int i=0;i<=search.split("\\s").length;i++) {	
+    		 longtext.add(getText(resulttext.get(i)));	 
     		 if (String.join(" ", longtext).equalsIgnoreCase(search)) {
-    			 text= String.join(" ", longtext);
+    		 text= true;
     			 break;
-    		 }
     	 }
     	 
      }
+    	  if (text==false) {
+    		 throw new Exception("Result text Not Matched in Yellow Color");
+    	 }
 		return text;
+		
 	}
 
 	public String getSearchText() {
 		return getText(searchtext).replaceAll("\"", "");
 	}
+	
+	public void clickClear() {
+		click(clearicon);
+	}
+	
 
-	public List<String> getFilters() {
-		List<String> text = new ArrayList<>();
+	public String getFilters(String titlename) throws Exception {
+		String text = null;
 		for (WebElement webElement : filters) {
-			text.add(getText(webElement));
+			if (getText(webElement).equalsIgnoreCase(titlename)) {
+				text=getText(webElement);
+				break;
+			}
+			
+		}
+		if (text==null) {
+			throw new Exception(titlename+" this text not Present in Filters");
 		}
 		return text;
 	}
@@ -370,17 +387,19 @@ public class ContentSearch_Page extends Baseclass {
 	}
 
 	public void clickAdvanceTermSearch() {
-		Baseclass.scrollUptoElement(pageHeading);
-		Baseclass.action.click(advancedtermsearch).build().perform();
+		Baseclass.scrollUptoElement(advancedtermsearch);
+		click(advancedtermsearch);
 	}
 
 	public void AdvanceTermSearch(String allofwords, String anyofwords, String noneofwords) {
-
+      
 		sendKeys(allofwordstxtbox, allofwords);
 		sendKeys(anyofwordstxtbox, anyofwords);
 		sendKeys(noneofwordstxtbox, noneofwords);
 		click(advancetermsearchbutton);
 	}
+	
+	
 
 	public String getAllofWords() {
 		return getText(allofwordstxt).replaceAll("\"", "");
@@ -412,7 +431,7 @@ public class ContentSearch_Page extends Baseclass {
 
 	public void clickShowRelevantTitles() {
 		Baseclass.scrollUptoElement(pageHeading);
-		click(showrelevanttitles);
+		action.click(showrelevanttitles).build().perform();
 	}
 
 	public String getRelevantTitle() {

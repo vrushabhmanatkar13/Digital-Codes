@@ -21,10 +21,6 @@
 		<classes>
 		<class name="com.Digitalcodes.testcases.Login_Test"></class>
 		<class name="com.Digitalcodes.testcases.ContentSearch_Test">
-		<methods>
-		<include name="TC51_verifyAdvanceTermSearch"></include>
-		<include name="TC57_verifySeeAll"></include>
-		</methods>
 		</class>
 			 
 	

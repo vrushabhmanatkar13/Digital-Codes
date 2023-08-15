@@ -30,15 +30,24 @@ public class TableOfContent_Page extends Baseclass{
 	@FindAll({ @FindBy(xpath = "//p[@class='mb-0 py-2 body-2']/a") })
 	private List<WebElement> list_section;
 
-	@FindAll({ @FindBy(xpath = "//div[@class=\"row ma-0 row--dense align-center pl-3\"]//a") })
+	@FindAll({ @FindBy(xpath = "//div[@class='row ma-0 row--dense align-center pl-2']//a") })
 	private List<WebElement> list_subsection;
 	
-	@FindBy(xpath = "//div[@class='row ma-0 row--dense align-center lightgreen accent2--text pl-3']//p")
+	@FindBy(xpath = "//div[@class='row ma-0 row--dense align-center pl-2']//button[@id='chapter-toggle-0']")
+	private List<WebElement> subsectionarrow;
+	
+	@FindBy(xpath = "//div[@class='row ma-0 row--dense align-center pl-4']//a")
+	private List<WebElement> list_childsection;
+	
+	@FindBy(xpath = "//div[@class='row ma-0 row--dense align-center lightgreen accent2--text pl-6']//a")
 	private WebElement opensection;
 	
+	@FindBy(xpath = "//div//div[@class='row ma-0 row--dense align-center lightgreen accent2--text pl-4']//a")
+	private WebElement opensubsection;
+	
 	//My Notes 
-	@FindBy(xpath ="//div[@class='subheading v-tab grey lighten-3 primary--text']")
-	private WebElement mynotes;
+	@FindBy(xpath ="//div[contains(text(),'Notes')]")
+	private WebElement notes;
 	
 	@FindBy(xpath ="//p[@class='caption text-center']")
 	 private WebElement nothaveanynotestext;
@@ -97,8 +106,7 @@ public class TableOfContent_Page extends Baseclass{
 	
 	public String navigateToChapter(String section) throws Exception {
 		 String chaptername=null;
-		
-		 
+			 
 		for (WebElement webElement : list_section) {
 			if (getText(webElement).equalsIgnoreCase(section)) {
 				chaptername=getText(webElement);
@@ -119,17 +127,31 @@ public class TableOfContent_Page extends Baseclass{
 	public String navigateToSubChapter(int indexofsubchapter) throws Exception {
 		
 		if (isDisplayed(list_subsection.get(indexofsubchapter))) {
+			String text=getText(list_subsection.get(indexofsubchapter));
 			click(list_subsection.get(indexofsubchapter));
 			
-			return getText(list_subsection.get(indexofsubchapter));
+			return text;
 		} 
 		else {
-			throw new Exception("Sub Chapter is not Present");
+			throw new Exception("Sub Chapter is not Availabel for this Chapter");
+		}
+	}
+	
+	public String navigateToSubSection(int indexofsubsection) throws Exception {
+		click(subsectionarrow.get(0));
+		if (isDisplayed(list_childsection.get(indexofsubsection))) {
+			String text=getText(list_childsection.get(indexofsubsection));
+			click(list_childsection.get(indexofsubsection));
+			 return text;
+		}
+		else {
+			throw new Exception("Sub Section not availale for this Chapter");
 		}
 	}
 	
 	public void clickOnMyNotes() {
-		 click(mynotes);
+		
+		 click(notes);
 	}
 	
 	public String getTextInMyNotes() throws Exception {
@@ -156,10 +178,13 @@ public class TableOfContent_Page extends Baseclass{
 		return notes;
 	}
 	
-	public String getTagNameInMyNotes() {
+	public String getTagNameInMyNotes() throws Exception {
 		click(tagListbox);
-		return getText(tagName);
-		
+		if (isDisplayed(tagName)) {
+			return getText(tagName);
+		} else {
+			throw new Exception("Tag Name is Not displayed");
+		}
 	}
 	
 	public boolean clickCheckBox() {
@@ -195,11 +220,17 @@ public class TableOfContent_Page extends Baseclass{
 		return text;
 	}
 	
-	public void clickASTMChapter() {
+	public String clickASTMChapter() {
+		String text=getText(astmsection);
 		click(astmsection);
+		return text;
 	}
 	
 	public String getOpenSectionName() {
 		return getText(opensection);
+	}
+	
+	public String getOpenSubSection() {
+		return getText(opensubsection);
 	}
 }

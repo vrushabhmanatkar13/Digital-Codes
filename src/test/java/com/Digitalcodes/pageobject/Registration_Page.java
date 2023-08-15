@@ -150,7 +150,8 @@ public class Registration_Page extends Baseclass{
 	public void verifyemail(String email) {
 		sendKeys(searchmailinator, email);
 		searchmailinator.sendKeys(Keys.ENTER);
-		click(emailinemail);
+		action.click(emailinemail).build().perform();
+		
 		swichToframe("html_msg_body");
 		scrollUptoElement(verifyemail);
 		click(verifyemail);

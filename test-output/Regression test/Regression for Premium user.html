@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression for Premium user</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>65/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>60/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 28 11:45:58 IST 2023</td>
+<td>Started on:</td><td>Tue Aug 08 16:50:49 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1274 seconds (1274023 ms)</td>
+<tr><td>Total time:</td><td>1523 seconds (1523228 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Regression </td>
 </tr><tr>
@@ -75,21 +75,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks()'><b>TC34_verifyNavigateToASTM_FromLinks</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds thorugh link<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td><div><pre>java.lang.AssertionError: expected [PREMIUM] but found [PREMIUM LITE]
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks(Title_ASTMStanderds_Test.java:59)
+<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks()'><b>TC34_verifyNavigateToASTM_FromLinks</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds thorugh link<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, ASTM E283, PREMIUM</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, isElementDisplayed {id=E86B2BCF7760F0A04E01A189AC740F4A_element_285580}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[@class=&quot;v-chip__content&quot;]//a]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at com.Digitalcodes.pageobject.TitleLanding_Page.getTagName(TitleLanding_Page.java:82)
+	at com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks(Title_ASTMStanderds_Test.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace869627045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace869627045'><pre>java.lang.AssertionError: expected [PREMIUM] but found [PREMIUM LITE]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks(Title_ASTMStanderds_Test.java:59)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834158041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834158041'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, isElementDisplayed {id=E86B2BCF7760F0A04E01A189AC740F4A_element_285580}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[@class=&quot;v-chip__content&quot;]//a]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at com.Digitalcodes.pageobject.TitleLanding_Page.getTagName(TitleLanding_Page.java:82)
+	at com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC34_verifyNavigateToASTM_FromLinks(Title_ASTMStanderds_Test.java:54)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,24 +161,34 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>16</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@59c33386</td></tr>
+<td>19</td>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@6c575325</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td><div><pre>java.lang.AssertionError: expected [PREMIUM] but found [BASIC PLUS]
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage(Title_LandingPage_Test.java:45)
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC48_verifyShareThisSection()'><b>TC48_verifyShareThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print Content search</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //input[@data-qa=&quot;share-section-modal-email-0&quot;]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:268)
+	at com.Digitalcodes.pageobject.TitleSection_Page.shareSection(TitleSection_Page.java:433)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC48_verifyShareThisSection(ContentSearch_Test.java:223)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace435173889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435173889'><pre>java.lang.AssertionError: expected [PREMIUM] but found [BASIC PLUS]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage(Title_LandingPage_Test.java:45)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391900312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391900312'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //input[@data-qa=&quot;share-section-modal-email-0&quot;]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:268)
+	at com.Digitalcodes.pageobject.TitleSection_Page.shareSection(TitleSection_Page.java:433)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC48_verifyShareThisSection(ContentSearch_Test.java:223)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,22 +218,106 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
+<td>61</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection()'><b>TC18_verifyDeleteBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Delete Bookmark from Section</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
-	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:305)
-	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection(Title_SectionPage_Test.java:352)
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC40_verifyRecentlyQuickAccessedSections_QuickAccess()'><b>TC40_verifyRecentlyQuickAccessedSections_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to view Recently Accessed Section at Quick Access<br>Parameters: [A]101.1 Title., 2021 International Building Code (IBC)</td>
+<td><div><pre>java.lang.AssertionError: expected [[A]101.1Title.] but found [null]
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC40_verifyRecentlyQuickAccessedSections_QuickAccess(PremiumTools_QuickAccess_Test.java:207)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace812262793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace812262793'><pre>java.lang.AssertionError: expected [false] but found [true]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658182993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658182993'><pre>java.lang.AssertionError: expected [[A]101.1Title.] but found [null]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at org.testng.Assert.assertFalse(Assert.java:77)
-	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:305)
-	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection(Title_SectionPage_Test.java:352)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC40_verifyRecentlyQuickAccessedSections_QuickAccess(PremiumTools_QuickAccess_Test.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@747d1932</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC23_verifyPrintSection_FromSubSection()'><b>TC23_verifyPrintSection_FromSubSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print SubSection</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-qa=&quot;title-icon-action-print&quot; id=&quot;24199935_print&quot; aria-hidden=&quot;true&quot; class=&quot;print-menu v-icon material-icons theme--light trigger-print-action float-right mr-2&quot; title=&quot;Print&quot; style=&quot;color: rgba(0,0,0,.54)!important;&quot;&gt;...&lt;/i&gt; is not clickable at point (1477, 148). Other element would receive the click: &lt;i id=&quot;section-action-icon-24199935&quot; aria-hidden=&quot;true&quot; class=&quot;v-icon material-icons theme--light trigger-section-action mr-2 float-right disable-selection&quot; style=&quot;color: rgba(0,0,0,.54)!important;&quot;&gt;...&lt;/i&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=C6BBD6004E117A36D62030E6A10990D8_element_216296}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //i[@title=&apos;Print&apos;]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.printThisSubSection(TitleSection_Page.java:519)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC23_verifyPrintSection_FromSubSection(Title_SectionPage_Test.java:574)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744799223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1744799223'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-qa=&quot;title-icon-action-print&quot; id=&quot;24199935_print&quot; aria-hidden=&quot;true&quot; class=&quot;print-menu v-icon material-icons theme--light trigger-print-action float-right mr-2&quot; title=&quot;Print&quot; style=&quot;color: rgba(0,0,0,.54)!important;&quot;&gt;...&lt;/i&gt; is not clickable at point (1477, 148). Other element would receive the click: &lt;i id=&quot;section-action-icon-24199935&quot; aria-hidden=&quot;true&quot; class=&quot;v-icon material-icons theme--light trigger-section-action mr-2 float-right disable-selection&quot; style=&quot;color: rgba(0,0,0,.54)!important;&quot;&gt;...&lt;/i&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=C6BBD6004E117A36D62030E6A10990D8_element_216296}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //i[@title=&apos;Print&apos;]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.printThisSubSection(TitleSection_Page.java:519)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC23_verifyPrintSection_FromSubSection(Title_SectionPage_Test.java:574)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,109 +348,270 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch()'><b>TC51_verifyAdvanceTermSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Advance Term Search from Content search<br>Parameters: Text, Buildings</td>
-<td><div><pre>java.lang.AssertionError: expected [brick] but found [building]
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:325)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace909348837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace909348837'><pre>java.lang.AssertionError: expected [brick] but found [building]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:325)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>43</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch()'><b>TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify mark favorite and un favorite Title from Content search<br>Parameters: Text, Buildings</td>
-<td><div><pre>java.lang.Exception: Title is already marked as favorite
-	at com.Digitalcodes.pageobject.ContentSearch_Page.clickFavorite(ContentSearch_Page.java:449)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch(ContentSearch_Test.java:405)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1102715869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1102715869'><pre>java.lang.Exception: Title is already marked as favorite
-	at com.Digitalcodes.pageobject.ContentSearch_Page.clickFavorite(ContentSearch_Page.java:449)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch(ContentSearch_Test.java:405)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>5</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection()'><b>TC15_verifyDeleteNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to delete Notes from Section</td>
 <td><div><pre>java.lang.AssertionError: expected [false] but found [true]
-	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:305)
-	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:280)
+	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:312)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:306)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace279443018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace279443018'><pre>java.lang.AssertionError: expected [false] but found [true]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace957796349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace957796349'><pre>java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertFalse(Assert.java:67)
 	at org.testng.Assert.assertFalse(Assert.java:77)
-	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:305)
-	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:280)
+	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:312)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:306)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection()'><b>TC18_verifyDeleteBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Delete Bookmark from Section</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:312)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection(Title_SectionPage_Test.java:393)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1287228183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1287228183'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at org.testng.Assert.assertFalse(Assert.java:77)
+	at com.Digitalcodes.utilities.Baseclass.assertFalse(Baseclass.java:312)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection(Title_SectionPage_Test.java:393)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC22_verifyShareSection_FromSubSection()'><b>TC22_verifyShareSection_FromSubSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the Subsection<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //i[@title=&apos;Share&apos;]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.shareSubSection(TitleSection_Page.java:451)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC22_verifyShareSection_FromSubSection(Title_SectionPage_Test.java:559)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322705747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace322705747'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //i[@title=&apos;Share&apos;]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.shareSubSection(TitleSection_Page.java:451)
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC22_verifyShareSection_FromSubSection(Title_SectionPage_Test.java:559)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>79</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch()'><b>TC51_verifyAdvanceTermSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Advance Term Search from Content search<br>Parameters: Buildings, area, brick, cement</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.get(Unknown Source)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.getSubtitleText(ContentSearch_Page.java:382)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:351)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1301272288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1301272288'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.get(Unknown Source)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.getSubtitleText(ContentSearch_Page.java:382)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:351)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>27</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark()'><b>TC49_verifyCreateBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Create Bookmark from Content search</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;v-icon notranslate right mr-2 v-icon--link material-icons theme--light&quot;&gt;...&lt;/button&gt; is not clickable at point (1539, 219). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=4C71D53DB904DC61551E730D15E055BA_element_273057}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: (//button[text()=&apos;bookmark_border&apos;])[1]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.clickBookmark(ContentSearch_Page.java:378)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark(ContentSearch_Test.java:233)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431519340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431519340'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;v-icon notranslate right mr-2 v-icon--link material-icons theme--light&quot;&gt;...&lt;/button&gt; is not clickable at point (1539, 219). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=4C71D53DB904DC61551E730D15E055BA_element_273057}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: (//button[text()=&apos;bookmark_border&apos;])[1]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.clickBookmark(ContentSearch_Page.java:378)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark(ContentSearch_Test.java:233)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -345,23 +642,33 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
-<td><div><pre>java.lang.AssertionError: expected [Basic] but found [Sign In]
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation(Login_Test.java:94)
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC54_verifySaveDeleteContentSerach()'><b>TC54_verifySaveDeleteContentSerach</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify save and delete serach Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[contains(text(),&apos;Confirm&apos;)]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.deleteSaveSearch(ContentSearch_Page.java:457)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC54_verifySaveDeleteContentSerach(ContentSearch_Test.java:419)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace216833827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace216833827'><pre>java.lang.AssertionError: expected [Basic] but found [Sign In]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:293)
-	at com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation(Login_Test.java:94)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358134890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358134890'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[contains(text(),&apos;Confirm&apos;)]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.deleteSaveSearch(ContentSearch_Page.java:457)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC54_verifySaveDeleteContentSerach(ContentSearch_Test.java:419)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -391,8 +698,341 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>6</td>
-<td>com.Digitalcodes.testcases.Login_Test@65b66b08</td></tr>
+<td>77</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC38_verifyActionsOnSection_QuickAccess()'><b>TC38_verifyActionsOnSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access<br>Parameters: [A]101.1 Title., 2021 International Building Code (IBC)</td>
+<td><div><pre>java.lang.Exception: [A]101.1 Title. Or Automation User Or Default any one on this is not correct showing in My Notes and Bookmark
+	at com.Digitalcodes.pageobject.MenuMyNotesandBookmark_Page.verifyDetails(MenuMyNotesandBookmark_Page.java:108)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC38_verifyActionsOnSection_QuickAccess(PremiumTools_QuickAccess_Test.java:144)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2129130366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2129130366'><pre>java.lang.Exception: [A]101.1 Title. Or Automation User Or Default any one on this is not correct showing in My Notes and Bookmark
+	at com.Digitalcodes.pageobject.MenuMyNotesandBookmark_Page.verifyDetails(MenuMyNotesandBookmark_Page.java:108)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC38_verifyActionsOnSection_QuickAccess(PremiumTools_QuickAccess_Test.java:144)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>18</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@747d1932</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess()'><b>TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Share, Edit, Delete Bookmark from Quick Access<br>Parameters: [A]101.1 Title., 2021 International Building Code (IBC)</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[text()=&apos;delete&apos;]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.deleteNotes__Bookmark(TitleSection_Page.java:595)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess(PremiumTools_QuickAccess_Test.java:188)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[text()=&apos;delete&apos;]&quot;}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, findElement {using=xpath, value=//i[text()=&apos;delete&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584211883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584211883'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[text()=&apos;delete&apos;]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.TitleSection_Page.deleteNotes__Bookmark(TitleSection_Page.java:595)
+	at com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess(PremiumTools_QuickAccess_Test.java:188)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[text()=&apos;delete&apos;]&quot;}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, findElement {using=xpath, value=//i[text()=&apos;delete&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+</pre></div></td>
+<td>114</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@747d1932</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch()'><b>TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify mark favorite and un favorite Title from Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;v-btn__content&quot;&gt;...&lt;/span&gt; is not clickable at point (188, 81). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=2848C672C20504493675944626E65493_element_280191}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[contains(text(),&apos;Clear Search&apos;)]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.clickClearSearch(ContentSearch_Page.java:417)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch(ContentSearch_Test.java:430)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911618184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911618184'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;v-btn__content&quot;&gt;...&lt;/span&gt; is not clickable at point (188, 81). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=2848C672C20504493675944626E65493_element_280191}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //span[contains(text(),&apos;Clear Search&apos;)]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:260)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.clickClearSearch(ContentSearch_Page.java:417)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch(ContentSearch_Test.java:430)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark()'><b>TC50_verifyShareEditDeleteBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Share, Edit, Delete Bookmark from Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input autocomplete=&quot;off&quot; id=&quot;txt_search&quot; type=&quot;text&quot;&gt; is not clickable at point (607, 31). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=4C71D53DB904DC61551E730D15E055BA_element_272917}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //input[@id=&apos;txt_search&apos;]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:268)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.search(ContentSearch_Page.java:212)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark(ContentSearch_Test.java:283)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace852548143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace852548143'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input autocomplete=&quot;off&quot; id=&quot;txt_search&quot; type=&quot;text&quot;&gt; is not clickable at point (607, 31). Other element would receive the click: &lt;div class=&quot;v-overlay__scrim&quot; style=&quot;opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=115.0.5790.170)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618cb535feb46bf7c66eb58ef439d3eb, clickElement {id=4C71D53DB904DC61551E730D15E055BA_element_272917}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56756/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618cb535feb46bf7c66eb58ef439d3eb)] -&gt; xpath: //input[@id=&apos;txt_search&apos;]]
+Session ID: 618cb535feb46bf7c66eb58ef439d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.Digitalcodes.utilities.Baseclass.sendKeys(Baseclass.java:268)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.search(ContentSearch_Page.java:212)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark(ContentSearch_Test.java:283)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -402,330 +1042,305 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC42_verifySearchWithinTitle()'><b>TC42_verifySearchWithinTitle</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: Verify user able to search within Title and navigate to content search Page<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC06_verifyChangeVersion_ReleatedTitles_Categories()'><b>TC06_verifyChangeVersion_ReleatedTitles_Categories</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Change Version, Releated Titles, Categories<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>22</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC13_verifyShareNote_FromSction()'><b>TC13_verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share note from section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
 <td></td>
 <td>10</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark()'><b>TC49_verifyCreateBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Create Bookmark from Content search</td>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS, PREMIUM</td>
 <td></td>
-<td>20</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>9</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC46_verifyJumpToSection()'><b>TC46_verifyJumpToSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to jump to the section from Content search<br>Parameters: Text, Buildings</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES, PREMIUM</td>
 <td></td>
-<td>16</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>22</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Text, Buildings</td>
 <td></td>
-<td>9</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>14</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Login_Test.TC01_loginValidData()'><b>TC01_loginValidData</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls<br>Parameters: dev.test@iccsafe.info, Digital@123, Dev, Test, Premium Complete</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION, PREMIUM</td>
+<td></td>
+<td>27</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Login_Test.TC01_loginValidData()'><b>TC01_loginValidData</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls<br>Parameters: complete.user@iccsafe.info, Digital@123, Complete, User, Premium Complete</td>
 <td></td>
 <td>23</td>
-<td>com.Digitalcodes.testcases.Login_Test@65b66b08</td></tr>
+<td>com.Digitalcodes.testcases.Login_Test@7ed9499e</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC52_verifyNearSearch()'><b>TC52_verifyNearSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify near search in Advance Term Search from Content search</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
 <td></td>
-<td>5</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>33</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration, PREMIUM</td>
 <td></td>
-<td>21</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>10</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC11_verifyShareSection_FromSection()'><b>TC11_verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC19_verifyLinksOnChapter()'><b>TC19_verifyLinksOnChapter</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify links On Chapter<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
 <td></td>
-<td>12</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Commentary_Test.TC34_verifyHideCommentary()'><b>TC34_verifyHideCommentary</b><br>Test class: com.Digitalcodes.testcases.Title_Commentary_Test<br>Test method: Verify User able to Hide commentary section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
-<td></td>
-<td>12</td>
-<td>com.Digitalcodes.testcases.Title_Commentary_Test@b25b095</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
-<td></td>
-<td>24</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Title Name, International Building Code</td>
-<td></td>
-<td>9</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION</td>
-<td></td>
-<td>23</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Chapter Name, Chapters 4</td>
-<td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC20_verifyCreateNotes_atSubsection()'><b>TC20_verifyCreateNotes_atSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at Sub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>25</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>29</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC27_verifyPrintSection_FromChildSubSection()'><b>TC27_verifyPrintSection_FromChildSubSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print SubSection</td>
 <td></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC19_verifyLinksOnChapter()'><b>TC19_verifyLinksOnChapter</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify links On Chapter<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>19</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC21_verifyCreateBookmark_atSubsection()'><b>TC21_verifyCreateBookmark_atSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create Bookmark at Sub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>30</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC47_verifyCopyAndPrintThisSection()'><b>TC47_verifyCopyAndPrintThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print the section</td>
-<td></td>
-<td>5</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection()'><b>TC14_verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit notes from Section</td>
-<td></td>
-<td>4</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Purchase_Test.TC_verifyUpdateQutentiy_RemoveIncart()'><b>TC_verifyUpdateQutentiy_RemoveIncart</b><br>Test class: com.Digitalcodes.testcases.Title_Purchase_Test<br>Test method: Verify user able to Update Qty and Remove product in My cart</td>
-<td></td>
-<td>24</td>
-<td>com.Digitalcodes.testcases.Title_Purchase_Test@4726927c</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES</td>
-<td></td>
-<td>22</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Section Name, 402.1 Applicability</td>
-<td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>26</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration</td>
-<td></td>
-<td>23</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC17_verifyEditBookmark_FromSection()'><b>TC17_verifyEditBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit Bookamrk from Section</td>
-<td></td>
-<td>4</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION</td>
-<td></td>
-<td>21</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC54_verifySaveDeleteContentSerach()'><b>TC54_verifySaveDeleteContentSerach</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify save and delete serach Content search<br>Parameters: Text, Buildings</td>
-<td></td>
-<td>14</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM()'><b>TC35_verifyNavigateToASTM</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds Landing page<br>Parameters: Standards, ASTM Standards, Iron and Steel Materials, ASTM A1003/A1003M-15, A1003/A1003M-15</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@59c33386</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC25_verifyCreateBookmark_atChildSubsection()'><b>TC25_verifyCreateBookmark_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create Bookmark at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>28</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
-<td></td>
-<td>6</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC12_verifyPrintSection_FromSection()'><b>TC12_verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print Section</td>
-<td></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC13_verifyShareNote_FromSction()'><b>TC13_verifyShareNote_FromSction</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share note from section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>4</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC05_verifyMarkFavoriteTitle()'><b>TC05_verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify user able to mark favorite & unfavorite and title should be displayed in favorites<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>23</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES</td>
-<td></td>
-<td>20</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC48_verifyShareThisSection()'><b>TC48_verifyShareThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print Content search</td>
-<td></td>
 <td>2</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION</td>
-<td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS</td>
-<td></td>
-<td>22</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC38_verifyActionsOnSection_QuickAccess()'><b>TC38_verifyActionsOnSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access</td>
-<td></td>
-<td>13</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@2f651f93</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Purchase_Test.TC_PurchaseTitle()'><b>TC_PurchaseTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Purchase_Test<br>Test method: Verify user able to Purchase Premium Complete</td>
-<td></td>
-<td>56</td>
-<td>com.Digitalcodes.testcases.Title_Purchase_Test@4726927c</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION</td>
-<td></td>
-<td>81</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES, PREMIUM</td>
 <td></td>
 <td>24</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC22_verifyShareSection_FromSubSection()'><b>TC22_verifyShareSection_FromSubSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the Subsection<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>13</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess()'><b>TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Share, Edit, Delete Bookmark from Quick Access</td>
-<td></td>
-<td>99</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@2f651f93</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark()'><b>TC50_verifyShareEditDeleteBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Share, Edit, Delete Bookmark from Content search<br>Parameters: Text, Buildings</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration, PREMIUM</td>
 <td></td>
 <td>23</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC26_verifyShareSection_atChildSubsection()'><b>TC26_verifyShareSection_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share section at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC35_verifyNavigateToASTM()'><b>TC35_verifyNavigateToASTM</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to navigate to ASTM Standerds Landing page<br>Parameters: Standards, ASTM Standards, Iron and Steel Materials, ASTM A1003/A1003M-15, PREMIUM LITE</td>
 <td></td>
-<td>14</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>12</td>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@6c575325</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC53_verifyShowRelevantTitles()'><b>TC53_verifyShowRelevantTitles</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Relevant Titles from Content search<br>Parameters: Text, Buildings</td>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC05_verifyMarkFavoriteTitle()'><b>TC05_verifyMarkFavoriteTitle</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify user able to mark favorite & unfavorite and title should be displayed in favorites<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
 <td></td>
-<td>5</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>25</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC24_verifyCreateNotes_atChildSubsection()'><b>TC24_verifyCreateNotes_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>24</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC36_verifyASTMSection()'><b>TC36_verifyASTMSection</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to Access ASTM title </td>
-<td></td>
-<td>3</td>
-<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@59c33386</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC41_verifyAlreadyCreatedBookmark_QuickAccess()'><b>TC41_verifyAlreadyCreatedBookmark_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify User able to View already created Bookmark at Quick Access</td>
-<td></td>
-<td>13</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@2f651f93</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration</td>
+<td title='com.Digitalcodes.testcases.Registration_Test.TC_Registeruser_ValidData()'><b>TC_Registeruser_ValidData</b><br>Test class: com.Digitalcodes.testcases.Registration_Test<br>Test method: Verfiy user able to Register with valid Data</td>
 <td></td>
 <td>21</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC16_verifyShareBookmark_FromSection()'><b>TC16_verifyShareBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share bookmark from Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>67</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition</td>
-<td></td>
-<td>7</td>
-<td>com.Digitalcodes.testcases.Title_Basic_Test@5cb042da</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration</td>
-<td></td>
-<td>8</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
-<td></td>
-<td>22</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
+<td>com.Digitalcodes.testcases.Registration_Test@77e7246b</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.ContentSearch_Test.TC43_verifyText_FiltersApplyed()'><b>TC43_verifyText_FiltersApplyed</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Search text and filters are alredy applyed</td>
 <td></td>
 <td>0</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC37_verifyAccessSection_QuickAccess()'><b>TC37_verifyAccessSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Access section from Quick Access</td>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC53_verifyShowRelevantTitles()'><b>TC53_verifyShowRelevantTitles</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Relevant Titles from Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>5</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>29</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION, PREMIUM</td>
+<td></td>
+<td>24</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Section Name, 402.1 Applicability</td>
 <td></td>
 <td>13</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@2f651f93</td></tr>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Login_Test@7ed9499e</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION, PREMIUM</td>
+<td></td>
+<td>32</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS, PREMIUM</td>
+<td></td>
+<td>29</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Title Name, International Building Code</td>
+<td></td>
+<td>13</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS, PREMIUM</td>
+<td></td>
+<td>25</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Purchase_Test.TC_PurchaseTitle()'><b>TC_PurchaseTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Purchase_Test<br>Test method: Verify user able to Purchase Premium Complete</td>
+<td></td>
+<td>56</td>
+<td>com.Digitalcodes.testcases.Title_Purchase_Test@28e19366</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION, PREMIUM</td>
+<td></td>
+<td>23</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Publisher, IAEI, 2023 Analysis of Changes, 2023 NEC, CHAPTER 2 WIRING AND PROTECTION, PREMIUM</td>
+<td></td>
+<td>9</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Publisher, American Institute of Steel Construction (AISC), 2018 M327-18BW Seismic Design Manual 3rd Edition</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_Basic_Test@719d35e8</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Purchase_Test.TC_verifyUpdateQutentiy_RemoveIncart()'><b>TC_verifyUpdateQutentiy_RemoveIncart</b><br>Test class: com.Digitalcodes.testcases.Title_Purchase_Test<br>Test method: Verify user able to Update Qty and Remove product in My cart</td>
+<td></td>
+<td>34</td>
+<td>com.Digitalcodes.testcases.Title_Purchase_Test@28e19366</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Publisher, Wiley, 2021 Building Codes Illustrated, 7th Edition</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_Basic_Test@719d35e8</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Commentary_Test.TC34_verifyHideCommentary()'><b>TC34_verifyHideCommentary</b><br>Test class: com.Digitalcodes.testcases.Title_Commentary_Test<br>Test method: Verify User able to Hide commentary section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use</td>
+<td></td>
+<td>11</td>
+<td>com.Digitalcodes.testcases.Title_Commentary_Test@571a9686</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Topics, Fire, 2019 California Fire Code Amendments Handbook, DIVISION II ADMINISTRATION, PREMIUM</td>
+<td></td>
+<td>10</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use, PREMIUM</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_Basic_Test.TC33_verifyNgviateToBasicTitle()'><b>TC33_verifyNgviateToBasicTitle</b><br>Test class: com.Digitalcodes.testcases.Title_Basic_Test<br>Test method: Verify user able to navigate to Non-accsiable title <br>Parameters: Resources, CodeMaster, 2021 Allowable Stress Design for Masonry (2021 IBC and TMS 402-16)</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_Basic_Test@719d35e8</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Chapter Name, Chapters 4</td>
+<td></td>
+<td>14</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use, PREMIUM</td>
+<td></td>
+<td>28</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Resources, Energy, 2021 IECC Code and Commentary (IECC), Chapter 1 [CE]: Scope and Administration, PREMIUM</td>
+<td></td>
+<td>28</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC16_verifyShareBookmark_FromSection()'><b>TC16_verifyShareBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share bookmark from Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>25</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC12_verifyPrintSection_FromSection()'><b>TC12_verifyPrintSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print Section</td>
+<td></td>
+<td>1</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.TableOfContent_Test.TC07_verifyMyNotes_FromTOC()'><b>TC07_verifyMyNotes_FromTOC</b><br>Test class: com.Digitalcodes.testcases.TableOfContent_Test<br>Test method: Verify my notes From Table Of Content when user have no any notes <br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>12</td>
+<td>com.Digitalcodes.testcases.TableOfContent_Test@10acd6</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC37_verifyAccessSection_QuickAccess()'><b>TC37_verifyAccessSection_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to Access section from Quick Access<br>Parameters: 2021 IBC, 2021 International Building Code (IBC), Second Version: Sep 2021, 101., [A]101.1 Title.</td>
+<td></td>
+<td>12</td>
+<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@747d1932</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC52_verifyNearSearch()'><b>TC52_verifyNearSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify near search in Advance Term Search from Content search<br>Parameters: fire, mall</td>
+<td></td>
+<td>6</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC46_verifyJumpToSection()'><b>TC46_verifyJumpToSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to jump to the section from Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>14</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC21_verifyCreateBookmark_atSubsection()'><b>TC21_verifyCreateBookmark_atSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create Bookmark at Sub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>32</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC11_verifyShareSection_FromSection()'><b>TC11_verifyShareSection_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share the section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>15</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_ASTMStanderds_Test.TC36_verifyASTMSection()'><b>TC36_verifyASTMSection</b><br>Test class: com.Digitalcodes.testcases.Title_ASTMStanderds_Test<br>Test method: Verify user able to Access ASTM title </td>
+<td></td>
+<td>3</td>
+<td>com.Digitalcodes.testcases.Title_ASTMStanderds_Test@6c575325</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC04_verifyTitleLandingPage()'><b>TC04_verifyTitleLandingPage</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Navigate to Title Landing page and verify Tag<br>Parameters: Standards, AFSI Standards, 1997 ASI-77 Air Structures Design and Standards Manual, SECTION B GUIDE SPECIFICATIONS FOR AIR SUPPORTED STRUCTURES, PREMIUM</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.Title_LandingPage_Test@244e619a</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC47_verifyCopyAndPrintThisSection()'><b>TC47_verifyCopyAndPrintThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print the section</td>
+<td></td>
+<td>5</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC42_verifySearchWithinTitle()'><b>TC42_verifySearchWithinTitle</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: Verify user able to search within Title and navigate to content search Page<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, Walls</td>
+<td></td>
+<td>13</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC14_verifyEditNotes_FromSection()'><b>TC14_verifyEditNotes_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit notes from Section</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC20_verifyCreateNotes_atSubsection()'><b>TC20_verifyCreateNotes_atSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at Sub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>35</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC25_verifyCreateBookmark_atChildSubsection()'><b>TC25_verifyCreateBookmark_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create Bookmark at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>31</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC26_verifyShareSection_atChildSubsection()'><b>TC26_verifyShareSection_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to share section at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>16</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC24_verifyCreateNotes_atChildSubsection()'><b>TC24_verifyCreateNotes_atChildSubsection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at ChildSub-Section<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS, PREMIUM</td>
+<td></td>
+<td>31</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.ContentSearch_Test.TC56_verifyPaginationinContentSearch()'><b>TC56_verifyPaginationinContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify paginations in Content search<br>Parameters: Text, Buildings</td>
 <td></td>
-<td>9</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@719d35e8</td></tr>
+<td>10</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@6ffa56fa</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_LandingPage_Test.TC06_verifyChangeVersion_ReleatedTitles_Categories()'><b>TC06_verifyChangeVersion_ReleatedTitles_Categories</b><br>Test class: com.Digitalcodes.testcases.Title_LandingPage_Test<br>Test method: Verify User able to Change Version, Releated Titles, Categories<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC17_verifyEditBookmark_FromSection()'><b>TC17_verifyEditBookmark_FromSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to edit Bookamrk from Section</td>
 <td></td>
-<td>16</td>
-<td>com.Digitalcodes.testcases.Title_LandingPage_Test@28e19366</td></tr>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC23_verifyPrintSection_FromSubSection()'><b>TC23_verifyPrintSection_FromSubSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to Print SubSection</td>
+<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC09_verifyCreateNotes_atSection()'><b>TC09_verifyCreateNotes_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create notes at section<br>Parameters: Commentaries, 2021 Commentaries, 2021 IBC Code and Commentary Volume 1 (IBC), Chapter 3: Occupancy Classification and Use, PREMIUM</td>
 <td></td>
-<td>3</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Registration_Test.TC_Registeruser_ValidData()'><b>TC_Registeruser_ValidData</b><br>Test class: com.Digitalcodes.testcases.Registration_Test<br>Test method: Verfiy user able to Register with valid Data</td>
-<td></td>
-<td>16</td>
-<td>com.Digitalcodes.testcases.Registration_Test@701bc94e</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.Title_SectionPage_Test.TC10_verifyCreateBookmark_atSection()'><b>TC10_verifyCreateBookmark_atSection</b><br>Test class: com.Digitalcodes.testcases.Title_SectionPage_Test<br>Test method: Verify user able to create bookmark at section<br>Parameters: Locations, Delaware, 2015 International Fuel Gas Code (IFGC), CHAPTER 3 GENERAL REGULATIONS</td>
-<td></td>
-<td>25</td>
-<td>com.Digitalcodes.testcases.Title_SectionPage_Test@61dde151</td></tr>
-<tr>
-<td title='com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test.TC40_verifyRecentlyQuickAccessedSections_QuickAccess()'><b>TC40_verifyRecentlyQuickAccessedSections_QuickAccess</b><br>Test class: com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test<br>Test method: Verify user able to view Recently Accessed Section at Quick Access</td>
-<td></td>
-<td>2</td>
-<td>com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test@2f651f93</td></tr>
+<td>26</td>
+<td>com.Digitalcodes.testcases.Title_SectionPage_Test@59c33386</td></tr>
 </table><p>
 </body>
 </html>

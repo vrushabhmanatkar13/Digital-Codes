@@ -4,13 +4,14 @@ import org.testng.annotations.Test;
 
 import com.Digitalcodes.pageobject.TableOfContent_Page;
 import com.Digitalcodes.utilities.Baseclass;
+import com.Digitalcodes.utilities.DataProviders;
 import com.Digitalcodes.utilities.Sparkreport;
 
 public class TableOfContent_Test extends Prerequisites_Teardown {
 
-	@Test(priority = 1, description = "Verify my notes From Table Of Content when user have no any notes ", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
-			"Smoke", "Regeration" })
-	public void TC07_verifyMyNotes_FromTOC(String Section, String Sub_section, String Title, String Chapter)
+	@Test(priority = 1, description = "Verify my notes From Table Of Content when user have no any notes ", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
+			"Smoke", "Regression" })
+	public void TC07_verifyMyNotes_FromTOC(String Section, String Sub_section, String Title, String Chapter, String tag)
 			throws Exception {
 		TableOfContent_Page tableOfContent_Page = new TableOfContent_Page();
 

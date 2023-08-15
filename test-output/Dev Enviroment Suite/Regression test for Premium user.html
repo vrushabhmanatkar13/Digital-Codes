@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression test for Premium user</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 28 20:05:22 IST 2023</td>
+<td>Started on:</td><td>Fri Jul 28 23:20:03 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1058 seconds (1058834 ms)</td>
+<tr><td>Total time:</td><td>1308 seconds (1308521 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,237 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySeeAll()'><b>TC57_verifySeeAll</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify see all form search suggestion<br>Parameters: Text, Buildings</td>
-<td><div><pre>java.lang.AssertionError: expected [Buildings] but found [BuildingsBuildings]
-	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySeeAll(ContentSearch_Test.java:468)
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC56_verifyPaginationinContentSearch()'><b>TC56_verifyPaginationinContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify paginations in Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.cssSelector: .v-list-item__title.lighten-1.font-weight-bold&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:261)
+	at com.Digitalcodes.pageobject.Menu.navigateToPremiumToolFeaturs(Menu.java:122)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC56_verifyPaginationinContentSearch(ContentSearch_Test.java:426)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373967287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1373967287'><pre>java.lang.AssertionError: expected [Buildings] but found [BuildingsBuildings]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.v-list-item__title.lighten-1.font-weight-bold&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2f9c6829c6b33170f372b674546afbb, findElement {using=css selector, value=.v-list-item__title.lighten-1.font-weight-bold}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61935/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2f9c6829c6b33170f372b674546afbb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785133628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785133628'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.cssSelector: .v-list-item__title.lighten-1.font-weight-bold&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.click(Baseclass.java:261)
+	at com.Digitalcodes.pageobject.Menu.navigateToPremiumToolFeaturs(Menu.java:122)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC56_verifyPaginationinContentSearch(ContentSearch_Test.java:426)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.v-list-item__title.lighten-1.font-weight-bold&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2f9c6829c6b33170f372b674546afbb, findElement {using=css selector, value=.v-list-item__title.lighten-1.font-weight-bold}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61935/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2f9c6829c6b33170f372b674546afbb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+</pre></div></td>
+<td>81</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch()'><b>TC51_verifyAdvanceTermSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Advance Term Search from Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:280)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.getNoneofWords(ContentSearch_Page.java:394)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:328)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2f9c6829c6b33170f372b674546afbb, findElement {using=xpath, value=(//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61935/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2f9c6829c6b33170f372b674546afbb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095142549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095142549'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.Digitalcodes.utilities.Baseclass.getText(Baseclass.java:280)
+	at com.Digitalcodes.pageobject.ContentSearch_Page.getNoneofWords(ContentSearch_Page.java:394)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:328)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2f9c6829c6b33170f372b674546afbb, findElement {using=xpath, value=(//p[@class=&apos;mb-0 font-weight-bold&apos;])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61935/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2f9c6829c6b33170f372b674546afbb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+</pre></div></td>
+<td>94</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark()'><b>TC50_verifyShareEditDeleteBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Share, Edit, Delete Bookmark from Content search<br>Parameters: Text, Buildings</td>
+<td><div><pre>java.lang.AssertionError: expected [User edit bookmark] but found [User create Bookmark]
+	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark(ContentSearch_Test.java:299)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace955610633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955610633'><pre>java.lang.AssertionError: expected [User edit bookmark] but found [User create Bookmark]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -89,7 +313,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
 	at com.Digitalcodes.utilities.Baseclass.assertEquals(Baseclass.java:300)
-	at com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySeeAll(ContentSearch_Test.java:468)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC50_verifyShareEditDeleteBookmark(ContentSearch_Test.java:299)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,8 +343,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a</td></tr>
+<td>35</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -130,20 +354,95 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC47_verifyCopyAndPrintThisSection()'><b>TC47_verifyCopyAndPrintThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print the section</td>
+<td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>15</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC54_verifySaveDeleteContentSerach()'><b>TC54_verifySaveDeleteContentSerach</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify save and delete serach Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>32</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch()'><b>TC55_verifymarkFavorite_unFavoriteTitleformConetntSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify mark favorite and un favorite Title from Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC53_verifyShowRelevantTitles()'><b>TC53_verifyShowRelevantTitles</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Relevant Titles from Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>6</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC42_verifySearchWithinTitle()'><b>TC42_verifySearchWithinTitle</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: Verify user able to search within Title and navigate to content search Page<br>Parameters: I-Codes, 2021 I-Codes, 2021 International Building Code (IBC), CHAPTER 2 DEFINITIONS</td>
+<td></td>
+<td>27</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC46_verifyJumpToSection()'><b>TC46_verifyJumpToSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to jump to the section from Content search<br>Parameters: Text, Buildings</td>
+<td></td>
+<td>31</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC43_verifyText_FiltersApplyed()'><b>TC43_verifyText_FiltersApplyed</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Search text and filters are alredy applyed</td>
+<td></td>
+<td>0</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Title Name, International Building Code</td>
+<td></td>
+<td>21</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
 <td title='com.Digitalcodes.testcases.Login_Test.TC01_loginValidData()'><b>TC01_loginValidData</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: User able to Login with valid creditionls<br>Parameters: complete.user@iccsafe.info, Digital@123, Complete, User, Premium Complete</td>
 <td></td>
-<td>9</td>
-<td>com.Digitalcodes.testcases.Login_Test@6b0615ae</td></tr>
+<td>15</td>
+<td>com.Digitalcodes.testcases.Login_Test@11d4dbd6</td></tr>
 <tr>
-<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch()'><b>TC51_verifyAdvanceTermSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify Advance Term Search from Content search<br>Parameters: Text, Buildings</td>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySearchSuggestions()'><b>TC57_verifySearchSuggestions</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify search suggestions<br>Parameters: Text, Buildings</td>
 <td></td>
-<td>90</td>
-<td>com.Digitalcodes.testcases.ContentSearch_Test@7b78ed6a</td></tr>
+<td>4</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
 <tr>
 <td title='com.Digitalcodes.testcases.Login_Test.TC02_verifyUserInformation()'><b>TC02_verifyUserInformation</b><br>Test class: com.Digitalcodes.testcases.Login_Test<br>Test method: Verify User able to displyed Subscription type, Name, email </td>
 <td></td>
+<td>7</td>
+<td>com.Digitalcodes.testcases.Login_Test@11d4dbd6</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC48_verifyShareThisSection()'><b>TC48_verifyShareThisSection</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Copy and Print Content search</td>
+<td></td>
+<td>3</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC57_verifySeeAll()'><b>TC57_verifySeeAll</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify see all form search suggestion<br>Parameters: Text, Buildings</td>
+<td></td>
 <td>6</td>
-<td>com.Digitalcodes.testcases.Login_Test@6b0615ae</td></tr>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Chapter Name, Chapters 4</td>
+<td></td>
+<td>19</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark()'><b>TC49_verifyCreateBookmark</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to Create Bookmark from Content search</td>
+<td></td>
+<td>34</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC52_verifyNearSearch()'><b>TC52_verifyNearSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify near search in Advance Term Search from Content search</td>
+<td></td>
+<td>8</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
+<tr>
+<td title='com.Digitalcodes.testcases.ContentSearch_Test.TC44_verifyContentSearch()'><b>TC44_verifyContentSearch</b><br>Test class: com.Digitalcodes.testcases.ContentSearch_Test<br>Test method: verify user able to navigate Content search page and search any content<br>Parameters: Section Name, 402.1 Applicability</td>
+<td></td>
+<td>29</td>
+<td>com.Digitalcodes.testcases.ContentSearch_Test@5e746d37</td></tr>
 </table><p>
 </body>
 </html>

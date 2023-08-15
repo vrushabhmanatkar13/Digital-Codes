@@ -194,7 +194,7 @@ public class Baseclass extends Perfecto_Capabailites{
     //scroll upto element
 	public static void scrollUptoElement(WebElement element) {
 		JavascriptExecutor js_exe = (JavascriptExecutor) driver;
-		js_exe.executeScript("arguments[0].scrollIntoView()", element);
+		js_exe.executeScript("arguments[0].scrollIntoView(true)", element);
 		
 	}
  //------------------------switch to new tab------------------------------>>
@@ -219,7 +219,6 @@ public class Baseclass extends Perfecto_Capabailites{
 
 	//----------return back to main window------>>
 	public static void retrunToMainWindow() {
-		
 		driver.switchTo().window(Win_id);
 	}
 	public static void switchToActiveElement() {
@@ -263,10 +262,11 @@ public class Baseclass extends Perfecto_Capabailites{
 	}
 	
 	public void sendKeys(WebElement webelement,String stringtext){
-		wait.until(ExpectedConditions.visibilityOf(webelement)).clear();
+	
 		try {
 			Thread.sleep(200);
-			wait.until(ExpectedConditions.elementToBeClickable(webelement)).sendKeys(stringtext);
+			wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
+			wait.until(ExpectedConditions.visibilityOf(webelement)).sendKeys(stringtext);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

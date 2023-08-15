@@ -7,29 +7,35 @@
 <listeners>
 	<listener class-name="com.Digitalcodes.listners.LogResult_ITestListner"></listener>
        <listener class-name="com.Digitalcodes.listners.LogResult_IReporterListner"></listener>
+       <listener class-name="io.qameta.allure.testng.AllureTestNg" />
 </listeners>
 
 	<test name="Regression for Premium user" preserve-order="true">
 	<parameter name="Browser" value="chrome"></parameter>
-	<parameter name="User" value="PREMIUM"></parameter>
-	<parameter name="UserType" value="New"></parameter>
+	<parameter name="User" value="PREMIUM"></parameter>     <!-- PREMIUM/SINGLE/BASIC -->
+	<parameter name="UserType" value="New"></parameter>   <!-- Existing/New -->
 	<groups>
 			<run>
-				<include name="Regression"></include>
+				<include name="Regression"></include>         <!-- Regression/Smoke -->
 			</run>
 		</groups>
 		<classes>
-			<class name="com.Digitalcodes.testcases.Registration_Test" />
+			<class name="com.Digitalcodes.testcases.Registration_Test" />    
+	    
 			<class name="com.Digitalcodes.testcases.Login_Test" />
-			<class name="com.Digitalcodes.testcases.Title_Purchase_Test" />
+			<class name="com.Digitalcodes.testcases.Title_Purchase_Test" />  
+			
 			<class name="com.Digitalcodes.testcases.Title_LandingPage_Test" />
-			<class name="com.Digitalcodes.testcases.TableOfContent_Test" />
+			<class name="com.Digitalcodes.testcases.TableOfContent_Test" />  
 			<class name="com.Digitalcodes.testcases.Title_SectionPage_Test" />
 			<class name="com.Digitalcodes.testcases.Title_Commentary_Test" />
-			<class name="com.Digitalcodes.testcases.Title_Basic_Test" />
+			<class name="com.Digitalcodes.testcases.Title_Basic_Test" />  
+			<class name="com.Digitalcodes.testcases.ContentSearch_Test" />
+			
+			
 			<class
 				name="com.Digitalcodes.testcases.Title_ASTMStanderds_Test" />
-			<class name="com.Digitalcodes.testcases.ContentSearch_Test" />
+			
 			<class
 				name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test" />
 	 	</classes>

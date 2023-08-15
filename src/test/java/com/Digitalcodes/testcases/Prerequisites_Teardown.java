@@ -54,7 +54,7 @@ public class Prerequisites_Teardown extends Baseclass {
 	static final String CLOUD_NAME = "icc";
 	static String SECURITY_TOCKEN;
 	public static String PLATFORM;
-	static String TAGNAME;
+	public static String TAGNAME;
 	public static String BEOWSER_NAME;
 	static  String ENVIROMENT ;
 	static String WIDTH;
@@ -75,7 +75,7 @@ public class Prerequisites_Teardown extends Baseclass {
 			json = data.readJson(System.getProperty("user.dir")+"\\TestData\\DC.json");
 			excel = new Load_Excle();
 
-			baseclass = new Baseclass();
+			
 			userdata=new HashMap<String, String>();
 			
 			/*
@@ -104,7 +104,7 @@ public class Prerequisites_Teardown extends Baseclass {
 			 * If not then by default value is Stage url
 			 * 
 			 */
-			URL=Baseclass.selectEnviroment(prop);
+			//URL=Baseclass.selectEnviroment(prop);
 			
 			ENVIROMENT=Enviroment;
 			TAGNAME = tagname;
@@ -122,7 +122,8 @@ public class Prerequisites_Teardown extends Baseclass {
 
 		try {
 			// Baseclass.fatechBrowserName(prop, System.getProperty("browser"));
-			
+			baseclass = new Baseclass();
+			URL=Baseclass.selectEnviroment(prop);
 			report = new Sparkreport(prop.getProperty("Title"), prop.getProperty("Report_Name"),ENVIROMENT+"/"+PLATFORM, USER ,TAGNAME);
 
 			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,WIDTH,HIGHT);
@@ -186,23 +187,5 @@ public class Prerequisites_Teardown extends Baseclass {
 
 	}
 
-	@DataProvider(name = "SingleTitle")
-	public Object[][] getTitlesByRow() {
-
-		return excel.getDataFromExcle("Titles", 1);
-	}
-
-	@DataProvider(name = "Title")
-	public Object[][] getAllTitles() throws Exception {
-		if (TAGNAME.equalsIgnoreCase("Smoke")) {
-			return excel.getDataFromExcle("Titles", 1);
-		}
-		if (TAGNAME.equalsIgnoreCase("Regression")) {
-			return excel.getDataFromExcle("Titles");
-		}
-		else {
-			throw new Exception("Suite Name Not Passed in TestNG.xml File"); 
-		}
-	}
 
 }
