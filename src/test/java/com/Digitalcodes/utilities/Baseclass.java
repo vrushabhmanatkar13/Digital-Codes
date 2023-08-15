@@ -1,7 +1,7 @@
 package com.Digitalcodes.utilities;
 
 import java.time.Duration;
-
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
@@ -11,6 +11,7 @@ import com.Digitalcodes.perfectocloud.Perfecto_Capabailites;
 import com.Digitalcodes.testcases.Prerequisites_Teardown;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,6 +32,7 @@ public class Baseclass extends Perfecto_Capabailites{
 	
 	
 	public static Actions action;
+   
 	private static String Win_id;
     public static WebDriverWait wait;
 	public static Perfecto_Capabailites cap;
@@ -51,6 +55,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					if (browserName.equalsIgnoreCase("Chrome")) {
 						WebDriverManager.chromedriver().setup();
 						ChromeOptions chromeoption=SetCapbilites.getChromecapabalites(incognito, headless);
+					//	SetCapbilites.getlamdatest(chromeoption);
 						WebDriver Cdriver = new ChromeDriver(chromeoption);
 						driver = Cdriver;
 
@@ -68,6 +73,7 @@ public class Baseclass extends Perfecto_Capabailites{
 					driver.manage().window().maximize();
 					
 					action = new Actions(driver);
+					
 					return driver;
 				}
 		
@@ -100,8 +106,26 @@ public class Baseclass extends Perfecto_Capabailites{
 		else {
 			return finalBrowser;
 		}
-		
-		
+	}
+	
+	public static String selectEnviroment(Properties prop) throws Exception {
+		String url=null;
+		String finalenviroment=System.getProperty("Enviroment");
+		if (finalenviroment==null) {
+			url=prop.getProperty("stage_url");
+		}
+		else {
+		if (finalenviroment.equalsIgnoreCase("Stage")) {
+			url= prop.getProperty("stage_url");
+		}
+		else if (finalenviroment.equalsIgnoreCase("Dev")) {
+			url= prop.getProperty("dev");
+		}
+		else {
+			throw new Exception("Not selected Enviroment");
+		}
+		}
+		return url;
 	}
 	
 	public static String selectHeadless(Properties prop) {
@@ -115,7 +139,7 @@ public class Baseclass extends Perfecto_Capabailites{
 	}
 	
 	public static String getTitle() {
-		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("title")));
 		return driver.getTitle();
 	}
 
@@ -149,6 +173,12 @@ public class Baseclass extends Perfecto_Capabailites{
 		driver.close();
 	}
 	
+	public void swichToframe(String id) {
+		driver.switchTo().frame(id);
+	}
+	public void swichToParentFrame() {
+		driver.switchTo().parentFrame();
+	}
 	
     //navigate to back
 	public static void navigateToBack() {
@@ -170,6 +200,7 @@ public class Baseclass extends Perfecto_Capabailites{
  //------------------------switch to new tab------------------------------>>
 	public static void getParentWindow() {
 		Win_id = driver.getWindowHandle();
+		
 	}
 	
 	public static void switchToWindow() throws Exception {
@@ -177,8 +208,7 @@ public class Baseclass extends Perfecto_Capabailites{
 		
 		Set<String> next_win = driver.getWindowHandles();
 		for (String string : next_win) {
-			if(!string.equals(Win_id)) {
-        
+			if(!string.contentEquals(Win_id)) {
 				driver.switchTo().window(string);
 				break;
 			}
@@ -189,10 +219,11 @@ public class Baseclass extends Perfecto_Capabailites{
 
 	//----------return back to main window------>>
 	public static void retrunToMainWindow() {
-		
 		driver.switchTo().window(Win_id);
 	}
-	
+	public static void switchToActiveElement() {
+		driver.switchTo().activeElement();
+	}
 	
 	public static boolean verifyNewWindow() {
 		Set<String> next_win = driver.getWindowHandles();
@@ -204,10 +235,10 @@ public class Baseclass extends Perfecto_Capabailites{
 		}
 	}
 	
-	public static void switchToWindow_index() {
-		Set<String> next_win = driver.getWindowHandles();
+	public static void switchToWindow_index(int i) {
+		List<String> next_win = (List<String>) driver.getWindowHandles();
 		if (next_win.size()>1) {
-		driver.switchTo().window(Win_id);
+		driver.switchTo().window(next_win.get(i));
 		}
 	}
 	
@@ -217,23 +248,42 @@ public class Baseclass extends Perfecto_Capabailites{
 		Alert alert=driver.switchTo().alert();
 		return alert;
 	}
+	
+	// Select Dropdown
+	public static Select Select(WebElement webelement) {
+		return new Select(webelement);
+		
+	}
 
-	public void click(WebElement e) {
-		wait.until(ExpectedConditions.visibilityOf(e));
-		wait.until(ExpectedConditions.elementToBeClickable(e));
-		e.click();
+	public void click(WebElement webelement) {
+	//	wait.until(ExpectedConditions.visibilityOf(webelement));
+		wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
+		
 	}
 	
-	public void sendKeys(WebElement e,String s) {
-		wait.until(ExpectedConditions.visibilityOf(e));
-		wait.until(ExpectedConditions.elementToBeClickable(e));
-		e.clear();
-		e.sendKeys(s);
+	public void sendKeys(WebElement webelement,String stringtext){
+	
+		try {
+			Thread.sleep(200);
+			wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
+			wait.until(ExpectedConditions.visibilityOf(webelement)).sendKeys(stringtext);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+	
+		
 	}
 	
 	public String getText(WebElement e) {
-		wait.until(ExpectedConditions.visibilityOf(e));
-		return e.getText();
+		return wait.until(ExpectedConditions.visibilityOf(e)).getText();
+		
+	}
+	
+	public String getTextByJS(WebElement e) {
+		JavascriptExecutor jsexe=(JavascriptExecutor) driver;
+		return (String) jsexe.executeScript("return arguments[0].value;", e);
 	}
 	
 	

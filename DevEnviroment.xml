@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Dev Enviroment Suite">
+	<parameter name="tagname" value="Regression"></parameter>
+    <parameter name="Enviroment" value="Dev"></parameter>
+	<listeners>
+		<listener
+			class-name="com.Digitalcodes.listners.LogResult_ITestListner"></listener>
+		<listener
+			class-name="com.Digitalcodes.listners.LogResult_IReporterListner"></listener>
+	</listeners>
+
+
+	<test name="Regression test for Premium user" preserve-order="true">
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="User" value="PREMIUM"></parameter>
+		<parameter name="UserType" value="Existing"></parameter>
+		<groups>
+			
+		</groups>
+		<classes>
+		<class name="com.Digitalcodes.testcases.Login_Test"></class>
+		<class name="com.Digitalcodes.testcases.ContentSearch_Test">
+		</class>
+			 
+	
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

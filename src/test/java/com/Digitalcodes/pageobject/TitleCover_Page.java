@@ -53,7 +53,7 @@ public class TitleCover_Page extends Baseclass{
 	public void clickASTMCategories(String category) {
 		for (WebElement webElement : categories) {
 			if (getText(webElement).equalsIgnoreCase(category)) {
-				click(webElement);
+				Baseclass.action.click(webElement).build().perform();
 				break;
 				
 			}

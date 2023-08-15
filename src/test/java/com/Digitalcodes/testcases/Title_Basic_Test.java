@@ -19,14 +19,19 @@ public class Title_Basic_Test extends Prerequisites_Teardown{
 	}
 	
 	
-	@DataProvider(name = "Basic")
-	public Object[][] getBasicTitleData(){
-		return excel.getDataFromExcle("Basic", 1);
+	@DataProvider(name = "Non Accessaible Titles")
+	public Object[][] getBasicTitleData() throws Exception{
+		return excel.getDataFromExcle("Titles", "Non Accessaible Titles");
 	}
 	
 	
+<<<<<<< HEAD
 	@Test(priority = 1,description = "Verify user able to navigate to Non-accsiable title ",dataProvider = "Basic",groups = {"Smoke","Regression"})
 	public void TC34_verifyNgviateToBasicTitle(String Section, String Sub_section,String title) {
+=======
+	@Test(priority = 1,description = "Verify user able to navigate to Non-accsiable title ",dataProvider = "Non Accessaible Titles",groups = {"Smoke","Regression"})
+	public void TC33_verifyNgviateToBasicTitle(String Section, String Sub_section,String title) {
+>>>>>>> vrushabh
 		landingpage=commanstep.navigetToTitle(Section, Sub_section, title);
 		Sparkreport.Step("Click Menu");
 		Sparkreport.Step("Click "+ Section);
@@ -35,14 +40,15 @@ public class Title_Basic_Test extends Prerequisites_Teardown{
 		 
 		String text2=landingpage.getNotPremiumText();
 		String text1=tocpage.getNotPremiumText();
-		report.create_info(text1);
+		Sparkreport.Step(text1);
 		
 		boolean lock=tocpage.locklabelisDisplayed();
 		assertTrue(lock);
 		assertEquals(text1, text2);
 		
 		String titlename=tocpage.clickSubscribedNow();
-		report.create_info(titlename);
+		Sparkreport.Step(titlename);
+		assertFalse(titlename.isBlank());
 		
 		
 	}

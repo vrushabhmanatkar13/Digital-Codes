@@ -17,10 +17,10 @@ public class Collections_Page extends Baseclass{
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//h1[@class=\"font-weight-regular\"]")
+	@FindBy(xpath = "//h1[@class='font-weight-regular']")
 	private WebElement heading;
 	
-	@FindBy(xpath = "//div[@class='v-data-iterator']//a[@target='_blank']")
+	@FindBy(xpath = "//div[@class='v-data-iterator']//p[@class='mb-0 font-weight-bold']")
 	private List<WebElement> includeTitles;
 	
 	@FindBy(xpath = "(//div[@class=\"row row--dense\"]//p[@class=\"mb-0 font-weight-bold\"])[1]")
@@ -32,13 +32,12 @@ public class Collections_Page extends Baseclass{
 	
 	public void clickIncludeTitles(String title) throws Exception {
 		  Baseclass.getParentWindow();
-		
 		for (WebElement webElement : includeTitles) {
 			
 			if (getText(webElement).equalsIgnoreCase(title)) {
 		     
 				click(webElement);
-				
+
 				Baseclass.switchToWindow();
 				break;
 			}

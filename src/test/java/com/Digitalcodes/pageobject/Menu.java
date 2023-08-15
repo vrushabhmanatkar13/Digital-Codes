@@ -33,8 +33,6 @@ public class Menu extends Baseclass {
 	@FindAll({ @FindBy(xpath = "//div[@class=\"v-treeview-node v-treeview-node--leaf\"]") })
 	private List<WebElement> groupTitle;
 	
-	
-	
 
 	@FindBy(xpath = "//h4[normalize-space()='Main Menu']")
 	private WebElement mainMenu;
@@ -53,6 +51,7 @@ public class Menu extends Baseclass {
 	private List<WebElement> premiumToolsFeatures;
 	
 	
+	
 	public void clickOnMenu() {
 		click(menu);
 	}
@@ -63,9 +62,7 @@ public class Menu extends Baseclass {
 	public TitleCover_Page navigateToTitlesCover(String listitem, String groupofTitle) {
 		clickOnMenu();
 		
-		if (mainMenu.isDisplayed()) {
-			clickOnMainMenu();
-		}
+		clickOnMainMenu();
 		
 		for (WebElement webElement : menuList) {		
 			if (getText(webElement).equalsIgnoreCase(listitem)) {
@@ -73,8 +70,8 @@ public class Menu extends Baseclass {
 				if (groupTitle.get(1).isDisplayed()) {
 					for (WebElement title : groupTitle) {
 						if (getText(title).equalsIgnoreCase(groupofTitle)) {
-
-							click(title);
+                             Baseclass.scrollUptoElement(title);
+							 click(title);
 
 						      break;
 					}
@@ -111,7 +108,7 @@ public class Menu extends Baseclass {
 	 	clickOnMenu();
 		for (WebElement webElement :features) {
 			if (webElement.getText().equalsIgnoreCase(listitem)) {
-				click(webElement);
+				Baseclass.action.click(webElement).build().perform();
 				break;
 			}
 			}
@@ -121,6 +118,7 @@ public class Menu extends Baseclass {
 	
 	public void navigateToPremiumToolFeaturs(String feature) {
 		clickOnMenu();
+		clickOnMainMenu();
 		click(premiumTools);
 		for (WebElement webElement : premiumToolsFeatures) {
 			if (webElement.getText().equalsIgnoreCase(feature)) {
@@ -133,12 +131,16 @@ public class Menu extends Baseclass {
 	
 	
 	public void clickOnMainMenu() {
-		click(mainMenu);
+		if (mainMenu.isDisplayed()) {
+			click(mainMenu);
+		}
 	}
 	
-	public void closeMainmenu() {
+	public void closemenu() {
 		click(menuClose);
 	}
+	
+	
 	
 	}
 

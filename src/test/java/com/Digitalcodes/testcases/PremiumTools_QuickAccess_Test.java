@@ -1,12 +1,14 @@
 package com.Digitalcodes.testcases;
 
-
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.Digitalcodes.pageobject.MenuMyNotesandBookmark_Page;
 import com.Digitalcodes.pageobject.PremiumTools_QuickAccess_Page;
 import com.Digitalcodes.pageobject.PremiumTools_SharingHistory_Page;
+import com.Digitalcodes.pageobject.TableOfContent_Page;
 import com.Digitalcodes.pageobject.TitleSection_Page;
 import com.Digitalcodes.utilities.Baseclass;
 import com.Digitalcodes.utilities.Sparkreport;
@@ -15,17 +17,25 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 
 	PremiumTools_QuickAccess_Page quickaccess;
 	TitleSection_Page sectionpage;
-     PremiumTools_SharingHistory_Page sharingHistorypage;
-     String titleName;
-     String section;
-     
+	PremiumTools_SharingHistory_Page sharingHistorypage;
+	TableOfContent_Page tocpage;
+	MenuMyNotesandBookmark_Page mynote_bookmark;
+
+	private String titlenameInDropDown;
+	private String sectionInDropDown;
+	private String email;
+
 	@BeforeClass(alwaysRun = true)
 	public void beforeClass() {
 		quickaccess = new PremiumTools_QuickAccess_Page();
-		sectionpage=new TitleSection_Page();
-		sharingHistorypage=new PremiumTools_SharingHistory_Page();
+		sectionpage = new TitleSection_Page();
+		sharingHistorypage = new PremiumTools_SharingHistory_Page();
+		tocpage = new TableOfContent_Page();
+		mynote_bookmark = new MenuMyNotesandBookmark_Page();
+		email = RandomStringUtils.randomAlphabetic(8).toLowerCase() + "@iccsafe.info";
 	}
 
+<<<<<<< HEAD
 	
 	
 	
@@ -33,139 +43,185 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	@Test(priority = 1, description = "Verify user able to Access section from Quick Access", groups = { "Smoke",
 			"Regression" })
 	public void TC35_verifyAccessSection_QuickAccess() throws Exception {
+=======
+	@DataProvider(name = "QuickAccessSection")
+	public Object[][] getQuickAccessData() throws Exception {
+		return excel.getDataFromExcle("Quick Access", "QuickAccessSection");
+	}
+	@DataProvider(name = "RecentlyAccessSection")
+	public Object[][] getRecentlyAccessSectionData() throws Exception{
+		return excel.getDataFromExcle("Quick Access", "RecentlyAccessSection");
+	}
+>>>>>>> vrushabh
 
-		menu.navigateToPremiumToolFeaturs("Quick Access");
+	@Test(priority = 1, description = "Verify user able to Access section from Quick Access", dataProvider = "QuickAccessSection", groups = {
+			"Smoke", "Regression" })
+	public void TC37_verifyAccessSection_QuickAccess(String step1,String titlename,String version,Object step2,String sectionname) throws Exception {
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click Quick Access");
+		Sparkreport.Step("Click " + jsonArrayValue("Premium tools", "QA"));
+		String title = getTitle();
+		Sparkreport.Step("Page Title :- " + title);
 
-		assertEquals(getTitle(), jsonArrayValue("Page-titles", "quick-access"));
+		titlenameInDropDown = quickaccess.enterTextinStep1_SelectTitle(step1, titlename);
+		Sparkreport.Step("Enter " + step1);
+		Sparkreport.Step("Click " + titlenameInDropDown);
 
-		 titleName = quickaccess.inputTitleName("2021 IBC");
-		Sparkreport.Step("Enter IBC");
-		report.create_info("Title :-" + titleName);
+		String versiontext = quickaccess.selectVersion(version);
+		Sparkreport.Step("Version :-" + versiontext);
 
-		String version = quickaccess.selectVersion();
-		report.create_info("Version :-" + version);
+		sectionInDropDown = quickaccess.enterTextinStep2_SelectSection(step2, sectionname);
+		Sparkreport.Step("Enter " + step2);
+		Sparkreport.Step("Section :-" + sectionInDropDown);
 
-		section = quickaccess.inputSectionName("301.1");
-		Sparkreport.Step("Enter 301");
-		report.create_info("Section :-" + section);
-
-		assertEquals(quickaccess.getSectionName().replaceAll(" ", ""), section.replaceAll(" ", ""));
+		assertEquals(quickaccess.getSectionName().replaceAll(" ", ""), sectionInDropDown.replaceAll(" ", ""));
 
 		Baseclass.getParentWindow();
 		quickaccess.clickJumpToSection();
+		
 		String sectionName = quickaccess.getSectionName();
-		report.create_info("Section Name :- " + sectionName);
-		Thread.sleep(3000);
-		assertEquals(sectionName.replaceAll(" ", ""), section.replaceAll(" ", ""));
+		Sparkreport.Step("Section Name in TOC :- " + sectionName);
+		Thread.sleep(1000);
+		assertEquals(sectionName.replaceAll(" ", ""), sectionInDropDown.replaceAll(" ", ""));
 		Baseclass.retrunToMainWindow();
 		Baseclass.switchToWindow();
-		 closeWindow();
-		  retrunToMainWindow();
-
+		closeWindow();
+		retrunToMainWindow();
 		
 
+		assertEquals(title, jsonArrayValue("Page-titles", "quick-access"));
+		assertEquals(titlenameInDropDown, titlename);
+		assertEquals(sectionInDropDown.replaceAll(" ", ""), sectionname.replaceAll(" ", ""));
+		assertEquals(versiontext.replaceAll("[()]", ""), version);
+
 	}
+<<<<<<< HEAD
 	
 	
 	
 	@Test(priority = 2,description = "Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access",groups = { "Smoke",
 	"Regression" })
 	public void TC36_verifyActionsOnSection_QuickAccess() throws Exception {
+=======
+
+	@Test(priority = 2, description = "Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access",dataProvider = "RecentlyAccessSection", groups = {
+			"Smoke", "Regression" })
+	public void TC38_verifyActionsOnSection_QuickAccess(String section, String title) throws Exception {
+
+		String sectionOnQuickAccess = quickaccess.getSectionName();
+>>>>>>> vrushabh
 		
-		String section= quickaccess.getSectionName();
 		quickaccess.clickInputIcon();
-		Sparkreport.Step("Click JumptoSection icon");
-		String sectionName = quickaccess.getSectionNameOnChapterPage();
-		report.create_info("Section Name :- " + sectionName);
+		
+		Sparkreport.Step("Click input icon");
+		String sectionNamefromTOC = quickaccess.getSectionName();
+		Sparkreport.Step("Section Name in TOC:- " + sectionNamefromTOC);
 		Baseclass.retrunToMainWindow();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Baseclass.switchToWindow();
 		Baseclass.closeWindow();
 		Baseclass.retrunToMainWindow();
-		assertEquals(sectionName.replaceAll(" ", ""), section.replaceAll(" ", ""));
-		
-		
-		String copiedText=quickaccess.copyThisSection();
+
+		assertEquals(sectionNamefromTOC.replaceAll(" ", ""), sectionOnQuickAccess.replaceAll(" ", ""));
+
+		String copiedText = quickaccess.copyThisSection();
 		Sparkreport.Step("Click CopyIcon");
-		report.create_info("Text After copied Section :- "+ copiedText);
-		
+		Sparkreport.Step("Text After copied Section :- " + copiedText);
+
 		assertEquals(copiedText, jsonValue("copied-text"));
-		
-		
-		boolean ActPdf=quickaccess.printThisSection();
+
+		boolean ActPdf = quickaccess.printThisSection();
 		Sparkreport.Step("Click PrintIcon");
-		
+
 		assertTrue(ActPdf);
-		
-		String sccussfulMsg=quickaccess.shareThisSection(Login_Test.EMAIL);
+
+		String sccussfulMsg = quickaccess.shareThisSection(email);
 		Sparkreport.Step("Click ShareIcon");
-		Sparkreport.Step("Enter "+ Login_Test.EMAIL);
+		Sparkreport.Step("Enter " + email);
 		Sparkreport.Step("Click Share");
-		
-		report.create_info("Text After share Section :- "+ sccussfulMsg);
-		
+		Sparkreport.Step("Text After share Section :- " + sccussfulMsg);
+
 		assertEquals(sccussfulMsg, jsonValue("share-successful"));
-		
+
 		Thread.sleep(3000);
-		
 		quickaccess.bookmarkThisSection(jsonValue("bookmark-text"));
 		Sparkreport.Step("Click BookmarkIcon");
-		Sparkreport.Step("Enter "+jsonValue("bookmark-text"));
+		Sparkreport.Step("Enter " + jsonValue("bookmark-text"));
 		Sparkreport.Step("Click Save");
-		report.create_info("Description is :- " + sectionpage.getDescription());
-		report.create_info("Note Created by :- " + sectionpage.getCreatedBy());
-		
+		Sparkreport.Step("Description is :- " + sectionpage.getDescription());
+		Sparkreport.Step("Note Created by :- " + sectionpage.getCreatedBy());
+
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-text"));
 		assertEquals(sectionpage.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
+		mynote_bookmark.clickTitleName(title);
 		
+		assertEquals(mynote_bookmark.getTitleName(title), title);
+		assertTrue(mynote_bookmark.verifyDetails(section, Login_Test.NAME, "Default"));
+
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 3,description = "Verify user able to Share, Edit, Delete Bookmark from Quick Access",groups = { 
 	"Smoke","Regression" })
 	public void TC37_verifyShare_Edit_DeleteBookmakr_QuickAccess() throws Exception {
 		
 		String SuccessfullyMsg = sectionpage.shareNotes_Bookmark(Login_Test.EMAIL);
+=======
+	@Test(priority = 3, description = "Verify user able to Share, Edit, Delete Bookmark from Quick Access",dataProvider = "RecentlyAccessSection",groups = {
+			"Smoke", "Regression" })
+	public void TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess(String section, String title) throws Exception {
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		quickaccess.clickRecentlyAccessedSection(section);	
+
+		String SuccessfullyMsg = sectionpage.shareNotes_Bookmark(email);
+>>>>>>> vrushabh
 		Sparkreport.Step("Click Share");
 		Sparkreport.Step("Enter email");
 		Sparkreport.Step("Click Submit");
 		Sparkreport.Step("Click Close");
-		report.create_info("Successful message :- " + SuccessfullyMsg);
+		Sparkreport.Step("Successful message :- " + SuccessfullyMsg);
 
 		assertEquals(SuccessfullyMsg, jsonValue("share-content-successful"));
-		
-	   	menu.navigateToPremiumToolFeaturs("Sharing History");
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
 		sharingHistorypage.clickOnvIcon();
-		Thread.sleep(3000);
-		 assertEquals(sharingHistorypage.titleName(), titleName);
-		 assertEquals(sharingHistorypage.getSectionName(), section);
-		 assertEquals(sharingHistorypage.getDescription(),jsonValue("bookmark-text"));
-		 assertEquals(sharingHistorypage.getTagName(), " Default");
-		 assertEquals(sharingHistorypage.getSharedwith(), Login_Test.NAME+"(Pending)");
-		 
-		
-		menu.navigateToPremiumToolFeaturs("Quick Access");
-		quickaccess.clickRecentlyAccessedSection(section);
 		Thread.sleep(2000);
+		assertEquals(sharingHistorypage.titleName(), title);
+		assertEquals(sharingHistorypage.getSectionName().replaceAll(" ", ""), section.replaceAll(" ", ""));
+		assertEquals(sharingHistorypage.getDescription(), jsonValue("bookmark-text"));
+		assertEquals(sharingHistorypage.getTagName(), " Default");
+		assertEquals(sharingHistorypage.getSharedwith(), email + "(Pending)");
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		quickaccess.clickRecentlyAccessedSection(section);		
 		sectionpage.editNotes_Bookmark(jsonValue("bookmark-edit-text"));
 		Sparkreport.Step("Click edit");
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
-
-		report.create_info("Description is :- " + sectionpage.getDescription());
-          Thread.sleep(3000);
-		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
-		
-		sectionpage.deleteNotes__Bookmark();
 		Thread.sleep(2000);
-		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
+		Sparkreport.Step("Description is :- " + sectionpage.getDescription());
+		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		sharingHistorypage.clickOnvIcon();
+		assertEquals(sharingHistorypage.getDescription(), jsonValue("bookmark-edit-text"));
+		
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		quickaccess.clickRecentlyAccessedSection(section);
+		sectionpage.deleteNotes__Bookmark();
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
-		
+		Thread.sleep(2000);
+		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
 		assertFalse(note_bookmakr);
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		assertEquals(sharingHistorypage.getNoResultText(), "No Results Found");
 	}
+<<<<<<< HEAD
 	
 	@Test(priority = 4,description = "Verify user able to view Recently Accessed Section at Quick Access",groups = {
 	"Regression" })
@@ -189,34 +245,20 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		String titleName = quickaccess.inputTitleName("IRC");
 		Sparkreport.Step("Enter IRC");
 		report.create_info("Title :- " + titleName);
+=======
+>>>>>>> vrushabh
 
-		String section = quickaccess.inputSectionName("R");
-		Sparkreport.Step("Enter R");
-		report.create_info("Section :- " + section);
-		
-		Thread.sleep(1000);
-		quickaccess.bookmarkThisSection(jsonValue("bookmark-text"));
-		Sparkreport.Step("Click BookmarkIcon");
-		Sparkreport.Step("Enter "+jsonValue("bookmark-text"));
-		Sparkreport.Step("Click Save");
-		
-		menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
-		Sparkreport.Step("Click Menu");
-		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click My notes and Bookmarks");
-		MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
-        mynote_bookmark.clickTitleName();
-        Sparkreport.Step("Click Title");
-        report.create_info("Title :- " + mynote_bookmark.getTitleName());
-        
-		assertEquals(mynote_bookmark.getTitleName(), titleName);
-		assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, "Default"));
-		
-		mynote_bookmark.removeNotes_Bookmark();
+	@Test(priority = 4, description = "Verify user able to view Recently Accessed Section at Quick Access",dataProvider = "RecentlyAccessSection", groups = {
+			"Regression" })
+	public void TC40_verifyRecentlyQuickAccessedSections_QuickAccess(String section, String title) throws Exception {
+
+		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		String RecentlyAccessedSection = quickaccess.getRecentlyAccessedSection(section);
+
+		String RecetlyAccessedtitle = quickaccess.getRecentlyAccessedTitleName(title);
+
+		assertEquals(RecentlyAccessedSection, section.replaceAll(" ", ""));
+		assertEquals(RecetlyAccessedtitle, title);
 	}
-	
-	
-	
-	
 
 }

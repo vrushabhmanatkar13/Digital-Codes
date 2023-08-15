@@ -15,15 +15,14 @@ public class LoadPropertiesfile {
 
 	//private XSSFSheet sheet=null;
 
-	public Properties load_properties() throws Exception {
+	public Properties load_properties(String filepath) throws Exception {
 
 		Properties prop = new Properties();
-		prop.load(new FileInputStream(new File(System.getProperty("user.dir")+"\\TestData\\Config.properties")));
+		prop.load(new FileInputStream(new File(filepath)));
 		return prop;
 	}
 	
 	public JsonNode readJson(String JsonFilepath) throws IOException {
-		
  
 	   ObjectMapper mapper=new ObjectMapper();
 	   JsonNode node =mapper.readTree(new File(JsonFilepath));

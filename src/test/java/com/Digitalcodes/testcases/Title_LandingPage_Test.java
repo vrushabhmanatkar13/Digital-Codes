@@ -7,6 +7,7 @@ import com.Digitalcodes.pageobject.MenuFavorite_Page;
 import com.Digitalcodes.pageobject.TitleCover_Page;
 import com.Digitalcodes.pageobject.TitleLanding_Page;
 import com.Digitalcodes.utilities.Baseclass;
+import com.Digitalcodes.utilities.DataProviders;
 import com.Digitalcodes.utilities.Sparkreport;
 
 public class Title_LandingPage_Test extends Prerequisites_Teardown {
@@ -19,18 +20,16 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		coverpage = new TitleCover_Page();
 	}
 
-	@Test(priority = 1, description = "Verify User able to Navigate to Title Landing page and verify Tag", dataProvider = "Title", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 1, description = "Verify User able to Navigate to Title Landing page and verify Tag", dataProvider="Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC04_verifyTitleLandingPage(String Section, String Sub_section, String Title, String Chapter)
+	public void TC04_verifyTitleLandingPage(String Section, String Sub_section, String Title, String Chapter, String tag)
 			throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
-	
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
 		Sparkreport.Step("Click " + Sub_section);
-		
-		report.create_info("Page Title is " + getTitle());
+		Sparkreport.Step("Page Title is " + getTitle());
 		String heading = coverpage.getHeading().replace(" Building Codes", "");
 		assertEquals(heading, Sub_section);
 		assertEquals(getTitle(), heading + " Building Codes - ICC Digital Codes");
@@ -38,24 +37,25 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		title = coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click " + Title);
 		titlename = title.getTitleHeading();
-		
-		report.create_info("Subscription Tag is " + title.getTagName());
-		report.create_info("Subscription is " + title.getActivepremiumText());
-		
+		Thread.sleep(2000);
+		String activepremium=title.getActivepremiumText();
+		String tagname=title.getTagName();
+		Sparkreport.Step("Subscription Tag is " + tagname);
+		Sparkreport.Step("Subscription is " + activepremium);
 		
 		assertEquals(titlename, Title);
-		assertEquals(title.getTagName(), jsonArrayValue("Premium", "tag"));
-		assertEquals(title.getActivepremiumText(), jsonArrayValue("Premium", "Access-title"));
-
+		assertEquals(tagname, tag);
+		assertEquals(activepremium, jsonArrayValue("Premium", "Access-title"));
+        
 	}
 
-	@Test(priority = 2, description = "Verify user able to mark favorite & unfavorite and title should be displayed in favorites", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 2, description = "Verify user able to mark favorite & unfavorite and title should be displayed in favorites", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Smoke","Regression" })
-	public void TC05_verifyMarkFavoriteTitle(String Section, String Sub_section, String Title, String Chapter)
+	public void TC05_verifyMarkFavoriteTitle(String Section, String Sub_section, String Title, String Chapter, String tag)
 			throws InterruptedException {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
-		coverpage.clickOnTitlesCover(Title);
+		title = coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
 		Sparkreport.Step("Click " + Sub_section);
@@ -64,7 +64,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 
 		title.clickOnFavorite();
 		Sparkreport.Step("Click Blank Heart icon");
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		report.create_info("Text after mark favorite :- " + title.getFavoriteText());
 
 		menu.navigetToStaticFeaturs("Favorites");
@@ -73,7 +73,7 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		String favtitlename = new MenuFavorite_Page().getTitleName();
 		Thread.sleep(3000);
 		menu.clickOnMainMenu();
-		menu.closeMainmenu();
+		menu.closemenu();
 		report.create_info("Title Name is :- " + favtitlename);
 
 		assertEquals(title.getFavoriteText(), jsonValue("unfavorite"));
@@ -92,10 +92,9 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 
 	}
 
-	@Test(priority = 3, description = "Verify User able to Change Version, Releated Titles, Categories", dataProvider = "SingleTitle", dataProviderClass = Prerequisites_Teardown.class, groups = {
+	@Test(priority = 3, description = "Verify User able to Change Version, Releated Titles, Categories", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
-	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title,
-			String Chapter) throws Exception {
+	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title, String Chapter, String tag) throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
 		coverpage.clickOnTitlesCover(Title);

@@ -16,8 +16,8 @@ public class LoginPage extends Baseclass{
 		this.driver = super.driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	WebDriver driver;
+	
 	@FindBy(id = "emailAddress")
 	private WebElement emailtextbox;
 
