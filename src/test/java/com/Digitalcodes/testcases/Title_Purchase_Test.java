@@ -163,11 +163,22 @@ public class Title_Purchase_Test extends Prerequisites_Teardown{
 		org.testng.Assert.assertEquals(mycart.getTotalPrice(), updatedprice);
 		assertEquals(updatedqty1, mycart.getItems().replace("Items", "").trim());
 		assertTrue(item1);
-		refreshBrowser();
+		Thread.sleep(2000);
 		mycart.clickRemove();
-		Sparkreport.Step("Click Remove");
-		Sparkreport.Step(mycart.getEmptyCartText());
+		 Sparkreport.Step("Click Remove");
+		 Sparkreport.Step(mycart.getEmptyCartText());
 		assertEquals(mycart.getEmptyCartText(), jsonValue("empty cart"));
+		
+		/*
+		 * do{ refreshBrowser(); Thread.sleep(3000); mycart.clickRemove();
+		 * Sparkreport.Step("Click Remove");
+		 * 
+		 * } while(mycart.titleNameIsDIisplay());
+		 * 
+		 * Sparkreport.Step(mycart.getEmptyCartText());
+		 * assertEquals(mycart.getEmptyCartText(), jsonValue("empty cart"));
+		 */
+		
 		
 	}
 

@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Digitalcodes.testcases.Login_Test">
+      <class name="com.Digitalcodes.utilities.Load_Excle">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeSuite"/>
-          <include name="TC02_verifyUserInformation"/>
-          <include name="afterTest"/>
-          <include name="log_result"/>
-          <include name="TC01_loginValidData"/>
-          <include name="beforeClass"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
+      </class> <!-- com.Digitalcodes.utilities.Load_Excle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

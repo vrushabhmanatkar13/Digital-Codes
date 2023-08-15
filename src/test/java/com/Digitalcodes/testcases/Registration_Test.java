@@ -71,7 +71,7 @@ public class Registration_Test extends Prerequisites_Teardown{
 		Sparkreport.Step("Click Submit");
 		
      	assertEquals(pagetitle, jsonArrayValue("Page-titles", "registration"));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Sparkreport.Step("Page Title after Submit:- "+getTitle());
 		assertEquals(getTitle(), jsonArrayValue("Page-titles", "confirm registration"));
 	

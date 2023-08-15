@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.Digitalcodes</groupId>
 	<artifactId>com.Digitalcodes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<name>ICC-Digital Codes</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -14,8 +15,6 @@
 		<aspectj.version>1.9.8</aspectj.version>
 		<suite>Smoke_testng.xml</suite>
 	</properties>
-
-
 	<profiles>
 		<profile>
 			<id>Smoke</id>
@@ -27,15 +26,12 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.1.0</version>
+						<version>2.19.1</version>
 						<configuration>
-
 							<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 							<suiteXmlFiles>
 								<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-
-
 						</configuration>
 						<dependencies>
 							<dependency>
@@ -47,9 +43,7 @@
 					</plugin>
 				</plugins>
 			</build>
-
 		</profile>
-
 		<profile>
 			<id>Regression</id>
 			<activation>
@@ -60,14 +54,12 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.1.0</version>
+						<version>2.19.1</version>
 						<configuration>
-
 							<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 							<suiteXmlFiles>
 								<suiteXmlFile>Regression_testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
-
 						</configuration>
 						<dependencies>
 							<dependency>
@@ -79,13 +71,8 @@
 					</plugin>
 				</plugins>
 			</build>
-
 		</profile>
-
-
 	</profiles>
-
-
 	<repositories>
 		<repository>
 			<id>repo1.perfectomobile.com</id>
@@ -119,19 +106,18 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>2.19.1</version>
 				<configuration>
 					<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suite}</suiteXmlFile>
+						<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<shutdown>kill</shutdown>
+					
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -162,7 +148,6 @@
 					<nohelp>true</nohelp>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -177,11 +162,8 @@
 				<version>2.12.0</version>
 			</plugin>
 		</plugins>
-
-
 	</build>
 	<dependencies>
-	
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -189,19 +171,16 @@
 			<version>4.9.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
-<dependency>
-	<groupId>com.epam.healenium</groupId>
-	<artifactId>healenium-web</artifactId>
-	<version>3.4.3</version>
-</dependency>
-
-		
+		<dependency>
+			<groupId>com.epam.healenium</groupId>
+			<artifactId>healenium-web</artifactId>
+			<version>3.4.3</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
-			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
@@ -248,7 +227,6 @@
 			<artifactId>reportium-testng</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/com.perfectomobile/http-client -->
 		<!-- https://mvnrepository.com/artifact/com.perfectomobile/http-client -->
 		<dependency>
@@ -274,9 +252,5 @@
 			<artifactId>allure-testng</artifactId>
 			<version>2.22.0</version>
 		</dependency>
-
-
 	</dependencies>
-
-
 </project>

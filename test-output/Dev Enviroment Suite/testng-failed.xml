@@ -15,13 +15,15 @@
       <class name="com.Digitalcodes.testcases.ContentSearch_Test">
         <methods>
           <include name="afterSuite"/>
-          <include name="TC57_verifySeeAll" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="beforeSuite"/>
           <include name="beforeclass"/>
+          <include name="TC50_verifyShareEditDeleteBookmark" invocation-numbers="0"/>
           <include name="afterTest"/>
           <include name="log_result"/>
           <include name="beforeClass"/>
+          <include name="TC51_verifyAdvanceTermSearch" invocation-numbers="0"/>
+          <include name="TC56_verifyPaginationinContentSearch" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.Digitalcodes.testcases.ContentSearch_Test -->
     </classes>

@@ -320,8 +320,10 @@ public class MyCart_Page extends Baseclass{
 		Thread.sleep(3000);
 		click(placeorder);
 		
-	   
-		
+	  
+	}
+	public boolean titleNameIsDIisplay() {
+		return titleName.isDisplayed();
 	}
 	
 	

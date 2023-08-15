@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 74, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1,390.709 sec <<< FAILURE! - in TestSuite
+TC15_verifyDeleteNotes_FromSection(com.Digitalcodes.testcases.Title_SectionPage_Test)  Time elapsed: 8.639 sec  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC15_verifyDeleteNotes_FromSection(Title_SectionPage_Test.java:306)
+
+TC18_verifyDeleteBookmark_FromSection(com.Digitalcodes.testcases.Title_SectionPage_Test)  Time elapsed: 7.526 sec  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at com.Digitalcodes.testcases.Title_SectionPage_Test.TC18_verifyDeleteBookmark_FromSection(Title_SectionPage_Test.java:393)
+
+TC49_verifyCreateBookmark(com.Digitalcodes.testcases.ContentSearch_Test)  Time elapsed: 19.114 sec  <<< FAILURE!
+java.lang.Exception: Chapter name 1206.1 Relocated buildings . Or Description User create Bookmark is Not Matched in My Notes and Bookmark
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC49_verifyCreateBookmark(ContentSearch_Test.java:275)
+
+TC51_verifyAdvanceTermSearch(com.Digitalcodes.testcases.ContentSearch_Test)  Time elapsed: 91.473 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//input[@placeholder='Ex. Area, Building, Brick'])[1]' (tried for 60 second(s) with 500 milliseconds interval)
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:346)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@placeholder='Ex. Area, Building, Brick'])[1]"}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7ddfcb6f30bc75103ea419fb8e7ca5e, findElement {using=xpath, value=(//input[@placeholder='Ex. Area, Building, Brick'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VRUSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60841/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7ddfcb6f30bc75103ea419fb8e7ca5e
+	at com.Digitalcodes.testcases.ContentSearch_Test.TC51_verifyAdvanceTermSearch(ContentSearch_Test.java:346)
+

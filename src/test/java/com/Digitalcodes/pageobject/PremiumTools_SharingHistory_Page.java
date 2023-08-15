@@ -33,6 +33,9 @@ public class PremiumTools_SharingHistory_Page extends Baseclass{
 	@FindBy(xpath = "//div[@class='v-card__text']//h5[2]")
 	private WebElement email;
 	
+	@FindBy(xpath = "//div[@class='text-center col']//p")
+	private WebElement noresultfound;
+	
 	public String titleName() {
 		return getText(titlename);
 	}
@@ -55,5 +58,9 @@ public class PremiumTools_SharingHistory_Page extends Baseclass{
 	}
 	public String getSharedwith() {
 		return getText(email).substring(13);
+	}
+	
+	public String getNoResultText() {
+		return getText(noresultfound);
 	}
 }

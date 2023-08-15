@@ -136,7 +136,7 @@ public class Menu extends Baseclass {
 		}
 	}
 	
-	public void closeMainmenu() {
+	public void closemenu() {
 		click(menuClose);
 	}
 	

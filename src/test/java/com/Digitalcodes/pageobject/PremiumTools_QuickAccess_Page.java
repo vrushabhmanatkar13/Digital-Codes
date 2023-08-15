@@ -26,17 +26,17 @@ public class PremiumTools_QuickAccess_Page extends Baseclass {
 	@FindBy(xpath = "//div[@class='col-lg-6 col']//input[@placeholder='Start typing to Search']")
 	private WebElement inputSection;
 
-	@FindBy(xpath = "(//div[contains(@id,'list-item-')]//p[@class=\"mb-0\"])[1]")
-	private WebElement titleName;
+	@FindBy(xpath = "//div[contains(@id,'list-item-')]//p[@class=\"mb-0\"]")
+	private List<WebElement> titleNames;
 
 	@FindBy(xpath = "//div[@aria-haspopup='listbox']//div[@class='v-select__selections']")
-	private WebElement version;
+	private WebElement versionarrow;
 
-	@FindBy(xpath = "(//div[@class='v-menu__content theme--light menuable__content__active']//div[@role='option'])[1]")
-	private WebElement getVersiontext;
+	@FindBy(xpath = "//div[@class='v-menu__content theme--light menuable__content__active']//div[@role='option']")
+	private List<WebElement> versions;
 
-	@FindBy(xpath = "(//div[@class='v-menu__content theme--light menuable__content__active v-autocomplete__content']//div[@role='option'])[1]")
-	private WebElement sectionName;
+	@FindBy(xpath = "//div[@class='v-menu__content theme--light menuable__content__active v-autocomplete__content']//div[@role='option']")
+	private  List<WebElement> sectionNames;
 
 	@FindBy(xpath = "//h1[@class='level2']")
 	private WebElement getSectionName;
@@ -98,30 +98,58 @@ public class PremiumTools_QuickAccess_Page extends Baseclass {
 	@FindAll(@FindBy(xpath = "//div[@class='col-sm-6 col-12']//p"))
 	private List<WebElement> recentlyAcceddedtitlename;
 	
-	public String inputTitleName(String title) throws InterruptedException {
+	public String enterTextinStep1_SelectTitle(String step1, String title) throws Exception {
+		String text=null;
+		sendKeys(inputTitle, step1);
+		for (WebElement webElement : titleNames) {
+			if (getText(webElement).equalsIgnoreCase(title)) {
+				text=getText(webElement);
+				action.click(webElement).build().perform();
+				
+				break;
+			}
+			
+		}
+		if (text==null) {
+			throw new Exception(title+" this title not available in results");
+		}
+		return text;
 
-		sendKeys(inputTitle, title);
+	}
+
+	public String selectVersion(String version) throws Exception {
+		String text=null;
+		action.click(versionarrow).build().perform();
 		Thread.sleep(2000);
-		String text = getText(titleName);
-		action.click(titleName).build().perform();
+		for (WebElement webElement : versions) {
+			if (getText(webElement).equalsIgnoreCase("("+version+")")) {
+				text=getText(webElement);
+				click(webElement);
+				break;
+			}
+		}
+		if (text==null) {
+			throw new Exception(version+" this Verison not Availabe in DropDown");
+		}
+		
 		return text;
 	}
 
-	public String selectVersion() throws InterruptedException {
-		// click(versionlistBox);
-		action.click(version).build().perform();
-		Thread.sleep(2000);
-		String text = getText(getVersiontext);
-		click(getVersiontext);
-		return text;
-	}
-
-	public String inputSectionName(String section) throws InterruptedException {
-
-		sendKeys(inputSection, section);
-		Thread.sleep(2000);
-		String text = getText(sectionName);
-		action.click(sectionName).build().perform();
+	public String enterTextinStep2_SelectSection(Object step2, String section) throws Exception {
+        String text=null;
+		sendKeys(inputSection, (String) step2);
+	
+		for (WebElement webElement : sectionNames) {
+			if (getText(webElement).equalsIgnoreCase(section)) {
+				text=getText(webElement);
+				action.click(webElement).build().perform();
+				break;
+			}
+		}
+		if (text==null) {
+			throw new Exception(section+" this Section Not Availabel in List");
+		}
+		
 		return text;
 
 	}
@@ -155,7 +183,7 @@ public class PremiumTools_QuickAccess_Page extends Baseclass {
 	}
 	
 	public boolean printThisSection() throws Exception {
-		
+		Baseclass.getParentWindow();
 		click(printIcon);
 		Baseclass.switchToWindow();
 		boolean Actpdf= isDisplayed(pdf);
