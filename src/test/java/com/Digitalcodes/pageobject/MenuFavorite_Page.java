@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Digitalcodes.utilities.Baseclass;
 
-public class MenuFavorite_Page extends Baseclass{
+public class MenuFavorite_Page extends Baseclass {
 
 	WebDriver driver;
 
 	@SuppressWarnings("static-access")
 	public MenuFavorite_Page() {
-		this.driver =super.driver;
+		this.driver = super.driver;
 		PageFactory.initElements(driver, this);
 	}
 

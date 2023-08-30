@@ -18,7 +18,6 @@ import com.perfecto.reportium.test.TestContext;
 import com.perfecto.reportium.test.result.TestResult;
 import com.perfecto.reportium.test.result.TestResultFactory;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Perfecto_Capabailites extends SetCapbilites {
@@ -29,54 +28,49 @@ public class Perfecto_Capabailites extends SetCapbilites {
 	FirefoxOptions firefox;
 	RemoteWebDriver Rdriver;
 
-	
-	
-	
-	
-	public static Map<String, Object> perfectoOptions(String securityToken,String width,String hight) {
+	public static Map<String, Object> perfectoOptions(String securityToken, String width, String hight) {
 		Map<String, Object> perfectoOptions = new HashMap<>();
-		perfectoOptions.put("resolution", width+"x"+hight);
+		perfectoOptions.put("resolution", width + "x" + hight);
 		perfectoOptions.put("securityToken", securityToken);
 		perfectoOptions.put("platformVersion", "10");
-	
-		
+
 		return perfectoOptions;
-		
+
 	}
 
-	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito, String headless,String width,String hight) throws Exception {
+	public WebDriver Perfecto(String browserName, String securityToken, String cloudName, String tag, String incognito,
+			String headless, String width, String hight) throws Exception {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			chrome=getChromecapabalites(incognito, headless);
+			chrome = getChromecapabalites(incognito, headless);
 			chrome.setPlatformName("Windows");
 			chrome.setBrowserVersion("latest");
-			chrome.setCapability("perfecto:options", perfectoOptions(securityToken,width,hight));
-		    
-			 Rdriver = new RemoteWebDriver(
-					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),chrome);
+			chrome.setCapability("perfecto:options", perfectoOptions(securityToken, width, hight));
+
+			Rdriver = new RemoteWebDriver(
+					new URL("https://" + cloudName + ".perfectomobile.com/nexperience/perfectomobile/wd/hub"), chrome);
 		}
 		if (browserName.equalsIgnoreCase("firefox")) {
-			firefox=getFirefoxcapabalites(incognito, headless);
+			firefox = getFirefoxcapabalites(incognito, headless);
 			firefox.setPlatformName("Windows");
 			firefox.setBrowserVersion("latest");
-			firefox.setCapability("perfecto:options", perfectoOptions(securityToken,width,hight));
-			
-			 Rdriver = new RemoteWebDriver(
-					new URL("https://"+ cloudName +".perfectomobile.com/nexperience/perfectomobile/wd/hub"),firefox);
+			firefox.setCapability("perfecto:options", perfectoOptions(securityToken, width, hight));
+
+			Rdriver = new RemoteWebDriver(
+					new URL("https://" + cloudName + ".perfectomobile.com/nexperience/perfectomobile/wd/hub"), firefox);
 		}
-		
+
 		/*
 		 * DesiredCapabilities capabilities = setCapabilities(browserName);
 		 * capabilities.setCapability("resolution", "1024x768");
 		 */
 		// The below capability is mandatory. Please do not replace it.
-	//	capabilities.setCapability("securityToken", PerfectoLabUtils.fetchSecurityToken(securityToken));
-
-		
+		// capabilities.setCapability("securityToken",
+		// PerfectoLabUtils.fetchSecurityToken(securityToken));
 
 		reportiumClient = PerfectoLabUtils.setReportiumClient(Rdriver, reportiumClient, tag);
 		WebDriver driver = (WebDriver) Rdriver;
-		
+
 		return driver;
 	}
 
@@ -95,16 +89,14 @@ public class Perfecto_Capabailites extends SetCapbilites {
 	}
 
 	public static void testStart(String testName, String testtag) throws Exception {
-		
-		PLATFORM=Prerequisites_Teardown.PLATFORM;
+
+		PLATFORM = Prerequisites_Teardown.PLATFORM;
 
 		if (PLATFORM.equalsIgnoreCase("Perfecto")) {
 			reportiumClient.testStart(testName, new TestContext(testtag)); // Starts a reportium step
 
 		}
 	}
-	
-	
 
 	public static void Assert(String massege, boolean expected) {
 
@@ -127,10 +119,11 @@ public class Perfecto_Capabailites extends SetCapbilites {
 		}
 
 	}
+
 	public static void AssertEquels(int actual, int expected) {
 		if (PLATFORM.equalsIgnoreCase("Perfecto")) {
 
-			if (actual==expected) {
+			if (actual == expected) {
 				reportiumClient.reportiumAssert("Actual and Expecated text is matched", true);
 			} else {
 				reportiumClient.reportiumAssert("Actual and Expecated text is not matched", false);
@@ -144,15 +137,14 @@ public class Perfecto_Capabailites extends SetCapbilites {
 	public static void logResult(ITestResult result) throws Exception {
 
 		if (PLATFORM.equalsIgnoreCase("Perfecto")) {
-			
-			
+
 			TestResult testResult = null;
 			if (result.getStatus() == ITestResult.SUCCESS) {
 				testResult = TestResultFactory.createSuccess();
-			
+
 			} else if (result.getStatus() == ITestResult.FAILURE) {
 				testResult = TestResultFactory.createFailure(result.getThrowable());
-			         	
+
 			}
 
 			reportiumClient.testStop(testResult);

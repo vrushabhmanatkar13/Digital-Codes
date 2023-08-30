@@ -29,14 +29,16 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown {
 
 		return excel.getDataFromExcle("Titles", "ASTM from Link");
 	}
+
 	@DataProvider(name = "ASTM Titles")
-	public Object[][] getASTMTitlesData() throws Exception{
+	public Object[][] getASTMTitlesData() throws Exception {
 		return excel.getDataFromExcle("Titles", "ASTM Titles");
 	}
 
 	@Test(priority = 1, description = "Verify user able to navigate to ASTM Standerds thorugh link", dataProvider = "ASTM from Link", groups = {
 			"Smoke", "Regression" })
-	public void TC34_verifyNavigateToASTM_FromLinks(String Section, String Sub_section, String Title, String Chapter,String astm, String tag) throws Exception {
+	public void TC34_verifyNavigateToASTM_FromLinks(String Section, String Sub_section, String Title, String Chapter,
+			String astm, String tag) throws Exception {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
@@ -46,11 +48,10 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown {
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + actChapter);
-         Thread.sleep(1000);
+		Thread.sleep(1000);
 		String text = sectionpage.click_getLinkText(astm);
 		report.create_info("ASTM LINK text :- " + text);
 
-	
 		String tagname = landingpage.getTagName();
 
 		report.create_info("Tag :- " + tagname);

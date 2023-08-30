@@ -23,8 +23,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 	TitleSection_Page section;
 	Collections_Page collectionpgae;
 	MenuMyNotesandBookmark_Page mynote_bookmark;
-    private String email;
-    
+	private String email;
+
 	@BeforeClass(alwaysRun = true)
 	public void beforeclassCollection() {
 		coverpage = new TitleCover_Page();
@@ -33,8 +33,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		collectionpgae = new Collections_Page();
 		landingpage = new TitleLanding_Page();
 		mynote_bookmark = new MenuMyNotesandBookmark_Page();
-		
-		email=RandomStringUtils.randomAlphabetic(8).toLowerCase()+"@iccsafe.info";
+
+		email = RandomStringUtils.randomAlphabetic(8).toLowerCase() + "@iccsafe.info";
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -45,7 +45,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 	@DataProvider(name = "Collection Titles for Premium Complete")
 	public Object[][] getCollectionData() throws Exception {
-		
+
 		switch (TAGNAME) {
 		case "Smoke":
 			return excel.getDataFromExcle("Titles", "Collection Titles for Premium Complete", 1);
@@ -53,9 +53,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 			return excel.getDataFromExcle("Titles", "Collection Titles for Premium Complete");
 		default:
 			throw new Exception("Suite Name Not Selected in TestNG.xml File");
-			
+
 		}
-		
+
 	}
 
 	@DataProvider(name = "Premium Complete")
@@ -63,57 +63,10 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		return excel.getDataFromExcle("Collection", 1);
 	}
 
-<<<<<<< HEAD
-	
-	
-	
-	
-	  @Test(priority = 1,description ="Verify user able to navigate to Collection title",dataProvider = "collection" ,groups = {"Smoke","Regression"})
-	  public void TC27_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter) throws Exception { 
-		  
-	  menu.navigateToCollections(Section);
-	  Sparkreport.Step("Click menu"); 
-	  Sparkreport.Step("Click "+Section); 
-	  
-	  String heading=coverpage.getHeading();
-	  report.create_info("Page Title is "+ getTitle());
-	  assertEquals(heading +" Building Codes - ICC Digital Codes", getTitle());
-	  
-	 
-	  coverpage.clickOnTitlesCover(subsection);
-	  Sparkreport.Step("Click "+ subsection);
-	  Thread.sleep(6000);
-	  
-	  collectionpgae.clickIncludeTitles(title);
-	 
-	  Sparkreport.Step("Click "+ title);
-	  Thread.sleep(2000);
-	   String titlename = landingpage.getTitleHeading();
-	   String activetext=landingpage.getActivepremiumText();
-	  
-	   report.create_info("Title Name is "+ titlename );
-	   report.create_info("Subscription Tag is " + landingpage.getTagName());
-	   report.create_info(activetext);
-	   
-	  
-	   
-	   assertEquals(title, titlename);
-	   assertEquals(landingpage.getTagName(), jsonArrayValue("Premium", "tag"));
-	   assertEquals(activetext,jsonArrayValue("Premium", "Access-title"));
-	   
-	  
-		
-	  
-	  }
-	  
-	  
-	  @Test(priority = 2,description = "Verify user able to navigate to Section on Collection title",dataProvider = "collection",groups = {"Smoke","Regression"})
-	  public void TC28_verifySection_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-=======
 	@Test(priority = 1, description = "Verify user able to navigate to Collection title", dataProvider = "Collection Titles for Premium Complete", groups = {
 			"Smoke", "Regression" })
-	public void TC28_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter, String tag)
-			throws Exception {
+	public void TC28_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter,
+			String tag) throws Exception {
 
 		menu.navigateToCollections(Section);
 		Sparkreport.Step("Click menu");
@@ -125,7 +78,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 		coverpage.clickOnTitlesCover(subsection);
 		Sparkreport.Step("Click " + subsection);
-		
+
 		collectionpgae.clickIncludeTitles(title);
 		Sparkreport.Step("Click " + title);
 		Thread.sleep(2000);
@@ -137,17 +90,15 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		report.create_info(activetext);
 
 		assertEquals(title, titlename);
-		assertEquals(landingpage.getTagName(),tag);
+		assertEquals(landingpage.getTagName(), tag);
 		assertEquals(activetext, jsonArrayValue("Premium", "Access-title"));
->>>>>>> vrushabh
-		
 
 	}
 
 	@Test(priority = 2, description = "Verify user able to navigate to Section on Collection title", dataProvider = "Collection Titles for Premium Complete", groups = {
 			"Smoke", "Regression" })
-	public void TC29_verifySection_collectionTitles(String Section, String subsection, String title, String chapter, String tag)
-			throws Exception {
+	public void TC29_verifySection_collectionTitles(String Section, String subsection, String title, String chapter,
+			String tag) throws Exception {
 
 		menu.navigateToCollections(Section);
 		Sparkreport.Step("Click menu");
@@ -165,14 +116,13 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		Thread.sleep(2000);
 
 		assertEquals(cahptername, chapter);
-		
 
 	}
 
 	@Test(priority = 3, description = "Verify user able to create Notes on Collection titles", dataProvider = "Collection Titles for Premium Complete", groups = {
-			"Regression","Section"})
-	public void TC30_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter, String tag)
-			throws Exception {
+			"Regression", "Section" })
+	public void TC30_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter,
+			String tag) throws Exception {
 		menu.navigateToCollections(Section);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
@@ -189,7 +139,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 		section.doubleClickOnTitle_Section();
 		Sparkreport.Step("Double Click on text");
-        
+
 		Thread.sleep(1000);
 		section.clickNotesIcon();
 		section.createNote_FromSection(jsonValue("notes-text"));
@@ -213,7 +163,7 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
 		report.create_info("Note Created by :- " + section.getCreatedBy());
-		//Baseclass.refreshBrowser();
+		// Baseclass.refreshBrowser();
 
 		assertEquals(section.getTagName(), Section);
 		assertEquals(section.getDescription(), jsonValue("notes-text"));
@@ -229,110 +179,36 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(title,chapter, jsonValue("notes-text")));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(title, chapter, jsonValue("notes-text")));
 		assertTrue(mynote_bookmark.verifyDetails(chapter, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("notes-text"));
-		
-<<<<<<< HEAD
-	  }
-	 
-	  @Test(priority = 3, description = "Verify user able to create Notes on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC29_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-		  menu.navigateToCollections(Section);
-		  Sparkreport.Step("Click menu"); 
-		  Sparkreport.Step("Click "+Section); 
-		  
-		  coverpage.clickOnTitlesCover(subsection);
-		  Sparkreport.Step("Click "+ subsection);
-		  Thread.sleep(6000);
-		  collectionpgae.clickIncludeTitles(title);
-		  
-		   Sparkreport.Step("Click "+ title);
-		  
-		   String cahptername= toc.navigateToChapter(chapter);
-		   Sparkreport.Step("Click "+ cahptername);
-		 
-			section.doubleClickOnTitle_Section();
-			Sparkreport.Step("Double Click on text");
-=======
->>>>>>> vrushabh
 
 	}
 
 	@Test(priority = 4, description = "Verify user able to create Bookmark on Collection titles", dataProvider = "Collection Titles for Premium Complete", groups = {
 			"Regression" })
-	public void TC31_verifyCreateBookmark_collectionTitles(String Section, String subsection, String title,String chapter, String tag) throws Exception {
+	public void TC31_verifyCreateBookmark_collectionTitles(String Section, String subsection, String title,
+			String chapter, String tag) throws Exception {
 
 		collectionpgae.clickIncludeTitles(title);
 		Sparkreport.Step("Click " + title);
 		String cahptername = toc.navigateToChapter(chapter);
 		Sparkreport.Step("Click " + cahptername);
 
-<<<<<<< HEAD
-			Thread.sleep(2000);
-			report.create_info("Note Created at :- " + section.getChapterName());
-			report.create_info("Tag Name :- " + section.getTagName());
-			report.create_info("Description is :- " + section.getDescription());
-			report.create_info("Note Created by :- " + section.getCreatedBy());
-             
-			assertEquals(section.getTagName(), Section);
-			assertEquals(section.getDescription(), jsonValue("notes-text"));
-			assertEquals(section.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
-
-			toc.clickOnMyNotes();
-			Sparkreport.Step("Click My Notes");
-
-			report.create_info("Chapter Name at my notes :- " + toc.getChapterNameInMynotes());
-
-			assertEquals(toc.getChapterNameInMynotes(), chapter);
-			 
-			
-			menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
-			MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
-
-			assertEquals(mynote_bookmark.getTitleName(), title);
-			assertTrue(mynote_bookmark.verifyChapterName_Decription(chapter, jsonValue("notes-text")));
-			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
-
-			mynote_bookmark.removeNotes_Bookmark();
-			
-		  
-	  }
-	
-	  @Test(priority = 4, description = "Verify user able to create Bookmark on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC30_verifyCreateBookmark_collectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-=======
-		section.clickOnApps(section.getSessionID_FromChapter());
-		Sparkreport.Step("Click Apps");
->>>>>>> vrushabh
-		
-		Thread.sleep(1000);
-		section.clickBookmarkIcon();
-		section.createBookamrk_FromSection(jsonValue("bookmark-text"));
-		Sparkreport.Step("Click Bookmark");
-		Sparkreport.Step("Enter Decription in textBox");
-
-		section.selectTag(Section);
-		Sparkreport.Step("Click Tag DropDown");
-		Sparkreport.Step("Select Tag Name");
 		Thread.sleep(2000);
-		section.clickOnSaveButton();
-		Sparkreport.Step("Click Save");
-
-		Thread.sleep(1000);
-		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Note Created at :- " + section.getChapterName());
+		report.create_info("Tag Name :- " + section.getTagName());
 		report.create_info("Description is :- " + section.getDescription());
 		report.create_info("Note Created by :- " + section.getCreatedBy());
-		Baseclass.refreshBrowser();
 
 		assertEquals(section.getTagName(), Section);
-		assertEquals(section.getDescription(), jsonValue("bookmark-text"));
+		assertEquals(section.getDescription(), jsonValue("notes-text"));
 		assertEquals(section.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
 
 		toc.clickOnMyNotes();
 		Sparkreport.Step("Click My Notes");
+
 		report.create_info("Chapter Name at my notes :- " + toc.getChapterNameInMynotes());
 
 		assertEquals(toc.getChapterNameInMynotes(), chapter);
@@ -341,36 +217,13 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(title,chapter, jsonValue("bookmark-text")));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(title, chapter, jsonValue("notes-text")));
 		assertTrue(mynote_bookmark.verifyDetails(chapter, Login_Test.NAME, Section));
 
-<<<<<<< HEAD
-			
-			menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
-			MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
+		mynote_bookmark.removeNotes_Bookmark(jsonValue("notes-text"));
 
-			assertEquals(mynote_bookmark.getTitleName(), title);
-			assertTrue(mynote_bookmark.verifyChapterName_Decription(chapter, jsonValue("bookmark-text")));
-			assertTrue(mynote_bookmark.verifyDetails(Login_Test.NAME, Section));
-
-			mynote_bookmark.removeNotes_Bookmark();
-			
-	  
-	  
-	  }
-	  
-	  @Test(priority = 5, description = "Verify user able to Share section on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC31_verifyShareSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-=======
-		mynote_bookmark.removeNotes_Bookmark(jsonValue("bookmark-text"));
->>>>>>> vrushabh
-		
 	}
 
-<<<<<<< HEAD
-	  @Test(priority = 6, description = "Verify user able to Print section on Collection titles", dataProvider = "Premium Complete",groups = {"Regression"})
-	  public void TC32_verifyPrintSection_CollectionTitles(String Section, String subsection, String title, String chapter) throws Exception {
-=======
 	@Test(priority = 5, description = "Verify user able to Share section on Collection titles", dataProvider = "Collection Titles for Premium Complete", groups = {
 			"Regression" })
 	public void TC32_verifyShareSection_CollectionTitles(String Section, String subsection, String title,
@@ -385,8 +238,8 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 		section.clickOnApps(section.getSessionID_FromChapter());
 		Sparkreport.Step("Click Apps");
-         section.clickShareIcon();
-         Sparkreport.Step("Click Share");
+		section.clickShareIcon();
+		Sparkreport.Step("Click Share");
 		String message = section.shareSection(email);
 		Sparkreport.Step("Enter email");
 		Sparkreport.Step("Click AddMore");
@@ -396,13 +249,13 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		report.create_info("Successful message :- " + message);
 
 		assertEquals(message, jsonValue("share-successful"));
->>>>>>> vrushabh
-		
 
 	}
 
-	@Test(priority = 6, description = "Verify user able to Print section on Collection titles", dataProvider = "Collection Titles for Premium Complete", groups = {"Regression" })
-	public void TC33_verifyPrintSection_CollectionTitles(String Section, String subsection, String title,String chapter, String tag) throws Exception {
+	@Test(priority = 6, description = "Verify user able to Print section on Collection titles", dataProvider = "Collection Titles for Premium Complete", groups = {
+			"Regression" })
+	public void TC33_verifyPrintSection_CollectionTitles(String Section, String subsection, String title,
+			String chapter, String tag) throws Exception {
 
 		collectionpgae.clickIncludeTitles(title);
 
@@ -422,29 +275,11 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click Print");
 
 		assertTrue(pdfprint);
-		
-<<<<<<< HEAD
-			section.clickOnApps(section.getSessionID_FromChapter());
-			Sparkreport.Step("Click Apps");
-		     section.clickOnPrintIcon();
-		 	boolean pdfprint=Baseclass.verifyNewWindow();
-		 	Baseclass.closeWindow();
-		 	Baseclass.retrunToMainWindow();
-		 	Baseclass.switchToWindow();
-		 	
-			Sparkreport.Step("Click Print");
-			
-			assertTrue(pdfprint);
-	  }
-	  
-	  
-	  
-	  @Test(priority = 7,description = "Verify user able to Navigate to Recently Added titles of Collection",dataProvider = "Premium Complete",groups = {"Smoke"})
-	  public void TC33_verifyRecentlyAddedTitle_Collection(String Section, String subsection, String title, String chapter) throws Exception {
-=======
+
 	}
 
-	@Test(priority = 7, description = "Verify user able to Navigate to Recently Added titles of Collection", groups = {"Smoke","Regression"})
+	@Test(priority = 7, description = "Verify user able to Navigate to Recently Added titles of Collection", groups = {
+			"Smoke", "Regression" })
 	public void TC34_verifyRecentlyAddedTitle_Collection() throws Exception {
 
 		String recentlyTitle = collectionpgae.clickOnRecentlyAddedTitles();
@@ -459,8 +294,6 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 		assertEquals(titlename, recentlyTitle);
 		assertEquals(tag, catageory);
 		assertEquals(activetext, jsonArrayValue("Premium", "Access-title"));
->>>>>>> vrushabh
-		
 
 	}
 

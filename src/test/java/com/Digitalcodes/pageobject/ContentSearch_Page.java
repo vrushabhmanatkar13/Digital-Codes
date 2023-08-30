@@ -36,7 +36,7 @@ public class ContentSearch_Page extends Baseclass {
 	private List<WebElement> titleNames;
 
 	@FindBy(xpath = "(//span[@style='background-color: yellow;'])")
-	private List<WebElement>  resulttext;
+	private List<WebElement> resulttext;
 
 	@FindBy(xpath = "(//p[@class='mb-0 font-weight-bold'])[1]")
 	private WebElement searchtext;
@@ -55,13 +55,13 @@ public class ContentSearch_Page extends Baseclass {
 
 	@FindBy(xpath = "//p[@class=\"mb-0 caption text-wrap\"]")
 	private List<WebElement> categoriesfilter;
-	
+
 	@FindBy(xpath = "//p[@class='my-1 caption text-wrap']")
 	private List<WebElement> yearfilter;
-	
+
 	@FindBy(xpath = "//label[@class='caption']")
 	private List<WebElement> premiumtitlesfilter;
-	
+
 	@FindBy(xpath = "//div[@multiple='multiple']//p[@class='mb-0 caption']")
 	private List<WebElement> contenttypefilter;
 
@@ -154,7 +154,7 @@ public class ContentSearch_Page extends Baseclass {
 
 	@FindBy(xpath = "(//div[@class=\"title-card-hover\"]//button)[1]")
 	private WebElement favoriteicon;
-	
+
 	@FindBy(xpath = "//button[text()='favorite']")
 	private WebElement unfavoriteicon;
 
@@ -190,24 +190,23 @@ public class ContentSearch_Page extends Baseclass {
 
 	@FindBy(xpath = "//i[@class='v-icon notranslate mdi mdi-close theme--light']")
 	private WebElement closerelevanttitles;
-	
-	
-	//Search Suggestions
-	
+
+	// Search Suggestions
+
 	@FindBy(xpath = "//div[@class='overlay-container']//div[@class='v-list-item__title']")
 	private List<WebElement> searchsuggetions;
-	
+
 	@FindBy(xpath = "(//a[@tabindex='0'])[1]")
 	private WebElement suggestionstitles;
-	
+
 	@FindBy(xpath = "(//div[@class='row grey lighten-3 row--dense']//i)[1]")
 	private WebElement seealltext;
-	
-	//Clear Search
+
+	// Clear Search
 	@FindBy(xpath = "//div[@class='v-toolbar__content']//button[@aria-label='clear icon']")
 	private WebElement clearicon;
 
-	public void search(String text)  {
+	public void search(String text) {
 		searchInputBox.clear();
 		sendKeys(searchInputBox, text);
 
@@ -218,7 +217,7 @@ public class ContentSearch_Page extends Baseclass {
 	}
 
 	public String clickAdvanceSearch() {
-		
+
 		click(advanceSearchButton);
 		return getText(advanceSearchButton);
 	}
@@ -241,44 +240,43 @@ public class ContentSearch_Page extends Baseclass {
 	}
 
 	public boolean getSearchResultText(String search) throws Exception {
-		boolean text=false;
-		List<String> longtext=new ArrayList<String>();
-    
-    	 for (int i=0;i<=search.split("\\s").length;i++) {	
-    		 longtext.add(getText(resulttext.get(i)));	 
-    		 if (String.join(" ", longtext).equalsIgnoreCase(search)) {
-    		 text= true;
-    			 break;
-    	 }
-    	 
-     }
-    	  if (text==false) {
-    		 throw new Exception("Result text Not Matched in Yellow Color");
-    	 }
+		boolean text = false;
+		List<String> longtext = new ArrayList<String>();
+
+		for (int i = 0; i <= search.split("\\s").length; i++) {
+			longtext.add(getText(resulttext.get(i)));
+			if (String.join(" ", longtext).equalsIgnoreCase(search)) {
+				text = true;
+				break;
+			}
+
+		}
+		if (text == false) {
+			throw new Exception("Result text Not Matched in Yellow Color");
+		}
 		return text;
-		
+
 	}
 
 	public String getSearchText() {
 		return getText(searchtext).replaceAll("\"", "");
 	}
-	
+
 	public void clickClear() {
 		click(clearicon);
 	}
-	
 
 	public String getFilters(String titlename) throws Exception {
 		String text = null;
 		for (WebElement webElement : filters) {
 			if (getText(webElement).equalsIgnoreCase(titlename)) {
-				text=getText(webElement);
+				text = getText(webElement);
 				break;
 			}
-			
+
 		}
-		if (text==null) {
-			throw new Exception(titlename+" this text not Present in Filters");
+		if (text == null) {
+			throw new Exception(titlename + " this text not Present in Filters");
 		}
 		return text;
 	}
@@ -287,22 +285,22 @@ public class ContentSearch_Page extends Baseclass {
 		for (int i = 0; i < filterName.size(); i++) {
 			if (getText(filterName.get(i)).equalsIgnoreCase(filter)) {
 				click(plusbutton.get(i));
-                break;
-				
+				break;
+
 			}
 		}
 	}
-	
+
 	public void clickMinusButtton(String filter) {
 		for (int i = 0; i < filterName.size(); i++) {
 			if (getText(filterName.get(i)).equalsIgnoreCase(filter)) {
 				click(minusbutton.get(i));
-                break;
-				
+				break;
+
 			}
 		}
 	}
-	
+
 	public void applyFilterOnCategories(String filtercategory) {
 		for (int j = 0; j < categoriesfilter.size(); j++) {
 			if (getText(categoriesfilter.get(j)).equalsIgnoreCase(filtercategory)) {
@@ -312,7 +310,7 @@ public class ContentSearch_Page extends Baseclass {
 		}
 
 	}
-	
+
 	public void applyFilterOnYears(String year) {
 		for (int j = 0; j < yearfilter.size(); j++) {
 			if (getText(yearfilter.get(j)).equalsIgnoreCase(year)) {
@@ -321,7 +319,7 @@ public class ContentSearch_Page extends Baseclass {
 			}
 		}
 	}
-	
+
 	public void applyFilterOnMyPremiumTitles(String premium) {
 		for (int j = 0; j < premiumtitlesfilter.size(); j++) {
 			if (getText(premiumtitlesfilter.get(j)).equalsIgnoreCase(premium)) {
@@ -330,7 +328,7 @@ public class ContentSearch_Page extends Baseclass {
 			}
 		}
 	}
-	
+
 	public void applyFilterOnContentType(String contenttype) {
 		for (int j = 0; j < contenttypefilter.size(); j++) {
 			if (getText(contenttypefilter.get(j)).equalsIgnoreCase(contenttype)) {
@@ -392,14 +390,12 @@ public class ContentSearch_Page extends Baseclass {
 	}
 
 	public void AdvanceTermSearch(String allofwords, String anyofwords, String noneofwords) {
-      
+
 		sendKeys(allofwordstxtbox, allofwords);
 		sendKeys(anyofwordstxtbox, anyofwords);
 		sendKeys(noneofwordstxtbox, noneofwords);
 		click(advancetermsearchbutton);
 	}
-	
-	
 
 	public String getAllofWords() {
 		return getText(allofwordstxt).replaceAll("\"", "");
@@ -422,8 +418,6 @@ public class ContentSearch_Page extends Baseclass {
 		sendKeys(near, neartext);
 		click(advancetermsearchbutton);
 	}
-
-	
 
 	public void clickSaveSearch() {
 		click(savesearch);
@@ -463,12 +457,12 @@ public class ContentSearch_Page extends Baseclass {
 
 	public void clickFavorite() throws Exception {
 		if (getText(favoriteicon).equals("favorite_border")) {
-		click(favoriteicon);
-		}
-		else {
+			click(favoriteicon);
+		} else {
 			throw new Exception("Title is already marked as favorite");
 		}
 	}
+
 	public void clickUnfavorite() {
 		click(unfavoriteicon);
 	}
@@ -492,42 +486,37 @@ public class ContentSearch_Page extends Baseclass {
 	public void closeRelevantTitles() {
 		click(closerelevanttitles);
 	}
-	
-	
+
 	public boolean getSearchSuggetions(String searchtext) {
-		boolean result=false;
+		boolean result = false;
 		for (WebElement webElement : searchsuggetions) {
 			for (String text : getText(webElement).split(" ")) {
 				if (text.equalsIgnoreCase(searchtext)) {
-					result=true;
+					result = true;
 					break;
+				} else {
+					result = false;
 				}
-				else {
-					result=false;
-				}
-				
+
 			}
 		}
 		return result;
 	}
-	
+
 	public String getSearchSuggetions() throws Exception {
 		if (isDisplayed(suggestionstitles)) {
 			return getText(suggestionstitles);
-		}
-		else {
+		} else {
 			throw new Exception("Title Name not showing");
 		}
 	}
-	
+
 	public String getSeeAlltext() {
 		return getText(seealltext);
 	}
-	
+
 	public void clickSeeAll() {
 		click(seealltext);
 	}
-	
-	
-	
+
 }

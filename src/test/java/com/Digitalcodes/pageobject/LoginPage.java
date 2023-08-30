@@ -7,17 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Digitalcodes.utilities.Baseclass;
 
-public class LoginPage extends Baseclass{
+public class LoginPage extends Baseclass {
 
-	
-  
 	@SuppressWarnings("static-access")
 	public LoginPage() {
 		this.driver = super.driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	WebDriver driver;
-	
+
 	@FindBy(id = "emailAddress")
 	private WebElement emailtextbox;
 
@@ -26,7 +25,6 @@ public class LoginPage extends Baseclass{
 	@FindBy(xpath = "(//b[contains(text(),'Sign In')])")
 	private WebElement SignInbutton;
 
-	
 	public void login(String username, String password) {
 
 		sendKeys(emailtextbox, username);
@@ -34,5 +32,5 @@ public class LoginPage extends Baseclass{
 		SignInbutton.click();
 
 	}
-	
+
 }

@@ -15,7 +15,6 @@ import com.Digitalcodes.utilities.Sparkreport;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.perfecto.reportium.client.ReportiumClient;
 
-
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -44,7 +43,7 @@ public class Prerequisites_Teardown extends Baseclass {
 	static final long WEBDRIVER_WAIT = 60;
 
 	// Objects
-	public static Header header; 																																						;
+	public static Header header;;
 	public static Menu menu;
 	public static CommanSteps commanstep;
 	// Capabilites
@@ -56,57 +55,53 @@ public class Prerequisites_Teardown extends Baseclass {
 	public static String PLATFORM;
 	public static String TAGNAME;
 	public static String BEOWSER_NAME;
-	static  String ENVIROMENT ;
+	static String ENVIROMENT;
 	static String WIDTH;
 	static String HIGHT;
-    static String URL;
+	static String URL;
 	// Users
 	public static String USER;
 	public static String USERTYPE;
 	public static Map<String, String> userdata;
 
 	@BeforeSuite(alwaysRun = true)
-	@Parameters({ "tagname","Enviroment"})
-	public void beforeSuite(String tagname, String Enviroment ) {
+	@Parameters({ "tagname", "Enviroment" })
+	public void beforeSuite(String tagname, String Enviroment) {
 		try {
 
 			LoadPropertiesfile data = new LoadPropertiesfile();
-			prop = data.load_properties(System.getProperty("user.dir")+"\\TestData\\Config.properties");
-			json = data.readJson(System.getProperty("user.dir")+"\\TestData\\DC.json");
+			prop = data.load_properties(System.getProperty("user.dir") + "\\TestData\\Config.properties");
+			json = data.readJson(System.getProperty("user.dir") + "\\TestData\\DC.json");
 			excel = new Load_Excle();
 
-			
-			userdata=new HashMap<String, String>();
-			
+			userdata = new HashMap<String, String>();
+
 			/*
-			 * Pass Platform name in command 
-			 * -DPlatformName="local"       OR       -DPlatformName="Perfecto"
-			 * If not then By default value is local 
+			 * Pass Platform name in command -DPlatformName="local" OR
+			 * -DPlatformName="Perfecto" If not then By default value is local
 			 * 
 			 * 
-			*/
-			 PLATFORM = Baseclass.fatechPlatformName(prop);
+			 */
+			PLATFORM = Baseclass.fatechPlatformName(prop);
 			INCOGNITO = prop.getProperty("incognito");
 			/*
-			 * Pass headless value in command 
-			 * -Dheadless="true" OR "false"
-			 * If not then by default value is false
+			 * Pass headless value in command -Dheadless="true" OR "false" If not then by
+			 * default value is false
 			 */
 			HEADLESS = Baseclass.selectHeadless(prop);
-			
+
 			SECURITY_TOCKEN = prop.getProperty("securityToken");
 			// Screen width and height for perfecto execution
-			WIDTH=prop.getProperty("width");
-			HIGHT=prop.getProperty("hight");
+			WIDTH = prop.getProperty("width");
+			HIGHT = prop.getProperty("hight");
 			/*
-			 * Pass environment value in command
-			 * -DEnviroment="Stage"  OR "Dev"
-			 * If not then by default value is Stage url
+			 * Pass environment value in command -DEnviroment="Stage" OR "Dev" If not then
+			 * by default value is Stage url
 			 * 
 			 */
-			//URL=Baseclass.selectEnviroment(prop);
-			
-			ENVIROMENT=Enviroment;
+			// URL=Baseclass.selectEnviroment(prop);
+
+			ENVIROMENT = Enviroment;
 			TAGNAME = tagname;
 
 		} catch (Exception e) {
@@ -117,33 +112,34 @@ public class Prerequisites_Teardown extends Baseclass {
 	}
 
 	@BeforeTest(alwaysRun = true)
-	@Parameters({ "Browser", "User","UserType"})
+	@Parameters({ "Browser", "User", "UserType" })
 	public void beforeTest(String BROWSER_NAME, String USER, String USERTYPE) {
 
 		try {
 			// Baseclass.fatechBrowserName(prop, System.getProperty("browser"));
 			baseclass = new Baseclass();
-			URL=Baseclass.selectEnviroment(prop);
-			report = new Sparkreport(prop.getProperty("Title"), prop.getProperty("Report_Name"),ENVIROMENT+"/"+PLATFORM, USER ,TAGNAME);
+			URL = Baseclass.selectEnviroment(prop);
+			report = new Sparkreport(prop.getProperty("Title"), prop.getProperty("Report_Name"),
+					ENVIROMENT + "/" + PLATFORM, USER, TAGNAME);
 
-			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,WIDTH,HIGHT);
+			baseclass.browserLaunch(INCOGNITO, HEADLESS, BROWSER_NAME, PLATFORM, SECURITY_TOCKEN, CLOUD_NAME, TAGNAME,
+					WIDTH, HIGHT);
 			baseclass.navigateToUrl(URL);
 			baseclass.implicitWait(IMPLICIT_WAIT);
 			baseclass.pageLoadTimeout(PAGE_LOAD_WAIT);
 			baseclass.waitForElement(WEBDRIVER_WAIT);
 			driver.manage().deleteAllCookies();
-			
 
 			BEOWSER_NAME = BROWSER_NAME;
 			Prerequisites_Teardown.USER = USER;
-			Prerequisites_Teardown.USERTYPE=USERTYPE;
-			
+			Prerequisites_Teardown.USERTYPE = USERTYPE;
+
 			System.out.println("Platform Name :- " + PLATFORM);
 			System.out.println("Browser Name :- " + BROWSER_NAME);
-			System.out.println("Headless Mode :- "+ HEADLESS);
+			System.out.println("Headless Mode :- " + HEADLESS);
 			System.out.println(driver.getCurrentUrl());
 			System.out.println(" ");
-			
+
 			header = new Header();
 			menu = new Menu();
 			commanstep = new Abstract_CommanMathods_Implinmation();
@@ -157,7 +153,7 @@ public class Prerequisites_Teardown extends Baseclass {
 
 	@BeforeClass(alwaysRun = true, enabled = true)
 	public void beforeClass() {
-		
+
 		System.out.println("Header ????????????????????????????????????");
 
 	}
@@ -171,21 +167,18 @@ public class Prerequisites_Teardown extends Baseclass {
 		System.out.println("  ");
 
 	}
-	
+
 	@AfterTest(alwaysRun = true)
 	public void afterTest() {
-	
-		//driver.quit();
+
+		// driver.quit();
 	}
-	
-	
+
 	@AfterSuite(alwaysRun = true)
 	public void afterSuite() {
-		
-		
+
 		getReporturl();
 
 	}
-
 
 }

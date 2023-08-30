@@ -1,14 +1,10 @@
 package com.Digitalcodes.capabilities;
 
-
-
 import java.util.HashMap;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.firefox.FirefoxOptions;
-
-
 
 public class SetCapbilites {
 
@@ -40,7 +36,7 @@ public class SetCapbilites {
 		chrome.addArguments("--remote-allow-origins=*");
 		chrome.addArguments("force-device-scale-factor=0.85");
 		chrome.addArguments("high-dpi-support=0.85");
-		
+
 		return chrome;
 	}
 
@@ -52,16 +48,15 @@ public class SetCapbilites {
 		}
 		if (headless.equalsIgnoreCase("true")) {
 			firefox.addArguments("--headless=new");
-            firefox.addArguments("--enable-automation");
+			firefox.addArguments("--enable-automation");
 		}
 		firefox.addArguments("force-device-scale-factor=0.85");
 		firefox.addArguments("high-dpi-support=0.85");
-		
+
 		return firefox;
 	}
-	
-	
-	public static void  getlamdatest(ChromeOptions options) {
+
+	public static void getlamdatest(ChromeOptions options) {
 		HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 		ltOptions.put("username", "vrushabhmanatkar13");
 		ltOptions.put("accessKey", "Cmg7QXWZSREFgaPboVGTkCH0m6Rtkq859gKMW60In46IhhIQ8K");

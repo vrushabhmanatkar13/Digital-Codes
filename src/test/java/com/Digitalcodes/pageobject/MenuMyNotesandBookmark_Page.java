@@ -47,18 +47,15 @@ public class MenuMyNotesandBookmark_Page extends Baseclass {
 			if (getText(webElement).equals(title)) {
 				text = getText(webElement);
 				break;
+			} else {
+				text = null;
 			}
-			else {
-				text=null;
-			}
-			
+
 		}
-		if (text==null) {
+		if (text == null) {
 			throw new Exception("this Title Name not showing in My Notes and Bookmark");
 		}
 		return text;
-		
-		
 
 	}
 
@@ -69,10 +66,10 @@ public class MenuMyNotesandBookmark_Page extends Baseclass {
 				break;
 			}
 		}
-		
+
 	}
 
-	public boolean verifyChapterName_Decription(String title,String chapname, String decription) throws Exception {
+	public boolean verifyChapterName_Decription(String title, String chapname, String decription) throws Exception {
 		clickTitleName(title);
 		boolean result = false;
 		for (int i = 0; i <= chapterName.size(); i++) {
@@ -96,16 +93,19 @@ public class MenuMyNotesandBookmark_Page extends Baseclass {
 
 	public boolean verifyDetails(String chaptername, String createdBy, String projectTag) throws Exception {
 		boolean result = false;
-		for (int i = 0; i <chapterName.size(); i++) {
+		for (int i = 0; i < chapterName.size(); i++) {
 			if (getText(chapterName.get(i)).equals(chaptername)) {
-				if (getText(createdBytext.get(i)).equals("Created By: " + createdBy)&& getText(projectTagtext.get(i)).equals("Project Tag: " + projectTag)&& isDisplayed(timeStamptext.get(i))) {
+				if (getText(createdBytext.get(i)).equals("Created By: " + createdBy)
+						&& getText(projectTagtext.get(i)).equals("Project Tag: " + projectTag)
+						&& isDisplayed(timeStamptext.get(i))) {
 					result = true;
 					break;
-				} 
+				}
 			}
 		}
-		if (result==false) {
-			throw new Exception(chaptername+" Or "+createdBy+" Or "+projectTag+" any one on this is not correct showing in My Notes and Bookmark");
+		if (result == false) {
+			throw new Exception(chaptername + " Or " + createdBy + " Or " + projectTag
+					+ " any one on this is not correct showing in My Notes and Bookmark");
 		}
 		return result;
 

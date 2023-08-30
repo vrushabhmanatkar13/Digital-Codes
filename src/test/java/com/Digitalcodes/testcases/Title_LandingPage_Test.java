@@ -20,10 +20,10 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		coverpage = new TitleCover_Page();
 	}
 
-	@Test(priority = 1, description = "Verify User able to Navigate to Title Landing page and verify Tag", dataProvider="Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
+	@Test(priority = 1, description = "Verify User able to Navigate to Title Landing page and verify Tag", dataProvider = "Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC04_verifyTitleLandingPage(String Section, String Sub_section, String Title, String Chapter, String tag)
-			throws Exception {
+	public void TC04_verifyTitleLandingPage(String Section, String Sub_section, String Title, String Chapter,
+			String tag) throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
 		Sparkreport.Step("Click menu");
@@ -33,26 +33,26 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		String heading = coverpage.getHeading().replace(" Building Codes", "");
 		assertEquals(heading, Sub_section);
 		assertEquals(getTitle(), heading + " Building Codes - ICC Digital Codes");
-		
+
 		title = coverpage.clickOnTitlesCover(Title);
 		Sparkreport.Step("Click " + Title);
 		titlename = title.getTitleHeading();
 		Thread.sleep(2000);
-		String activepremium=title.getActivepremiumText();
-		String tagname=title.getTagName();
+		String activepremium = title.getActivepremiumText();
+		String tagname = title.getTagName();
 		Sparkreport.Step("Subscription Tag is " + tagname);
 		Sparkreport.Step("Subscription is " + activepremium);
-		
+
 		assertEquals(titlename, Title);
 		assertEquals(tagname, tag);
 		assertEquals(activepremium, jsonArrayValue("Premium", "Access-title"));
-        
+
 	}
 
 	@Test(priority = 2, description = "Verify user able to mark favorite & unfavorite and title should be displayed in favorites", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
-			"Smoke","Regression" })
-	public void TC05_verifyMarkFavoriteTitle(String Section, String Sub_section, String Title, String Chapter, String tag)
-			throws InterruptedException {
+			"Smoke", "Regression" })
+	public void TC05_verifyMarkFavoriteTitle(String Section, String Sub_section, String Title, String Chapter,
+			String tag) throws InterruptedException {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
 		title = coverpage.clickOnTitlesCover(Title);
@@ -94,7 +94,8 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 3, description = "Verify User able to Change Version, Releated Titles, Categories", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
-	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title, String Chapter, String tag) throws Exception {
+	public void TC06_verifyChangeVersion_ReleatedTitles_Categories(String Section, String Sub_section, String Title,
+			String Chapter, String tag) throws Exception {
 
 		menu.navigateToTitlesCover(Section, Sub_section);
 		coverpage.clickOnTitlesCover(Title);
@@ -113,7 +114,6 @@ public class Title_LandingPage_Test extends Prerequisites_Teardown {
 		String category = title.getCategoryText();
 		String heading = coverpage.getHeading();
 		Sparkreport.Step("Click on category");
-		
 
 		assertTrue(currentlyviewing);
 		assertEquals(code, 200);
