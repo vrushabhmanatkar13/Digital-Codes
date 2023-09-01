@@ -46,11 +46,11 @@ public class TitleSection_Page extends Baseclass {
 
 	@FindBy(xpath = "//h4[@class=\"primary--text\"]")
 	private WebElement titleHeading;
-	
-	//Note popup
+
+	// Note popup
 	@FindBy(xpath = "//div[@class='v-dialog__content v-dialog__content--active']//div[@class='v-card__title primary white--text headline']")
-    private WebElement notes_bookmarkpopup;
- 	// Notes
+	private WebElement notes_bookmarkpopup;
+	// Notes
 
 	@FindBy(xpath = "//i[text()=' border_color']")
 	private WebElement note;
@@ -204,7 +204,7 @@ public class TitleSection_Page extends Baseclass {
 
 	@FindBy(xpath = "//div[@class='py-0 col col-auto']/button")
 	private WebElement hideButton;
-	
+
 	@FindBy(xpath = "(//p[@class='chapter_subtitle'])[1]")
 	private WebElement commentry_subtitle;
 
@@ -264,13 +264,11 @@ public class TitleSection_Page extends Baseclass {
 	}
 
 	public void createNote_FromSection(String notetext) throws Exception {
-    if (isDisplayed(notes_bookmarkpopup)) {
-    	sendKeys(textcontainer, notetext);
-    }
-    else {
-    	throw new Exception("Notes/Bookmark Popup is not displayed");
-    }
-		
+		if (isDisplayed(notes_bookmarkpopup)) {
+			sendKeys(textcontainer, notetext);
+		} else {
+			throw new Exception("Notes/Bookmark Popup is not displayed");
+		}
 
 	}
 
@@ -280,96 +278,83 @@ public class TitleSection_Page extends Baseclass {
 
 	public void createBookamrk_FromSection(String bookamrk) throws Exception {
 
-	if (isDisplayed(notes_bookmarkpopup)) {
-		textcontainer.clear();
-		sendKeys(textcontainer, bookamrk);
-	}
-	else {
-    	throw new Exception("Notes/Bookmark Popup is not displayed");
-    }
-		
+		if (isDisplayed(notes_bookmarkpopup)) {
+			textcontainer.clear();
+			sendKeys(textcontainer, bookamrk);
+		} else {
+			throw new Exception("Notes/Bookmark Popup is not displayed");
+		}
+
 	}
 
 	public void createNote_FromSubSection(String sectionId, String notetext) throws Exception {
-		
-			for (WebElement webElement : noteicon) {
-				if (webElement.getAttribute("id").equals(sectionId + "_note")) {
-					click(webElement);
-					if (isDisplayed(notes_bookmarkpopup)) {
-						Thread.sleep(1000);
-						textcontainer.clear();
-						sendKeys(textcontainer, notetext);
-						break;
-					}
-					else {
-				    	throw new Exception("Notes/Bookmark Popup is not displayed");
-				    }
-					
+
+		for (WebElement webElement : noteicon) {
+			if (webElement.getAttribute("id").equals(sectionId + "_note")) {
+				click(webElement);
+				if (isDisplayed(notes_bookmarkpopup)) {
+					Thread.sleep(1000);
+					textcontainer.clear();
+					sendKeys(textcontainer, notetext);
+					break;
+				} else {
+					throw new Exception("Notes/Bookmark Popup is not displayed");
 				}
+
 			}
-		
-		
-		
+		}
+
 	}
 
 	public void creteBookmark_FromSubSection(String sectionId, String bookmarktext) throws Exception {
-		
-			for (WebElement webElement : Bookmarkicon) {
-				if (webElement.getAttribute("id").equals(sectionId+"_bookmark")) {
-					click(webElement);
-					if (isDisplayed(notes_bookmarkpopup)) {
-					
-						sendKeys(textcontainer, bookmarktext);
-						break;
-					}
-					else {
-				    	throw new Exception("Notes/Bookmark Popup is not displayed");
-				    }
-					
-				}
-		}
-			
 
-		
-		
+		for (WebElement webElement : Bookmarkicon) {
+			if (webElement.getAttribute("id").equals(sectionId + "_bookmark")) {
+				click(webElement);
+				if (isDisplayed(notes_bookmarkpopup)) {
+
+					sendKeys(textcontainer, bookmarktext);
+					break;
+				} else {
+					throw new Exception("Notes/Bookmark Popup is not displayed");
+				}
+
+			}
+		}
 
 	}
 
 	public void creatNote_FromChildSubSection(String sectionId, String notetext) throws Exception {
-			for (WebElement webElement : noteicon) {
-				if (webElement.getAttribute("id").equals(sectionId + "_note")) {
-					click(webElement);
-					if (isDisplayed(notes_bookmarkpopup)) {
-						
-						textcontainer.clear();
-						sendKeys(textcontainer, notetext);
-						break;
-					}
-					else {
-				    	throw new Exception("Notes/Bookmark Popup is not displayed");
-				    }
-					
+		for (WebElement webElement : noteicon) {
+			if (webElement.getAttribute("id").equals(sectionId + "_note")) {
+				click(webElement);
+				if (isDisplayed(notes_bookmarkpopup)) {
+
+					textcontainer.clear();
+					sendKeys(textcontainer, notetext);
+					break;
+				} else {
+					throw new Exception("Notes/Bookmark Popup is not displayed");
 				}
+
 			}
-		
-		
-		
+		}
+
 	}
 
 	public void createBookmark_FromChildSubSection(String sectionId, String bookmarktext) throws Exception {
-		
+
 		for (WebElement webElement : Bookmarkicon) {
 			if (webElement.getAttribute("id").equals(sectionId + "_bookmark")) {
 				click(webElement);
-				if (isDisplayed(notes_bookmarkpopup)) {				
+				if (isDisplayed(notes_bookmarkpopup)) {
 					textcontainer.clear();
 					sendKeys(textcontainer, bookmarktext);
 					break;
+				} else {
+					throw new Exception("Notes/Bookmark Popup is not displayed");
 				}
-				else {
-			    	throw new Exception("Notes/Bookmark Popup is not displayed");
-			    }
-				
+
 			}
 
 		}
@@ -446,8 +431,8 @@ public class TitleSection_Page extends Baseclass {
 	public String shareSubSection(String sectionId, String email) {
 		String message = null;
 		for (WebElement webElement : shareicon) {
-             
-			if (webElement.getAttribute("id").equals(sectionId+"_share")) {
+
+			if (webElement.getAttribute("id").equals(sectionId + "_share")) {
 				click(webElement);
 				sendKeys(emailInput, email);
 				click(addmore);
@@ -468,7 +453,7 @@ public class TitleSection_Page extends Baseclass {
 		String message = null;
 		for (WebElement webElement : shareicon) {
 
-			if (webElement.getAttribute("id").equals(sectionId+"_share")) {
+			if (webElement.getAttribute("id").equals(sectionId + "_share")) {
 				click(webElement);
 				sendKeys(emailInput, email);
 				click(addmore);
@@ -581,13 +566,9 @@ public class TitleSection_Page extends Baseclass {
 			filledtextcontainer.clear();
 			sendKeys(textcontainer, text);
 			click(saveButton_Notes);
+		} else {
+			throw new Exception("Notes/Bookmark Popup is not displayed");
 		}
-		else {
-	    	throw new Exception("Notes/Bookmark Popup is not displayed");
-	    }
-		
-
-		
 
 	}
 
@@ -622,16 +603,16 @@ public class TitleSection_Page extends Baseclass {
 	}
 
 	// Hide Commentary
-    public boolean subtitleIsDisplayed() {
-      return commentry_subtitle.isDisplayed();
-    }
-	
+	public boolean subtitleIsDisplayed() {
+		return commentry_subtitle.isDisplayed();
+	}
+
 	public String clickHideButton() {
 		wait.until(ExpectedConditions.visibilityOf(commentry_subtitle));
 		click(hideButton);
 		return getText(hideButton);
 	}
-	
+
 	public String clickShowButton() throws InterruptedException {
 		click(hideButton);
 		Thread.sleep(500);
@@ -641,27 +622,24 @@ public class TitleSection_Page extends Baseclass {
 	// ASTM LINK
 
 	public String click_getLinkText(String linktext) throws Exception {
-		String text=null;
+		String text = null;
 		for (WebElement webElement : ASTMlink) {
 			if (getText(webElement).equalsIgnoreCase(linktext)) {
-				 text=getText(webElement);
-				 try {
-					 action.click(webElement).build().perform();
-				 }
-				 catch (Exception e) {
-					 action.click(webElement).build().perform();
+				text = getText(webElement);
+				try {
+					action.click(webElement).build().perform();
+				} catch (Exception e) {
+					action.click(webElement).build().perform();
 				}
-				 break;
+				break;
 			}
 		}
-		if (text==null) {
-			throw new Exception(linktext+" this text link is not present in this chapter");
+		if (text == null) {
+			throw new Exception(linktext + " this text link is not present in this chapter");
 		}
-		
+
 		return text;
 	}
-
-	
 
 	public String getTitleName() {
 		return getText(titlename);

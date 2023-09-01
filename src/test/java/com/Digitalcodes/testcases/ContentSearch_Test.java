@@ -173,7 +173,8 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		String actultitlename = null;
 		try {
 			Baseclass.switchToWindow();
-			sectionname = tocpage.getOpenSubSection().replaceAll(" ", "").trim();;
+			sectionname = tocpage.getOpenSubSection().replaceAll(" ", "").trim();
+			;
 			actultitlename = sectionpage.getTitleName();
 
 		} catch (Exception e) {
@@ -272,7 +273,7 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
 		assertEquals(mynotesbookmarkpage.getTitleName(titlename), titlename);
-		assertTrue(mynotesbookmarkpage.verifyChapterName_Decription(titlename,subtitle, jsonValue("bookmark-text")));
+		assertTrue(mynotesbookmarkpage.verifyChapterName_Decription(titlename, subtitle, jsonValue("bookmark-text")));
 		assertTrue(mynotesbookmarkpage.verifyDetails(subtitle, Login_Test.NAME, tagname));
 
 	}
@@ -337,12 +338,11 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 	public void TC51_verifyAdvanceTermSearch(String data, String allofwords, String anyofwords, String noneofwords)
 			throws InterruptedException {
 
-		
 		contentsearch.search(data);
 		Thread.sleep(1000);
 		contentsearch.pressEnter();
 		contentsearch.clickAdvanceTermSearch();
-		 Thread.sleep(2000);
+		Thread.sleep(2000);
 		contentsearch.AdvanceTermSearch(allofwords, anyofwords, noneofwords);
 		Sparkreport.Step("Click Advance Term Search");
 		Sparkreport.Step("Enter values ");

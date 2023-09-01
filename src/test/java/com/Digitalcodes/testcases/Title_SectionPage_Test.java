@@ -23,22 +23,24 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	TitleSection_Page section;
 	MenuMyNotesandBookmark_Page mynote_bookmark;
 	PremiumTools_SharingHistory_Page sharinghistory;
-	
+
 	private String email;
+
 	@BeforeClass(alwaysRun = true)
 	public void beforeClassTitlepage() {
 
 		tableOfContent_Page = new TableOfContent_Page();
 		section = new TitleSection_Page();
 		mynote_bookmark = new MenuMyNotesandBookmark_Page();
-		sharinghistory=new PremiumTools_SharingHistory_Page();
-		email= RandomStringUtils.randomAlphabetic(8).toLowerCase()+"@iccsafe.info";
+		sharinghistory = new PremiumTools_SharingHistory_Page();
+		email = RandomStringUtils.randomAlphabetic(8).toLowerCase() + "@iccsafe.info";
 	}
 
-	
-	@Test(priority = 1, description = "Verify user able to create notes at section",  dataProvider="Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
-			"Smoke", "Regression","Section" })
-	public void TC09_verifyCreateNotes_atSection(String Section, String Sub_section, String Title, String Chapter, String tag)
+	@Test(priority = 1, description = "Verify user able to create notes at section", dataProvider = "Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
+			"Smoke", "Regression", "Section" })
+	public void TC09_verifyCreateNotes_atSection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -49,13 +51,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		String chapterName = tableOfContent_Page.navigateToChapter(Chapter);
 		Sparkreport.Step("Click Chapter " + chapterName);
+
+		report.create_info("Chapter Name :- " + section.getChapterName());
+
 		assertEquals(section.getChapterName(), chapterName);
-		
-		
+
 		section.doubleClickOnTitle_Section();
 		Sparkreport.Step("Double Click on text");
 
-		
 		section.clickNotesIcon();
 		Thread.sleep(1000);
 		section.createNote_FromSection(jsonValue("notes-text"));
@@ -71,20 +74,19 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.selectTag(Section);
 		Sparkreport.Step("Click Tag DropDown");
 		Sparkreport.Step("Select Tag Name");
-		
+
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		Thread.sleep(1000);
-	//	Baseclass.refreshBrowser();
+		// Baseclass.refreshBrowser();
 		Sparkreport.Step("Note Created at :- " + section.getChapterName());
 		Sparkreport.Step("Tag Name :- " + section.getTagName());
 		Sparkreport.Step("Description is :- " + section.getDescription());
 		Sparkreport.Step("Note Created by :- " + section.getCreatedBy());
 
-		
 		assertEquals(section.getTagName(), Section);
 		assertEquals(section.getDescription(), jsonValue("notes-text"));
-		assertEquals(section.getCreatedBy(), Login_Test.NAME+ " (" + Login_Test.EMAIL + ")");
+		assertEquals(section.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
 
 		tableOfContent_Page.clickOnMyNotes();
 		Sparkreport.Step("Click My Notes");
@@ -93,18 +95,21 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(tableOfContent_Page.getChapterNameInMynotes(), Chapter);
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
-		
+
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,Chapter, jsonValue("notes-text")));
-		assertTrue(mynote_bookmark.verifyDetails(Chapter,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, Chapter, jsonValue("notes-text")));
+		assertTrue(mynote_bookmark.verifyDetails(Chapter, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("notes-text"));
 
 	}
 
-	@Test(priority = 2, description = "Verify user able to create bookmark at section",  dataProvider="Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
+	@Test(priority = 2, description = "Verify user able to create bookmark at section", dataProvider = "Premium Complete Titles", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC10_verifyCreateBookmark_atSection(String Section, String Sub_section, String Title, String Chapter, String tag)
+
+	public void TC10_verifyCreateBookmark_atSection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -119,19 +124,16 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.clickOnApps(section.getSessionID_FromChapter());
 		Sparkreport.Step("Click Apps");
 
-		
 		section.clickBookmarkIcon();
 		Thread.sleep(1000);
 		section.createBookamrk_FromSection(jsonValue("bookmark-text"));
 		Sparkreport.Step("Click Bookmark");
 		Sparkreport.Step("Enter Decription in textBox");
 
-		
 		section.selectTag(Section);
 		Sparkreport.Step("Click Tag DropDown");
 		Sparkreport.Step("Select Tag Name");
-		
-		
+
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		Thread.sleep(2000);
@@ -139,11 +141,11 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		report.create_info("Note Created at :- " + section.getChapterName());
 		report.create_info("Description is :- " + section.getDescription());
 		report.create_info("Note Created by :- " + section.getCreatedBy());
-		
+
 		Baseclass.refreshBrowser();
 		assertEquals(section.getTagName(), Section);
 		assertEquals(section.getDescription(), jsonValue("bookmark-text"));
-		assertEquals(section.getCreatedBy(), Login_Test.NAME+ " (" + Login_Test.EMAIL + ")");
+		assertEquals(section.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
 
 		tableOfContent_Page.clickOnMyNotes();
 		Sparkreport.Step("Click My Notes");
@@ -152,18 +154,21 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(tableOfContent_Page.getChapterNameInMynotes(), Chapter);
 
 		menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
-		
+
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,Chapter, jsonValue("bookmark-text")));
-		assertTrue(mynote_bookmark.verifyDetails(Chapter,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, Chapter, jsonValue("bookmark-text")));
+		assertTrue(mynote_bookmark.verifyDetails(Chapter, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("bookmark-text"));
 
 	}
 
-	@Test(priority = 3, description = "Verify user able to share the section", dataProvider = "PC first title",dataProviderClass = DataProviders.class, groups = {
+	@Test(priority = 3, description = "Verify user able to share the section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC11_verifyShareSection_FromSection(String Section, String Sub_section, String Title, String Chapter,String tag)
+
+	public void TC11_verifyShareSection_FromSection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -177,8 +182,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnApps(section.getSessionID_FromChapter());
 		Sparkreport.Step("Click Apps");
-		
-        section.clickShareIcon();
+
+		section.clickShareIcon();
 		String successMessage = section.shareSection(email);
 		Sparkreport.Step("Click Share");
 		Sparkreport.Step("Enter email");
@@ -193,7 +198,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(dependsOnMethods = "TC11_verifyShareSection_FromSection", description = "Verify user able to Print Section", groups = {
 			"Smoke", "Regression" })
-	public void TC12_verifyPrintSection_FromSection() throws Exception {
+	public void TC11_verifyPrintSection_FromSection() throws Exception {
 		/*
 		 * menu.navigateToTitlesCover(Section,Sub_section);
 		 * coverpage.clickOnTitlesCover(Title); Sparkreport.Step("Click menu");
@@ -219,7 +224,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 4, description = "Verify user able to share note from section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC13_verifyShareNote_FromSction(String Section, String Sub_section, String Title, String Chapter,String tag)
+
+	public void TC13_verifyShareNote_FromSction(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 		/*
 		 * menu.navigateToTitlesCover(Section,Sub_section);
@@ -234,13 +242,13 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.doubleClickOnTitle_Section();
 		Sparkreport.Step("Double Click on text");
-         section.clickNotesIcon();
+		section.clickNotesIcon();
 		section.createNote_FromSection(jsonValue("notes-text"));
 		Sparkreport.Step("Click Note icon");
 		Sparkreport.Step("Enter Decription in textBox");
 
 		Thread.sleep(1000);
-		//section.selectTag(Section);
+		// section.selectTag(Section);
 		Sparkreport.Step("Click Tag DropDown");
 		Sparkreport.Step("Select Tag Name");
 
@@ -255,7 +263,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		report.create_info("Successful message :- " + SuccessfullyMsg);
 
 		assertEquals(SuccessfullyMsg, jsonValue("share-content-successful"));
-		
+
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
 		sharinghistory.clickOnvIcon();
 		Thread.sleep(2000);
@@ -269,19 +277,21 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(description = "Verify user able to edit notes from Section", dependsOnMethods = "TC13_verifyShareNote_FromSction", groups = {
 			"Smoke", "Regression" })
+
 	public void TC14_verifyEditNotes_FromSection() throws Exception {
-        Baseclass.navigateToBack();
-        menu.clickOnMainMenu();
-        menu.closemenu();
+		Baseclass.navigateToBack();
+		menu.clickOnMainMenu();
+		menu.closemenu();
+
 		section.editNotes_Bookmark(jsonValue("notes-edit-text"));
 		Sparkreport.Step("Click edit");
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
 		Thread.sleep(2000);
 		report.create_info("Description is :- " + section.getDescription());
-	
+
 		assertEquals(section.getDescription(), jsonValue("notes-edit-text"));
-		
+
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
 		sharinghistory.clickOnvIcon();
 		assertEquals(sharinghistory.getDescription(), jsonValue("notes-edit-text"));
@@ -289,28 +299,35 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(description = "Verify user able to delete Notes from Section", dependsOnMethods = "TC14_verifyEditNotes_FromSection", groups = {
 			"Smoke", "Regression" })
+
 	public void TC15_verifyDeleteNotes_FromSection() throws Exception {
-		  Baseclass.navigateToBack();
-	     menu.clickOnMainMenu();
-	     menu.closemenu();
-	     
+		Baseclass.navigateToBack();
+		menu.clickOnMainMenu();
+		menu.closemenu();
+
 		section.deleteNotes__Bookmark();
 		boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
-		
+
 		Sparkreport.Step("Click delete");
 		Sparkreport.Step("Click Remove");
 		refreshBrowser();
 		tableOfContent_Page.clickOnMyNotes();
 		report.create_info("Text in My Notes after delete notes :- " + tableOfContent_Page.getTextInMyNotes());
-		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));	
+
+		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
+
+		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
+
 		assertFalse(note_bookmakr);
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
-        assertEquals(sharinghistory.getNoResultText(), "No Results Found");
+		assertEquals(sharinghistory.getNoResultText(), "No Results Found");
 	}
 
 	@Test(priority = 5, description = "Verify user able to share bookmark from Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
-			"Smoke","Regression" })
-	public void TC16_verifyShareBookmark_FromSection(String Section, String Sub_section, String Title, String Chapter, String tag)
+			"Smoke", "Regression" })
+	public void TC16_verifyShareBookmark_FromSection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 
 		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -324,14 +341,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.clickOnApps(section.getSessionID_FromChapter());
 		Sparkreport.Step("Click Apps");
-         
+
 		section.clickBookmarkIcon();
 		section.createBookamrk_FromSection(jsonValue("bookmark-text"));
 		Sparkreport.Step("Click Bookmark");
 		Sparkreport.Step("Enter Decription in textBox");
 
 		Thread.sleep(1000);
-		//section.selectTag(Section);
+		// section.selectTag(Section);
 		Sparkreport.Step("Click Tag DropDown");
 		Sparkreport.Step("Select Tag Name");
 
@@ -344,7 +361,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click Submit");
 		report.create_info("Successful message :- " + SuccessfullyMsg);
 		assertEquals(SuccessfullyMsg, jsonValue("share-content-successful"));
-		
+
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
 		sharinghistory.clickOnvIcon();
 		Thread.sleep(2000);
@@ -356,16 +373,17 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(description = "Verify user able to edit Bookamrk from Section", dependsOnMethods = "TC16_verifyShareBookmark_FromSection", groups = {
-			"Smoke","Regression" })
+			"Smoke", "Regression" })
 	public void TC17_verifyEditBookmark_FromSection() throws Exception {
-		 Baseclass.navigateToBack();
-	        menu.clickOnMainMenu();
-	        menu.closemenu();
+		Baseclass.navigateToBack();
+		menu.clickOnMainMenu();
+		menu.closemenu();
+
 		section.editNotes_Bookmark(jsonValue("bookmark-edit-text"));
 		Sparkreport.Step("Click edit");
 		Sparkreport.Step("Enter edited text");
 		Sparkreport.Step("Click Save");
-         
+
 		Thread.sleep(2000);
 		report.create_info("Description is :- " + section.getDescription());
 
@@ -376,11 +394,12 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(description = "Verify user able to Delete Bookmark from Section", dependsOnMethods = "TC17_verifyEditBookmark_FromSection", groups = {
-			"Smoke","Regression" })
+			"Smoke", "Regression" })
 	public void TC18_verifyDeleteBookmark_FromSection() throws Exception {
-		 Baseclass.navigateToBack();
-	     menu.clickOnMainMenu();
-	     menu.closemenu();	
+		Baseclass.navigateToBack();
+		menu.clickOnMainMenu();
+		menu.closemenu();
+
 		section.deleteNotes__Bookmark();
 		boolean note_bookmakr = section.Notes_BookmarkisDisplayed();
 		Sparkreport.Step("Click delete");
@@ -392,12 +411,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(tableOfContent_Page.getTextInMyNotes(), jsonValue("mynotes-text"));
 		assertFalse(note_bookmakr);
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
-        assertEquals(sharinghistory.getNoResultText(), "No Results Found");
+		assertEquals(sharinghistory.getNoResultText(), "No Results Found");
 	}
 
 	@Test(priority = 6, description = "Verify links On Chapter", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Smoke", "Regression" })
-	public void TC19_verifyLinksOnChapter(String Section, String Sub_section, String Title, String Chapter,String tag)
+
+	public void TC19_verifyLinksOnChapter(String Section, String Sub_section, String Title, String Chapter, String tag)
+
 			throws Exception {
 
 		commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -432,7 +453,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 7, description = "Verify user able to create notes at Sub-Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
-	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter, String tag)
+
+	public void TC20_verifyCreateNotes_atSubsection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
@@ -476,11 +500,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(tableOfContent_Page.getChapterNameInMynotes(), subsection);
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
-		
 
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,Chapter, jsonValue("notes-text")));
-		assertTrue(mynote_bookmark.verifyDetails(Chapter,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, Chapter, jsonValue("notes-text")));
+		assertTrue(mynote_bookmark.verifyDetails(Chapter, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("notes-text"));
 
@@ -488,7 +511,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 8, description = "Verify user able to create Bookmark at Sub-Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
-	public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter, String tag)
+
+	public void TC21_verifyCreateBookmark_atSubsection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
@@ -506,10 +532,9 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click Bookmark icon");
 		Sparkreport.Step("Enter Decription in textBox");
 
-		
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-		
+
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		Thread.sleep(2000);
@@ -529,19 +554,21 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(tableOfContent_Page.getChapterNameInMynotes(), subsection);
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
-		
 
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,subsection, jsonValue("bookmark-text")));
-		assertTrue(mynote_bookmark.verifyDetails(subsection,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, subsection, jsonValue("bookmark-text")));
+		assertTrue(mynote_bookmark.verifyDetails(subsection, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("bookmark-text"));
 
 	}
 
-	@Test(priority = 9, description = "Verify user able to share the Subsection", dataProvider = "PC first title",dataProviderClass = DataProviders.class ,groups = {
+	@Test(priority = 9, description = "Verify user able to share the Subsection", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
-	public void TC22_verifyShareSection_FromSubSection(String Section, String Sub_section, String Title, String Chapter,String tag)
+
+	public void TC22_verifyShareSection_FromSubSection(String Section, String Sub_section, String Title, String Chapter,
+			String tag)
+
 			throws Exception {
 
 		commanstep.navigetToTitle(Section, Sub_section, Title);
@@ -569,7 +596,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(priority = 10, description = "Verify user able to Print SubSection", groups = { "Regression" })
-	public void TC23_verifyPrintSection_FromSubSection() throws Exception {
+
+	public void TC22_verifyPrintSection_FromSubSection() throws Exception {
 
 		boolean pdfprint = section.printThisSubSection(section.getSessionID_FromSubChapter());
 		Sparkreport.Step("Click Print");
@@ -583,9 +611,11 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 11, description = "Verify user able to create notes at ChildSub-Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
+
 	public void TC24_verifyCreateNotes_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter, String tag) throws Exception {
-	    commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(Section, Sub_section, Title);
+
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
 		Sparkreport.Step("Click  " + Sub_section);
@@ -605,10 +635,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		section.creatNote_FromChildSubSection(section.getSectionID_FromChildSection(), jsonValue("notes-text"));
 		Sparkreport.Step("Click Note icon");
 		Sparkreport.Step("Enter Decription in textBox");
-         
+
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-		
+
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		Thread.sleep(2000);
@@ -628,11 +658,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 				childsection.replaceAll(" ", ""));
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
-		
 
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,Chapter, jsonValue("notes-text")));
-		assertTrue(mynote_bookmark.verifyDetails(Chapter,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, Chapter, jsonValue("notes-text")));
+		assertTrue(mynote_bookmark.verifyDetails(Chapter, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("notes-text"));
 
@@ -640,8 +669,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 12, description = "Verify user able to create Bookmark at ChildSub-Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
+
 	public void TC25_verifyCreateBookmark_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter, String tag) throws Exception {
+
 		commanstep.navigetToTitle(Section, Sub_section, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + Section);
@@ -655,8 +686,8 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click Sub Section ");
 
 		String childsection = section.getChildSubSectionName();
-	
-		//section.clickOnApps(section.getSectionID_FromChildSection());
+
+		// section.clickOnApps(section.getSectionID_FromChildSection());
 		Sparkreport.Step("Click Apps");
 
 		section.creteBookmark_FromSubSection(section.getSectionID_FromChildSection(), jsonValue("bookmark-text"));
@@ -665,7 +696,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		section.selectTag(Section);
 		Sparkreport.Step("Select Tag Name");
-		
+
 		section.clickOnSaveButton();
 		Sparkreport.Step("Click Save");
 		Thread.sleep(2000);
@@ -686,11 +717,10 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 		assertEquals(Childsection.replaceAll(" ", ""), childsection.replaceAll(" ", ""));
 
 		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
-		
 
 		assertEquals(mynote_bookmark.getTitleName(Title), Title);
-		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title,Childsection, jsonValue("bookmark-text")));
-		assertTrue(mynote_bookmark.verifyDetails(Childsection,Login_Test.NAME, Section));
+		assertTrue(mynote_bookmark.verifyChapterName_Decription(Title, Childsection, jsonValue("bookmark-text")));
+		assertTrue(mynote_bookmark.verifyDetails(Childsection, Login_Test.NAME, Section));
 
 		mynote_bookmark.removeNotes_Bookmark(jsonValue("bookmark-text"));
 
@@ -698,6 +728,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 13, description = "Verify user able to share section at ChildSub-Section", dataProvider = "PC first title", dataProviderClass = DataProviders.class, groups = {
 			"Regression" })
+
 	public void TC26_verifyShareSection_atChildSubsection(String Section, String Sub_section, String Title,
 			String Chapter, String tag) throws Exception {
 
@@ -712,11 +743,11 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 
 		tableOfContent_Page.navigateToSubSection(0);
 		Sparkreport.Step("Click Sub Section ");
-		
+
 		section.getChildSubSectionName();
-		//section.clickOnApps(section.getSectionID_FromChildSection());
-		//Sparkreport.Step("Click Apps");
-       Thread.sleep(1000);
+		// section.clickOnApps(section.getSectionID_FromChildSection());
+		// Sparkreport.Step("Click Apps");
+		Thread.sleep(1000);
 		String message = section.shareChildSubSection(section.getSectionID_FromChildSection(), email);
 		Sparkreport.Step("Click Share Icon ");
 		Sparkreport.Step("Enter Email Address");
@@ -728,13 +759,14 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(priority = 14, description = "Verify user able to Print SubSection", groups = { "Regression" })
+
 	public void TC27_verifyPrintSection_FromChildSubSection() throws Exception {
 		Thread.sleep(1000);
+
 		boolean pdf = section.printChildSubSection(section.getSectionID_FromChildSection());
 		Sparkreport.Step("Click Print");
 
 		assertTrue(pdf);
 	}
-	
 
 }

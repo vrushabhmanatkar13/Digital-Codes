@@ -307,11 +307,10 @@ public class Load_Excle {
 							data[i][j] = cell.getNumericCellValue();
 							break;
 						case FORMULA:
-							data[i][j]=cell.getCellFormula();
+							data[i][j] = cell.getCellFormula();
 						default:
 							break;
 						}
-						
 
 					}
 				}
@@ -373,7 +372,7 @@ public class Load_Excle {
 					default:
 						break;
 					}
-            
+
 				}
 			}
 
@@ -382,11 +381,5 @@ public class Load_Excle {
 			throw new Exception("Test Case Name Not add in sheet");
 		}
 	}
-	
-	
-	
-	
-
-	
 
 }

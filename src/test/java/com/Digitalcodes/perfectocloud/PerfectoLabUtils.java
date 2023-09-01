@@ -20,9 +20,6 @@ import java.util.Map;
 
 import org.apache.commons.lang3.time.StopWatch;
 
-
-
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -48,10 +45,11 @@ public class PerfectoLabUtils {
 	 */
 	public static String fetchCloudName(String cloudName) throws Exception {
 		// Verifies if cloudName is hardcoded, else loads from Maven properties
-		String finalCloudName = cloudName.equalsIgnoreCase("${cloudName}") ? System.getProperty("cloudName") : cloudName;
-		
+		String finalCloudName = cloudName.equalsIgnoreCase("${cloudName}") ? System.getProperty("cloudName")
+				: cloudName;
+
 		// throw exceptions if cloudName isnt passed:
-		if (finalCloudName==null || finalCloudName.equalsIgnoreCase("${cloudName}") )
+		if (finalCloudName == null || finalCloudName.equalsIgnoreCase("${cloudName}"))
 			throw new Exception(
 					"Please replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>");
 		else
@@ -87,8 +85,8 @@ public class PerfectoLabUtils {
 	 * @return
 	 * @throws Exception
 	 */
-	public static ReportiumClient setReportiumClient(RemoteWebDriver driver, ReportiumClient reportiumClient,String tag)
-			throws Exception {
+	public static ReportiumClient setReportiumClient(RemoteWebDriver driver, ReportiumClient reportiumClient,
+			String tag) throws Exception {
 		PerfectoExecutionContext perfectoExecutionContext;
 		// Reporting client. For more details, see
 		// https://developers.perfectomobile.com/display/PD/Java
@@ -100,8 +98,7 @@ public class PerfectoLabUtils {
 					.withContextTags("tag1").withWebDriver(driver).build();
 		} else {
 			perfectoExecutionContext = new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
-					.withProject(new Project("My Project", "1.0")).withContextTags(tag).withWebDriver(driver)
-					.build();
+					.withProject(new Project("My Project", "1.0")).withContextTags(tag).withWebDriver(driver).build();
 		}
 		reportiumClient = new ReportiumClientFactory().createPerfectoReportiumClient(perfectoExecutionContext);
 		if (reportiumClient == null) {
@@ -362,8 +359,5 @@ public class PerfectoLabUtils {
 	 * 
 	 * @throws URISyntaxException
 	 */
-	
-	
-	
-	
+
 }

@@ -6,14 +6,12 @@ import java.io.IOException;
 
 import java.util.Properties;
 
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
 public class LoadPropertiesfile {
 
-	//private XSSFSheet sheet=null;
+	// private XSSFSheet sheet=null;
 
 	public Properties load_properties(String filepath) throws Exception {
 
@@ -21,12 +19,12 @@ public class LoadPropertiesfile {
 		prop.load(new FileInputStream(new File(filepath)));
 		return prop;
 	}
-	
+
 	public JsonNode readJson(String JsonFilepath) throws IOException {
- 
-	   ObjectMapper mapper=new ObjectMapper();
-	   JsonNode node =mapper.readTree(new File(JsonFilepath));
-	    return node;
-	
+
+		ObjectMapper mapper = new ObjectMapper();
+		JsonNode node = mapper.readTree(new File(JsonFilepath));
+		return node;
+
 	}
 }
