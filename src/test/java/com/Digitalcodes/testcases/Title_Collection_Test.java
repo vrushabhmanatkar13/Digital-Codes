@@ -68,9 +68,11 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 	public void TC28_verifyCollectionLandingPage(String Section, String subsection, String title, String chapter,
 			String tag) throws Exception {
 
-		menu.navigateToCollections(Section);
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Browse Contents");
+		menu.click_menu_optionL2("Collections");
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click " + Section);
+		Sparkreport.Step("Click Browse Contents");
 
 		String heading = coverpage.getHeading();
 		report.create_info("Page Title is " + getTitle());
@@ -100,7 +102,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 	public void TC29_verifySection_collectionTitles(String Section, String subsection, String title, String chapter,
 			String tag) throws Exception {
 
-		menu.navigateToCollections(Section);
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Browse Contents");
+		menu.click_menu_optionL2("Collections");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
 
@@ -123,7 +127,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 			"Regression", "Section" })
 	public void TC30_verifyCreateNotes_collectionTitles(String Section, String subsection, String title, String chapter,
 			String tag) throws Exception {
-		menu.navigateToCollections(Section);
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Browse Contents");
+		menu.click_menu_optionL2("Collections");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click " + Section);
 
@@ -176,7 +182,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 		assertEquals(toc.getChapterNameInMynotes(), chapter);
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("My notes and Bookmarks");
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);
 		assertTrue(mynote_bookmark.verifyChapterName_Decription(title, chapter, jsonValue("notes-text")));
@@ -213,7 +221,9 @@ public class Title_Collection_Test extends Prerequisites_Teardown {
 
 		assertEquals(toc.getChapterNameInMynotes(), chapter);
 
-		menu.navigateToPremiumToolFeaturs("My notes and Bookmarks");
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("My notes and Bookmarks");
 		MenuMyNotesandBookmark_Page mynote_bookmark = new MenuMyNotesandBookmark_Page();
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);

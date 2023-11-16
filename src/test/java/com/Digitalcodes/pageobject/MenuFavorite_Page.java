@@ -17,7 +17,7 @@ public class MenuFavorite_Page extends Baseclass {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(className = "accent--text")
+	@FindBy(xpath  = "//div[@class='v-list-item__title font-weight-bold']")
 	private WebElement titleName;
 
 	public String getTitleName() {

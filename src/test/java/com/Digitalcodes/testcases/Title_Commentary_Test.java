@@ -28,13 +28,14 @@ public class Title_Commentary_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 1, description = "Verify User able to Hide commentary section", dataProvider = "Premium Complete Commentries", groups = {
 			"Smoke", "Regression" })
-	public void TC34_verifyHideCommentary(String Section, String Sub_section, String Title, String Chapter)
+	public void TC34_verifyHideCommentary(String option_L1, String option_L2, String option_L3, String Title, String Chapter)
 			throws Exception {
 
-		commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(option_L1, option_L2,option_L3, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click  " + Section);
-		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + option_L1);
+		Sparkreport.Step("Click  " + option_L2);
+		Sparkreport.Step("Click  " + option_L3);
 		Sparkreport.Step("Click  " + Title);
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);

@@ -37,13 +37,14 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 1, description = "Verify user able to navigate to ASTM Standerds thorugh link", dataProvider = "ASTM from Link", groups = {
 			"Smoke", "Regression" })
-	public void TC34_verifyNavigateToASTM_FromLinks(String Section, String Sub_section, String Title, String Chapter,
+	public void TC34_verifyNavigateToASTM_FromLinks(String option_L1, String option_L2, String option_L3, String Title, String Chapter,
 			String astm, String tag) throws Exception {
 
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, Title);
+		landingpage = commanstep.navigetToTitle(option_L1, option_L2,option_L3, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click  " + Section);
-		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + option_L1);
+		Sparkreport.Step("Click  " + option_L2);
+		Sparkreport.Step("Click  " + option_L3);
 		Sparkreport.Step("Click  " + Title);
 
 		String actChapter = tableOfContent_Page.navigateToChapter(Chapter);
@@ -65,13 +66,14 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 2, description = "Verify user able to navigate to ASTM Standerds Landing page", dataProvider = "ASTM Titles", groups = {
 			"Smoke", "Regression" })
-	public void TC35_verifyNavigateToASTM(String Section, String Sub_section, String category, String Title, String tag)
+	public void TC35_verifyNavigateToASTM(String option_L1, String option_L2, String option_L3, String category, String Title, String tag)
 			throws Exception {
 
-		coverpage = menu.navigateToTitlesCover(Section, Sub_section);
+		coverpage = menu.navigateToTitlesCover(option_L1,option_L2, option_L3);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click  " + Section);
-		Sparkreport.Step("Click  " + Sub_section);
+		Sparkreport.Step("Click  " + option_L1);
+		Sparkreport.Step("Click  " + option_L2);
+		Sparkreport.Step("Click  " + option_L3);
 		String title = getTitle();
 		String heading = coverpage.getHeading().replace(" Building Codes", "");
 		report.create_info("Page Title :- " + title);
@@ -89,8 +91,8 @@ public class Title_ASTMStanderds_Test extends Prerequisites_Teardown {
 		String activetext = landingpage.getActivepremiumText();
 		report.create_info("Title is " + activetext);
 
-		assertEquals(heading, Sub_section);
-		assertEquals(title, Sub_section + " Building Codes - ICC Digital Codes");
+		assertEquals(heading, option_L3);
+		assertEquals(title, option_L3 + " Building Codes - ICC Digital Codes");
 		assertEquals(titlename, Title);
 		assertEquals(tagname, tag);
 		assertEquals(activetext, jsonArrayValue("Premium", "Access-title"));

@@ -37,20 +37,11 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		favoritespage = new MenuFavorite_Page();
 	}
 
-	@DataProvider(name = "VerifyContentSearch")
-	public Object[][] getContentSearchData() throws Exception {
-		return excel.getDataFromExcle("Content Search", "VerifyContentSearch");
-	}
+	
 
-	@DataProvider(name = "Search by Text")
-	public Object[][] getContentSearchData_firstRow() throws Exception {
-		return excel.getDataFromExcle("Content Search", "VerifyContentSearch", 1);
-	}
+	
 
-	@DataProvider(name = "VerifySerachWithin Title")
-	public Object[][] getSearchWithinTitleData() throws Exception {
-		return excel.getDataFromExcle("Content Search", "VerifySerachWithin Title");
-	}
+	
 
 	@DataProvider(name = "Advance Term Serach")
 	public Object[][] getAdvanceTermSerachData() throws Exception {
@@ -62,17 +53,21 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		return excel.getDataFromExcle("Content Search", "Near Search In Advance Term Search");
 	}
 
+	@DataProvider(name = "VerifySerachWithin Title")
+	public Object[][] getSearchWithinTitleData() throws Exception {
+		return excel.getDataFromExcle("Content Search", "VerifySerachWithin Title");
+	}
 	@Test(priority = 1, description = "Verify user able to search within Title and navigate to content search Page", dataProvider = "VerifySerachWithin Title", groups = {
 			"Smoke", "Regression" })
-	public void TC42_verifySearchWithinTitle(String Section, String Sub_section, String Title, String Chapter,
+	public void TC42_verifySearchWithinTitle(String option_L1, String option_L2, String option_L3, String Title, String Chapter,
 			String data) throws Exception {
 		Titlename = Title;
 		SearchData = data;
-
-		commanstep.navigetToTitle(Section, Sub_section, Title);
+		commanstep.navigetToTitle(option_L1, option_L2, option_L3, Title);
 		Sparkreport.Step("Click menu");
-		Sparkreport.Step("Click " + Section);
-		Sparkreport.Step("Click " + Sub_section);
+		Sparkreport.Step("Click " + option_L1);
+		Sparkreport.Step("Click " + option_L2);
+		Sparkreport.Step("Click " + option_L3);
 		Sparkreport.Step("Click " + Title);
 		Thread.sleep(2000);
 		contentsearch.search(data);
@@ -108,15 +103,21 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		assertTrue(filters != null);
 
 	}
+	@DataProvider(name = "VerifyContentSearch")
+	public Object[][] getContentSearchData() throws Exception {
+		return excel.getDataFromExcle("Content Search", "VerifyContentSearch");
+	}
 
 	@Test(priority = 2, description = "verify user able to navigate Content search page and search any content", dataProvider = "VerifyContentSearch", groups = {
 			"Smoke", "Regression" })
 	public void TC44_verifyContentSearch(String searchby, String data) throws Exception {
-
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "CS"));
+		
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Advance Search");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click " + jsonArrayValue("Premium tools", "CS"));
+		Sparkreport.Step("Click Advance Search");
 		Thread.sleep(1000);
 		contentsearch.search(data);
 		Sparkreport.Step("Search by :- " + searchby);
@@ -149,15 +150,21 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		Thread.sleep(2000);
 
 	}
-
+	
+	@DataProvider(name = "Search by Text")
+	public Object[][] getContentSearchData_firstRow() throws Exception {
+		return excel.getDataFromExcle("Content Search", "VerifyContentSearch", 1);
+	}
 	@Test(priority = 3, description = "verify user able to jump to the section from Content search", dataProvider = "Search by Text", groups = {
 			"Smoke", "Regression" })
 	public void TC46_verifyJumpToSection(String searchby, String data) throws InterruptedException {
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "CS"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Advance Search");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click " + jsonArrayValue("Premium tools", "CS"));
+		Sparkreport.Step("Click Advance Search");
 		Thread.sleep(1000);
 		contentsearch.search(data);
 		Sparkreport.Step("Enter :-" + data);
@@ -271,12 +278,15 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		Baseclass.closeWindow();
 		Baseclass.retrunToMainWindow();
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("My Notes and Bookmark");
 		assertEquals(mynotesbookmarkpage.getTitleName(titlename), titlename);
 		assertTrue(mynotesbookmarkpage.verifyChapterName_Decription(titlename, subtitle, jsonValue("bookmark-text")));
 		assertTrue(mynotesbookmarkpage.verifyDetails(subtitle, Login_Test.NAME, tagname));
 
 	}
+	
 
 	@Test(priority = 6, description = "verify user able to Share, Edit, Delete Bookmark from Content search", dataProvider = "Search by Text", groups = {
 			"Smoke", "Regression" })
@@ -297,7 +307,9 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		report.create_info("Text after share bookmark :- " + msg);
 		assertEquals(msg, jsonValue("share-content-successful"));
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		sharinghistory.clickOnvIcon();
 		Thread.sleep(3000);
 		assertEquals(sharinghistory.titleName(), titlename);
@@ -317,7 +329,9 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		Thread.sleep(2000);
 		report.create_info("Edit Description :- " + sectionpage.getDescription());
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		sharinghistory.clickOnvIcon();
 		Thread.sleep(3000);
 		assertEquals(sharinghistory.getDescription(), jsonValue("bookmark-edit-text"));
@@ -329,7 +343,9 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Click Delete icon");
 		Sparkreport.Step("Click Remove");
 		assertTrue(sectionpage.Notes_BookmarkisDisplayed());
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		assertEquals(sharinghistory.getNoResultText(), "No Results Found");
 	}
 
@@ -396,10 +412,12 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 	@Test(priority = 10, description = "verify save and delete serach Content search", dataProvider = "Search by Text", groups = {
 			"Smoke", "Regression" })
 	public void TC54_verifySaveDeleteContentSerach(String searchby, String data) throws InterruptedException {
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "CS"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Advance Search");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click " + jsonArrayValue("Premium tools", "CS"));
+		Sparkreport.Step("Click Advance Search");
 		contentsearch.search(data);
 		Sparkreport.Step("Enter :- " + data);
 		Thread.sleep(1000);
@@ -439,7 +457,7 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		Sparkreport.Step("Title Name " + title1);
 		contentsearch.clickFavorite();
 		Sparkreport.Step("Click favorite icon");
-		menu.navigetToStaticFeaturs("Favorites");
+		menu.click_menu_optionL1("Favorites");
 		String title2 = favoritespage.getTitleName();
 		menu.closemenu();
 		contentsearch.clickUnfavorite();
@@ -451,7 +469,9 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 	@Test(priority = 12, description = "verify paginations in Content search", dataProvider = "Search by Text", groups = {
 			"Smoke", "Regression" })
 	public void TC56_verifyPaginationinContentSearch(String searchby, String data) throws InterruptedException {
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "CS"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Adcance Search");
 		contentsearch.search(data);
 		Sparkreport.Step("Enter :- " + data);
 		contentsearch.pressEnter();

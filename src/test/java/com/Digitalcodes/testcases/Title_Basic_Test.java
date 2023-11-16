@@ -26,12 +26,13 @@ public class Title_Basic_Test extends Prerequisites_Teardown {
 
 	@Test(priority = 1, description = "Verify user able to navigate to Non-accsiable title ", dataProvider = "Non Accessaible Titles", groups = {
 			"Smoke", "Regression" })
-	public void TC33_verifyNgviateToBasicTitle(String Section, String Sub_section, String title) {
+	public void TC33_verifyNgviateToBasicTitle(String option_L1, String option_L2, String option_L3, String title) {
 
-		landingpage = commanstep.navigetToTitle(Section, Sub_section, title);
+		landingpage = commanstep.navigetToTitle(option_L1, option_L2,option_L3, title);
 		Sparkreport.Step("Click Menu");
-		Sparkreport.Step("Click " + Section);
-		Sparkreport.Step("Click " + Sub_section);
+		Sparkreport.Step("Click " + option_L1);
+		Sparkreport.Step("Click " + option_L2);
+		Sparkreport.Step("Click " + option_L3);
 		Sparkreport.Step("Click " + title);
 
 		String text2 = landingpage.getNotPremiumText();

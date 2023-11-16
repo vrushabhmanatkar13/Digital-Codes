@@ -115,7 +115,7 @@
 				<configuration>
 					<argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suite}</suiteXmlFile>
 					</suiteXmlFiles>
 					
 				</configuration>
@@ -169,12 +169,6 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.9.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
-		<dependency>
-			<groupId>com.epam.healenium</groupId>
-			<artifactId>healenium-web</artifactId>
-			<version>3.4.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
