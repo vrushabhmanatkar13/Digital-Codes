@@ -280,7 +280,7 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 
 		menu.clickOnMenu();
 		menu.click_menu_optionL1("Premium Tools");
-		menu.click_menu_optionL2("My Notes and Bookmark");
+		menu.click_menu_optionL2("My Notes and Bookmarks");
 		assertEquals(mynotesbookmarkpage.getTitleName(titlename), titlename);
 		assertTrue(mynotesbookmarkpage.verifyChapterName_Decription(titlename, subtitle, jsonValue("bookmark-text")));
 		assertTrue(mynotesbookmarkpage.verifyDetails(subtitle, Login_Test.NAME, tagname));
