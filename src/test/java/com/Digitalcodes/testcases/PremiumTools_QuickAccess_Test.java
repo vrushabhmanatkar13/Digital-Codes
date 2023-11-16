@@ -50,10 +50,12 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	public void TC37_verifyAccessSection_QuickAccess(String step1, String titlename, String version, Object step2,
 			String sectionname) throws Exception {
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click Premium Tools");
-		Sparkreport.Step("Click " + jsonArrayValue("Premium tools", "QA"));
+		Sparkreport.Step("Click Quick Access");
 		String title = getTitle();
 		Sparkreport.Step("Page Title :- " + title);
 
@@ -138,7 +140,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-text"));
 		assertEquals(sectionpage.getCreatedBy(), Login_Test.NAME + " (" + Login_Test.EMAIL + ")");
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "M-NB"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("My Notes and Bookmark");
 		mynote_bookmark.clickTitleName(title);
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);
@@ -150,7 +154,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 			"Smoke", "Regression" })
 	public void TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess(String section, String title) throws Exception {
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
 		quickaccess.clickRecentlyAccessedSection(section);
 
 		String SuccessfullyMsg = sectionpage.shareNotes_Bookmark(email);
@@ -162,7 +168,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 
 		assertEquals(SuccessfullyMsg, jsonValue("share-content-successful"));
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		sharingHistorypage.clickOnvIcon();
 		Thread.sleep(2000);
 		assertEquals(sharingHistorypage.titleName(), title);
@@ -171,7 +179,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		assertEquals(sharingHistorypage.getTagName(), " Default");
 		assertEquals(sharingHistorypage.getSharedwith(), email + "(Pending)");
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
 		quickaccess.clickRecentlyAccessedSection(section);
 		sectionpage.editNotes_Bookmark(jsonValue("bookmark-edit-text"));
 		Sparkreport.Step("Click edit");
@@ -180,11 +190,15 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		Thread.sleep(2000);
 		Sparkreport.Step("Description is :- " + sectionpage.getDescription());
 		assertEquals(sectionpage.getDescription(), jsonValue("bookmark-edit-text"));
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		sharingHistorypage.clickOnvIcon();
 		assertEquals(sharingHistorypage.getDescription(), jsonValue("bookmark-edit-text"));
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
 		quickaccess.clickRecentlyAccessedSection(section);
 		sectionpage.deleteNotes__Bookmark();
 		Sparkreport.Step("Click delete");
@@ -192,7 +206,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 		Thread.sleep(2000);
 		boolean note_bookmakr = sectionpage.Notes_BookmarkisDisplayed();
 		assertFalse(note_bookmakr);
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "SH"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Sharing History");
 		assertEquals(sharingHistorypage.getNoResultText(), "No Results Found");
 	}
 
@@ -200,7 +216,9 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 			"Regression" })
 	public void TC40_verifyRecentlyQuickAccessedSections_QuickAccess(String section, String title) throws Exception {
 
-		menu.navigateToPremiumToolFeaturs(jsonArrayValue("Premium tools", "QA"));
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
 		String RecentlyAccessedSection = quickaccess.getRecentlyAccessedSection(section);
 
 		String RecetlyAccessedtitle = quickaccess.getRecentlyAccessedTitleName(title);

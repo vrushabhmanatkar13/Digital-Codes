@@ -12,6 +12,6 @@ public abstract class CommanSteps {
 	 *
 	 *
 	 */
-	public abstract TitleLanding_Page navigetToTitle(String list, String groupofTitle, String Title);
+	public abstract TitleLanding_Page navigetToTitle(String option_L1, String option_L2, String option_L3, String title_name);
 
 }

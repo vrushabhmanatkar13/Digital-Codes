@@ -171,7 +171,7 @@ public class Prerequisites_Teardown extends Baseclass {
 	@AfterTest(alwaysRun = true)
 	public void afterTest() {
 
-		// driver.quit();
+		 driver.quit();
 	}
 
 	@AfterSuite(alwaysRun = true)

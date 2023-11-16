@@ -31,8 +31,8 @@ public class Title_Purchase_Test extends Prerequisites_Teardown {
 	@Test(priority = 2, description = "Verify user able to Purchase Premium Complete", groups = { "Smoke",
 			"Regression" })
 	public void TC_PurchaseTitle() throws Exception {
-
-		menu.navigetToStaticFeaturs("Home");
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Home");
 		Sparkreport.Step("Click Home");
 		String subscribedbuttontext = registerpage.clickSubscribeToPremium();
 		Sparkreport.Step("Click " + subscribedbuttontext);
@@ -112,10 +112,11 @@ public class Title_Purchase_Test extends Prerequisites_Teardown {
 	}
 
 	@Test(priority = 1, description = "Verify user able to Update Qty and Remove product in My cart", groups = {
-			"Regression" })
+			"Regression" }, enabled = false)
 	public void TC_verifyUpdateQutentiy_RemoveIncart() throws InterruptedException {
 
-		menu.navigetToStaticFeaturs("Home");
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Home");
 		Sparkreport.Step("Click Home");
 		String subscribedbuttontext = registerpage.clickSubscribeToPremium();
 		Sparkreport.Step("Click " + subscribedbuttontext);

@@ -381,5 +381,25 @@ public class Load_Excle {
 			throw new Exception("Test Case Name Not add in sheet");
 		}
 	}
+	
+	
+	public List<String> getCellValue1(String sheetname) {
+		sheet = workbook.getSheet(sheetname);
+		List<String> finaldata=null;
+		int cellnum = sheet.getRow(0).getLastCellNum();
 
+		for (int j = 0; j < cellnum; j++) {
+
+			XSSFCell cell = sheet.getRow(0).getCell(j);
+			String cellval = cell.getStringCellValue();
+
+			String data = sheet.getRow(0).getCell(j).getStringCellValue();
+			finaldata.add(data);
+		}
+
+		
+		return finaldata;
+
+	}
+	
 }

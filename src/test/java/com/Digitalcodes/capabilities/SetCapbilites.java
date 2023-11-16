@@ -56,18 +56,5 @@ public class SetCapbilites {
 		return firefox;
 	}
 
-	public static void getlamdatest(ChromeOptions options) {
-		HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-		ltOptions.put("username", "vrushabhmanatkar13");
-		ltOptions.put("accessKey", "Cmg7QXWZSREFgaPboVGTkCH0m6Rtkq859gKMW60In46IhhIQ8K");
-		ltOptions.put("geoLocation", "US");
-		ltOptions.put("visual", true);
-		ltOptions.put("video", true);
-		ltOptions.put("build", "Digital Codes");
-		ltOptions.put("project", "Digital Codes");
-		ltOptions.put("w3c", true);
-		ltOptions.put("plugin", "java-testNG");
-		options.setCapability("LT:Options", ltOptions);
-	}
 
 }
