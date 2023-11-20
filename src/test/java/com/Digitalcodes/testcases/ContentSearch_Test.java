@@ -36,22 +36,7 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		sharinghistory = new PremiumTools_SharingHistory_Page();
 		favoritespage = new MenuFavorite_Page();
 	}
-
 	
-
-	
-
-	
-
-	@DataProvider(name = "Advance Term Serach")
-	public Object[][] getAdvanceTermSerachData() throws Exception {
-		return excel.getDataFromExcle("Content Search", "Advance Term Serach");
-	}
-
-	@DataProvider(name = "Near Search In Advance Term Search")
-	public Object[][] getNearSerachInAdvanceTermSearchData() throws Exception {
-		return excel.getDataFromExcle("Content Search", "Near Search In Advance Term Search");
-	}
 
 	@DataProvider(name = "VerifySerachWithin Title")
 	public Object[][] getSearchWithinTitleData() throws Exception {
@@ -348,6 +333,12 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		menu.click_menu_optionL2("Sharing History");
 		assertEquals(sharinghistory.getNoResultText(), "No Results Found");
 	}
+	
+	@DataProvider(name = "Advance Term Serach")
+	public Object[][] getAdvanceTermSerachData() throws Exception {
+		return excel.getDataFromExcle("Content Search", "Advance Term Serach");
+	}
+
 
 	@Test(priority = 7, description = "verify Advance Term Search from Content search", dataProvider = "Advance Term Serach", groups = {
 			"Smoke", "Regression" })
@@ -373,6 +364,11 @@ public class ContentSearch_Test extends Prerequisites_Teardown {
 		assertEquals(contentsearch.getAllofWords(), allofwords);
 		assertEquals(contentsearch.getAnyofWords(), anyofwords);
 		assertEquals(contentsearch.getNoneofWords(), noneofwords);
+	}
+	
+	@DataProvider(name = "Near Search In Advance Term Search")
+	public Object[][] getNearSerachInAdvanceTermSearchData() throws Exception {
+		return excel.getDataFromExcle("Content Search", "Near Search In Advance Term Search");
 	}
 
 	@Test(priority = 8, description = "verify near search in Advance Term Search from Content search", dataProvider = "Near Search In Advance Term Search", groups = {
