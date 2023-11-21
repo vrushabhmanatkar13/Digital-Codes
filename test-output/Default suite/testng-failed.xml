@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Digitalcodes.testcases.Login_Test">
+      <class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test">
         <methods>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
+          <include name="beforeClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="log_result"/>
-          <include name="TC01_loginValidData"/>
-          <include name="beforeClass"/>
+          <include name="TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Login_Test -->
+      </class> <!-- com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

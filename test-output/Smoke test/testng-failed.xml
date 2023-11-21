@@ -17,23 +17,18 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Digitalcodes.testcases.Title_SectionPage_Test">
+      <class name="com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test">
         <methods>
           <include name="afterSuite"/>
-          <include name="TC18_verifyDeleteBookmark_FromSection"/>
-          <include name="beforeClassTitlepage"/>
           <include name="beforeTest"/>
-          <include name="TC16_verifyShareBookmark_FromSection"/>
-          <include name="beforeSuite"/>
-          <include name="TC15_verifyDeleteNotes_FromSection"/>
-          <include name="afterTest"/>
-          <include name="TC13_verifyShareNote_FromSction"/>
-          <include name="log_result"/>
-          <include name="TC14_verifyEditNotes_FromSection"/>
           <include name="beforeClass"/>
-          <include name="TC17_verifyEditBookmark_FromSection"/>
+          <include name="beforeSuite"/>
+          <include name="TC38_verifyActionsOnSection_QuickAccess" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="log_result"/>
+          <include name="TC39_verifyShare_Edit_DeleteBookmakr_QuickAccess" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.Digitalcodes.testcases.Title_SectionPage_Test -->
+      </class> <!-- com.Digitalcodes.testcases.PremiumTools_QuickAccess_Test -->
     </classes>
   </test> <!-- Smoke test for Premium user(failed) -->
 </suite> <!-- Failed suite [Smoke test] -->

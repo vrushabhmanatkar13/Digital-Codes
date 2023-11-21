@@ -53,7 +53,6 @@ public class Baseclass extends Perfecto_Capabailites {
 			if (browserName.equalsIgnoreCase("Chrome")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions chromeoption = SetCapbilites.getChromecapabalites(incognito, headless);
-				// SetCapbilites.getlamdatest(chromeoption);
 				WebDriver Cdriver = new ChromeDriver(chromeoption);
 				driver = Cdriver;
 
@@ -231,7 +230,7 @@ public class Baseclass extends Perfecto_Capabailites {
 		}
 	}
 
-	// -----Handle alert------------------------->>
+	// -----Handle alert------------------>>
 	public static Alert handleAlert() {
 		Alert alert = driver.switchTo().alert();
 		return alert;
@@ -244,27 +243,24 @@ public class Baseclass extends Perfecto_Capabailites {
 	}
 
 	public void click(WebElement webelement) {
-		// wait.until(ExpectedConditions.visibilityOf(webelement));
 		wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
 
 	}
 
 	public void sendKeys(WebElement webelement, String stringtext) {
 
-		try {
-			Thread.sleep(200);
-			wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
-			wait.until(ExpectedConditions.visibilityOf(webelement)).sendKeys(stringtext);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		wait.until(ExpectedConditions.elementToBeClickable(webelement)).click();
+		wait.until(ExpectedConditions.visibilityOf(webelement)).sendKeys(stringtext);
 
 	}
 
 	public String getText(WebElement e) {
 		return wait.until(ExpectedConditions.visibilityOf(e)).getText();
 
+	}
+	public static boolean isDisplayed(WebElement e) {
+		wait.until(ExpectedConditions.visibilityOfAllElements(e));
+		return e.isDisplayed();
 	}
 
 	public String getTextByJS(WebElement e) {
@@ -300,9 +296,6 @@ public class Baseclass extends Perfecto_Capabailites {
 		Perfecto_Capabailites.Assert("", booleanvalue);
 	}
 
-	public static boolean isDisplayed(WebElement e) {
-		wait.until(ExpectedConditions.visibilityOfAllElements(e));
-		return e.isDisplayed();
-	}
+	
 
 }

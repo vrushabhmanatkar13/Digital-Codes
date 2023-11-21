@@ -175,7 +175,7 @@ public class Title_SectionPage_Test extends Prerequisites_Teardown {
 			String tag)
 
 			throws Exception {
-
+		Baseclass.refreshBrowser();
 		landingpage = commanstep.navigetToTitle(option_L1, option_L2,option_L3, Title);
 		Sparkreport.Step("Click menu");
 		Sparkreport.Step("Click  " + option_L1);
