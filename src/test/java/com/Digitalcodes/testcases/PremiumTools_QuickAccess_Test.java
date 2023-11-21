@@ -94,7 +94,11 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 	@Test(priority = 2, description = "Verify user able to Jump, Copy, Print, Share, Bookmark Section from Quick Access", dataProvider = "RecentlyAccessSection", groups = {
 			"Smoke", "Regression" })
 	public void TC38_verifyActionsOnSection_QuickAccess(String section, String title) throws Exception {
-
+		menu.clickOnMenu();
+		menu.click_menu_optionL1("Premium Tools");
+		menu.click_menu_optionL2("Quick Access");
+		
+		quickaccess.clickRecentlyAccessedSection(section);
 		String sectionOnQuickAccess = quickaccess.getSectionName();
 
 		quickaccess.clickInputIcon();
@@ -142,7 +146,7 @@ public class PremiumTools_QuickAccess_Test extends Prerequisites_Teardown {
 
 		menu.clickOnMenu();
 		menu.click_menu_optionL1("Premium Tools");
-		menu.click_menu_optionL2("My Notes and Bookmark");
+		menu.click_menu_optionL2("My Notes and Bookmarks");
 		mynote_bookmark.clickTitleName(title);
 
 		assertEquals(mynote_bookmark.getTitleName(title), title);
